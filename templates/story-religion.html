@@ -1,7 +1,7 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><link rel="stylesheet" href="style.css"></head>
 <body><main class="canvas story {{ debug_class|default('') }}" style="--bg-position:{{ background_position|default('center center') }}">
 <img class="bg" src="{{ background }}"><div class="overlay"></div><div class="grain"></div><div class="crop-guide"></div>
-<div class="brand">LABAYKA <span class="gold">NUSUK</span></div><div class="brand-line"></div><div class="brand-diamond"></div>
+<div class="brand"><span>LABAYKA</span><span class="gold">NUSUK</span></div><div class="brand-line"></div><div class="brand-diamond"></div>
 <div class="safe-frame"><section class="content {{ density|default('medium') }}">
 <div class="kicker">{{ kicker }}</div>
 <h1 class="title">{{ title_before }}{% if title_highlight %} <span class="highlight">{{ title_highlight }}</span>{% endif %}</h1>

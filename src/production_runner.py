@@ -1,0 +1,417 @@
+from __future__ import annotations
+
+from pathlib import Path
+from datetime import datetime, date, timedelta, timezone
+import argparse
+import hashlib
+import json
+import os
+import time
+import urllib.parse
+import urllib.request
+
+from render import render
+
+ROOT = Path(__file__).resolve().parents[1]
+CONTENT = ROOT / "content"
+CONFIG = ROOT / "config"
+LOGS = ROOT / "logs"
+OUTPUT = ROOT / "output"
+HISTORY_PATH = LOGS / "publication_history.json"
+EXPECTED_IG_USERNAME = os.environ.get("IG_EXPECTED_USERNAME", "labaykanusuk")
+
+SLOTS = {
+    1: {"format": "story", "category": "religion"},
+    2: {"format": "story", "category": "tool"},
+    3: {"format": "story", "category": "religion"},
+    4: {"format": "story", "category": "religion"},
+    5: {"format": "story", "category": "tool"},
+    6: {"format": "story", "category": "religion"},
+    7: {"format": "feed", "category": "rotation_religion_or_tool"},
+}
+
+
+def load_json(path: Path, default=None):
+    if not path.exists():
+        return default
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def save_json(path: Path, data):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def approved_items():
+    religion, tools = [], []
+    for p in sorted((CONTENT / "religion").glob("*.json")):
+        data = load_json(p, [])
+        if isinstance(data, list):
+            religion.extend(x for x in data if x.get("approved") is True)
+    for p in sorted((CONTENT / "tools").glob("*.json")):
+        data = load_json(p, [])
+        if isinstance(data, list):
+            tools.extend(x for x in data if x.get("approved") is True)
+    return religion, tools
+
+
+def history():
+    data = load_json(HISTORY_PATH, [])
+    return data if isinstance(data, list) else []
+
+
+def published_entries(hist):
+    # Backward compatible with the older history format, which had no status field.
+    return [h for h in hist if h.get("status", "published") == "published"]
+
+
+def item_last_used(item_id: str, hist):
+    dates = []
+    for h in published_entries(hist):
+        if h.get("content_id") == item_id:
+            try:
+                dates.append(date.fromisoformat(h["date"]))
+            except Exception:
+                pass
+    return max(dates) if dates else None
+
+
+def choose_item(pool, hist, target_date: date, prevent_days=90):
+    if not pool:
+        raise RuntimeError("No approved content available for this category")
+
+    used_today = {
+        h.get("content_id") for h in published_entries(hist)
+        if h.get("date") == target_date.isoformat()
+    }
+    candidates = [x for x in pool if x.get("id") not in used_today]
+    if not candidates:
+        candidates = pool[:]
+
+    cutoff = target_date - timedelta(days=prevent_days)
+    fresh = []
+    for item in candidates:
+        last = item_last_used(item["id"], hist)
+        if last is None or last < cutoff:
+            fresh.append(item)
+
+    if fresh:
+        candidates = fresh
+
+    # When the current validated library is smaller than the requested anti-repeat window,
+    # choose the least recently used item instead of stopping the whole machine.
+    candidates.sort(key=lambda x: (
+        item_last_used(x["id"], hist) or date.min,
+        x["id"],
+    ))
+    return candidates[0]
+
+
+def choose_photo(item, hist, target_date: date, slot: int):
+    manifest = load_json(CONFIG / "photo_manifest.json", {"photos": []})
+    photos = [p for p in manifest.get("photos", []) if p.get("approved")]
+    if not photos:
+        raise RuntimeError("No approved background images in photo_manifest.json")
+
+    themes = set(item.get("theme", []))
+    if item.get("type") == "tool":
+        themes.add("universal")
+
+    scored = []
+    for p in photos:
+        score = len(themes.intersection(set(p.get("tags", []))))
+        if score:
+            scored.append((score, p))
+    candidates = [p for _, p in sorted(scored, key=lambda t: (-t[0], t[1]["id"]))]
+    if not candidates:
+        candidates = [p for p in photos if "universal" in p.get("tags", [])] or photos
+
+    used_today = {
+        h.get("photo_id") for h in published_entries(hist)
+        if h.get("date") == target_date.isoformat() and h.get("photo_id")
+    }
+    unused = [p for p in candidates if p.get("id") not in used_today]
+    if unused:
+        candidates = unused
+
+    seed = f"{target_date.isoformat()}:{slot}:{item['id']}".encode("utf-8")
+    idx = int(hashlib.sha256(seed).hexdigest()[:8], 16) % len(candidates)
+    return candidates[idx]
+
+
+def make_payload(item, slot_meta, photo):
+    common = {
+        "background": photo["file"],
+        "background_position": photo.get("default_position", "center center"),
+    }
+
+    if item["type"] == "tool":
+        template = "story-tool.html" if slot_meta["format"] == "story" else "feed-tool.html"
+        payload = {
+            **common,
+            "chip": "OUTIL LABAYKANUSUK",
+            "title_before": item["name"],
+            "title_highlight": "",
+            "copy": " · ".join(item.get("benefits", [])[:3]),
+            "quote": "",
+            "source": "",
+            "cta": item.get("cta", "DÉCOUVRIR"),
+        }
+        caption = (
+            f"{item['name']}\n\n"
+            + "\n".join(f"• {b}" for b in item.get("benefits", [])[:3])
+            + f"\n\n{item.get('url', 'https://www.labaykanusuk.com')}"
+        )
+    elif item["type"] == "quran":
+        template = "story-religion.html" if slot_meta["format"] == "story" else "feed-religion.html"
+        payload = {
+            **common,
+            "kicker": "PAROLE D’ALLAH",
+            "title_before": "Le Hajj est un",
+            "title_highlight": "devoir pour celui qui en a les moyens.",
+            "copy": "La préparation du pèlerinage commence par la connaissance de ce qu’Allah a prescrit.",
+            "quote": item.get("french", ""),
+            "source": f"{item.get('reference','')} — traduction {item.get('translation','')}",
+            "cta": "Prépare ton Hajj",
+        }
+        caption = f"{item.get('french','')}\n\n{item.get('reference','')} — traduction {item.get('translation','')}"
+    else:
+        template = "story-religion.html" if slot_meta["format"] == "story" else "feed-religion.html"
+        payload = {
+            **common,
+            "kicker": "RAPPEL DU PÈLERIN",
+            "title_before": item.get("title_hook", "Rappel du pèlerin"),
+            "title_highlight": "",
+            "copy": item.get("editorial_copy", ""),
+            "quote": "",
+            "source": item.get("support_reference", ""),
+            "cta": "À méditer",
+        }
+        caption = f"{item.get('title_hook','')}\n\n{item.get('editorial_copy','')}"
+
+    return template, payload, caption
+
+
+def already_published_slot(hist, target_date: str, slot: int):
+    return any(
+        h.get("date") == target_date
+        and int(h.get("slot_order", -1)) == slot
+        and h.get("status", "published") == "published"
+        for h in hist
+    )
+
+
+def prepare(slot: int, state_path: Path, force=False):
+    if slot not in SLOTS:
+        raise SystemExit("slot must be between 1 and 7")
+
+    target_date = date.today()
+    hist = history()
+    if already_published_slot(hist, target_date.isoformat(), slot) and not force:
+        state = {"skip": True, "reason": "slot_already_published", "date": target_date.isoformat(), "slot": slot}
+        save_json(state_path, state)
+        print(json.dumps(state, ensure_ascii=False))
+        return
+
+    religion, tools = approved_items()
+    meta = SLOTS[slot]
+
+    if meta["category"] == "religion":
+        pool = religion
+    elif meta["category"] == "tool":
+        pool = tools
+    else:
+        # Feed may be religion or tool. With the current validated religion library,
+        # the four religious Stories consume the full daily set, so prefer a tool for feed
+        # until the source library is expanded.
+        religion_used_today = {
+            h.get("content_id") for h in published_entries(hist)
+            if h.get("date") == target_date.isoformat()
+        }
+        unused_religion = [r for r in religion if r["id"] not in religion_used_today]
+        feed_count = sum(1 for h in published_entries(hist) if h.get("slot_format") == "feed")
+        if unused_religion and feed_count % 2 == 0:
+            pool = unused_religion
+        else:
+            pool = tools
+
+    item = choose_item(pool, hist, target_date, prevent_days=90)
+    photo = choose_photo(item, hist, target_date, slot)
+    template, payload, caption = make_payload(item, meta, photo)
+
+    OUTPUT.mkdir(exist_ok=True)
+    payload_path = OUTPUT / f"production-slot-{slot:02d}.json"
+    save_json(payload_path, payload)
+    output_name = f"production-slot-{slot:02d}.jpg"
+    result = render(template, payload_path, output_name)
+
+    state = {
+        "skip": False,
+        "date": target_date.isoformat(),
+        "slot": slot,
+        "slot_format": meta["format"],
+        "slot_category": meta["category"],
+        "kind": "STORY" if meta["format"] == "story" else "IMAGE",
+        "content_id": item["id"],
+        "content_type": item["type"],
+        "photo_id": photo["id"],
+        "template": template,
+        "output": result["output"],
+        "public_filename": f"slot-{slot:02d}.jpg",
+        "caption": caption if meta["format"] == "feed" else "",
+        "logo_variant": result.get("logo_variant"),
+        "density": result.get("density"),
+    }
+    save_json(state_path, state)
+    print(json.dumps(state, ensure_ascii=False, indent=2))
+
+
+def require_env(name):
+    value = os.environ.get(name)
+    if not value:
+        raise RuntimeError(f"Missing environment variable {name}")
+    return value
+
+
+def api_json(url: str, params=None, method="GET"):
+    params = params or {}
+    if method == "GET":
+        full = url + "?" + urllib.parse.urlencode(params)
+        req = urllib.request.Request(full, method="GET")
+    else:
+        data = urllib.parse.urlencode(params).encode("utf-8")
+        req = urllib.request.Request(url, data=data, method=method)
+    try:
+        with urllib.request.urlopen(req, timeout=90) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"Instagram API HTTP {exc.code}: {body}") from exc
+
+
+def resolve_instagram_account(token: str):
+    data = api_json(
+        "https://graph.instagram.com/me",
+        {"fields": "id,username", "access_token": token},
+    )
+    ig_id = str(data.get("id", ""))
+    username = str(data.get("username", ""))
+    if not ig_id or not username:
+        raise RuntimeError(f"Could not resolve Instagram account: {data}")
+    if EXPECTED_IG_USERNAME and username.lower() != EXPECTED_IG_USERNAME.lower():
+        raise RuntimeError(f"Token belongs to @{username}, expected @{EXPECTED_IG_USERNAME}")
+    return ig_id, username
+
+
+def publish_instagram(state, media_url: str):
+    token = require_env("IG_ACCESS_TOKEN")
+    version = require_env("IG_API_VERSION")
+    ig_id, username = resolve_instagram_account(token)
+    base = f"https://graph.instagram.com/{version}/{ig_id}"
+
+    params = {"access_token": token}
+    if state["kind"] == "STORY":
+        params.update({"image_url": media_url, "media_type": "STORIES"})
+    elif state["kind"] == "IMAGE":
+        params.update({"image_url": media_url, "caption": state.get("caption", "")})
+    else:
+        raise RuntimeError(f"Unsupported production kind: {state['kind']}")
+
+    created = api_json(f"{base}/media", params, method="POST")
+    container_id = created.get("id")
+    if not container_id:
+        raise RuntimeError(f"No container id returned: {created}")
+
+    # Give Meta time to fetch and process the public media.
+    finished = False
+    for _ in range(30):
+        status = api_json(
+            f"https://graph.instagram.com/{version}/{container_id}",
+            {"fields": "status_code,status", "access_token": token},
+        )
+        code = status.get("status_code")
+        if code == "FINISHED":
+            finished = True
+            break
+        if code in {"ERROR", "EXPIRED"}:
+            raise RuntimeError(f"Container processing failed: {status}")
+        time.sleep(4)
+
+    # Some image containers are publishable even if status polling is not returned consistently.
+    last_error = None
+    for attempt in range(8):
+        try:
+            published = api_json(
+                f"{base}/media_publish",
+                {"creation_id": container_id, "access_token": token},
+                method="POST",
+            )
+            media_id = published.get("id")
+            if media_id:
+                return {"media_id": media_id, "ig_id": ig_id, "username": username, "container_id": container_id}
+        except Exception as exc:
+            last_error = exc
+            if attempt == 7:
+                break
+            time.sleep(5)
+    raise RuntimeError(f"Instagram publication failed: {last_error}")
+
+
+def record_success(state, media_url: str, published):
+    hist = history()
+    entry = {
+        "date": state["date"],
+        "slot_order": state["slot"],
+        "slot_format": state["slot_format"],
+        "slot_category": state["slot_category"],
+        "content_id": state["content_id"],
+        "content_type": state["content_type"],
+        "photo_id": state.get("photo_id"),
+        "kind": state["kind"],
+        "status": "published",
+        "instagram_media_id": published["media_id"],
+        "instagram_username": published["username"],
+        "public_url": media_url,
+        "published_at_utc": datetime.now(timezone.utc).isoformat(),
+    }
+    hist.append(entry)
+    save_json(HISTORY_PATH, hist)
+    return entry
+
+
+def publish(state_path: Path, media_url: str, live: bool):
+    state = load_json(state_path, {})
+    if state.get("skip"):
+        print(json.dumps(state, ensure_ascii=False))
+        return
+    if not live:
+        print(json.dumps({"dry_run": True, "state": state, "media_url": media_url}, ensure_ascii=False, indent=2))
+        return
+    result = publish_instagram(state, media_url)
+    entry = record_success(state, media_url, result)
+    print(json.dumps({"published": True, "result": result, "history": entry}, ensure_ascii=False, indent=2))
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    p_prepare = sub.add_parser("prepare")
+    p_prepare.add_argument("--slot", type=int, required=True)
+    p_prepare.add_argument("--state", required=True)
+    p_prepare.add_argument("--force", action="store_true")
+
+    p_publish = sub.add_parser("publish")
+    p_publish.add_argument("--state", required=True)
+    p_publish.add_argument("--url", required=True)
+    p_publish.add_argument("--live", action="store_true")
+
+    args = parser.parse_args()
+    if args.command == "prepare":
+        prepare(args.slot, Path(args.state), force=args.force)
+    else:
+        publish(Path(args.state), args.url, live=args.live)
+
+
+if __name__ == "__main__":
+    main()

@@ -35,7 +35,7 @@ body{font-family:"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antial
 /* Branding stays inside the safe area. */
 .story .brand{left:var(--story-safe-x);top:var(--story-safe-top)}
 .feed .brand{left:var(--feed-safe-x);top:var(--feed-safe-top)}
-.brand{position:absolute;font-size:31px;font-weight:780;letter-spacing:.9px;z-index:4;white-space:nowrap}
+.brand{position:absolute;font-size:31px;font-weight:780;letter-spacing:.9px;z-index:4;white-space:nowrap;display:flex;gap:0}
 .brand .gold{color:var(--gold)}
 .brand-line{position:absolute;height:2px;background:var(--gold);z-index:4}
 .story .brand-line{left:var(--story-safe-x);top:calc(var(--story-safe-top) + 55px);width:296px}
@@ -61,20 +61,20 @@ body{font-family:"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antial
 
 /* Adaptive density classes applied automatically by render.py. */
 .content.short{width:min(730px,80%)}
-.content.short .title{font-size:84px;line-height:1.00}
-.content.short .copy{font-size:33px}
-.content.medium .title{font-size:74px}
-.content.medium .copy{font-size:30px}
+.content.short .title{font-size:92px;line-height:.99}
+.content.short .copy{font-size:36px}
+.content.medium .title{font-size:82px}
+.content.medium .copy{font-size:33px}
 .content.long{width:min(760px,84%)}
-.content.long .title{font-size:62px;line-height:1.055;margin-bottom:22px}
-.content.long .copy{font-size:27px;line-height:1.32;margin-bottom:20px}
-.content.long .quote{font-size:25px;line-height:1.32;margin-top:24px}
-.content.long .source{font-size:19px}
+.content.long .title{font-size:76px;line-height:1.025;margin-bottom:24px}
+.content.long .copy{font-size:32px;line-height:1.30;margin-bottom:22px}
+.content.long .quote{font-size:29px;line-height:1.30;margin-top:26px}
+.content.long .source{font-size:21px}
 .content.xlong{width:min(790px,87%);padding-left:40px}
-.content.xlong .title{font-size:52px;line-height:1.075;margin-bottom:18px}
-.content.xlong .copy{font-size:23px;line-height:1.27;margin-bottom:17px}
-.content.xlong .quote{font-size:21px;line-height:1.27;margin-top:20px;padding-left:18px}
-.content.xlong .source{font-size:17px;margin-top:12px}
+.content.xlong .title{font-size:59px;line-height:1.05;margin-bottom:18px}
+.content.xlong .copy{font-size:26px;line-height:1.27;margin-bottom:17px}
+.content.xlong .quote{font-size:23px;line-height:1.27;margin-top:20px;padding-left:18px}
+.content.xlong .source{font-size:18px;margin-top:12px}
 
 .feed .safe-frame{align-items:center}
 .feed .content{width:min(760px,82%)}
