@@ -1,0 +1,31 @@
+name: Daily dry run queue
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+  queue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - run: playwright install --with-deps chromium
+
+      - run: python src/validate.py
+
+      - run: python src/selector.py
+
+      - run: python src/render_queue.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: daily-dry-run-output
+          path: output/
