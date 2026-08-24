@@ -1,0 +1,163 @@
+name: Publish first Instagram Story v2
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish-first-story-v2.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-first-story:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check if this test was already published
+        id: guard
+        shell: bash
+        run: |
+          git fetch origin main
+          if git cat-file -e origin/main:logs/first_story_v2_published.marker 2>/dev/null; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Setup Python
+        if: steps.guard.outputs.published != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        if: steps.guard.outputs.published != 'true'
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Verify Instagram connection
+        if: steps.guard.outputs.published != 'true'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+        run: |
+          python - <<'PY'
+          import os, json, urllib.parse, urllib.request
+
+          uid = os.environ["IG_USER_ID"]
+          token = os.environ["IG_ACCESS_TOKEN"]
+          version = os.environ["IG_API_VERSION"]
+
+          url = f"https://graph.instagram.com/{version}/{uid}"
+          query = urllib.parse.urlencode({
+              "fields": "id,username",
+              "access_token": token
+          })
+
+          with urllib.request.urlopen(url + "?" + query, timeout=60) as response:
+              data = json.loads(response.read().decode("utf-8"))
+
+          if str(data.get("id")) != str(uid):
+              raise SystemExit("Instagram account mismatch")
+
+          print("Instagram OK:", data.get("username"))
+          PY
+
+      - name: Generate approved Story
+        if: steps.guard.outputs.published != 'true'
+        run: |
+          cat > config/first-instagram-story-v2.json <<'JSON'
+          {
+            "background": "assets/photos/approved/arafat_muzdalifah.jpg",
+            "background_position": "center center",
+            "kicker": "PAROLE D’ALLAH",
+            "title_before": "Le Hajj est un",
+            "title_highlight": "devoir pour celui qui en a les moyens.",
+            "copy": "La préparation du pèlerinage commence par la connaissance de ce qu’Allah a prescrit.",
+            "quote": "Là sont des signes évidents, parmi lesquels l’endroit où Abraham s’est tenu debout; et quiconque y entre est en sécurité. Et c’est un devoir envers Allah pour les gens qui [en] ont les moyens, d’aller faire le pèlerinage de la Maison.",
+            "source": "Coran 3:97 — traduction Muhammad Hamidullah",
+            "cta": "Prépare ton Hajj"
+          }
+          JSON
+
+          python src/render.py \
+            --template story-religion.html \
+            --data config/first-instagram-story-v2.json \
+            --output first-instagram-story-v2.jpg
+
+      - name: Put Story at a public URL
+        if: steps.guard.outputs.published != 'true'
+        run: |
+          set -e
+          mkdir -p docs/media
+          cp output/first-instagram-story-v2.jpg docs/media/first-instagram-story-v2.jpg
+
+          git config user.name "LABAYKANUSUK Social Machine"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add docs/media/first-instagram-story-v2.jpg
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Expose Instagram Story test v2"
+            git push origin HEAD:main
+          fi
+
+      - name: Wait until public image is reachable
+        if: steps.guard.outputs.published != 'true'
+        id: media
+        shell: bash
+        run: |
+          URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/docs/media/first-instagram-story-v2.jpg"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+          for i in {1..20}; do
+            if curl -L --fail --silent --max-time 20 "$URL" -o /tmp/story.jpg && [ -s /tmp/story.jpg ]; then
+              echo "Story image is public."
+              exit 0
+            fi
+            echo "Waiting for public image ($i/20)..."
+            sleep 5
+          done
+
+          exit 1
+
+      - name: Publish Story LIVE on Instagram
+        if: steps.guard.outputs.published != 'true'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+        run: |
+          python src/publish_instagram.py \
+            --url "${{ steps.media.outputs.url }}" \
+            --kind STORY \
+            --live
+
+      - name: Record successful publication
+        if: steps.guard.outputs.published != 'true'
+        run: |
+          git pull --rebase origin main
+
+          mkdir -p logs
+          printf "First Instagram Story v2 published successfully at %s\n" \
+            "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" \
+            > logs/first_story_v2_published.marker
+
+          git add logs/first_story_v2_published.marker
+          git commit -m "Mark Instagram Story test v2 as published"
+          git push origin HEAD:main
+
+      - name: Already published
+        if: steps.guard.outputs.published == 'true'
+        run: |
+          echo "This Story test was already published. Nothing sent again."
