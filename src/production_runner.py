@@ -6,6 +6,7 @@ import argparse
 import hashlib
 import json
 import os
+import subprocess
 import time
 import urllib.parse
 import urllib.request
@@ -28,6 +29,7 @@ SLOTS = {
     5: {"format": "story", "category": "tool"},
     6: {"format": "story", "category": "religion"},
     7: {"format": "feed", "category": "rotation_religion_or_tool"},
+    8: {"format": "reel", "category": "rotation_religion_or_tool"},
 }
 
 
@@ -144,9 +146,10 @@ def make_payload(item, slot_meta, photo):
         "background": photo["file"],
         "background_position": photo.get("default_position", "center center"),
     }
+    vertical = slot_meta["format"] in {"story", "reel"}
 
     if item["type"] == "tool":
-        template = "story-tool.html" if slot_meta["format"] == "story" else "feed-tool.html"
+        template = "story-tool.html" if vertical else "feed-tool.html"
         payload = {
             **common,
             "chip": "OUTIL LABAYKANUSUK",
@@ -163,7 +166,7 @@ def make_payload(item, slot_meta, photo):
             + f"\n\n{item.get('url', 'https://www.labaykanusuk.com')}"
         )
     elif item["type"] == "quran":
-        template = "story-religion.html" if slot_meta["format"] == "story" else "feed-religion.html"
+        template = "story-religion.html" if vertical else "feed-religion.html"
         payload = {
             **common,
             "kicker": "PAROLE D’ALLAH",
@@ -176,7 +179,7 @@ def make_payload(item, slot_meta, photo):
         }
         caption = f"{item.get('french','')}\n\n{item.get('reference','')} — traduction {item.get('translation','')}"
     else:
-        template = "story-religion.html" if slot_meta["format"] == "story" else "feed-religion.html"
+        template = "story-religion.html" if vertical else "feed-religion.html"
         payload = {
             **common,
             "kicker": "RAPPEL DU PÈLERIN",
@@ -192,6 +195,44 @@ def make_payload(item, slot_meta, photo):
     return template, payload, caption
 
 
+def make_reel(source_image: str, output_name: str, duration=12.0, fps=30):
+    """Create a silent cinematic 9:16 Reel with an AAC silence track for API compatibility."""
+    src = Path(source_image)
+    if not src.is_absolute():
+        src = (ROOT / src).resolve()
+    out = OUTPUT / output_name
+    out.parent.mkdir(parents=True, exist_ok=True)
+
+    frames = int(duration * fps)
+    vf = (
+        "scale=1080:1920:force_original_aspect_ratio=increase,"
+        "crop=1080:1920,"
+        f"zoompan=z='min(zoom+0.00010,1.035)':"
+        f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+        f"d={frames}:s=1080x1920:fps={fps},"
+        "format=yuv420p"
+    )
+    cmd = [
+        "ffmpeg", "-y",
+        "-loop", "1", "-i", str(src),
+        "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000",
+        "-vf", vf,
+        "-t", str(duration), "-r", str(fps),
+        "-c:v", "libx264", "-preset", "medium", "-crf", "18",
+        "-pix_fmt", "yuv420p",
+        "-c:a", "aac", "-b:a", "128k",
+        "-shortest", "-movflags", "+faststart",
+        str(out),
+    ]
+    try:
+        subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    except FileNotFoundError as exc:
+        raise RuntimeError("ffmpeg is required to generate Reels") from exc
+    except subprocess.CalledProcessError as exc:
+        err = exc.stderr.decode("utf-8", errors="replace")[-4000:]
+        raise RuntimeError(f"ffmpeg Reel generation failed: {err}") from exc
+    return out
+
 def already_published_slot(hist, target_date: str, slot: int):
     return any(
         h.get("date") == target_date
@@ -203,7 +244,7 @@ def already_published_slot(hist, target_date: str, slot: int):
 
 def prepare(slot: int, state_path: Path, force=False):
     if slot not in SLOTS:
-        raise SystemExit("slot must be between 1 and 7")
+        raise SystemExit("slot must be between 1 and 8")
 
     target_date = date.today()
     hist = history()
@@ -242,8 +283,18 @@ def prepare(slot: int, state_path: Path, force=False):
     OUTPUT.mkdir(exist_ok=True)
     payload_path = OUTPUT / f"production-slot-{slot:02d}.json"
     save_json(payload_path, payload)
-    output_name = f"production-slot-{slot:02d}.jpg"
-    result = render(template, payload_path, output_name)
+    if meta["format"] == "reel":
+        frame_name = f"production-slot-{slot:02d}-frame.jpg"
+        result = render(template, payload_path, frame_name)
+        output_name = f"production-slot-{slot:02d}.mp4"
+        reel_path = make_reel(result["output"], output_name)
+        final_output = str(reel_path)
+        public_filename = f"slot-{slot:02d}.mp4"
+    else:
+        output_name = f"production-slot-{slot:02d}.jpg"
+        result = render(template, payload_path, output_name)
+        final_output = result["output"]
+        public_filename = f"slot-{slot:02d}.jpg"
 
     state = {
         "skip": False,
@@ -251,14 +302,14 @@ def prepare(slot: int, state_path: Path, force=False):
         "slot": slot,
         "slot_format": meta["format"],
         "slot_category": meta["category"],
-        "kind": "STORY" if meta["format"] == "story" else "IMAGE",
+        "kind": "STORY" if meta["format"] == "story" else ("REEL" if meta["format"] == "reel" else "IMAGE"),
         "content_id": item["id"],
         "content_type": item["type"],
         "photo_id": photo["id"],
         "template": template,
-        "output": result["output"],
-        "public_filename": f"slot-{slot:02d}.jpg",
-        "caption": caption if meta["format"] == "feed" else "",
+        "output": final_output,
+        "public_filename": public_filename,
+        "caption": caption if meta["format"] in {"feed", "reel"} else "",
         "logo_variant": result.get("logo_variant"),
         "density": result.get("density"),
     }
@@ -314,6 +365,13 @@ def publish_instagram(state, media_url: str):
         params.update({"image_url": media_url, "media_type": "STORIES"})
     elif state["kind"] == "IMAGE":
         params.update({"image_url": media_url, "caption": state.get("caption", "")})
+    elif state["kind"] == "REEL":
+        params.update({
+            "video_url": media_url,
+            "media_type": "REELS",
+            "caption": state.get("caption", ""),
+            "share_to_feed": "true",
+        })
     else:
         raise RuntimeError(f"Unsupported production kind: {state['kind']}")
 
@@ -324,7 +382,8 @@ def publish_instagram(state, media_url: str):
 
     # Give Meta time to fetch and process the public media.
     finished = False
-    for _ in range(30):
+    poll_attempts = 60 if state["kind"] == "REEL" else 30
+    for _ in range(poll_attempts):
         status = api_json(
             f"https://graph.instagram.com/{version}/{container_id}",
             {"fields": "status_code,status", "access_token": token},
