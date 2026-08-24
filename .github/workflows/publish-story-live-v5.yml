@@ -1,0 +1,114 @@
+name: Publish Instagram Story LIVE v5
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check public Story image
+        id: media
+        shell: bash
+        run: |
+          set -euo pipefail
+          URL="https://labaykanusuk.github.io/labaykanusuk-social-machine/media/FIRST_STORY_LABAYKANUSUK.jpg"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+          curl -L --fail --silent --show-error --max-time 30 \
+            "$URL" -o /tmp/story.jpg
+
+          test -s /tmp/story.jpg
+          echo "Public Story image OK."
+
+      - name: Resolve Instagram account from token
+        id: ig
+        shell: bash
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          RESPONSE=$(curl -sS --fail-with-body \
+            "https://graph.instagram.com/me?fields=id,username&access_token=${IG_ACCESS_TOKEN}")
+
+          IG_ID=$(echo "$RESPONSE" | jq -r '.id // empty')
+          USERNAME=$(echo "$RESPONSE" | jq -r '.username // empty')
+
+          if [ -z "$IG_ID" ] || [ -z "$USERNAME" ]; then
+            echo "Could not resolve Instagram account from token."
+            echo "$RESPONSE"
+            exit 1
+          fi
+
+          echo "ig_id=$IG_ID" >> "$GITHUB_OUTPUT"
+          echo "Instagram token belongs to: $USERNAME"
+
+          if [ "$USERNAME" != "labaykanusuk" ]; then
+            echo "Token belongs to a different Instagram account."
+            exit 1
+          fi
+
+      - name: Create Instagram Story container
+        id: create
+        shell: bash
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+          IG_ID: ${{ steps.ig.outputs.ig_id }}
+          MEDIA_URL: ${{ steps.media.outputs.url }}
+        run: |
+          set -euo pipefail
+
+          RESPONSE=$(curl -sS --fail-with-body -X POST \
+            "https://graph.instagram.com/${IG_API_VERSION}/${IG_ID}/media" \
+            --data-urlencode "image_url=${MEDIA_URL}" \
+            --data-urlencode "media_type=STORIES" \
+            --data-urlencode "access_token=${IG_ACCESS_TOKEN}")
+
+          CONTAINER_ID=$(echo "$RESPONSE" | jq -r '.id // empty')
+
+          if [ -z "$CONTAINER_ID" ]; then
+            echo "Instagram did not return a container ID."
+            echo "$RESPONSE"
+            exit 1
+          fi
+
+          echo "container_id=$CONTAINER_ID" >> "$GITHUB_OUTPUT"
+          echo "Story container created: $CONTAINER_ID"
+
+      - name: Publish Story LIVE
+        shell: bash
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+          IG_ID: ${{ steps.ig.outputs.ig_id }}
+          CONTAINER_ID: ${{ steps.create.outputs.container_id }}
+        run: |
+          set -euo pipefail
+
+          for attempt in 1 2 3 4 5 6; do
+            HTTP_CODE=$(curl -sS -o /tmp/publish-response.json -w "%{http_code}" -X POST \
+              "https://graph.instagram.com/${IG_API_VERSION}/${IG_ID}/media_publish" \
+              --data-urlencode "creation_id=${CONTAINER_ID}" \
+              --data-urlencode "access_token=${IG_ACCESS_TOKEN}")
+
+            if [ "$HTTP_CODE" = "200" ]; then
+              MEDIA_ID=$(jq -r '.id // empty' /tmp/publish-response.json)
+              if [ -n "$MEDIA_ID" ]; then
+                echo "=========================================="
+                echo "INSTAGRAM STORY PUBLISHED SUCCESSFULLY"
+                echo "Media ID: $MEDIA_ID"
+                echo "=========================================="
+                exit 0
+              fi
+            fi
+
+            echo "Instagram has not published it yet (attempt $attempt/6)."
+            cat /tmp/publish-response.json
+            sleep 5
+          done
+
+          echo "Instagram publication failed after retries."
+          exit 1
