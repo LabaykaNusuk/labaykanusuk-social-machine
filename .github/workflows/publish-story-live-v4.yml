@@ -1,0 +1,142 @@
+name: Publish Instagram Story LIVE v4
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check public Story image
+        id: media
+        shell: bash
+        run: |
+          set -euo pipefail
+          URL="https://labaykanusuk.github.io/labaykanusuk-social-machine/media/FIRST_STORY_LABAYKANUSUK.jpg"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+          for i in $(seq 1 24); do
+            if curl -L --fail --silent --show-error --max-time 20 "$URL" -o /tmp/story.jpg && [ -s /tmp/story.jpg ]; then
+              echo "Public Story image is reachable."
+              file /tmp/story.jpg
+              exit 0
+            fi
+            echo "Waiting for GitHub Pages... $i/24"
+            sleep 5
+          done
+
+          echo "Story image is not publicly reachable."
+          exit 1
+
+      - name: Verify Instagram connection
+        shell: bash
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+        run: |
+          set -euo pipefail
+          RESPONSE=$(curl -sS --fail-with-body \
+            "https://graph.instagram.com/${IG_API_VERSION}/${IG_USER_ID}?fields=id,username&access_token=${IG_ACCESS_TOKEN}")
+
+          echo "$RESPONSE" | jq -e '.id' >/dev/null
+
+          RETURNED_ID=$(echo "$RESPONSE" | jq -r '.id')
+          USERNAME=$(echo "$RESPONSE" | jq -r '.username // "unknown"')
+
+          if [ "$RETURNED_ID" != "$IG_USER_ID" ]; then
+            echo "Instagram user ID mismatch."
+            exit 1
+          fi
+
+          echo "Instagram connection OK: $USERNAME"
+
+      - name: Create Story container
+        id: create
+        shell: bash
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+          MEDIA_URL: ${{ steps.media.outputs.url }}
+        run: |
+          set -euo pipefail
+
+          RESPONSE=$(curl -sS --fail-with-body -X POST \
+            "https://graph.instagram.com/${IG_API_VERSION}/${IG_USER_ID}/media" \
+            --data-urlencode "image_url=${MEDIA_URL}" \
+            --data-urlencode "media_type=STORIES" \
+            --data-urlencode "access_token=${IG_ACCESS_TOKEN}")
+
+          echo "$RESPONSE" > /tmp/create.json
+          CONTAINER_ID=$(echo "$RESPONSE" | jq -r '.id // empty')
+
+          if [ -z "$CONTAINER_ID" ]; then
+            echo "No Instagram container ID returned."
+            cat /tmp/create.json
+            exit 1
+          fi
+
+          echo "container_id=$CONTAINER_ID" >> "$GITHUB_OUTPUT"
+          echo "Story container created."
+
+      - name: Wait for Instagram processing
+        shell: bash
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+          CONTAINER_ID: ${{ steps.create.outputs.container_id }}
+        run: |
+          set -euo pipefail
+
+          for i in $(seq 1 30); do
+            RESPONSE=$(curl -sS --fail-with-body \
+              "https://graph.instagram.com/${IG_API_VERSION}/${CONTAINER_ID}?fields=status_code&access_token=${IG_ACCESS_TOKEN}")
+
+            CODE=$(echo "$RESPONSE" | jq -r '.status_code // empty')
+
+            if [ "$CODE" = "FINISHED" ]; then
+              echo "Story container is ready."
+              exit 0
+            fi
+
+            if [ "$CODE" = "ERROR" ] || [ "$CODE" = "EXPIRED" ]; then
+              echo "$RESPONSE"
+              exit 1
+            fi
+
+            echo "Instagram processing: $CODE ($i/30)"
+            sleep 4
+          done
+
+          echo "Instagram container timeout."
+          exit 1
+
+      - name: Publish Story LIVE
+        shell: bash
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+          CONTAINER_ID: ${{ steps.create.outputs.container_id }}
+        run: |
+          set -euo pipefail
+
+          RESPONSE=$(curl -sS --fail-with-body -X POST \
+            "https://graph.instagram.com/${IG_API_VERSION}/${IG_USER_ID}/media_publish" \
+            --data-urlencode "creation_id=${CONTAINER_ID}" \
+            --data-urlencode "access_token=${IG_ACCESS_TOKEN}")
+
+          MEDIA_ID=$(echo "$RESPONSE" | jq -r '.id // empty')
+
+          if [ -z "$MEDIA_ID" ]; then
+            echo "Instagram publication failed."
+            echo "$RESPONSE"
+            exit 1
+          fi
+
+          echo "=========================================="
+          echo "INSTAGRAM STORY PUBLISHED SUCCESSFULLY"
+          echo "Media ID: $MEDIA_ID"
+          echo "=========================================="
