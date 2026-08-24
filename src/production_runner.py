@@ -20,6 +20,9 @@ LOGS = ROOT / "logs"
 OUTPUT = ROOT / "output"
 HISTORY_PATH = LOGS / "publication_history.json"
 EXPECTED_IG_USERNAME = os.environ.get("IG_EXPECTED_USERNAME", "labaykanusuk")
+AUDIO_ROOT = ROOT / "assets" / "audio" / "approved"
+AUDIO_PRIORITY = ("coran", "doua", "adhan", "anachid_sans_musique")
+AUDIO_EXTENSIONS = {".mp3", ".m4a", ".aac", ".wav", ".ogg"}
 
 SLOTS = {
     1: {"format": "story", "category": "religion"},
@@ -195,8 +198,35 @@ def make_payload(item, slot_meta, photo):
     return template, payload, caption
 
 
-def make_reel(source_image: str, output_name: str, duration=12.0, fps=30):
-    """Create a silent cinematic 9:16 Reel with an AAC silence track for API compatibility."""
+def choose_reel_audio(target_date: date, item_id: str):
+    """Return an approved audio clip using the strict priority, or None for a silent Reel.
+
+    Only files placed in these folders are eligible:
+      assets/audio/approved/coran
+      assets/audio/approved/doua
+      assets/audio/approved/adhan
+      assets/audio/approved/anachid_sans_musique
+
+    Nothing outside those folders is ever selected, which enforces the no-music rule.
+    """
+    for category in AUDIO_PRIORITY:
+        folder = AUDIO_ROOT / category
+        if not folder.exists():
+            continue
+        files = sorted(
+            p for p in folder.rglob("*")
+            if p.is_file() and p.suffix.lower() in AUDIO_EXTENSIONS
+        )
+        if not files:
+            continue
+        seed = f"{target_date.isoformat()}:{item_id}:{category}".encode("utf-8")
+        idx = int(hashlib.sha256(seed).hexdigest()[:8], 16) % len(files)
+        return {"category": category, "path": files[idx]}
+    return None
+
+
+def make_reel(source_image: str, output_name: str, duration=12.0, fps=30, audio=None):
+    """Create a cinematic 9:16 Reel. Approved audio is optional; otherwise publish silently."""
     src = Path(source_image)
     if not src.is_absolute():
         src = (ROOT / src).resolve()
@@ -212,16 +242,27 @@ def make_reel(source_image: str, output_name: str, duration=12.0, fps=30):
         f"d={frames}:s=1080x1920:fps={fps},"
         "format=yuv420p"
     )
-    cmd = [
-        "ffmpeg", "-y",
-        "-loop", "1", "-i", str(src),
-        "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000",
-        "-vf", vf,
+
+    cmd = ["ffmpeg", "-y", "-loop", "1", "-i", str(src)]
+    if audio:
+        # Audio clips in the approved bank are publication-ready. If shorter than the Reel,
+        # pad with silence; if longer, trim at Reel duration. Never source audio elsewhere.
+        cmd += ["-i", str(audio["path"])]
+        cmd += [
+            "-vf", vf,
+            "-af", f"apad=pad_dur={duration},atrim=0:{duration},aresample=48000",
+        ]
+    else:
+        # No approved audio available: Reel still publishes, silently, as requested.
+        cmd += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]
+        cmd += ["-vf", vf]
+
+    cmd += [
         "-t", str(duration), "-r", str(fps),
         "-c:v", "libx264", "-preset", "medium", "-crf", "18",
         "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "128k",
-        "-shortest", "-movflags", "+faststart",
+        "-movflags", "+faststart",
         str(out),
     ]
     try:
@@ -283,11 +324,13 @@ def prepare(slot: int, state_path: Path, force=False):
     OUTPUT.mkdir(exist_ok=True)
     payload_path = OUTPUT / f"production-slot-{slot:02d}.json"
     save_json(payload_path, payload)
+    reel_audio = None
     if meta["format"] == "reel":
         frame_name = f"production-slot-{slot:02d}-frame.jpg"
         result = render(template, payload_path, frame_name)
         output_name = f"production-slot-{slot:02d}.mp4"
-        reel_path = make_reel(result["output"], output_name)
+        reel_audio = choose_reel_audio(target_date, item["id"])
+        reel_path = make_reel(result["output"], output_name, audio=reel_audio)
         final_output = str(reel_path)
         public_filename = f"slot-{slot:02d}.mp4"
     else:
@@ -312,6 +355,9 @@ def prepare(slot: int, state_path: Path, force=False):
         "caption": caption if meta["format"] in {"feed", "reel"} else "",
         "logo_variant": result.get("logo_variant"),
         "density": result.get("density"),
+        "audio_category": reel_audio.get("category") if reel_audio else None,
+        "audio_file": str(reel_audio["path"].relative_to(ROOT)) if reel_audio else None,
+        "audio_mode": "approved" if reel_audio else "silent",
     }
     save_json(state_path, state)
     print(json.dumps(state, ensure_ascii=False, indent=2))
@@ -431,6 +477,9 @@ def record_success(state, media_url: str, published):
         "instagram_media_id": published["media_id"],
         "instagram_username": published["username"],
         "public_url": media_url,
+        "audio_category": state.get("audio_category"),
+        "audio_file": state.get("audio_file"),
+        "audio_mode": state.get("audio_mode"),
         "published_at_utc": datetime.now(timezone.utc).isoformat(),
     }
     hist.append(entry)
