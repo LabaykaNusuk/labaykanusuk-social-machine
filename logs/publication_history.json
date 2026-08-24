@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2026-08-24",
+    "slot_order": 1,
+    "slot_format": "story",
+    "content_id": "QURAN-003-097"
+  },
+  {
+    "date": "2026-08-24",
+    "slot_order": 2,
+    "slot_format": "story",
+    "content_id": "TOOL-ACCOMPAGNEMENT-HAJJ"
+  },
+  {
+    "date": "2026-08-24",
+    "slot_order": 3,
+    "slot_format": "story",
+    "content_id": "RAPPEL-001"
+  },
+  {
+    "date": "2026-08-24",
+    "slot_order": 4,
+    "slot_format": "story",
+    "content_id": "RAPPEL-002"
+  },
+  {
+    "date": "2026-08-24",
+    "slot_order": 5,
+    "slot_format": "story",
+    "content_id": "TOOL-CHECKLIST"
+  },
+  {
+    "date": "2026-08-24",
+    "slot_order": 6,
+    "slot_format": "story",
+    "content_id": "RAPPEL-003"
+  },
+  {
+    "date": "2026-08-24",
+    "slot_order": 7,
+    "slot_format": "feed",
+    "content_id": "QURAN-003-097"
+  }
+]

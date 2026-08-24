@@ -1,0 +1,19 @@
+{
+  "brand": "LABAYKANUSUK",
+  "version": 1,
+  "colors": {
+    "purple_night": "#1B1430",
+    "purple_deep": "#24003D",
+    "gold": "#D6A72C",
+    "green": "#2E6B55",
+    "cream": "#F7F2E8",
+    "white": "#FFFFFF",
+    "black": "#08080B"
+  },
+  "usage": {
+    "gold": "prestige, spiritual emphasis, dividers, highlighted words",
+    "green": "action, tools, useful CTA, validation",
+    "cream": "main readable text",
+    "purple_night": "background and atmospheric overlays"
+  }
+}

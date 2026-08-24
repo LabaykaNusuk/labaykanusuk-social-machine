@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "principle": "Conservative internal safe zones for automated Instagram/TikTok compositions. Text and CTA stay inside these areas even when UI overlays or preview crops vary.",
+  "story_reel_1080x1920": {
+    "left_right_px": 96,
+    "top_px": 176,
+    "bottom_px": 310,
+    "note": "Bottom margin intentionally larger to protect CTA from social UI overlays."
+  },
+  "feed_1080x1350": {
+    "left_right_px": 88,
+    "top_px": 92,
+    "bottom_px": 102
+  },
+  "adaptive_typography": {
+    "short": "large display",
+    "medium": "standard",
+    "long": "reduced size and tighter leading",
+    "xlong": "strong reduction while staying inside safe frame"
+  }
+}

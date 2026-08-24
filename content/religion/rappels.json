@@ -1,0 +1,44 @@
+[
+  {
+    "id": "RAPPEL-001",
+    "type": "editorial_religion",
+    "theme": [
+      "hajj",
+      "intention",
+      "preparation"
+    ],
+    "title_hook": "Le voyage commence avant le départ.",
+    "editorial_copy": "Avant le billet, avant la valise, avant l’ihram, il y a l’intention, la sincérité et la préparation du cœur.",
+    "support_reference": "Rappel éditorial LABAYKANUSUK",
+    "source_id": "LABAYKANUSUK_SITE",
+    "approved": true
+  },
+  {
+    "id": "RAPPEL-002",
+    "type": "editorial_religion",
+    "theme": [
+      "omra",
+      "rappel",
+      "repentir"
+    ],
+    "title_hook": "La Omra n’est pas un simple voyage.",
+    "editorial_copy": "C’est une réponse à l’appel d’Allah, un moment de recentrage, de repentir et d’espérance.",
+    "support_reference": "Rappel éditorial LABAYKANUSUK",
+    "source_id": "LABAYKANUSUK_SITE",
+    "approved": true
+  },
+  {
+    "id": "RAPPEL-003",
+    "type": "editorial_religion",
+    "theme": [
+      "dhikr",
+      "talbiyah",
+      "hajj"
+    ],
+    "title_hook": "Le pèlerin ne se contente pas d’avancer, il répond.",
+    "editorial_copy": "La talbiyah n’est pas une formule répétée machinalement. C’est une réponse consciente, humble et vivante.",
+    "support_reference": "Rappel éditorial LABAYKANUSUK",
+    "source_id": "LABAYKANUSUK_SITE",
+    "approved": true
+  }
+]

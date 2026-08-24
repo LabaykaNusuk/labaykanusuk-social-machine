@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "timezone": "Europe/Paris",
+  "enabled": false,
+  "daily_volume": 7,
+  "slots": [
+    {
+      "order": 1,
+      "format": "story",
+      "category": "religion",
+      "time_local": null
+    },
+    {
+      "order": 2,
+      "format": "story",
+      "category": "tool",
+      "time_local": null
+    },
+    {
+      "order": 3,
+      "format": "story",
+      "category": "religion",
+      "time_local": null
+    },
+    {
+      "order": 4,
+      "format": "story",
+      "category": "religion",
+      "time_local": null
+    },
+    {
+      "order": 5,
+      "format": "story",
+      "category": "tool",
+      "time_local": null
+    },
+    {
+      "order": 6,
+      "format": "story",
+      "category": "religion",
+      "time_local": null
+    },
+    {
+      "order": 7,
+      "format": "feed",
+      "category": "rotation_religion_or_tool",
+      "time_local": null
+    }
+  ],
+  "targets": {
+    "instagram": {
+      "enabled": false
+    },
+    "tiktok": {
+      "enabled": false
+    }
+  },
+  "safety": {
+    "require_approved_content": true,
+    "prevent_duplicate_days": 90,
+    "dry_run": true
+  }
+}

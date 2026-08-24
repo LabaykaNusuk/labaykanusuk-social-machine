@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "policy": "Whitelist only. No religious claim can be published from a source outside this registry without manual approval.",
+  "sources": [
+    {
+      "id": "QURAN_KING_FAHD_COMPLEX",
+      "name": "King Fahd Glorious Qur'an Printing Complex",
+      "type": "quran_primary",
+      "url": "https://qurancomplex.gov.sa/",
+      "use_for": [
+        "Arabic Qur'an text",
+        "Qur'an publishing reference",
+        "translation reference"
+      ],
+      "trust_level": "primary_official",
+      "notes": "Preferred primary reference for Qur'anic text. The Complex documents French translations including Muhammad Hamidullah."
+    },
+    {
+      "id": "QURAN_COM_HAMIDULLAH",
+      "name": "Quran.com — French translation by Muhammad Hamidullah",
+      "type": "quran_convenience",
+      "url": "https://quran.com/fr",
+      "use_for": [
+        "French verse lookup",
+        "cross-check verse number",
+        "Arabic/French display"
+      ],
+      "trust_level": "secondary_curated",
+      "notes": "Convenience source. Translation attribution must always be stored with the verse."
+    },
+    {
+      "id": "DORAR_HADITH",
+      "name": "Dorar al-Sunniyyah — Hadith Encyclopedia",
+      "type": "hadith_validation",
+      "url": "https://dorar.net/hadith",
+      "use_for": [
+        "Hadith grading",
+        "source chain/reference",
+        "cross-check Bukhari/Muslim numbering"
+      ],
+      "trust_level": "primary_validation",
+      "notes": "Phase 1 accepts only hadiths traced to Sahih al-Bukhari and/or Sahih Muslim."
+    },
+    {
+      "id": "SAHIH_BUKHARI",
+      "name": "Sahih al-Bukhari",
+      "type": "hadith_collection",
+      "url": "https://dorar.net/hadith",
+      "use_for": [
+        "Hadith content"
+      ],
+      "trust_level": "primary_classical"
+    },
+    {
+      "id": "SAHIH_MUSLIM",
+      "name": "Sahih Muslim",
+      "type": "hadith_collection",
+      "url": "https://dorar.net/hadith",
+      "use_for": [
+        "Hadith content"
+      ],
+      "trust_level": "primary_classical"
+    },
+    {
+      "id": "HAJ_MINISTRY",
+      "name": "Saudi Ministry of Hajj and Umrah — Awareness Guides",
+      "type": "official_hajj_umrah",
+      "url": "https://haj.gov.sa/en/Awareness-Center/Awareness-Guides",
+      "use_for": [
+        "Hajj rites guides",
+        "Umrah guides",
+        "Makkah/Madinah guidance",
+        "current official instructions"
+      ],
+      "trust_level": "primary_official"
+    },
+    {
+      "id": "NUSUK_OFFICIAL",
+      "name": "Nusuk official platform",
+      "type": "official_operational",
+      "url": "https://www.nusuk.sa/",
+      "use_for": [
+        "current operational information",
+        "services",
+        "permits/processes when applicable"
+      ],
+      "trust_level": "primary_official",
+      "notes": "Use for time-sensitive operational facts, not as a substitute for Qur'an/Hadith."
+    },
+    {
+      "id": "ALIFTA_SA",
+      "name": "General Presidency for Scholarly Research and Ifta",
+      "type": "fiqh_secondary",
+      "url": "https://alifta.gov.sa/",
+      "use_for": [
+        "fiqh clarification when needed"
+      ],
+      "trust_level": "secondary_official",
+      "notes": "Never present a specific fiqh opinion as consensus. Divergences must be labelled."
+    },
+    {
+      "id": "LABAYKANUSUK_SITE",
+      "name": "LABAYKANUSUK",
+      "type": "internal_tools",
+      "url": "https://www.labaykanusuk.com/",
+      "use_for": [
+        "tool descriptions",
+        "service benefits",
+        "internal guides and URLs"
+      ],
+      "trust_level": "internal",
+      "notes": "Internal pages can promote tools. Religious claims inside them must still resolve back to approved religious sources."
+    }
+  ]
+}

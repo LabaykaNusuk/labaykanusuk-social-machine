@@ -1,0 +1,24 @@
+[
+  {
+    "id": "QURAN-003-097",
+    "type": "quran",
+    "theme": [
+      "hajj",
+      "maison_sacree",
+      "obligation"
+    ],
+    "arabic": "فِيهِ ءَايَـٰتٌۢ بَيِّنَـٰتٌۭ مَّقَامُ إِبْرَٰهِيمَ ۖ وَمَن دَخَلَهُۥ كَانَ ءَامِنًۭا ۗ وَلِلَّهِ عَلَى ٱلنَّاسِ حِجُّ ٱلْبَيْتِ مَنِ ٱسْتَطَاعَ إِلَيْهِ سَبِيلًۭا ۚ وَمَن كَفَرَ فَإِنَّ ٱللَّهَ غَنِىٌّ عَنِ ٱلْعَـٰلَمِينَ",
+    "french": "Là sont des signes évidents, parmi lesquels l’endroit où Abraham s’est tenu debout; et quiconque y entre est en sécurité. Et c’est un devoir envers Allah pour les gens qui [en] ont les moyens, d’aller faire le pèlerinage de la Maison.",
+    "translation": "Muhammad Hamidullah",
+    "reference": "Coran 3:97",
+    "source_id": "QURAN_COM_HAMIDULLAH",
+    "source_url": "https://quran.com/fr/la-famille-de-imran/97",
+    "locked_text": true,
+    "approved": true,
+    "editorial_angles": [
+      "Le Hajj est un devoir pour celui qui en a la capacité.",
+      "Préparer ce voyage commence avant le départ.",
+      "La Maison sacrée est mentionnée explicitement dans le Coran."
+    ]
+  }
+]

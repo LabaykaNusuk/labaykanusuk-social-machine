@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "instagram": {
+    "enabled": false,
+    "dry_run": true,
+    "requires_env": [
+      "IG_USER_ID",
+      "IG_ACCESS_TOKEN",
+      "IG_API_VERSION"
+    ],
+    "public_media_required": true,
+    "formats": {
+      "story": "JPG 1080x1920",
+      "feed": "JPG 1080x1350",
+      "reel": "MP4 H.264 1080x1920"
+    }
+  },
+  "tiktok": {
+    "enabled": false,
+    "status": "prepared_later",
+    "note": "Official Content Posting API requires app approval/audit for public Direct Post; branding/watermark guidelines must be respected."
+  }
+}

@@ -1,0 +1,109 @@
+:root{
+  --purple-night:#171126;
+  --purple-deep:#24003D;
+  --gold:#D6A72C;
+  --green:#2E6B55;
+  --cream:#F7F2E8;
+  --white:#FFFFFF;
+  --black:#07070A;
+
+  /* Conservative social-safe areas. These keep text away from UI/crop zones. */
+  --story-safe-x:96px;
+  --story-safe-top:176px;
+  --story-safe-bottom:310px;
+  --feed-safe-x:88px;
+  --feed-safe-top:92px;
+  --feed-safe-bottom:102px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#111}
+body{font-family:"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.canvas{position:relative;overflow:hidden;color:var(--cream);background:linear-gradient(135deg,var(--purple-deep),#071427 78%)}
+.story{width:1080px;height:1920px}
+.feed{width:1080px;height:1350px}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--bg-position,center center);opacity:.42;filter:saturate(.82) contrast(1.07) brightness(.72)}
+.overlay{position:absolute;inset:0;background:
+  radial-gradient(circle at 78% 42%,rgba(214,167,44,.08),transparent 34%),
+  linear-gradient(90deg,rgba(22,8,38,.97) 0%,rgba(31,11,53,.91) 37%,rgba(16,14,42,.60) 69%,rgba(4,9,20,.30) 100%),
+  linear-gradient(0deg,rgba(3,3,8,.76),transparent 44%,rgba(3,3,8,.26));}
+.tool .overlay{background:
+  radial-gradient(circle at 78% 42%,rgba(46,107,85,.16),transparent 35%),
+  linear-gradient(90deg,rgba(17,24,34,.97) 0%,rgba(26,50,50,.90) 39%,rgba(16,31,38,.59) 70%,rgba(3,10,17,.28) 100%),
+  linear-gradient(0deg,rgba(3,5,7,.78),transparent 45%,rgba(3,5,7,.24));}
+.grain{position:absolute;inset:0;opacity:.09;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.32'/%3E%3C/svg%3E")}
+
+/* Branding stays inside the safe area. */
+.story .brand{left:var(--story-safe-x);top:var(--story-safe-top)}
+.feed .brand{left:var(--feed-safe-x);top:var(--feed-safe-top)}
+.brand{position:absolute;font-size:31px;font-weight:780;letter-spacing:.9px;z-index:4;white-space:nowrap}
+.brand .gold{color:var(--gold)}
+.brand-line{position:absolute;height:2px;background:var(--gold);z-index:4}
+.story .brand-line{left:var(--story-safe-x);top:calc(var(--story-safe-top) + 55px);width:296px}
+.feed .brand-line{left:var(--feed-safe-x);top:calc(var(--feed-safe-top) + 55px);width:296px}
+.brand-diamond{position:absolute;width:13px;height:13px;background:var(--gold);transform:rotate(45deg);z-index:5}
+.story .brand-diamond{left:226px;top:calc(var(--story-safe-top) + 49px)}
+.feed .brand-diamond{left:218px;top:calc(var(--feed-safe-top) + 49px)}
+
+/* Safe content frame: text is vertically centered instead of stuck to the top. */
+.story .safe-frame{position:absolute;left:var(--story-safe-x);right:var(--story-safe-x);top:calc(var(--story-safe-top) + 145px);bottom:var(--story-safe-bottom);display:flex;align-items:center;z-index:4}
+.feed .safe-frame{position:absolute;left:var(--feed-safe-x);right:var(--feed-safe-x);top:calc(var(--feed-safe-top) + 120px);bottom:calc(var(--feed-safe-bottom) + 72px);display:flex;align-items:center;z-index:4}
+.content{position:relative;width:min(690px,76%);padding-left:46px}
+.content::before{content:"";position:absolute;left:0;top:3px;bottom:3px;width:2px;background:linear-gradient(var(--gold),rgba(214,167,44,.22))}
+.kicker{color:var(--gold);font-size:21px;font-weight:780;letter-spacing:2.5px;margin-bottom:20px;text-transform:uppercase}
+.tool .kicker{color:#D7E8E1}
+.green-chip{display:inline-block;background:rgba(46,107,85,.94);color:white;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:9px 17px;font-size:18px;font-weight:780;letter-spacing:.8px;margin-bottom:22px}
+.title{font-size:70px;line-height:1.035;font-weight:850;letter-spacing:-2.1px;margin:0 0 28px;text-wrap:balance;text-shadow:0 2px 22px rgba(0,0,0,.28)}
+.highlight{color:var(--gold)}
+.tool .highlight{color:#77B19A}
+.copy{font-size:29px;line-height:1.36;margin:0 0 28px;max-width:650px;text-wrap:pretty}
+.quote{font-size:26px;line-height:1.38;margin-top:34px;border-left:4px solid var(--gold);padding-left:22px;max-width:650px;color:#fff}
+.source{font-size:21px;line-height:1.35;margin-top:18px;color:rgba(255,255,255,.82)}
+
+/* Adaptive density classes applied automatically by render.py. */
+.content.short{width:min(730px,80%)}
+.content.short .title{font-size:84px;line-height:1.00}
+.content.short .copy{font-size:33px}
+.content.medium .title{font-size:74px}
+.content.medium .copy{font-size:30px}
+.content.long{width:min(760px,84%)}
+.content.long .title{font-size:62px;line-height:1.055;margin-bottom:22px}
+.content.long .copy{font-size:27px;line-height:1.32;margin-bottom:20px}
+.content.long .quote{font-size:25px;line-height:1.32;margin-top:24px}
+.content.long .source{font-size:19px}
+.content.xlong{width:min(790px,87%);padding-left:40px}
+.content.xlong .title{font-size:52px;line-height:1.075;margin-bottom:18px}
+.content.xlong .copy{font-size:23px;line-height:1.27;margin-bottom:17px}
+.content.xlong .quote{font-size:21px;line-height:1.27;margin-top:20px;padding-left:18px}
+.content.xlong .source{font-size:17px;margin-top:12px}
+
+.feed .safe-frame{align-items:center}
+.feed .content{width:min(760px,82%)}
+.feed .title{font-size:58px}
+.feed .content.short .title{font-size:69px}
+.feed .content.long .title{font-size:52px}
+.feed .content.xlong .title{font-size:45px}
+.feed .copy{font-size:27px}
+.feed .quote{font-size:24px}
+
+/* CTA and URL are also kept in safe areas. */
+.cta{position:absolute;z-index:4;font-size:26px;font-weight:780;letter-spacing:.2px;display:flex;align-items:center;gap:16px;max-width:760px}
+.story .cta{left:var(--story-safe-x);bottom:210px}
+.feed .cta{left:var(--feed-safe-x);bottom:82px}
+.cta::before{content:"";width:12px;height:12px;background:var(--gold);transform:rotate(45deg);flex:none}
+.tool .cta{background:var(--green);padding:18px 25px;border-radius:8px;color:white;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+.tool .cta::before{display:none}
+.site{position:absolute;z-index:4;font-size:20px;letter-spacing:.5px;color:rgba(255,255,255,.78)}
+.story .site{left:var(--story-safe-x);bottom:140px}
+.feed .site{right:var(--feed-safe-x);bottom:85px;font-size:17px}
+
+/* Optional crop guide for test renders only. */
+.crop-guide{display:none;position:absolute;z-index:20;pointer-events:none;border:1px dashed rgba(255,255,255,.24)}
+.canvas.debug-safe .crop-guide{display:block}
+.story.debug-safe .crop-guide{left:var(--story-safe-x);right:var(--story-safe-x);top:var(--story-safe-top);bottom:var(--story-safe-bottom)}
+.feed.debug-safe .crop-guide{left:var(--feed-safe-x);right:var(--feed-safe-x);top:var(--feed-safe-top);bottom:var(--feed-safe-bottom)}
+
+
+/* Official LABAYKANUSUK sigle: exact PNG, never distorted/recolored. */
+.sigle{position:absolute;z-index:6;height:auto;object-fit:contain;filter:none;transform:none}
+.story .sigle{right:122px;bottom:142px;width:132px}
+.feed .sigle{right:104px;bottom:84px;width:118px}

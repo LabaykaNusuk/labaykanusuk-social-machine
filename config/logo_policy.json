@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "official_assets": {
+    "black_gold": "assets/logos/sigle_black_gold.png",
+    "white": "assets/logos/sigle_white.png",
+    "white_gold": "assets/logos/sigle_white_gold.png"
+  },
+  "rules": {
+    "light_background": "black_gold",
+    "dark_background": "white_gold",
+    "busy_or_high_saturation_background": "white",
+    "default": "white_gold"
+  },
+  "integrity": {
+    "allow_recolor": false,
+    "allow_distortion": false,
+    "allow_redraw": false,
+    "preserve_aspect_ratio": true
+  },
+  "placement": {
+    "story": {
+      "right_px": 122,
+      "bottom_px": 142,
+      "width_px": 132
+    },
+    "feed": {
+      "right_px": 104,
+      "bottom_px": 84,
+      "width_px": 118
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    "No unsourced religious quotation.",
+    "Qur'an text must keep exact surah/ayah reference and translation attribution.",
+    "Editorial copy must never be presented as a Qur'an verse or hadith.",
+    "Hadith Phase 1: Sahih al-Bukhari and/or Sahih Muslim only, verified through Dorar.",
+    "A hadith French rendering created by the editorial team must be labelled 'sens en français' unless copied from an approved translation.",
+    "Fiqh divergences must be identified as divergences; never convert one opinion into a claimed consensus.",
+    "Current visa, access, permit, health or regulatory information must come from an official current source.",
+    "Every item must have approved=true before it can enter the publication queue.",
+    "The renderer never invents a source, verse number, hadith number, tool URL or factual claim.",
+    "The generator may shorten editorial framing, but may not alter Qur'an or hadith wording stored as locked_text=true."
+  ],
+  "blocked_patterns": [
+    "citation sans source",
+    "hadith viral non vérifié",
+    "texte présenté comme Coran sans verset",
+    "règle opérationnelle ancienne non datée"
+  ]
+}

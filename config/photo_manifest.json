@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "photos": [
+    {
+      "id": "HADY_SACRIFICE",
+      "file": "assets/photos/approved/hady_sacrifice.jpg",
+      "tags": [
+        "hajj",
+        "hady",
+        "sacrifice"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "TAWAF_IFADAH",
+      "file": "assets/photos/approved/tawaf_ifadah.jpg",
+      "tags": [
+        "hajj",
+        "tawaf",
+        "kaaba"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "ZAMZAM_CROWD",
+      "file": "assets/photos/approved/zamzam_crowd.jpg",
+      "tags": [
+        "zamzam",
+        "kaaba",
+        "crowd"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "KAABA_NIGHT",
+      "file": "assets/photos/approved/kaaba_night.jpg",
+      "tags": [
+        "hajj",
+        "kaaba",
+        "night",
+        "universal"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "JAMARAT_CLOSE",
+      "file": "assets/photos/approved/jamarat_close.jpg",
+      "tags": [
+        "hajj",
+        "jamarat"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "JAMARAT_WIDE",
+      "file": "assets/photos/approved/jamarat_wide.jpg",
+      "tags": [
+        "hajj",
+        "jamarat",
+        "wide"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "MINA_ARAFAT_ROAD",
+      "file": "assets/photos/approved/mina_arafat_road.jpg",
+      "tags": [
+        "hajj",
+        "mina",
+        "arafat",
+        "road"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "MUZDALIFAH_NIGHT",
+      "file": "assets/photos/approved/muzdalifah_night.jpg",
+      "tags": [
+        "hajj",
+        "muzdalifah",
+        "night"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "ARAFAT_MUZDALIFAH",
+      "file": "assets/photos/approved/arafat_muzdalifah.jpg",
+      "tags": [
+        "hajj",
+        "arafat",
+        "muzdalifah"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "MINA_CAMP",
+      "file": "assets/photos/approved/mina_camp.jpg",
+      "tags": [
+        "hajj",
+        "mina",
+        "camp",
+        "wide"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "ZAMZAM_DRINK",
+      "file": "assets/photos/approved/zamzam_drink.jpg",
+      "tags": [
+        "zamzam",
+        "kaaba"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "HALQ_HAIRCUT",
+      "file": "assets/photos/approved/halq_haircut.jpg",
+      "tags": [
+        "hajj",
+        "omra",
+        "halq",
+        "haircut"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "HARAM_EXTERIOR",
+      "file": "assets/photos/approved/haram_exterior.jpg",
+      "tags": [
+        "makkah",
+        "haram",
+        "universal"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "ARCADES_TALBIYAH",
+      "file": "assets/photos/approved/arcades_talbiyah.jpg",
+      "tags": [
+        "hajj",
+        "omra",
+        "talbiyah",
+        "universal"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "IHRAM_PREPARATION",
+      "file": "assets/photos/approved/ihram_preparation.jpg",
+      "tags": [
+        "ihram",
+        "preparation",
+        "hotel"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "SAI_CORRIDOR",
+      "file": "assets/photos/approved/sai_corridor.jpg",
+      "tags": [
+        "omra",
+        "hajj",
+        "sai"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "MIQAT_PALMS",
+      "file": "assets/photos/approved/miqat_palms.jpg",
+      "tags": [
+        "miqat",
+        "ihram",
+        "universal"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "ABRAJ_CLOCK",
+      "file": "assets/photos/approved/abraj_clock.jpg",
+      "tags": [
+        "makkah",
+        "abraj",
+        "universal"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "MINA_DAYS_TASHRIQ",
+      "file": "assets/photos/approved/mina_days_tashriq.jpg",
+      "tags": [
+        "hajj",
+        "mina",
+        "tashriq"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    },
+    {
+      "id": "MINA_ROAD_AERIAL",
+      "file": "assets/photos/approved/mina_road_aerial.jpg",
+      "tags": [
+        "hajj",
+        "mina",
+        "wide"
+      ],
+      "approved": true,
+      "default_opacity": 0.34,
+      "default_position": "center center"
+    }
+  ]
+}

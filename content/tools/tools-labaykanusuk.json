@@ -1,0 +1,143 @@
+[
+  {
+    "id": "TOOL-FORMATION",
+    "type": "tool",
+    "name": "Formation Hajj & Omra gratuite",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "source_id": "LABAYKANUSUK_SITE",
+    "benefits": [
+      "Formation gratuite",
+      "Parcours Hajj et Omra structurés",
+      "Rites expliqués étape par étape",
+      "Guides, quiz, checklists et contenus terrain"
+    ],
+    "cta": "ACCÉDER À LA FORMATION",
+    "approved": true
+  },
+  {
+    "id": "TOOL-GUIDES",
+    "type": "tool",
+    "name": "Guides & articles Hajj et Omra",
+    "url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "source_id": "LABAYKANUSUK_SITE",
+    "benefits": [
+      "Ressources centralisées pour les pèlerins francophones",
+      "Préparation, rites, lieux et conseils pratiques",
+      "Recherche par thème"
+    ],
+    "cta": "EXPLORER LES GUIDES",
+    "approved": true
+  },
+  {
+    "id": "TOOL-DOUAS",
+    "type": "tool",
+    "name": "Dou‘as du Hajj et de la Omra",
+    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "source_id": "LABAYKANUSUK_SITE",
+    "benefits": [
+      "Invocations en arabe, français et phonétique",
+      "Audio intégré",
+      "Navigation par étapes du pèlerinage"
+    ],
+    "cta": "VOIR LES DOU‘AS",
+    "approved": true
+  },
+  {
+    "id": "TOOL-PAR-OU-COMMENCER",
+    "type": "tool",
+    "name": "Par où commencer",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "source_id": "LABAYKANUSUK_SITE",
+    "benefits": [
+      "Page pilote pour s’orienter rapidement",
+      "Accès direct aux parcours, guides et outils",
+      "Point d’entrée idéal pour les nouveaux visiteurs"
+    ],
+    "cta": "COMMENCER ICI",
+    "approved": true
+  },
+  {
+    "id": "TOOL-HISTOIRE-HAJJ",
+    "type": "tool",
+    "name": "Histoire du Hajj",
+    "url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "source_id": "LABAYKANUSUK_SITE",
+    "benefits": [
+      "Expérience interactive",
+      "Chronologie du Hajj",
+      "Vision spirituelle et historique"
+    ],
+    "cta": "VOIR L’HISTOIRE",
+    "approved": true
+  },
+  {
+    "id": "TOOL-POINT-PELERIN",
+    "type": "tool",
+    "name": "Le Point Pèlerin",
+    "url": "https://www.labaykanusuk.com/blogs/blog-hajj/tagged/le-point-pelerin",
+    "source_id": "LABAYKANUSUK_SITE",
+    "benefits": [
+      "Veille francophone Hajj et Omra",
+      "Actualités, décisions, infos pratiques",
+      "Lecture rapide en format fiche"
+    ],
+    "cta": "VOIR LES ACTUS",
+    "approved": true
+  },
+  {
+    "id": "TOOL-RADIO",
+    "type": "tool",
+    "name": "Radio LABAYKANUSUK",
+    "url": "https://radio.labaykanusuk.com",
+    "source_id": "LABAYKANUSUK_SITE",
+    "benefits": [
+      "Radio dédiée aux rappels utiles",
+      "Écoute simple avant, pendant et après le pèlerinage",
+      "Compagnon audio du pèlerin"
+    ],
+    "cta": "ÉCOUTER LA RADIO",
+    "approved": true
+  },
+  {
+    "id": "TOOL-ESPACE-PELERIN",
+    "type": "tool",
+    "name": "Espace Pèlerin",
+    "url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "source_id": "LABAYKANUSUK_SITE",
+    "benefits": [
+      "Rassemble les outils utiles",
+      "Accès rapide aux besoins du pèlerin",
+      "Hub pratique LABAYKANUSUK"
+    ],
+    "cta": "VOIR L’ESPACE",
+    "approved": true
+  },
+  {
+    "id": "TOOL-ACCOMPAGNEMENT-HAJJ",
+    "type": "tool",
+    "name": "Accompagnement Hajj Nusuk",
+    "url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "source_id": "LABAYKANUSUK_SITE",
+    "benefits": [
+      "Accompagnement dédié au Hajj",
+      "Passerelle avec Carnot Voyages",
+      "Formulaire simple de mise en relation"
+    ],
+    "cta": "DEMANDER UN ACCOMPAGNEMENT",
+    "approved": true
+  },
+  {
+    "id": "TOOL-CHECKLIST",
+    "type": "tool",
+    "name": "Checklist du pèlerin",
+    "url": "https://www.labaykanusuk.com/pages/checklist-pelerin",
+    "source_id": "LABAYKANUSUK_SITE",
+    "benefits": [
+      "Aide à ne rien oublier",
+      "Préparation matérielle et mentale",
+      "Format simple à consulter"
+    ],
+    "cta": "VOIR LA CHECKLIST",
+    "approved": true
+  }
+]

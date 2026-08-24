@@ -1,0 +1,21 @@
+[
+  {
+    "id": "HADITH-BUKHARI-1773-MUSLIM-1349",
+    "type": "hadith",
+    "theme": [
+      "hajj",
+      "omra",
+      "merite"
+    ],
+    "arabic": "العمرة إلى العمرة كفارة لما بينهما، والحج المبرور ليس له جزاء إلا الجنة",
+    "french": "D’une Omra à l’autre, ce qui est commis entre les deux est expié; et le Hajj agréé n’a d’autre récompense que le Paradis.",
+    "french_status": "sens_en_francais_a_revalider_avant_diffusion",
+    "reference": "Sahih al-Bukhari 1773; Sahih Muslim 1349",
+    "source_id": "DORAR_HADITH",
+    "source_url": "https://dorar.net/h/GM8NeUJ0?osoul=1",
+    "grade": "sahih",
+    "locked_text": true,
+    "approved": false,
+    "notes": "Reference and Arabic are verified. French rendering is intentionally kept unapproved until final editorial validation."
+  }
+]
