@@ -1,0 +1,176 @@
+name: Publish first Instagram Story
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish-first-story.yml"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Republish even if the first test was already sent?"
+        required: true
+        default: "NO"
+        type: choice
+        options:
+          - "NO"
+          - "YES"
+
+permissions:
+  contents: write
+
+jobs:
+  publish-first-story:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check whether test Story was already published
+        id: guard
+        shell: bash
+        run: |
+          set -e
+          git fetch origin main
+          PUBLISHED="false"
+
+          if git cat-file -e origin/main:logs/first_story_published.marker 2>/dev/null; then
+            PUBLISHED="true"
+          fi
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "YES" ]; then
+            PUBLISHED="false"
+          fi
+
+          echo "published=$PUBLISHED" >> "$GITHUB_OUTPUT"
+
+      - name: Setup Python
+        if: steps.guard.outputs.published != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        if: steps.guard.outputs.published != 'true'
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Verify Instagram connection
+        if: steps.guard.outputs.published != 'true'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+        run: |
+          python - <<'PY'
+          import os, json, urllib.parse, urllib.request
+          uid = os.environ["IG_USER_ID"]
+          token = os.environ["IG_ACCESS_TOKEN"]
+          version = os.environ["IG_API_VERSION"]
+          url = f"https://graph.instagram.com/{version}/{uid}"
+          params = urllib.parse.urlencode({
+              "fields": "id,username",
+              "access_token": token,
+          })
+          with urllib.request.urlopen(url + "?" + params, timeout=60) as r:
+              data = json.loads(r.read().decode("utf-8"))
+          if str(data.get("id")) != str(uid):
+              raise SystemExit("Instagram user ID mismatch")
+          print("Instagram connection OK:", data.get("username"))
+          PY
+
+      - name: Build approved test Story
+        if: steps.guard.outputs.published != 'true'
+        run: |
+          cat > config/first-instagram-story.json <<'JSON'
+          {
+            "background": "assets/photos/approved/arafat_muzdalifah.png",
+            "background_position": "center center",
+            "kicker": "PAROLE D’ALLAH",
+            "title_before": "Le Hajj est un",
+            "title_highlight": "devoir pour celui qui en a les moyens.",
+            "copy": "La préparation du pèlerinage commence par la connaissance de ce qu’Allah a prescrit.",
+            "quote": "Là sont des signes évidents, parmi lesquels l’endroit où Abraham s’est tenu debout; et quiconque y entre est en sécurité. Et c’est un devoir envers Allah pour les gens qui [en] ont les moyens, d’aller faire le pèlerinage de la Maison.",
+            "source": "Coran 3:97 — traduction Muhammad Hamidullah",
+            "cta": "Prépare ton Hajj"
+          }
+          JSON
+
+          python src/render.py \
+            --template story-religion.html \
+            --data config/first-instagram-story.json \
+            --output first-instagram-story.jpg
+
+      - name: Publish media file publicly
+        if: steps.guard.outputs.published != 'true'
+        run: |
+          set -e
+          mkdir -p docs/media
+          cp output/first-instagram-story.jpg docs/media/first-instagram-story.jpg
+
+          git config user.name "LABAYKANUSUK Social Machine"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add docs/media/first-instagram-story.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "Add first Instagram test Story"
+            git push origin HEAD:main
+          fi
+
+      - name: Wait for public media URL
+        if: steps.guard.outputs.published != 'true'
+        id: media
+        shell: bash
+        run: |
+          set -e
+          URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/docs/media/first-instagram-story.jpg"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+          for i in {1..18}; do
+            if curl -L --fail --silent --show-error --max-time 20 "$URL" -o /tmp/story.jpg; then
+              if [ -s /tmp/story.jpg ]; then
+                echo "Public Story media is ready."
+                exit 0
+              fi
+            fi
+            echo "Waiting for public media... attempt $i/18"
+            sleep 5
+          done
+
+          echo "Public media URL did not become available in time."
+          exit 1
+
+      - name: Publish Story to Instagram
+        if: steps.guard.outputs.published != 'true'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+        run: |
+          python src/publish_instagram.py \
+            --url "${{ steps.media.outputs.url }}" \
+            --kind STORY \
+            --live
+
+      - name: Mark first test as published
+        if: steps.guard.outputs.published != 'true'
+        run: |
+          set -e
+          git pull --rebase origin main
+          mkdir -p logs
+          printf "Published successfully by GitHub Actions on %s\n" "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" > logs/first_story_published.marker
+
+          git add logs/first_story_published.marker
+          git commit -m "Mark first Instagram Story as published"
+          git push origin HEAD:main
+
+      - name: Already published
+        if: steps.guard.outputs.published == 'true'
+        run: |
+          echo "The first Instagram test Story is already marked as published."
+          echo "Use Run workflow with force=YES only if you intentionally want to publish it again."
