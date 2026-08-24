@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       slot:
-        description: "Slot à tester/publier (1 à 7)"
+        description: "Slot à tester/publier (1 à 8)"
         required: true
         default: "1"
         type: choice
-        options: ["1", "2", "3", "4", "5", "6", "7"]
+        options: ["1", "2", "3", "4", "5", "6", "7", "8"]
       mode:
         description: "DRY = génère seulement, LIVE = publie réellement"
         required: true
@@ -23,15 +23,23 @@ on:
         options: ["NO", "YES"]
 
   schedule:
-    # UTC. En heure d'été française : 08:00, 10:30, 13:00, 15:30, 18:00, 20:30, 22:00.
-    # En heure d'hiver, ces créneaux seront une heure plus tôt.
-    - cron: "0 6 * * *"     # slot 1 - story religion
-    - cron: "30 8 * * *"    # slot 2 - story outil
-    - cron: "0 11 * * *"    # slot 3 - story religion
-    - cron: "30 13 * * *"   # slot 4 - story religion
-    - cron: "0 16 * * *"    # slot 5 - story outil
-    - cron: "30 18 * * *"   # slot 7 - feed
-    - cron: "0 20 * * *"    # slot 6 - story religion
+    # Heures locales France. GitHub gère automatiquement heure d'été/hiver via Europe/Paris.
+    - cron: "0 8 * * *"
+      timezone: "Europe/Paris"     # slot 1 - story religion
+    - cron: "30 10 * * *"
+      timezone: "Europe/Paris"     # slot 2 - story outil
+    - cron: "0 13 * * *"
+      timezone: "Europe/Paris"     # slot 3 - story religion
+    - cron: "30 15 * * *"
+      timezone: "Europe/Paris"     # slot 4 - story religion
+    - cron: "0 18 * * *"
+      timezone: "Europe/Paris"     # slot 5 - story outil
+    - cron: "15 19 * * *"
+      timezone: "Europe/Paris"     # slot 8 - reel
+    - cron: "30 20 * * *"
+      timezone: "Europe/Paris"     # slot 7 - feed
+    - cron: "0 22 * * *"
+      timezone: "Europe/Paris"     # slot 6 - story religion
 
 permissions:
   contents: write
@@ -64,13 +72,14 @@ jobs:
             MODE="LIVE"
             FORCE="NO"
             case "${{ github.event.schedule }}" in
-              "0 6 * * *") SLOT="1" ;;
-              "30 8 * * *") SLOT="2" ;;
-              "0 11 * * *") SLOT="3" ;;
-              "30 13 * * *") SLOT="4" ;;
-              "0 16 * * *") SLOT="5" ;;
-              "30 18 * * *") SLOT="7" ;;
-              "0 20 * * *") SLOT="6" ;;
+              "0 8 * * *") SLOT="1" ;;
+              "30 10 * * *") SLOT="2" ;;
+              "0 13 * * *") SLOT="3" ;;
+              "30 15 * * *") SLOT="4" ;;
+              "0 18 * * *") SLOT="5" ;;
+              "15 19 * * *") SLOT="8" ;;
+              "30 20 * * *") SLOT="7" ;;
+              "0 22 * * *") SLOT="6" ;;
               *) echo "Unknown schedule"; exit 1 ;;
             esac
           fi
@@ -85,10 +94,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install renderer
+      - name: Install renderer and Reel encoder
         run: |
           pip install -r requirements.txt
           playwright install --with-deps chromium
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
 
       - name: Prepare one publication
         id: prepare
@@ -123,8 +136,17 @@ jobs:
         run: |
           set -euo pipefail
           SLOT="${{ steps.runconfig.outputs.slot }}"
-          SRC="output/production-slot-$(printf '%02d' "$SLOT").jpg"
-          DEST="docs/media/slot-$(printf '%02d' "$SLOT").jpg"
+          SRC=$(python - <<'PY'
+          import json
+          print(json.load(open('/tmp/production-state.json'))['output'])
+          PY
+          )
+          PUBLIC_FILENAME=$(python - <<'PY'
+          import json
+          print(json.load(open('/tmp/production-state.json'))['public_filename'])
+          PY
+          )
+          DEST="docs/media/$PUBLIC_FILENAME"
 
           mkdir -p docs/media
           cp "$SRC" "$DEST"
