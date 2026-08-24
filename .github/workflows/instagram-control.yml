@@ -1,0 +1,89 @@
+name: Instagram control
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "TEST = verify connection, PUBLISH = publish media"
+        required: true
+        default: TEST
+        type: choice
+        options:
+          - TEST
+          - PUBLISH
+      public_url:
+        description: "Public JPG/MP4 URL (required only for PUBLISH)"
+        required: false
+      kind:
+        description: "Media type"
+        required: true
+        default: STORY
+        type: choice
+        options:
+          - STORY
+          - IMAGE
+          - REEL
+      caption:
+        description: "Caption (optional)"
+        required: false
+      confirm:
+        description: "Type YES to actually publish"
+        required: true
+        default: NO
+
+jobs:
+  instagram:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify Instagram connection
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+        run: |
+          python - <<'PY'
+          import os, json, urllib.parse, urllib.request
+          uid = os.environ["IG_USER_ID"]
+          token = os.environ["IG_ACCESS_TOKEN"]
+          version = os.environ["IG_API_VERSION"]
+          url = f"https://graph.instagram.com/{version}/{uid}"
+          params = urllib.parse.urlencode({
+              "fields": "id,username",
+              "access_token": token
+          })
+          with urllib.request.urlopen(url + "?" + params, timeout=60) as r:
+              data = json.loads(r.read().decode("utf-8"))
+          print("Instagram connection OK")
+          print("Username:", data.get("username", "(not returned)"))
+          print("ID matched:", str(data.get("id")) == str(uid))
+          PY
+
+      - name: Publish or dry-run
+        if: ${{ inputs.action == 'PUBLISH' }}
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+          URL: ${{ inputs.public_url }}
+          KIND: ${{ inputs.kind }}
+          CAPTION: ${{ inputs.caption }}
+          CONFIRM: ${{ inputs.confirm }}
+        run: |
+          set -euo pipefail
+          if [ -z "$URL" ]; then
+            echo "public_url is required for PUBLISH"
+            exit 1
+          fi
+
+          if [ "$CONFIRM" = "YES" ]; then
+            python src/publish_instagram.py               --url "$URL"               --kind "$KIND"               --caption "$CAPTION"               --live
+          else
+            echo "Dry-run only. To publish for real, set confirm=YES."
+            python src/publish_instagram.py               --url "$URL"               --kind "$KIND"               --caption "$CAPTION"
+          fi
