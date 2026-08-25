@@ -94,7 +94,16 @@ body{font-family:"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antial
 .tool .cta::before{display:none}
 .site{position:absolute;z-index:4;font-size:20px;letter-spacing:.5px;color:rgba(255,255,255,.78)}
 .story .site{left:var(--story-safe-x);bottom:140px}
-.feed .site{right:var(--feed-safe-x);bottom:85px;font-size:17px}
+
+/* FEED BRANDING FOOTER
+   URL and logo are deliberately separated with a fixed safe gap.
+   This prevents the sigle from ever overlapping labaykanusuk.com. */
+.feed .site{
+  right:244px;
+  bottom:96px;
+  font-size:17px;
+  white-space:nowrap;
+}
 
 /* Optional crop guide for test renders only. */
 .crop-guide{display:none;position:absolute;z-index:20;pointer-events:none;border:1px dashed rgba(255,255,255,.24)}
@@ -106,4 +115,8 @@ body{font-family:"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antial
 /* Official LABAYKANUSUK sigle: exact PNG, never distorted/recolored. */
 .sigle{position:absolute;z-index:6;height:auto;object-fit:contain;filter:none;transform:none}
 .story .sigle{right:122px;bottom:142px;width:132px}
-.feed .sigle{right:104px;bottom:84px;width:118px}
+.feed .sigle{
+  right:88px;
+  bottom:70px;
+  width:112px;
+}
