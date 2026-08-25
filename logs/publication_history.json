@@ -112,5 +112,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-25T12:00:33.488574+00:00"
+  },
+  {
+    "date": "2026-08-25",
+    "slot_order": 4,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "RAPPEL-002",
+    "content_type": "editorial_religion",
+    "photo_id": "HALQ_HAIRCUT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17929666023143311",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/058738d1253ccc8d1cbc593feec5751af32356ea/docs/media/slot-04.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-25T16:05:19.293124+00:00"
   }
 ]
