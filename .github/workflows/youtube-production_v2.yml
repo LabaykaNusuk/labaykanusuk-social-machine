@@ -1,0 +1,176 @@
+name: LABAYKANUSUK YouTube Production
+
+on:
+  workflow_dispatch:
+    inputs:
+      yt_slot:
+        description: "YouTube slot"
+        required: true
+        default: "1"
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+          - "4"
+      privacy:
+        description: "Visibility for manual test"
+        required: true
+        default: "private"
+        type: choice
+        options:
+          - "private"
+          - "unlisted"
+          - "public"
+
+  schedule:
+    - cron: "0 16 * * *"
+      timezone: "Europe/Paris"
+    - cron: "0 20 * * *"
+      timezone: "Europe/Paris"
+    - cron: "0 21 * * *"
+      timezone: "Europe/Paris"
+    - cron: "0 22 * * *"
+      timezone: "Europe/Paris"
+
+permissions:
+  contents: read
+
+jobs:
+  publish-youtube:
+    # Keep scheduled public publishing OFF until YouTube's separate API
+    # compliance audit has approved public uploads for this project.
+    if: github.event_name == 'workflow_dispatch' || vars.YOUTUBE_API_AUDITED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: requirements.txt
+
+      - name: Install renderer and YouTube client
+        run: |
+          set -euo pipefail
+          pip install -r requirements.txt
+          pip install google-api-python-client google-auth
+          playwright install --with-deps chromium
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq ffmpeg >/dev/null
+          fi
+
+      - name: Resolve YouTube slot
+        id: slot
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SLOT="${{ inputs.yt_slot }}"
+            PRIVACY="${{ inputs.privacy }}"
+          else
+            case "${{ github.event.schedule }}" in
+              "0 16 * * *") SLOT="1" ;;
+              "0 20 * * *") SLOT="2" ;;
+              "0 21 * * *") SLOT="3" ;;
+              "0 22 * * *") SLOT="4" ;;
+              *) echo "Unknown schedule: ${{ github.event.schedule }}"; exit 1 ;;
+            esac
+            PRIVACY="public"
+          fi
+
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "privacy=$PRIVACY" >> "$GITHUB_OUTPUT"
+          echo "YouTube slot: $SLOT — privacy: $PRIVACY"
+
+      - name: Generate real LABAYKANUSUK Short
+        id: short
+        run: |
+          set -euo pipefail
+
+          python src/youtube_runner.py prepare \
+            --slot "${{ steps.slot.outputs.slot }}" \
+            --state /tmp/youtube-state.json
+
+          VIDEO=$(python - <<'PY'
+          import json
+          print(json.load(open("/tmp/youtube-state.json", encoding="utf-8"))["output"])
+          PY
+          )
+
+          test -s "$VIDEO"
+          echo "video=$VIDEO" >> "$GITHUB_OUTPUT"
+          echo "✅ Short LABAYKANUSUK généré : $VIDEO"
+
+      - name: Upload Short to YouTube
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          VIDEO: ${{ steps.short.outputs.video }}
+          PRIVACY: ${{ steps.slot.outputs.privacy }}
+        run: |
+          set -euo pipefail
+
+          test -n "$YOUTUBE_CLIENT_ID"
+          test -n "$YOUTUBE_CLIENT_SECRET"
+          test -n "$YOUTUBE_REFRESH_TOKEN"
+          test -s "$VIDEO"
+
+          cat > /tmp/upload_youtube.py <<'PY'
+          import json
+          import os
+
+          from google.oauth2.credentials import Credentials
+          from google.auth.transport.requests import Request
+          from googleapiclient.discovery import build
+          from googleapiclient.http import MediaFileUpload
+
+          state = json.load(open("/tmp/youtube-state.json", encoding="utf-8"))
+
+          creds = Credentials(
+              token=None,
+              refresh_token=os.environ["YOUTUBE_REFRESH_TOKEN"],
+              token_uri="https://oauth2.googleapis.com/token",
+              client_id=os.environ["YOUTUBE_CLIENT_ID"],
+              client_secret=os.environ["YOUTUBE_CLIENT_SECRET"],
+              scopes=["https://www.googleapis.com/auth/youtube.upload"],
+          )
+          creds.refresh(Request())
+
+          youtube = build("youtube", "v3", credentials=creds, cache_discovery=False)
+
+          response = youtube.videos().insert(
+              part="snippet,status",
+              body={
+                  "snippet": {
+                      "title": state["title"],
+                      "description": state["description"],
+                      "tags": state["tags"],
+                      "categoryId": "27",
+                      "defaultLanguage": "fr",
+                  },
+                  "status": {
+                      "privacyStatus": os.environ["PRIVACY"],
+                  },
+              },
+              media_body=MediaFileUpload(
+                  os.environ["VIDEO"],
+                  mimetype="video/mp4",
+                  resumable=True,
+              ),
+          ).execute()
+
+          print("✅ YOUTUBE_UPLOAD_OK")
+          print("Video ID:", response["id"])
+          print("Requested privacy:", os.environ["PRIVACY"])
+          PY
+
+          python /tmp/upload_youtube.py
