@@ -1,0 +1,86 @@
+name: YouTube Upload Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  youtube-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          python -m pip install --upgrade pip
+          pip install google-api-python-client google-auth
+
+      - name: Create private test Short
+        run: |
+          ffmpeg -y \
+            -f lavfi -i "color=c=0x24003d:s=720x1280:r=30:d=6" \
+            -f lavfi -i "anullsrc=channel_layout=stereo:sample_rate=48000" \
+            -vf "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='LABAYKANUSUK':fontcolor=0xD6A72C:fontsize=64:x=(w-text_w)/2:y=(h-text_h)/2-45,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='YouTube Social Machine':fontcolor=white:fontsize=32:x=(w-text_w)/2:y=(h-text_h)/2+45" \
+            -c:v libx264 -crf 18 -pix_fmt yuv420p \
+            -c:a aac -b:a 128k \
+            -t 6 -movflags +faststart \
+            youtube-test.mp4
+
+      - name: Upload to YouTube
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          cat > /tmp/upload_youtube.py <<'PY'
+          import os
+          from google.oauth2.credentials import Credentials
+          from google.auth.transport.requests import Request
+          from googleapiclient.discovery import build
+          from googleapiclient.http import MediaFileUpload
+
+          creds = Credentials(
+              token=None,
+              refresh_token=os.environ["YOUTUBE_REFRESH_TOKEN"],
+              token_uri="https://oauth2.googleapis.com/token",
+              client_id=os.environ["YOUTUBE_CLIENT_ID"],
+              client_secret=os.environ["YOUTUBE_CLIENT_SECRET"],
+              scopes=["https://www.googleapis.com/auth/youtube.upload"],
+          )
+
+          creds.refresh(Request())
+
+          youtube = build(
+              "youtube",
+              "v3",
+              credentials=creds,
+              cache_discovery=False
+          )
+
+          response = youtube.videos().insert(
+              part="snippet,status",
+              body={
+                  "snippet": {
+                      "title": "LABAYKANUSUK | Test automatique #Shorts",
+                      "description": "Test privé de la machine YouTube LABAYKANUSUK.",
+                      "categoryId": "27"
+                  },
+                  "status": {
+                      "privacyStatus": "private"
+                  }
+              },
+              media_body=MediaFileUpload(
+                  "youtube-test.mp4",
+                  mimetype="video/mp4",
+                  resumable=True
+              )
+          ).execute()
+
+          print("✅ YOUTUBE_UPLOAD_OK")
+          print("Video ID:", response["id"])
+          PY
+
+          python /tmp/upload_youtube.py
