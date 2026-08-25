@@ -148,5 +148,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-25T17:46:56.095596+00:00"
+  },
+  {
+    "date": "2026-08-25",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "TOOL-GUIDES",
+    "content_type": "tool",
+    "photo_id": "HARAM_EXTERIOR",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18116223013965986",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/17bd2c2cd2dc72273b91d95dfa2fdf3f0cbd34d1/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-25T19:19:07.955868+00:00"
   }
 ]
