@@ -184,5 +184,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-25T19:58:22.959425+00:00"
+  },
+  {
+    "date": "2026-08-25",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "RAPPEL-003",
+    "content_type": "editorial_religion",
+    "photo_id": "MINA_ROAD_AERIAL",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18377147080226367",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1b888aaab2cff51218b14ce881be8021a937ccce/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-25T21:02:36.275741+00:00"
   }
 ]
