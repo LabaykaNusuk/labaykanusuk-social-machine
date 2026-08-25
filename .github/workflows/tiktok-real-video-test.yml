@@ -1,0 +1,179 @@
+name: TikTok Real LABAYKANUSUK Video Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  real-video-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install renderer
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq ffmpeg jq >/dev/null
+          fi
+          if ! command -v jq >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq jq >/dev/null
+          fi
+
+      - name: Generate real LABAYKANUSUK Reel
+        id: reel
+        run: |
+          set -euo pipefail
+          python src/production_runner.py prepare \
+            --slot 8 \
+            --state /tmp/tiktok-state.json \
+            --force
+
+          VIDEO=$(python - <<'PY'
+          import json
+          print(json.load(open('/tmp/tiktok-state.json'))['output'])
+          PY
+          )
+
+          test -s "$VIDEO"
+          echo "video=$VIDEO" >> "$GITHUB_OUTPUT"
+          echo "✅ Vraie vidéo LABAYKANUSUK générée : $VIDEO"
+
+      - name: Refresh TikTok access token
+        id: token
+        env:
+          CLIENT_KEY: ${{ secrets.TIKTOK_SANDBOX_CLIENT_KEY }}
+          CLIENT_SECRET: ${{ secrets.TIKTOK_SANDBOX_CLIENT_SECRET }}
+          REFRESH_TOKEN: ${{ secrets.TIKTOK_SANDBOX_REFRESH_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          RESPONSE=$(curl -sS -X POST \
+            'https://open.tiktokapis.com/v2/oauth/token/' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode "client_key=${CLIENT_KEY}" \
+            --data-urlencode "client_secret=${CLIENT_SECRET}" \
+            --data-urlencode 'grant_type=refresh_token' \
+            --data-urlencode "refresh_token=${REFRESH_TOKEN}")
+
+          ACCESS_TOKEN=$(printf '%s' "$RESPONSE" | jq -r '.access_token // empty')
+
+          if [ -z "$ACCESS_TOKEN" ]; then
+            echo "❌ TikTok token refresh failed"
+            printf '%s' "$RESPONSE" | jq '{error,error_description}'
+            exit 1
+          fi
+
+          echo "access_token=$ACCESS_TOKEN" >> "$GITHUB_OUTPUT"
+          echo "✅ TikTok connecté"
+
+      - name: Initialize TikTok inbox upload
+        id: init
+        env:
+          ACCESS_TOKEN: ${{ steps.token.outputs.access_token }}
+          VIDEO: ${{ steps.reel.outputs.video }}
+        run: |
+          set -euo pipefail
+
+          SIZE=$(stat -c%s "$VIDEO")
+          BODY=$(jq -n --argjson size "$SIZE" \
+            '{source_info:{source:"FILE_UPLOAD",video_size:$size,chunk_size:$size,total_chunk_count:1}}')
+
+          RESPONSE=$(curl -sS -X POST \
+            'https://open.tiktokapis.com/v2/post/publish/inbox/video/init/' \
+            -H "Authorization: Bearer ${ACCESS_TOKEN}" \
+            -H 'Content-Type: application/json; charset=UTF-8' \
+            --data "$BODY")
+
+          ERROR_CODE=$(printf '%s' "$RESPONSE" | jq -r '.error.code // empty')
+
+          if [ "$ERROR_CODE" != "ok" ]; then
+            echo "❌ TikTok upload initialization failed"
+            printf '%s' "$RESPONSE" | jq '{error}'
+            exit 1
+          fi
+
+          echo "upload_url=$(printf '%s' "$RESPONSE" | jq -r '.data.upload_url')" >> "$GITHUB_OUTPUT"
+          echo "publish_id=$(printf '%s' "$RESPONSE" | jq -r '.data.publish_id')" >> "$GITHUB_OUTPUT"
+          echo "✅ Envoi TikTok initialisé"
+
+      - name: Upload real Reel to TikTok
+        env:
+          UPLOAD_URL: ${{ steps.init.outputs.upload_url }}
+          VIDEO: ${{ steps.reel.outputs.video }}
+        run: |
+          set -euo pipefail
+
+          SIZE=$(stat -c%s "$VIDEO")
+          LAST=$((SIZE - 1))
+
+          HTTP_CODE=$(curl -sS \
+            -o /tmp/tiktok-upload-response.txt \
+            -w '%{http_code}' \
+            -X PUT "$UPLOAD_URL" \
+            -H 'Content-Type: video/mp4' \
+            -H "Content-Length: ${SIZE}" \
+            -H "Content-Range: bytes 0-${LAST}/${SIZE}" \
+            --data-binary "@$VIDEO")
+
+          if [ "$HTTP_CODE" -lt 200 ] || [ "$HTTP_CODE" -ge 300 ]; then
+            echo "❌ Upload vidéo TikTok refusé (HTTP $HTTP_CODE)"
+            cat /tmp/tiktok-upload-response.txt
+            exit 1
+          fi
+
+          echo "✅ Vraie vidéo LABAYKANUSUK reçue par TikTok"
+
+      - name: Wait for TikTok inbox
+        env:
+          ACCESS_TOKEN: ${{ steps.token.outputs.access_token }}
+          PUBLISH_ID: ${{ steps.init.outputs.publish_id }}
+        run: |
+          set -euo pipefail
+
+          for i in $(seq 1 40); do
+            sleep 15
+
+            RESPONSE=$(curl -sS -X POST \
+              'https://open.tiktokapis.com/v2/post/publish/status/fetch/' \
+              -H "Authorization: Bearer ${ACCESS_TOKEN}" \
+              -H 'Content-Type: application/json; charset=UTF-8' \
+              --data "$(jq -n --arg id "$PUBLISH_ID" '{publish_id:$id}')")
+
+            ERROR_CODE=$(printf '%s' "$RESPONSE" | jq -r '.error.code // empty')
+            STATUS=$(printf '%s' "$RESPONSE" | jq -r '.data.status // empty')
+            FAIL_REASON=$(printf '%s' "$RESPONSE" | jq -r '.data.fail_reason // empty')
+
+            echo "TikTok status: ${STATUS:-UNKNOWN}"
+
+            if [ "$ERROR_CODE" != "ok" ]; then
+              printf '%s' "$RESPONSE" | jq '{error,data}'
+              exit 1
+            fi
+
+            if [ "$STATUS" = "SEND_TO_USER_INBOX" ]; then
+              echo "✅ VRAIE VIDÉO ENVOYÉE À TIKTOK"
+              exit 0
+            fi
+
+            if [ "$STATUS" = "FAILED" ]; then
+              echo "❌ TikTok a refusé la vidéo : ${FAIL_REASON:-raison inconnue}"
+              printf '%s' "$RESPONSE" | jq '{data,error}'
+              exit 1
+            fi
+          done
+
+          echo "❌ TikTok n'a pas confirmé l'envoi après 10 minutes"
+          exit 1
