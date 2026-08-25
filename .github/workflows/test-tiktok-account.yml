@@ -1,0 +1,60 @@
+name: TikTok Account Check
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-account:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Refresh TikTok access token
+        id: token
+        env:
+          CLIENT_KEY: ${{ secrets.TIKTOK_SANDBOX_CLIENT_KEY }}
+          CLIENT_SECRET: ${{ secrets.TIKTOK_SANDBOX_CLIENT_SECRET }}
+          REFRESH_TOKEN: ${{ secrets.TIKTOK_SANDBOX_REFRESH_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          RESPONSE=$(curl -sS -X POST             'https://open.tiktokapis.com/v2/oauth/token/'             -H 'Content-Type: application/x-www-form-urlencoded'             --data-urlencode "client_key=${CLIENT_KEY}"             --data-urlencode "client_secret=${CLIENT_SECRET}"             --data-urlencode 'grant_type=refresh_token'             --data-urlencode "refresh_token=${REFRESH_TOKEN}")
+
+          ACCESS_TOKEN=$(printf '%s' "$RESPONSE" | jq -r '.access_token // empty')
+
+          if [ -z "$ACCESS_TOKEN" ]; then
+            echo "❌ Impossible de rafraîchir le token TikTok"
+            printf '%s' "$RESPONSE" | jq '{error,error_description}'
+            exit 1
+          fi
+
+          echo "access_token=$ACCESS_TOKEN" >> "$GITHUB_OUTPUT"
+          echo "✅ Token TikTok valide"
+
+      - name: Show authorized TikTok account
+        env:
+          ACCESS_TOKEN: ${{ steps.token.outputs.access_token }}
+        run: |
+          set -euo pipefail
+
+          RESPONSE=$(curl -sS -L             'https://open.tiktokapis.com/v2/user/info/?fields=open_id,display_name'             -H "Authorization: Bearer ${ACCESS_TOKEN}")
+
+          ERROR_CODE=$(printf '%s' "$RESPONSE" | jq -r '.error.code // empty')
+
+          if [ "$ERROR_CODE" != "ok" ]; then
+            echo "❌ TikTok user info error"
+            printf '%s' "$RESPONSE" | jq '{error}'
+            exit 1
+          fi
+
+          DISPLAY_NAME=$(printf '%s' "$RESPONSE" | jq -r '.data.user.display_name // "INCONNU"')
+          OPEN_ID=$(printf '%s' "$RESPONSE" | jq -r '.data.user.open_id // ""')
+
+          echo "✅ COMPTE TIKTOK AUTORISÉ"
+          echo "Nom affiché : ${DISPLAY_NAME}"
+
+          if [ -n "$OPEN_ID" ]; then
+            echo "Open ID : ${OPEN_ID:0:6}...${OPEN_ID: -4}"
+          fi
