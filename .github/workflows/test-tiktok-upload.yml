@@ -1,0 +1,109 @@
+name: TikTok Sandbox Upload Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  upload-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg jq >/dev/null
+
+      - name: Create safe test video
+        run: |
+          ffmpeg -hide_banner -loglevel error -y \
+            -f lavfi -i "color=c=0x24003d:s=720x1280:r=30:d=6" \
+            -f lavfi -i "anullsrc=channel_layout=stereo:sample_rate=48000" \
+            -shortest -c:v libx264 -preset veryfast -crf 20 \
+            -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart \
+            tiktok-test.mp4
+          ls -lh tiktok-test.mp4
+
+      - name: Refresh TikTok access token
+        id: token
+        env:
+          CLIENT_KEY: ${{ secrets.TIKTOK_SANDBOX_CLIENT_KEY }}
+          CLIENT_SECRET: ${{ secrets.TIKTOK_SANDBOX_CLIENT_SECRET }}
+          REFRESH_TOKEN: ${{ secrets.TIKTOK_SANDBOX_REFRESH_TOKEN }}
+        run: |
+          set -euo pipefail
+          RESPONSE=$(curl -sS -X POST 'https://open.tiktokapis.com/v2/oauth/token/' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode "client_key=${CLIENT_KEY}" \
+            --data-urlencode "client_secret=${CLIENT_SECRET}" \
+            --data-urlencode 'grant_type=refresh_token' \
+            --data-urlencode "refresh_token=${REFRESH_TOKEN}")
+
+          ACCESS_TOKEN=$(printf '%s' "$RESPONSE" | jq -r '.access_token // empty')
+          if [ -z "$ACCESS_TOKEN" ]; then
+            echo "TikTok token refresh failed:"
+            printf '%s' "$RESPONSE" | jq '{error,error_description}'
+            exit 1
+          fi
+
+          NEW_REFRESH_TOKEN=$(printf '%s' "$RESPONSE" | jq -r '.refresh_token // empty')
+          if [ -n "$NEW_REFRESH_TOKEN" ] && [ "$NEW_REFRESH_TOKEN" != "$REFRESH_TOKEN" ]; then
+            echo "::warning::TikTok returned a new refresh token. Update TIKTOK_SANDBOX_REFRESH_TOKEN before the next run."
+          fi
+
+          echo "access_token=$ACCESS_TOKEN" >> "$GITHUB_OUTPUT"
+          echo "✅ TikTok access token refreshed"
+
+      - name: Initialize TikTok inbox upload
+        id: init
+        env:
+          ACCESS_TOKEN: ${{ steps.token.outputs.access_token }}
+        run: |
+          set -euo pipefail
+          SIZE=$(stat -c%s tiktok-test.mp4)
+          BODY=$(jq -n --argjson size "$SIZE" '{source_info:{source:"FILE_UPLOAD",video_size:$size,chunk_size:$size,total_chunk_count:1}}')
+
+          RESPONSE=$(curl -sS -X POST 'https://open.tiktokapis.com/v2/post/publish/inbox/video/init/' \
+            -H "Authorization: Bearer ${ACCESS_TOKEN}" \
+            -H 'Content-Type: application/json; charset=UTF-8' \
+            --data "$BODY")
+
+          ERROR_CODE=$(printf '%s' "$RESPONSE" | jq -r '.error.code // empty')
+          if [ "$ERROR_CODE" != "ok" ]; then
+            echo "TikTok upload initialization failed:"
+            printf '%s' "$RESPONSE" | jq '{error}'
+            exit 1
+          fi
+
+          UPLOAD_URL=$(printf '%s' "$RESPONSE" | jq -r '.data.upload_url')
+          PUBLISH_ID=$(printf '%s' "$RESPONSE" | jq -r '.data.publish_id')
+          echo "upload_url=$UPLOAD_URL" >> "$GITHUB_OUTPUT"
+          echo "publish_id=$PUBLISH_ID" >> "$GITHUB_OUTPUT"
+          echo "✅ TikTok upload initialized"
+
+      - name: Upload video to TikTok
+        env:
+          UPLOAD_URL: ${{ steps.init.outputs.upload_url }}
+        run: |
+          set -euo pipefail
+          SIZE=$(stat -c%s tiktok-test.mp4)
+          LAST=$((SIZE - 1))
+          HTTP_CODE=$(curl -sS -o /tmp/tiktok-upload-response.txt -w '%{http_code}' \
+            -X PUT "$UPLOAD_URL" \
+            -H 'Content-Type: video/mp4' \
+            -H "Content-Length: ${SIZE}" \
+            -H "Content-Range: bytes 0-${LAST}/${SIZE}" \
+            --data-binary '@tiktok-test.mp4')
+
+          if [ "$HTTP_CODE" -lt 200 ] || [ "$HTTP_CODE" -ge 300 ]; then
+            echo "TikTok binary upload failed (HTTP $HTTP_CODE)"
+            cat /tmp/tiktok-upload-response.txt
+            exit 1
+          fi
+
+          echo "✅ TEST TIKTOK ENVOYÉ"
+          echo "Ouvre TikTok > Boîte de réception pour terminer le brouillon."
