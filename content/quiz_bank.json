@@ -1,0 +1,26 @@
+[
+  {
+    "id": "quiz-histoire-jurhum-zamzam-001",
+    "type": "quiz",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Premier quiz validé pendant la conception du rendez-vous. Source primaire indiquée.",
+    "theme": ["makkah", "zamzam", "histoire", "kaaba"],
+    "section": "QUIZ DU PÈLERIN",
+    "category_label": "HISTOIRE DE LA MECQUE",
+    "question_before": "Quelle tribu s’est installée auprès de",
+    "question_highlight": "Hajar et Ismaïl",
+    "question_after": "après l’apparition de Zamzam ?",
+    "options": ["Quraysh", "Jurhum", "Khuza‘ah"],
+    "answer_letter": "B",
+    "answer": "JURHUM",
+    "hook": "Peu de gens connaissent cette partie de l’histoire de La Mecque.",
+    "answer_text": "Après l’apparition de Zamzam, des membres de Jurhum remarquèrent des oiseaux autour de la vallée. Ils vinrent auprès de Hajar et lui demandèrent l’autorisation de s’installer près d’elle et d’Ismaïl.",
+    "source": "Hajar accepta à condition qu’ils n’aient aucun droit de propriété sur l’eau de Zamzam. Récit d’Ibn ‘Abbâs, Sahih al-Bukhari 2368.",
+    "right_message": "Bravo. Tu connais déjà une partie de l’histoire de La Mecque que beaucoup ignorent.",
+    "wrong_message": "Aujourd’hui, tu repars avec une connaissance de plus : le quiz a rempli sa mission.",
+    "caption_hook": "Après l’apparition de Zamzam, quelle tribu s’est installée auprès de Hajar et Ismaïl ?",
+    "cta_label": "DÉCOUVRE L’HISTOIRE DU HAJJ",
+    "cta_url": "https://www.labaykanusuk.com/pages/histoire-du-hajj"
+  }
+]
