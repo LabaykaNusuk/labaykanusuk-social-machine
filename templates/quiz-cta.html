@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1350px;overflow:hidden}
+body{font-family:Montserrat,Poppins,Arial,sans-serif;color:#F7F2E8;background:#130a1b}
+.slide{position:relative;width:1080px;height:1350px;overflow:hidden;background:#160c20}
+.photo{position:absolute;inset:0;background-image:url("{{BACKGROUND_DATA}}");background-size:cover;background-position:{{BACKGROUND_POSITION}};filter:saturate(.72) contrast(1.03) brightness(.58);transform:scale(1.045)}
+.photo2{position:absolute;inset:0;background-image:url("{{BACKGROUND_DATA}}");background-size:cover;background-position:78% 68%;opacity:.13;transform:scale(1.12)}
+.wash{position:absolute;inset:0;background:
+radial-gradient(circle at 74% 42%,rgba(46,107,85,.20),transparent 34%),
+linear-gradient(90deg,rgba(36,0,61,.98) 0%,rgba(36,0,61,.91) 43%,rgba(13,17,29,.68) 75%,rgba(4,6,10,.90) 100%),
+linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.83))}
+.safe{position:absolute;inset:0;padding:92px 90px 76px;display:flex;flex-direction:column}
+.brand{font-size:31px;font-weight:800;letter-spacing:.035em;color:#fff}
+.brand span{color:#D6A72C}
+.brandline{width:275px;height:2px;background:#D6A72C;margin-top:25px;position:relative}
+.brandline:after{content:"";position:absolute;width:16px;height:16px;background:#D6A72C;left:45%;top:50%;transform:translate(-50%,-50%) rotate(45deg)}
+.counter{position:absolute;right:90px;top:92px;font-size:16px;font-weight:800;letter-spacing:.12em;color:#ddd4df;text-transform:uppercase}
+.content{margin:auto 0;width:830px;padding-left:42px;border-left:2px solid #D6A72C}
+.eyebrow{font-size:18px;font-weight:850;letter-spacing:.18em;color:#D6A72C;text-transform:uppercase;margin-bottom:26px}
+.title{font-size:79px;line-height:.98;letter-spacing:-.045em;font-weight:850;margin:0 0 30px;max-width:810px}
+.title .green{color:#77B19A}
+.copy{font-size:29px;line-height:1.42;max-width:770px;margin:0;color:#f4eef5}
+.rule{width:118px;height:4px;background:#D6A72C;margin:38px 0 30px}
+.button{display:inline-flex;align-items:center;gap:14px;background:#2E6B55;color:#fff;padding:19px 26px;border-radius:7px;font-size:20px;font-weight:850;letter-spacing:.035em;text-transform:uppercase;box-shadow:0 12px 38px rgba(0,0,0,.22)}
+.button:before{content:"◈";color:#F7F2E8;font-size:22px}
+.hint{margin-top:18px;font-size:19px;font-weight:750;color:#D6A72C}
+.footer{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end}
+.appointment{font-size:19px;font-weight:780}
+.appointment:before{content:"";display:inline-block;width:14px;height:14px;background:#D6A72C;transform:rotate(45deg);margin-right:15px}
+.url{margin-top:28px;font-size:15px;color:#c9c2cc}
+.logo{width:96px;height:auto}
+</style></head>
+<body><section class="slide">
+<div class="photo"></div><div class="photo2"></div><div class="wash"></div>
+<div class="safe">
+<div class="brand">LABAYKA<span>NUSUK</span></div><div class="brandline"></div>
+<div class="counter">{{SECTION}} · {{CARD_COUNTER}}</div>
+<div class="content">
+<div class="eyebrow">{{CTA_EYEBROW}}</div>
+<h1 class="title">Challenge-toi.<br><span class="green">Défie un proche.</span></h1>
+<p class="copy">{{CTA_COPY}}</p>
+<div class="rule"></div>
+<div class="button">{{CTA_BUTTON}}</div>
+<div class="hint">{{CTA_HINT}}</div>
+</div>
+<footer class="footer">
+<div><div class="appointment">Le rendez-vous quiz continue ici</div><div class="url">{{WEBSITE}}</div></div>
+<img class="logo" src="{{LOGO_DATA}}" alt="">
+</footer>
+</div></section></body></html>
