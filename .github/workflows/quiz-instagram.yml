@@ -66,7 +66,7 @@ jobs:
           pip install -r requirements.txt
           playwright install --with-deps chromium
 
-      - name: Prepare 2-card quiz
+      - name: Prepare 3-card quiz
         id: prepare
         shell: bash
         run: |
@@ -93,7 +93,7 @@ jobs:
           cat /tmp/quiz-state.json
           echo "Aucun carrousel n'est publié : pas de contenu validé frais ou quiz déjà publié."
 
-      - name: Publish both cards as public media
+      - name: Publish all 3 cards as public media
         if: steps.prepare.outputs.skip != 'true'
         id: media
         shell: bash
@@ -112,14 +112,21 @@ jobs:
           print(s['outputs'][1])
           PY
           )
+          CARD3=$(python - <<'PY'
+          import json
+          s=json.load(open('/tmp/quiz-state.json'))
+          print(s['outputs'][2])
+          PY
+          )
 
           mkdir -p docs/media
           cp "$CARD1" docs/media/quiz-card-1.jpg
           cp "$CARD2" docs/media/quiz-card-2.jpg
+          cp "$CARD3" docs/media/quiz-card-3.jpg
 
           git config user.name "LABAYKANUSUK Social Machine"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/media/quiz-card-1.jpg docs/media/quiz-card-2.jpg
+          git add docs/media/quiz-card-1.jpg docs/media/quiz-card-2.jpg docs/media/quiz-card-3.jpg
 
           if ! git diff --cached --quiet; then
             git commit -m "Update Quiz du Pèlerin 21H media"
@@ -130,14 +137,18 @@ jobs:
           MEDIA_COMMIT=$(git rev-parse HEAD)
           URL1="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${MEDIA_COMMIT}/docs/media/quiz-card-1.jpg"
           URL2="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${MEDIA_COMMIT}/docs/media/quiz-card-2.jpg"
+          URL3="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${MEDIA_COMMIT}/docs/media/quiz-card-3.jpg"
 
           curl -L --fail --silent --show-error --max-time 30 "$URL1" -o /tmp/quiz-public-1.jpg
           curl -L --fail --silent --show-error --max-time 30 "$URL2" -o /tmp/quiz-public-2.jpg
+          curl -L --fail --silent --show-error --max-time 30 "$URL3" -o /tmp/quiz-public-3.jpg
           test -s /tmp/quiz-public-1.jpg
           test -s /tmp/quiz-public-2.jpg
+          test -s /tmp/quiz-public-3.jpg
 
           echo "url1=$URL1" >> "$GITHUB_OUTPUT"
           echo "url2=$URL2" >> "$GITHUB_OUTPUT"
+          echo "url3=$URL3" >> "$GITHUB_OUTPUT"
 
       - name: Dry run
         if: steps.prepare.outputs.skip != 'true' && steps.runconfig.outputs.mode == 'DRY'
@@ -149,7 +160,8 @@ jobs:
           python src/quiz_runner.py publish \
             --state /tmp/quiz-state.json \
             --url "${{ steps.media.outputs.url1 }}" \
-            --url "${{ steps.media.outputs.url2 }}"
+            --url "${{ steps.media.outputs.url2 }}" \
+            --url "${{ steps.media.outputs.url3 }}"
 
       - name: Publish LIVE Instagram carousel
         if: steps.prepare.outputs.skip != 'true' && steps.runconfig.outputs.mode == 'LIVE'
@@ -162,6 +174,7 @@ jobs:
             --state /tmp/quiz-state.json \
             --url "${{ steps.media.outputs.url1 }}" \
             --url "${{ steps.media.outputs.url2 }}" \
+            --url "${{ steps.media.outputs.url3 }}" \
             --live
 
       - name: Persist quiz history
