@@ -256,5 +256,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-26T12:02:32.423496+00:00"
+  },
+  {
+    "date": "2026-08-26",
+    "slot_order": 4,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "hook-hajj-mabrur-paradis",
+    "content_type": "hook",
+    "photo_id": "JAMARAT_WIDE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18278661703290623",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/487cd01cdc64ed4d481cc7c3e738738e89e43053/docs/media/slot-04.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-26T16:40:11.351401+00:00"
   }
 ]
