@@ -238,5 +238,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-26T10:19:47.715469+00:00"
+  },
+  {
+    "date": "2026-08-26",
+    "slot_order": 3,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "hook-hajj-arafah",
+    "content_type": "hook",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17925002709410539",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/9b0befa7fe7f57f48a542d642c59db66ed5b0005/docs/media/slot-03.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-26T12:02:32.423496+00:00"
   }
 ]
