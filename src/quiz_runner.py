@@ -150,6 +150,8 @@ def build_caption(item: dict) -> str:
         "",
         "Reviens demain à 21H pour une nouvelle question.",
         "",
+        "◈ Envie d’aller plus loin ? Challenge-toi ou défie un proche avec le Grand Quiz Hajj & Omra — lien en bio.",
+        "",
         "◈ Apprendre le Hajj et la Omra, une question à la fois.",
     ]
     if item.get("cta_url"):
@@ -201,7 +203,7 @@ def prepare(state_path: Path, force: bool = False):
 
     card1_values = {
         **common,
-        "CARD_COUNTER": "1/2",
+        "CARD_COUNTER": "1/3",
         "QUESTION_BEFORE": item.get("question_before", ""),
         "QUESTION_HIGHLIGHT": item.get("question_highlight", ""),
         "QUESTION_AFTER": item.get("question_after", ""),
@@ -213,7 +215,7 @@ def prepare(state_path: Path, force: bool = False):
 
     card2_values = {
         **common,
-        "CARD_COUNTER": "2/2",
+        "CARD_COUNTER": "2/3",
         "ANSWER_LETTER": item["answer_letter"],
         "ANSWER": item["answer"],
         "ANSWER_TEXT": item["answer_text"],
@@ -223,8 +225,19 @@ def prepare(state_path: Path, force: bool = False):
         "CTA_LABEL": item.get("cta_label", "CONTINUE D’APPRENDRE"),
     }
 
+    card3_values = {
+        **common,
+        "CARD_COUNTER": "3/3",
+        "CTA_EYEBROW": "LABAYKANUSUK PLAY",
+        "CTA_TITLE": "Challenge-toi. Défie un proche.",
+        "CTA_COPY": "Passe du quiz du soir au Grand Quiz Hajj & Omra et teste vraiment tes connaissances.",
+        "CTA_BUTTON": "GRAND QUIZ HAJJ & OMRA",
+        "CTA_HINT": "Lien en bio",
+    }
+
     out1 = render_template("quiz-question.html", card1_values, "quiz-card-1.jpg")
     out2 = render_template("quiz-answer.html", card2_values, "quiz-card-2.jpg")
+    out3 = render_template("quiz-cta.html", card3_values, "quiz-card-3.jpg")
 
     state = {
         "skip": False,
@@ -236,8 +249,8 @@ def prepare(state_path: Path, force: bool = False):
         "content_id": item["id"],
         "content_type": "quiz",
         "photo_id": photo["id"],
-        "outputs": [out1, out2],
-        "public_filenames": ["quiz-card-1.jpg", "quiz-card-2.jpg"],
+        "outputs": [out1, out2, out3],
+        "public_filenames": ["quiz-card-1.jpg", "quiz-card-2.jpg", "quiz-card-3.jpg"],
         "caption": build_caption(item),
         "cta_url": item.get("cta_url", ""),
         "source": item.get("source", ""),
@@ -262,8 +275,8 @@ def wait_container(base: str, container_id: str, token: str, attempts: int = 30)
 
 
 def publish_carousel(state: dict, media_urls: list[str]):
-    if len(media_urls) != 2:
-        raise RuntimeError("Quiz carousel requires exactly 2 public image URLs")
+    if len(media_urls) != 3:
+        raise RuntimeError("Quiz carousel requires exactly 3 public image URLs")
 
     token = require_env("IG_ACCESS_TOKEN")
     version = require_env("IG_API_VERSION")
