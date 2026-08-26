@@ -1,0 +1,179 @@
+name: LABAYKANUSUK Quiz du Pèlerin 21H
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "DRY = génère seulement, LIVE = publie le carrousel"
+        required: true
+        default: "DRY"
+        type: choice
+        options: ["DRY", "LIVE"]
+      force:
+        description: "YES autorise à rejouer le quiz du jour"
+        required: true
+        default: "NO"
+        type: choice
+        options: ["NO", "YES"]
+
+  schedule:
+    - cron: "0 21 * * *"
+      timezone: "Europe/Paris"
+
+permissions:
+  contents: write
+
+# Same group as the existing Instagram machine: avoids two workflows pushing
+# publication history/media at the same moment.
+concurrency:
+  group: labaykanusuk-instagram-production
+  cancel-in-progress: false
+
+jobs:
+  quiz:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve mode
+        id: runconfig
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            MODE="${{ inputs.mode }}"
+            FORCE="${{ inputs.force }}"
+          else
+            MODE="LIVE"
+            FORCE="NO"
+          fi
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "force=$FORCE" >> "$GITHUB_OUTPUT"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install renderer
+        run: |
+          set -euo pipefail
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Prepare 2-card quiz
+        id: prepare
+        shell: bash
+        run: |
+          set -euo pipefail
+          FORCE_ARG=""
+          if [ "${{ steps.runconfig.outputs.force }}" = "YES" ]; then
+            FORCE_ARG="--force"
+          fi
+
+          python src/quiz_runner.py prepare \
+            --state /tmp/quiz-state.json \
+            $FORCE_ARG
+
+          SKIP=$(python - <<'PY'
+          import json
+          print(str(json.load(open('/tmp/quiz-state.json')).get('skip', False)).lower())
+          PY
+          )
+          echo "skip=$SKIP" >> "$GITHUB_OUTPUT"
+
+      - name: Stop safely if no fresh approved quiz
+        if: steps.prepare.outputs.skip == 'true'
+        run: |
+          cat /tmp/quiz-state.json
+          echo "Aucun carrousel n'est publié : pas de contenu validé frais ou quiz déjà publié."
+
+      - name: Publish both cards as public media
+        if: steps.prepare.outputs.skip != 'true'
+        id: media
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          CARD1=$(python - <<'PY'
+          import json
+          s=json.load(open('/tmp/quiz-state.json'))
+          print(s['outputs'][0])
+          PY
+          )
+          CARD2=$(python - <<'PY'
+          import json
+          s=json.load(open('/tmp/quiz-state.json'))
+          print(s['outputs'][1])
+          PY
+          )
+
+          mkdir -p docs/media
+          cp "$CARD1" docs/media/quiz-card-1.jpg
+          cp "$CARD2" docs/media/quiz-card-2.jpg
+
+          git config user.name "LABAYKANUSUK Social Machine"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/media/quiz-card-1.jpg docs/media/quiz-card-2.jpg
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Quiz du Pèlerin 21H media"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+          MEDIA_COMMIT=$(git rev-parse HEAD)
+          URL1="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${MEDIA_COMMIT}/docs/media/quiz-card-1.jpg"
+          URL2="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${MEDIA_COMMIT}/docs/media/quiz-card-2.jpg"
+
+          curl -L --fail --silent --show-error --max-time 30 "$URL1" -o /tmp/quiz-public-1.jpg
+          curl -L --fail --silent --show-error --max-time 30 "$URL2" -o /tmp/quiz-public-2.jpg
+          test -s /tmp/quiz-public-1.jpg
+          test -s /tmp/quiz-public-2.jpg
+
+          echo "url1=$URL1" >> "$GITHUB_OUTPUT"
+          echo "url2=$URL2" >> "$GITHUB_OUTPUT"
+
+      - name: Dry run
+        if: steps.prepare.outputs.skip != 'true' && steps.runconfig.outputs.mode == 'DRY'
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+          IG_EXPECTED_USERNAME: labaykanusuk
+        run: |
+          python src/quiz_runner.py publish \
+            --state /tmp/quiz-state.json \
+            --url "${{ steps.media.outputs.url1 }}" \
+            --url "${{ steps.media.outputs.url2 }}"
+
+      - name: Publish LIVE Instagram carousel
+        if: steps.prepare.outputs.skip != 'true' && steps.runconfig.outputs.mode == 'LIVE'
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+          IG_EXPECTED_USERNAME: labaykanusuk
+        run: |
+          python src/quiz_runner.py publish \
+            --state /tmp/quiz-state.json \
+            --url "${{ steps.media.outputs.url1 }}" \
+            --url "${{ steps.media.outputs.url2 }}" \
+            --live
+
+      - name: Persist quiz history
+        if: steps.prepare.outputs.skip != 'true' && steps.runconfig.outputs.mode == 'LIVE'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "LABAYKANUSUK Social Machine"
+          git config user.email "actions@users.noreply.github.com"
+          git add logs/publication_history.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record Quiz du Pèlerin 21H publication"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
