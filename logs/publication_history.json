@@ -202,5 +202,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-25T21:02:36.275741+00:00"
+  },
+  {
+    "date": "2026-08-26",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "hook-dhul-hijjah-dix-jours",
+    "content_type": "hook",
+    "photo_id": "JAMARAT_CLOSE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17883687060654123",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1f2b9e0823ecfe4ca49eaec34711640648495aa2/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-26T08:12:04.663701+00:00"
   }
 ]
