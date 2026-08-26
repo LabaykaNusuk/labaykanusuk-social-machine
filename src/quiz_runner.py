@@ -260,10 +260,10 @@ def prepare(state_path: Path, force: bool = False):
     print(json.dumps(state, ensure_ascii=False, indent=2))
 
 
-def wait_container(base: str, container_id: str, token: str, attempts: int = 30):
+def wait_container(version: str, container_id: str, token: str, attempts: int = 30):
     for _ in range(attempts):
         status = api_json(
-            f"{base}/{container_id}",
+            f"https://graph.instagram.com/{version}/{container_id}",
             {"fields": "status_code,status", "access_token": token},
         )
         code = status.get("status_code")
@@ -297,7 +297,7 @@ def publish_carousel(state: dict, media_urls: list[str]):
         child_id = child.get("id")
         if not child_id:
             raise RuntimeError(f"No Instagram child container id returned: {child}")
-        wait_container(base, child_id, token)
+        wait_container(version, child_id, token)
         child_ids.append(child_id)
 
     parent = api_json(
@@ -314,7 +314,7 @@ def publish_carousel(state: dict, media_urls: list[str]):
     if not parent_id:
         raise RuntimeError(f"No Instagram carousel container id returned: {parent}")
 
-    wait_container(base, parent_id, token, attempts=40)
+    wait_container(version, parent_id, token, attempts=40)
 
     last_error = None
     for attempt in range(8):
