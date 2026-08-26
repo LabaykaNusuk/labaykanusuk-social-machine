@@ -1,0 +1,134 @@
+[
+  {
+    "id": "hook-jumua-expiation",
+    "type": "hook",
+    "approved": true,
+    "theme": ["universal", "rappel"],
+    "title_hook": "Sais-tu que d’une Jumu‘a à l’autre, des fautes peuvent être effacées ?",
+    "editorial_copy": "Le Prophète Muhammad ﷺ a enseigné que les cinq prières, d’une Jumu‘a à l’autre et d’un Ramadan à l’autre, sont une expiation de ce qui se trouve entre eux lorsque les grands péchés sont évités.",
+    "support_reference": "Sahih Muslim 233c",
+    "source_grade": "sahih",
+    "format_family": "hook_reaction"
+  },
+  {
+    "id": "hook-omra-expiation",
+    "type": "hook",
+    "approved": true,
+    "theme": ["omra", "kaaba", "makkah"],
+    "title_hook": "Sais-tu ce qu’il y a entre une Omra et la suivante ?",
+    "editorial_copy": "Le Prophète Muhammad ﷺ a enseigné qu’une Omra à l’autre est une expiation de ce qui a été commis entre les deux.",
+    "support_reference": "Sahih al-Bukhari 1773",
+    "source_grade": "sahih",
+    "format_family": "hook_reaction"
+  },
+  {
+    "id": "hook-hajj-mabrur-paradis",
+    "type": "hook",
+    "approved": true,
+    "theme": ["hajj", "kaaba", "makkah"],
+    "title_hook": "Le savais-tu ? Le Hajj accepté a une récompense immense.",
+    "editorial_copy": "Le Prophète Muhammad ﷺ a enseigné que le Hajj mabrur n’a d’autre récompense que le Paradis.",
+    "support_reference": "Sahih al-Bukhari 1773",
+    "source_grade": "sahih",
+    "format_family": "hook_reaction"
+  },
+  {
+    "id": "hook-hajj-retour-nouveau-ne",
+    "type": "hook",
+    "approved": true,
+    "theme": ["hajj", "kaaba", "makkah"],
+    "title_hook": "Sais-tu comment peut revenir celui qui accomplit correctement son Hajj ?",
+    "editorial_copy": "Celui qui accomplit le Hajj pour Allah, en s’écartant des rapports conjugaux et de la désobéissance pendant le pèlerinage, revient purifié comme au jour de sa naissance.",
+    "support_reference": "Sahih al-Bukhari 1521",
+    "source_grade": "sahih",
+    "format_family": "hook_reaction"
+  },
+  {
+    "id": "hook-hajj-arafah",
+    "type": "hook",
+    "approved": true,
+    "theme": ["hajj", "arafat"],
+    "title_hook": "Pourquoi ‘Arafat est-il si central dans le Hajj ?",
+    "editorial_copy": "Le Prophète Muhammad ﷺ a résumé l’importance de cette étape par une parole très courte : « Le Hajj, c’est ‘Arafah. »",
+    "support_reference": "Jami‘ at-Tirmidhi 889, classé sahih",
+    "source_grade": "sahih",
+    "format_family": "hook_reaction"
+  },
+  {
+    "id": "hook-jeune-arafah",
+    "type": "hook",
+    "approved": true,
+    "theme": ["arafat", "dhul-hijjah", "rappel"],
+    "title_hook": "Le savais-tu ? Le jeûne du jour de ‘Arafah possède une immense vertu.",
+    "editorial_copy": "Le Prophète Muhammad ﷺ a indiqué que le jeûne du jour de ‘Arafah expie les fautes de l’année précédente et de l’année suivante.",
+    "support_reference": "Sahih Muslim 1162",
+    "source_grade": "sahih",
+    "format_family": "hook_reaction"
+  },
+  {
+    "id": "hook-dhul-hijjah-dix-jours",
+    "type": "hook",
+    "approved": true,
+    "theme": ["dhul-hijjah", "hajj", "rappel"],
+    "title_hook": "Sais-tu pourquoi les dix premiers jours de Dhul Hijjah sont si précieux ?",
+    "editorial_copy": "Le Prophète Muhammad ﷺ a enseigné que les bonnes œuvres accomplies durant ces jours ont une valeur exceptionnelle auprès d’Allah.",
+    "support_reference": "Sahih al-Bukhari 969",
+    "source_grade": "sahih",
+    "format_family": "hook_reaction"
+  },
+  {
+    "id": "hook-omra-ramadan",
+    "type": "hook",
+    "approved": true,
+    "theme": ["omra", "ramadan", "makkah"],
+    "title_hook": "Le savais-tu ? Une Omra pendant Ramadan a une récompense particulière.",
+    "editorial_copy": "Le Prophète Muhammad ﷺ a enseigné qu’une Omra accomplie pendant Ramadan équivaut à un Hajj en récompense.",
+    "support_reference": "Sahih al-Bukhari 1782",
+    "source_grade": "sahih",
+    "format_family": "hook_reaction"
+  },
+  {
+    "id": "hook-medine-priere-mille",
+    "type": "hook",
+    "approved": true,
+    "theme": ["medine", "masjid-nabawi"],
+    "title_hook": "Sais-tu ce que vaut une prière dans la Mosquée du Prophète ﷺ ?",
+    "editorial_copy": "Une prière dans la mosquée du Prophète ﷺ à Médine est meilleure que mille prières dans les autres mosquées, à l’exception d’Al-Masjid Al-Haram.",
+    "support_reference": "Sahih al-Bukhari 1190",
+    "source_grade": "sahih",
+    "format_family": "hook_reaction"
+  },
+  {
+    "id": "hook-hajj-omra-pauvrete-fautes",
+    "type": "hook",
+    "approved": true,
+    "theme": ["hajj", "omra", "makkah"],
+    "title_hook": "Sais-tu ce qui est rapporté sur l’enchaînement du Hajj et de la Omra ?",
+    "editorial_copy": "Le Prophète Muhammad ﷺ a encouragé à faire suivre le Hajj et la Omra, en indiquant qu’ils repoussent la pauvreté et les fautes comme le soufflet débarrasse le métal de ses impuretés.",
+    "support_reference": "Jami‘ at-Tirmidhi 810, classé hasan",
+    "source_grade": "hasan",
+    "format_family": "hook_reaction"
+  },
+  {
+    "id": "hook-trois-mosquees",
+    "type": "hook",
+    "approved": true,
+    "theme": ["makkah", "medine", "masjid-nabawi", "kaaba"],
+    "title_hook": "Le savais-tu ? Trois mosquées occupent une place particulière pour le voyage cultuel.",
+    "editorial_copy": "Le Prophète Muhammad ﷺ a cité Al-Masjid Al-Haram, sa mosquée à Médine et Al-Masjid Al-Aqsa parmi les trois mosquées vers lesquelles on entreprend spécialement le voyage.",
+    "support_reference": "Sahih al-Bukhari 1189",
+    "source_grade": "sahih",
+    "format_family": "hook_reaction"
+  },
+  {
+    "id": "hook-hajj-mabrur-preparation",
+    "type": "hook",
+    "approved": true,
+    "theme": ["hajj", "rappel"],
+    "title_hook": "Un rappel qui donne envie de préparer son pèlerinage autrement.",
+    "editorial_copy": "Dans les textes authentiques, le Hajj mabrur est associé au Paradis. La préparation du pèlerinage ne concerne donc pas seulement le voyage, mais aussi l’intention, le comportement et l’adoration.",
+    "support_reference": "Sahih al-Bukhari 1773",
+    "source_grade": "sahih",
+    "format_family": "hook_reaction"
+  }
+]
