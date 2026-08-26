@@ -220,5 +220,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-26T08:12:04.663701+00:00"
+  },
+  {
+    "date": "2026-08-26",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "TOOL-PAR-OU-COMMENCER",
+    "content_type": "tool",
+    "photo_id": "MIQAT_PALMS",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17964425769165720",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/4fd057e3840e603257d8a80faf36a0a3a2ca1d17/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-26T10:19:47.715469+00:00"
   }
 ]
