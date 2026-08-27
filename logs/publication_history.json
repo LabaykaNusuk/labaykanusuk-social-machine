@@ -438,5 +438,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-27T09:29:59.297968+00:00"
+  },
+  {
+    "date": "2026-08-27",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "TOOL-ACCOMPAGNEMENT-HAJJ",
+    "content_type": "tool",
+    "photo_id": "ABRAJ_CLOCK",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18112694168050409",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e6fafe20df853f196505d7840d0e25bef6d7c98e/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-27T16:19:13.764171+00:00"
   }
 ]
