@@ -17,7 +17,11 @@ on:
         options: ["NO", "YES"]
 
   schedule:
-    - cron: "0 21 * * *"
+    # Évite l'heure pile, plus exposée aux retards GitHub Actions.
+    # Le second déclenchement est un secours ; l'anti-doublon bloque toute répétition.
+    - cron: "7 21 * * *"
+      timezone: "Europe/Paris"
+    - cron: "19 21 * * *"
       timezone: "Europe/Paris"
 
 permissions:
@@ -27,6 +31,7 @@ permissions:
 # publication history/media at the same moment.
 concurrency:
   group: labaykanusuk-instagram-production
+  queue: max
   cancel-in-progress: false
 
 jobs:
