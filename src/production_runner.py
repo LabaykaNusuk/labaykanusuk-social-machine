@@ -144,6 +144,70 @@ def choose_photo(item, hist, target_date: date, slot: int):
     return candidates[idx]
 
 
+
+def _stable_variant(options, seed: str):
+    """Choose a deterministic wording without adding randomness to production."""
+    options = [str(x).strip() for x in options if str(x).strip()]
+    if not options:
+        return ""
+    idx = int(hashlib.sha256(seed.encode("utf-8")).hexdigest()[:8], 16) % len(options)
+    return options[idx]
+
+
+def _legacy_hook_without_repetition(title: str, seed: str):
+    """Diversify old French hooks while preserving the underlying statement."""
+    title = (title or "Rappel du pèlerin").strip()
+    lower = title.lower()
+
+    if lower.startswith("sais-tu pourquoi "):
+        return "Pourquoi " + title[len("Sais-tu pourquoi "):]
+    if lower.startswith("sais-tu comment "):
+        return "Comment " + title[len("Sais-tu comment "):]
+    if lower.startswith("sais-tu ce que vaut "):
+        return "Que vaut " + title[len("Sais-tu ce que vaut "):]
+    if lower.startswith("sais-tu ce qu’il y a entre "):
+        tail = title[len("Sais-tu ce qu’il y a entre "):].rstrip(" ?")
+        return f"Entre {tail} : que faut-il retenir ?"
+    if lower.startswith("sais-tu ce qui est rapporté sur "):
+        tail = title[len("Sais-tu ce qui est rapporté sur "):].rstrip(" ?")
+        return f"Que disent les textes sur {tail} ?"
+    if lower.startswith("sais-tu que "):
+        clause = title[len("Sais-tu que "):].rstrip()
+        variants = [
+            title,
+            "À retenir : " + clause,
+            "Un rappel important : " + clause,
+            "Ce point mérite ton attention : " + clause,
+        ]
+        return _stable_variant(variants, seed)
+    if lower.startswith("le savais-tu ?"):
+        rest = title[len("Le savais-tu ?"):].strip()
+        variants = [
+            title,
+            "À connaître : " + rest,
+            "Un détail souvent méconnu : " + rest,
+            "À garder en tête : " + rest,
+        ]
+        return _stable_variant(variants, seed)
+    if lower.startswith("sais-tu "):
+        return "Connais-tu " + title[len("Sais-tu "):]
+
+    return title
+
+
+def story_title(item, slot_meta):
+    """Return varied, publication-safe French hooks for Stories only."""
+    original = item.get("title_hook", "Rappel du pèlerin")
+    date_key = str(slot_meta.get("_date", "stable"))
+    slot_key = str(slot_meta.get("_slot", "story"))
+    seed = f"{date_key}:{slot_key}:{item.get('id','')}"
+
+    variants = item.get("title_variants", [])
+    if isinstance(variants, list) and variants:
+        return _stable_variant(variants, seed)
+
+    return _legacy_hook_without_repetition(original, seed)
+
 def make_payload(item, slot_meta, photo):
     common = {
         "background": photo["file"],
@@ -186,7 +250,7 @@ def make_payload(item, slot_meta, photo):
         payload = {
             **common,
             "kicker": "RAPPEL DU PÈLERIN",
-            "title_before": item.get("title_hook", "Rappel du pèlerin"),
+            "title_before": story_title(item, slot_meta) if slot_meta.get("format") == "story" else item.get("title_hook", "Rappel du pèlerin"),
             "title_highlight": "",
             "copy": item.get("editorial_copy", ""),
             "quote": "",
@@ -319,7 +383,8 @@ def prepare(slot: int, state_path: Path, force=False):
 
     item = choose_item(pool, hist, target_date, prevent_days=90)
     photo = choose_photo(item, hist, target_date, slot)
-    template, payload, caption = make_payload(item, meta, photo)
+    render_meta = {**meta, "_slot": slot, "_date": target_date.isoformat()}
+    template, payload, caption = make_payload(item, render_meta, photo)
 
     OUTPUT.mkdir(exist_ok=True)
     payload_path = OUTPUT / f"production-slot-{slot:02d}.json"
