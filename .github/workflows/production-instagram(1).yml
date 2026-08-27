@@ -1,0 +1,230 @@
+name: LABAYKANUSUK Instagram Production
+
+on:
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Slot à tester/publier (1 à 8)"
+        required: true
+        default: "1"
+        type: choice
+        options: ["1", "2", "3", "4", "5", "6", "7", "8"]
+      mode:
+        description: "DRY = génère seulement, LIVE = publie réellement"
+        required: true
+        default: "DRY"
+        type: choice
+        options: ["DRY", "LIVE"]
+      force:
+        description: "YES autorise à rejouer un slot déjà publié aujourd’hui"
+        required: true
+        default: "NO"
+        type: choice
+        options: ["NO", "YES"]
+
+  schedule:
+    # Horaires principaux + secours 12 minutes après.
+    # Si le principal a déjà publié, l'historique anti-doublon fait sauter le secours.
+    - cron: "0 8 * * *"
+      timezone: "Europe/Paris"     # slot 1 principal
+    - cron: "12 8 * * *"
+      timezone: "Europe/Paris"     # slot 1 secours
+
+    - cron: "30 10 * * *"
+      timezone: "Europe/Paris"     # slot 2 principal
+    - cron: "42 10 * * *"
+      timezone: "Europe/Paris"     # slot 2 secours
+
+    - cron: "0 13 * * *"
+      timezone: "Europe/Paris"     # slot 3 principal
+    - cron: "12 13 * * *"
+      timezone: "Europe/Paris"     # slot 3 secours
+
+    - cron: "30 15 * * *"
+      timezone: "Europe/Paris"     # slot 4 principal
+    - cron: "42 15 * * *"
+      timezone: "Europe/Paris"     # slot 4 secours
+
+    - cron: "0 18 * * *"
+      timezone: "Europe/Paris"     # slot 5 principal
+    - cron: "12 18 * * *"
+      timezone: "Europe/Paris"     # slot 5 secours
+
+    - cron: "15 19 * * *"
+      timezone: "Europe/Paris"     # slot 8 principal - reel
+    - cron: "27 19 * * *"
+      timezone: "Europe/Paris"     # slot 8 secours
+
+    - cron: "30 20 * * *"
+      timezone: "Europe/Paris"     # slot 7 principal - feed
+    - cron: "42 20 * * *"
+      timezone: "Europe/Paris"     # slot 7 secours
+
+    - cron: "0 22 * * *"
+      timezone: "Europe/Paris"     # slot 6 principal
+    - cron: "12 22 * * *"
+      timezone: "Europe/Paris"     # slot 6 secours
+
+permissions:
+  contents: write
+
+concurrency:
+  group: labaykanusuk-instagram-production
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve slot and mode
+        id: runconfig
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SLOT="${{ inputs.slot }}"
+            MODE="${{ inputs.mode }}"
+            FORCE="${{ inputs.force }}"
+          else
+            MODE="LIVE"
+            FORCE="NO"
+            case "${{ github.event.schedule }}" in
+              "0 8 * * *"|"12 8 * * *") SLOT="1" ;;
+              "30 10 * * *"|"42 10 * * *") SLOT="2" ;;
+              "0 13 * * *"|"12 13 * * *") SLOT="3" ;;
+              "30 15 * * *"|"42 15 * * *") SLOT="4" ;;
+              "0 18 * * *"|"12 18 * * *") SLOT="5" ;;
+              "15 19 * * *"|"27 19 * * *") SLOT="8" ;;
+              "30 20 * * *"|"42 20 * * *") SLOT="7" ;;
+              "0 22 * * *"|"12 22 * * *") SLOT="6" ;;
+              *) echo "Unknown schedule"; exit 1 ;;
+            esac
+          fi
+
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "force=$FORCE" >> "$GITHUB_OUTPUT"
+          echo "Resolved: slot=$SLOT mode=$MODE force=$FORCE"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install renderer and Reel encoder
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+
+      - name: Prepare one publication
+        id: prepare
+        shell: bash
+        run: |
+          set -euo pipefail
+          FORCE_ARG=""
+          if [ "${{ steps.runconfig.outputs.force }}" = "YES" ]; then
+            FORCE_ARG="--force"
+          fi
+
+          python src/production_runner.py prepare \
+            --slot "${{ steps.runconfig.outputs.slot }}" \
+            --state /tmp/production-state.json \
+            $FORCE_ARG
+
+          SKIP=$(python - <<'PY'
+          import json
+          print(str(json.load(open('/tmp/production-state.json')).get('skip', False)).lower())
+          PY
+          )
+          echo "skip=$SKIP" >> "$GITHUB_OUTPUT"
+
+      - name: Stop safely when slot was already published
+        if: steps.prepare.outputs.skip == 'true'
+        run: echo "Ce slot est déjà publié aujourd'hui. Aucun doublon envoyé."
+
+      - name: Update the stable public media file
+        if: steps.prepare.outputs.skip != 'true'
+        id: media
+        shell: bash
+        run: |
+          set -euo pipefail
+          SLOT="${{ steps.runconfig.outputs.slot }}"
+          SRC=$(python - <<'PY'
+          import json
+          print(json.load(open('/tmp/production-state.json'))['output'])
+          PY
+          )
+          PUBLIC_FILENAME=$(python - <<'PY'
+          import json
+          print(json.load(open('/tmp/production-state.json'))['public_filename'])
+          PY
+          )
+          DEST="docs/media/$PUBLIC_FILENAME"
+
+          mkdir -p docs/media
+          cp "$SRC" "$DEST"
+
+          git config user.name "LABAYKANUSUK Social Machine"
+          git config user.email "actions@users.noreply.github.com"
+          git add "$DEST"
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Instagram slot $SLOT media"
+            git push origin HEAD:main
+          fi
+
+          MEDIA_COMMIT=$(git rev-parse HEAD)
+          URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${MEDIA_COMMIT}/${DEST}"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+          curl -L --fail --silent --show-error --max-time 30 "$URL" -o /tmp/public-media.jpg
+          test -s /tmp/public-media.jpg
+          echo "Public media ready: $URL"
+
+      - name: Dry run
+        if: steps.prepare.outputs.skip != 'true' && steps.runconfig.outputs.mode == 'DRY'
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+        run: |
+          python src/production_runner.py publish \
+            --state /tmp/production-state.json \
+            --url "${{ steps.media.outputs.url }}"
+
+      - name: Publish LIVE on Instagram
+        if: steps.prepare.outputs.skip != 'true' && steps.runconfig.outputs.mode == 'LIVE'
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+          IG_EXPECTED_USERNAME: labaykanusuk
+        run: |
+          python src/production_runner.py publish \
+            --state /tmp/production-state.json \
+            --url "${{ steps.media.outputs.url }}" \
+            --live
+
+      - name: Persist anti-duplicate history
+        if: steps.prepare.outputs.skip != 'true' && steps.runconfig.outputs.mode == 'LIVE'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "LABAYKANUSUK Social Machine"
+          git config user.email "actions@users.noreply.github.com"
+          git add logs/publication_history.json
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Record Instagram publication slot ${{ steps.runconfig.outputs.slot }}"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
