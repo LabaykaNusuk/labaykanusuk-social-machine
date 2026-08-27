@@ -402,5 +402,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-27T09:11:55.158994+00:00"
+  },
+  {
+    "date": "2026-08-27",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "hook-jumua-expiation",
+    "content_type": "hook",
+    "photo_id": "HARAM_EXTERIOR",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17979381312081331",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/be946f9a092d08e9dfd62281f14f9efcb58257a0/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-27T09:16:12.568902+00:00"
   }
 ]
