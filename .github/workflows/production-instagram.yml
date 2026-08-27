@@ -9,12 +9,14 @@ on:
         default: "1"
         type: choice
         options: ["1", "2", "3", "4", "5", "6", "7", "8"]
+
       mode:
         description: "DRY = génère seulement, LIVE = publie réellement"
         required: true
         default: "DRY"
         type: choice
         options: ["DRY", "LIVE"]
+
       force:
         description: "YES autorise à rejouer un slot déjà publié aujourd’hui"
         required: true
@@ -23,53 +25,57 @@ on:
         options: ["NO", "YES"]
 
   schedule:
+    # LABAYKANUSUK
     # Horaires principaux + secours 12 minutes après.
-    # Si le principal a déjà publié, l'historique anti-doublon fait sauter le secours.
-    - cron: "0 8 * * *"
-      timezone: "Europe/Paris"     # slot 1 principal
-    - cron: "12 8 * * *"
-      timezone: "Europe/Paris"     # slot 1 secours
+    # Les heures pile sont volontairement évitées.
+    # Si le principal a publié, l'anti-doublon fait sauter le secours.
+
+    - cron: "7 8 * * *"
+      timezone: "Europe/Paris"     # slot 1 principal - 08h07
+    - cron: "19 8 * * *"
+      timezone: "Europe/Paris"     # slot 1 secours - 08h19
 
     - cron: "30 10 * * *"
-      timezone: "Europe/Paris"     # slot 2 principal
+      timezone: "Europe/Paris"     # slot 2 principal - 10h30
     - cron: "42 10 * * *"
-      timezone: "Europe/Paris"     # slot 2 secours
+      timezone: "Europe/Paris"     # slot 2 secours - 10h42
 
-    - cron: "0 13 * * *"
-      timezone: "Europe/Paris"     # slot 3 principal
-    - cron: "12 13 * * *"
-      timezone: "Europe/Paris"     # slot 3 secours
+    - cron: "7 13 * * *"
+      timezone: "Europe/Paris"     # slot 3 principal - 13h07
+    - cron: "19 13 * * *"
+      timezone: "Europe/Paris"     # slot 3 secours - 13h19
 
     - cron: "30 15 * * *"
-      timezone: "Europe/Paris"     # slot 4 principal
+      timezone: "Europe/Paris"     # slot 4 principal - 15h30
     - cron: "42 15 * * *"
-      timezone: "Europe/Paris"     # slot 4 secours
+      timezone: "Europe/Paris"     # slot 4 secours - 15h42
 
-    - cron: "0 18 * * *"
-      timezone: "Europe/Paris"     # slot 5 principal
-    - cron: "12 18 * * *"
-      timezone: "Europe/Paris"     # slot 5 secours
+    - cron: "7 18 * * *"
+      timezone: "Europe/Paris"     # slot 5 principal - 18h07
+    - cron: "19 18 * * *"
+      timezone: "Europe/Paris"     # slot 5 secours - 18h19
 
     - cron: "15 19 * * *"
-      timezone: "Europe/Paris"     # slot 8 principal - reel
+      timezone: "Europe/Paris"     # slot 8 principal - Reel - 19h15
     - cron: "27 19 * * *"
-      timezone: "Europe/Paris"     # slot 8 secours
+      timezone: "Europe/Paris"     # slot 8 secours - 19h27
 
     - cron: "30 20 * * *"
-      timezone: "Europe/Paris"     # slot 7 principal - feed
+      timezone: "Europe/Paris"     # slot 7 principal - Feed - 20h30
     - cron: "42 20 * * *"
-      timezone: "Europe/Paris"     # slot 7 secours
+      timezone: "Europe/Paris"     # slot 7 secours - 20h42
 
-    - cron: "0 22 * * *"
-      timezone: "Europe/Paris"     # slot 6 principal
-    - cron: "12 22 * * *"
-      timezone: "Europe/Paris"     # slot 6 secours
+    - cron: "7 22 * * *"
+      timezone: "Europe/Paris"     # slot 6 principal - 22h07
+    - cron: "19 22 * * *"
+      timezone: "Europe/Paris"     # slot 6 secours - 22h19
 
 permissions:
   contents: write
 
 concurrency:
   group: labaykanusuk-instagram-production
+  queue: max
   cancel-in-progress: false
 
 jobs:
@@ -95,22 +101,27 @@ jobs:
           else
             MODE="LIVE"
             FORCE="NO"
+
             case "${{ github.event.schedule }}" in
-              "0 8 * * *"|"12 8 * * *") SLOT="1" ;;
+              "7 8 * * *"|"19 8 * * *") SLOT="1" ;;
               "30 10 * * *"|"42 10 * * *") SLOT="2" ;;
-              "0 13 * * *"|"12 13 * * *") SLOT="3" ;;
+              "7 13 * * *"|"19 13 * * *") SLOT="3" ;;
               "30 15 * * *"|"42 15 * * *") SLOT="4" ;;
-              "0 18 * * *"|"12 18 * * *") SLOT="5" ;;
+              "7 18 * * *"|"19 18 * * *") SLOT="5" ;;
               "15 19 * * *"|"27 19 * * *") SLOT="8" ;;
               "30 20 * * *"|"42 20 * * *") SLOT="7" ;;
-              "0 22 * * *"|"12 22 * * *") SLOT="6" ;;
-              *) echo "Unknown schedule"; exit 1 ;;
+              "7 22 * * *"|"19 22 * * *") SLOT="6" ;;
+              *)
+                echo "Unknown schedule: ${{ github.event.schedule }}"
+                exit 1
+                ;;
             esac
           fi
 
           echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
           echo "force=$FORCE" >> "$GITHUB_OUTPUT"
+
           echo "Resolved: slot=$SLOT mode=$MODE force=$FORCE"
 
       - name: Setup Python
@@ -120,8 +131,11 @@ jobs:
 
       - name: Install renderer and Reel encoder
         run: |
+          set -euo pipefail
+
           pip install -r requirements.txt
           playwright install --with-deps chromium
+
           if ! command -v ffmpeg >/dev/null 2>&1; then
             sudo apt-get update
             sudo apt-get install -y ffmpeg
@@ -132,7 +146,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+
           FORCE_ARG=""
+
           if [ "${{ steps.runconfig.outputs.force }}" = "YES" ]; then
             FORCE_ARG="--force"
           fi
@@ -144,14 +160,20 @@ jobs:
 
           SKIP=$(python - <<'PY'
           import json
-          print(str(json.load(open('/tmp/production-state.json')).get('skip', False)).lower())
+
+          with open("/tmp/production-state.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          print(str(data.get("skip", False)).lower())
           PY
           )
+
           echo "skip=$SKIP" >> "$GITHUB_OUTPUT"
 
       - name: Stop safely when slot was already published
         if: steps.prepare.outputs.skip == 'true'
-        run: echo "Ce slot est déjà publié aujourd'hui. Aucun doublon envoyé."
+        run: |
+          echo "Ce slot est déjà publié aujourd'hui. Aucun doublon envoyé."
 
       - name: Update the stable public media file
         if: steps.prepare.outputs.skip != 'true'
@@ -159,17 +181,29 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+
           SLOT="${{ steps.runconfig.outputs.slot }}"
+
           SRC=$(python - <<'PY'
           import json
-          print(json.load(open('/tmp/production-state.json'))['output'])
+
+          with open("/tmp/production-state.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          print(data["output"])
           PY
           )
+
           PUBLIC_FILENAME=$(python - <<'PY'
           import json
-          print(json.load(open('/tmp/production-state.json'))['public_filename'])
+
+          with open("/tmp/production-state.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          print(data["public_filename"])
           PY
           )
+
           DEST="docs/media/$PUBLIC_FILENAME"
 
           mkdir -p docs/media
@@ -177,6 +211,7 @@ jobs:
 
           git config user.name "LABAYKANUSUK Social Machine"
           git config user.email "actions@users.noreply.github.com"
+
           git add "$DEST"
 
           if ! git diff --cached --quiet; then
@@ -185,11 +220,22 @@ jobs:
           fi
 
           MEDIA_COMMIT=$(git rev-parse HEAD)
+
           URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${MEDIA_COMMIT}/${DEST}"
+
           echo "url=$URL" >> "$GITHUB_OUTPUT"
 
-          curl -L --fail --silent --show-error --max-time 30 "$URL" -o /tmp/public-media.jpg
-          test -s /tmp/public-media.jpg
+          curl \
+            -L \
+            --fail \
+            --silent \
+            --show-error \
+            --max-time 30 \
+            "$URL" \
+            -o /tmp/public-media
+
+          test -s /tmp/public-media
+
           echo "Public media ready: $URL"
 
       - name: Dry run
@@ -198,6 +244,8 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
         run: |
+          set -euo pipefail
+
           python src/production_runner.py publish \
             --state /tmp/production-state.json \
             --url "${{ steps.media.outputs.url }}"
@@ -209,6 +257,8 @@ jobs:
           IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
           IG_EXPECTED_USERNAME: labaykanusuk
         run: |
+          set -euo pipefail
+
           python src/production_runner.py publish \
             --state /tmp/production-state.json \
             --url "${{ steps.media.outputs.url }}" \
@@ -219,12 +269,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+
           git config user.name "LABAYKANUSUK Social Machine"
           git config user.email "actions@users.noreply.github.com"
+
           git add logs/publication_history.json
 
           if ! git diff --cached --quiet; then
-            git commit -m "Record Instagram publication slot ${{ steps.runconfig.outputs.slot }}"
+            git commit \
+              -m "Record Instagram publication slot ${{ steps.runconfig.outputs.slot }}"
+
             git pull --rebase origin main
             git push origin HEAD:main
           fi
