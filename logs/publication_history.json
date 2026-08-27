@@ -384,5 +384,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-27T09:08:08.508477+00:00"
+  },
+  {
+    "date": "2026-08-27",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "hook-jeune-arafah",
+    "content_type": "hook",
+    "photo_id": "ARAFAT_MUZDALIFAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18034869926827414",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/d193fd2163fd9788c976a4477c4710c1d1cf42cf/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-27T09:11:55.158994+00:00"
   }
 ]
