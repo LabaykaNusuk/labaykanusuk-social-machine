@@ -23,29 +23,55 @@ on:
         options: ["NO", "YES"]
 
   schedule:
-    # Heures locales France. GitHub gère automatiquement heure d'été/hiver via Europe/Paris.
-    - cron: "0 8 * * *"
-      timezone: "Europe/Paris"     # slot 1 - story religion
+    # Horaires Europe/Paris volontairement décalés des heures pile.
+    # Chaque créneau a un secours +12 min. L'historique anti-doublon
+    # empêche le secours de republier si le principal a réussi.
+    - cron: "7 8 * * *"
+      timezone: "Europe/Paris"     # slot 1 principal - story religion
+    - cron: "19 8 * * *"
+      timezone: "Europe/Paris"     # slot 1 secours
+
     - cron: "30 10 * * *"
-      timezone: "Europe/Paris"     # slot 2 - story outil
-    - cron: "0 13 * * *"
-      timezone: "Europe/Paris"     # slot 3 - story religion
+      timezone: "Europe/Paris"     # slot 2 principal - story outil
+    - cron: "42 10 * * *"
+      timezone: "Europe/Paris"     # slot 2 secours
+
+    - cron: "7 13 * * *"
+      timezone: "Europe/Paris"     # slot 3 principal - story religion
+    - cron: "19 13 * * *"
+      timezone: "Europe/Paris"     # slot 3 secours
+
     - cron: "30 15 * * *"
-      timezone: "Europe/Paris"     # slot 4 - story religion
-    - cron: "0 18 * * *"
-      timezone: "Europe/Paris"     # slot 5 - story outil
+      timezone: "Europe/Paris"     # slot 4 principal - story religion
+    - cron: "42 15 * * *"
+      timezone: "Europe/Paris"     # slot 4 secours
+
+    - cron: "7 18 * * *"
+      timezone: "Europe/Paris"     # slot 5 principal - story outil
+    - cron: "19 18 * * *"
+      timezone: "Europe/Paris"     # slot 5 secours
+
     - cron: "15 19 * * *"
-      timezone: "Europe/Paris"     # slot 8 - reel
+      timezone: "Europe/Paris"     # slot 8 principal - reel
+    - cron: "27 19 * * *"
+      timezone: "Europe/Paris"     # slot 8 secours
+
     - cron: "30 20 * * *"
-      timezone: "Europe/Paris"     # slot 7 - feed
-    - cron: "0 22 * * *"
-      timezone: "Europe/Paris"     # slot 6 - story religion
+      timezone: "Europe/Paris"     # slot 7 principal - feed
+    - cron: "42 20 * * *"
+      timezone: "Europe/Paris"     # slot 7 secours
+
+    - cron: "7 22 * * *"
+      timezone: "Europe/Paris"     # slot 6 principal - story religion
+    - cron: "19 22 * * *"
+      timezone: "Europe/Paris"     # slot 6 secours
 
 permissions:
   contents: write
 
 concurrency:
   group: labaykanusuk-instagram-production
+  queue: max
   cancel-in-progress: false
 
 jobs:
@@ -72,14 +98,14 @@ jobs:
             MODE="LIVE"
             FORCE="NO"
             case "${{ github.event.schedule }}" in
-              "0 8 * * *") SLOT="1" ;;
-              "30 10 * * *") SLOT="2" ;;
-              "0 13 * * *") SLOT="3" ;;
-              "30 15 * * *") SLOT="4" ;;
-              "0 18 * * *") SLOT="5" ;;
-              "15 19 * * *") SLOT="8" ;;
-              "30 20 * * *") SLOT="7" ;;
-              "0 22 * * *") SLOT="6" ;;
+              "7 8 * * *"|"19 8 * * *") SLOT="1" ;;
+              "30 10 * * *"|"42 10 * * *") SLOT="2" ;;
+              "7 13 * * *"|"19 13 * * *") SLOT="3" ;;
+              "30 15 * * *"|"42 15 * * *") SLOT="4" ;;
+              "7 18 * * *"|"19 18 * * *") SLOT="5" ;;
+              "15 19 * * *"|"27 19 * * *") SLOT="8" ;;
+              "30 20 * * *"|"42 20 * * *") SLOT="7" ;;
+              "7 22 * * *"|"19 22 * * *") SLOT="6" ;;
               *) echo "Unknown schedule"; exit 1 ;;
             esac
           fi
