@@ -456,5 +456,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-27T16:19:13.764171+00:00"
+  },
+  {
+    "date": "2026-08-27",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "hook-omra-expiation",
+    "content_type": "hook",
+    "photo_id": "ZAMZAM_CROWD",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18137915521526291",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/95f48c368ac9500b1ce9a3a3e8d701dde5f68abb/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-27T16:27:35.933290+00:00"
   }
 ]
