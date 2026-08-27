@@ -420,5 +420,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-27T09:16:12.568902+00:00"
+  },
+  {
+    "date": "2026-08-27",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "hook-medine-priere-mille",
+    "content_type": "hook",
+    "photo_id": "MIQAT_PALMS",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17972444016004952",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/d646e25841239f5a429415c89c57f76b83bbc64a/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-27T09:29:59.297968+00:00"
   }
 ]
