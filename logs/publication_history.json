@@ -606,5 +606,26 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-28T17:18:16.722107+00:00"
+  },
+  {
+    "date": "2026-08-28",
+    "slot_order": 7,
+    "slot_format": "feed",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "growth-t-003",
+    "content_type": "tool",
+    "content_fingerprint": "ae3451081ed69ac0301fb9cf51d80ff3c3fb7a5da6c20356a16f1b9e05a96be9",
+    "content_cooldown_days": 30,
+    "photo_id": "HARAM_EXTERIOR",
+    "photo_cooldown_days": 7,
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "17888866569673835",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/d363de613fc4272dd4bf4c8e7864c00e1810cf57/docs/media/slot-07.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-28T18:32:03.401990+00:00"
   }
 ]
