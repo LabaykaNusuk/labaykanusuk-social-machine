@@ -6,7 +6,9 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import subprocess
+import unicodedata
 import time
 import urllib.parse
 import urllib.request
@@ -23,6 +25,14 @@ EXPECTED_IG_USERNAME = os.environ.get("IG_EXPECTED_USERNAME", "labaykanusuk")
 AUDIO_ROOT = ROOT / "assets" / "audio" / "approved"
 AUDIO_PRIORITY = ("coran", "doua", "adhan", "anachid_sans_musique")
 AUDIO_EXTENSIONS = {".mp3", ".m4a", ".aac", ".wav", ".ogg"}
+
+# Anti-duplicate V2
+# Exact/semantic content must not be reused inside this window.
+CONTENT_COOLDOWN_DAYS = int(os.environ.get("LBK_CONTENT_COOLDOWN_DAYS", "30"))
+# Photos are visual support, so they use a shorter preference window. If every
+# suitable photo is inside the window, the least-recently-used image is chosen
+# rather than stopping a valid publication. Same-day image reuse is still avoided.
+PHOTO_COOLDOWN_DAYS = int(os.environ.get("LBK_PHOTO_COOLDOWN_DAYS", "7"))
 
 SLOTS = {
     1: {"format": "story", "category": "religion"},
@@ -70,46 +80,141 @@ def published_entries(hist):
     return [h for h in hist if h.get("status", "published") == "published"]
 
 
-def item_last_used(item_id: str, hist):
+def _normalise_text(value) -> str:
+    text = unicodedata.normalize("NFKC", str(value or "")).casefold()
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def content_fingerprint(item: dict) -> str:
+    """Stable semantic fingerprint used to catch clones with different IDs/titles."""
+    item_type = _normalise_text(item.get("type"))
+
+    if item_type == "tool":
+        parts = [
+            item_type,
+            item.get("name", ""),
+            " | ".join(item.get("benefits", []) or []),
+            item.get("url", ""),
+        ]
+    elif item_type == "quran":
+        parts = [
+            item_type,
+            item.get("reference", ""),
+            item.get("arabic", ""),
+            item.get("french", ""),
+            item.get("translation", ""),
+        ]
+    else:
+        # Deliberately do not depend only on title_hook: two differently worded
+        # hooks that teach the same sourced fact should still count as one content.
+        parts = [
+            item_type,
+            item.get("editorial_copy", ""),
+            item.get("support_reference", ""),
+            item.get("source_grade", ""),
+        ]
+
+    canonical = "\n".join(_normalise_text(x) for x in parts)
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
+def _catalog_by_id(extra_pool=None):
+    religion, tools = approved_items()
+    items = [*religion, *tools, *(extra_pool or [])]
+    return {
+        str(item.get("id")): item
+        for item in items
+        if item.get("id") is not None
+    }
+
+
+def _history_fingerprint(entry: dict, catalog: dict) -> str | None:
+    stored = entry.get("content_fingerprint")
+    if stored:
+        return str(stored)
+
+    content_id = str(entry.get("content_id", ""))
+    item = catalog.get(content_id)
+    if item:
+        return content_fingerprint(item)
+    return None
+
+
+def item_last_used(item: dict, hist, catalog=None):
+    """Last publication date matching either ID or semantic fingerprint."""
+    catalog = catalog or _catalog_by_id([item])
+    item_id = str(item.get("id", ""))
+    fingerprint = content_fingerprint(item)
     dates = []
+
     for h in published_entries(hist):
-        if h.get("content_id") == item_id:
-            try:
-                dates.append(date.fromisoformat(h["date"]))
-            except Exception:
-                pass
+        same_id = str(h.get("content_id", "")) == item_id
+        same_fingerprint = _history_fingerprint(h, catalog) == fingerprint
+        if not (same_id or same_fingerprint):
+            continue
+        try:
+            dates.append(date.fromisoformat(h["date"]))
+        except Exception:
+            pass
+
     return max(dates) if dates else None
 
 
-def choose_item(pool, hist, target_date: date, prevent_days=90):
-    if not pool:
-        raise RuntimeError("No approved content available for this category")
+class NoFreshContent(RuntimeError):
+    pass
 
-    used_today = {
-        h.get("content_id") for h in published_entries(hist)
-        if h.get("date") == target_date.isoformat()
-    }
-    candidates = [x for x in pool if x.get("id") not in used_today]
-    if not candidates:
-        candidates = pool[:]
+
+def choose_item(pool, hist, target_date: date, prevent_days=CONTENT_COOLDOWN_DAYS):
+    if not pool:
+        raise NoFreshContent("No approved content available for this category")
+
+    catalog = _catalog_by_id(pool)
+
+    # Remove semantic duplicates already present inside the content bank itself.
+    unique = []
+    seen_fingerprints = set()
+    for item in pool:
+        fp = content_fingerprint(item)
+        if fp in seen_fingerprints:
+            continue
+        seen_fingerprints.add(fp)
+        unique.append(item)
 
     cutoff = target_date - timedelta(days=prevent_days)
     fresh = []
-    for item in candidates:
-        last = item_last_used(item["id"], hist)
-        if last is None or last < cutoff:
-            fresh.append(item)
+    blocked = []
 
-    if fresh:
-        candidates = fresh
+    for item in unique:
+        last = item_last_used(item, hist, catalog=catalog)
+        if last is None or last <= cutoff:
+            fresh.append((last or date.min, item))
+        else:
+            blocked.append((last, item))
 
-    # When the current validated library is smaller than the requested anti-repeat window,
-    # choose the least recently used item instead of stopping the whole machine.
-    candidates.sort(key=lambda x: (
-        item_last_used(x["id"], hist) or date.min,
-        x["id"],
-    ))
-    return candidates[0]
+    if not fresh:
+        blocked.sort(key=lambda pair: (pair[0], str(pair[1].get("id", ""))))
+        oldest = blocked[0][0].isoformat() if blocked else "unknown"
+        raise NoFreshContent(
+            f"No fresh approved content: {len(unique)} unique items are inside "
+            f"the {prevent_days}-day cooldown (oldest recent use: {oldest})."
+        )
+
+    # Oldest/never-used first gives deterministic rotation without random repeats.
+    fresh.sort(key=lambda pair: (pair[0], str(pair[1].get("id", ""))))
+    return fresh[0][1]
+
+
+def _photo_last_used(photo_id: str, hist):
+    dates = []
+    for h in published_entries(hist):
+        if h.get("photo_id") != photo_id:
+            continue
+        try:
+            dates.append(date.fromisoformat(h["date"]))
+        except Exception:
+            pass
+    return max(dates) if dates else None
 
 
 def choose_photo(item, hist, target_date: date, slot: int):
@@ -131,82 +236,42 @@ def choose_photo(item, hist, target_date: date, slot: int):
     if not candidates:
         candidates = [p for p in photos if "universal" in p.get("tags", [])] or photos
 
+    # Never reuse a photo on the same day when another approved option exists.
     used_today = {
         h.get("photo_id") for h in published_entries(hist)
         if h.get("date") == target_date.isoformat() and h.get("photo_id")
     }
-    unused = [p for p in candidates if p.get("id") not in used_today]
-    if unused:
-        candidates = unused
+    not_today = [p for p in candidates if p.get("id") not in used_today]
+    if not_today:
+        candidates = not_today
+
+    cutoff = target_date - timedelta(days=PHOTO_COOLDOWN_DAYS)
+    visually_fresh = [
+        p for p in candidates
+        if (_photo_last_used(p.get("id"), hist) is None
+            or _photo_last_used(p.get("id"), hist) <= cutoff)
+    ]
+    if visually_fresh:
+        candidates = visually_fresh
+
+    # If the photo bank is too small, keep the content publication alive and
+    # choose the least-recently-used suitable photo. Content itself remains strict.
+    candidates.sort(key=lambda p: (
+        _photo_last_used(p.get("id"), hist) or date.min,
+        p.get("id", ""),
+    ))
+
+    least_recent = candidates[0]
+    same_age = [
+        p for p in candidates
+        if (_photo_last_used(p.get("id"), hist) or date.min)
+        == (_photo_last_used(least_recent.get("id"), hist) or date.min)
+    ]
 
     seed = f"{target_date.isoformat()}:{slot}:{item['id']}".encode("utf-8")
-    idx = int(hashlib.sha256(seed).hexdigest()[:8], 16) % len(candidates)
-    return candidates[idx]
+    idx = int(hashlib.sha256(seed).hexdigest()[:8], 16) % len(same_age)
+    return same_age[idx]
 
-
-
-def _stable_variant(options, seed: str):
-    """Choose a deterministic wording without adding randomness to production."""
-    options = [str(x).strip() for x in options if str(x).strip()]
-    if not options:
-        return ""
-    idx = int(hashlib.sha256(seed.encode("utf-8")).hexdigest()[:8], 16) % len(options)
-    return options[idx]
-
-
-def _legacy_hook_without_repetition(title: str, seed: str):
-    """Diversify old French hooks while preserving the underlying statement."""
-    title = (title or "Rappel du pèlerin").strip()
-    lower = title.lower()
-
-    if lower.startswith("sais-tu pourquoi "):
-        return "Pourquoi " + title[len("Sais-tu pourquoi "):]
-    if lower.startswith("sais-tu comment "):
-        return "Comment " + title[len("Sais-tu comment "):]
-    if lower.startswith("sais-tu ce que vaut "):
-        return "Que vaut " + title[len("Sais-tu ce que vaut "):]
-    if lower.startswith("sais-tu ce qu’il y a entre "):
-        tail = title[len("Sais-tu ce qu’il y a entre "):].rstrip(" ?")
-        return f"Entre {tail} : que faut-il retenir ?"
-    if lower.startswith("sais-tu ce qui est rapporté sur "):
-        tail = title[len("Sais-tu ce qui est rapporté sur "):].rstrip(" ?")
-        return f"Que disent les textes sur {tail} ?"
-    if lower.startswith("sais-tu que "):
-        clause = title[len("Sais-tu que "):].rstrip()
-        variants = [
-            title,
-            "À retenir : " + clause,
-            "Un rappel important : " + clause,
-            "Ce point mérite ton attention : " + clause,
-        ]
-        return _stable_variant(variants, seed)
-    if lower.startswith("le savais-tu ?"):
-        rest = title[len("Le savais-tu ?"):].strip()
-        variants = [
-            title,
-            "À connaître : " + rest,
-            "Un détail souvent méconnu : " + rest,
-            "À garder en tête : " + rest,
-        ]
-        return _stable_variant(variants, seed)
-    if lower.startswith("sais-tu "):
-        return "Connais-tu " + title[len("Sais-tu "):]
-
-    return title
-
-
-def story_title(item, slot_meta):
-    """Return varied, publication-safe French hooks for Stories only."""
-    original = item.get("title_hook", "Rappel du pèlerin")
-    date_key = str(slot_meta.get("_date", "stable"))
-    slot_key = str(slot_meta.get("_slot", "story"))
-    seed = f"{date_key}:{slot_key}:{item.get('id','')}"
-
-    variants = item.get("title_variants", [])
-    if isinstance(variants, list) and variants:
-        return _stable_variant(variants, seed)
-
-    return _legacy_hook_without_repetition(original, seed)
 
 def make_payload(item, slot_meta, photo):
     common = {
@@ -250,7 +315,7 @@ def make_payload(item, slot_meta, photo):
         payload = {
             **common,
             "kicker": "RAPPEL DU PÈLERIN",
-            "title_before": story_title(item, slot_meta) if slot_meta.get("format") == "story" else item.get("title_hook", "Rappel du pèlerin"),
+            "title_before": item.get("title_hook", "Rappel du pèlerin"),
             "title_highlight": "",
             "copy": item.get("editorial_copy", ""),
             "quote": "",
@@ -381,10 +446,23 @@ def prepare(slot: int, state_path: Path, force=False):
         else:
             pool = tools
 
-    item = choose_item(pool, hist, target_date, prevent_days=90)
+    try:
+        item = choose_item(pool, hist, target_date, prevent_days=CONTENT_COOLDOWN_DAYS)
+    except NoFreshContent as exc:
+        state = {
+            "skip": True,
+            "reason": "content_cooldown_exhausted",
+            "date": target_date.isoformat(),
+            "slot": slot,
+            "cooldown_days": CONTENT_COOLDOWN_DAYS,
+            "detail": str(exc),
+        }
+        save_json(state_path, state)
+        print(json.dumps(state, ensure_ascii=False, indent=2))
+        return
+
     photo = choose_photo(item, hist, target_date, slot)
-    render_meta = {**meta, "_slot": slot, "_date": target_date.isoformat()}
-    template, payload, caption = make_payload(item, render_meta, photo)
+    template, payload, caption = make_payload(item, meta, photo)
 
     OUTPUT.mkdir(exist_ok=True)
     payload_path = OUTPUT / f"production-slot-{slot:02d}.json"
@@ -413,7 +491,10 @@ def prepare(slot: int, state_path: Path, force=False):
         "kind": "STORY" if meta["format"] == "story" else ("REEL" if meta["format"] == "reel" else "IMAGE"),
         "content_id": item["id"],
         "content_type": item["type"],
+        "content_fingerprint": content_fingerprint(item),
+        "content_cooldown_days": CONTENT_COOLDOWN_DAYS,
         "photo_id": photo["id"],
+        "photo_cooldown_days": PHOTO_COOLDOWN_DAYS,
         "template": template,
         "output": final_output,
         "public_filename": public_filename,
@@ -536,7 +617,10 @@ def record_success(state, media_url: str, published):
         "slot_category": state["slot_category"],
         "content_id": state["content_id"],
         "content_type": state["content_type"],
+        "content_fingerprint": state.get("content_fingerprint"),
+        "content_cooldown_days": state.get("content_cooldown_days", CONTENT_COOLDOWN_DAYS),
         "photo_id": state.get("photo_id"),
+        "photo_cooldown_days": state.get("photo_cooldown_days", PHOTO_COOLDOWN_DAYS),
         "kind": state["kind"],
         "status": "published",
         "instagram_media_id": published["media_id"],
