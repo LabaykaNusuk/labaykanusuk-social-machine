@@ -564,5 +564,26 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-28T13:32:19.287657+00:00"
+  },
+  {
+    "date": "2026-08-28",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "growth-t-001",
+    "content_type": "tool",
+    "content_fingerprint": "3dbaae78fc269022a77a46faf3500c9c0a1b1b85aeade536c53d7a6fb5185e0d",
+    "content_cooldown_days": 30,
+    "photo_id": "IHRAM_PREPARATION",
+    "photo_cooldown_days": 7,
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17859353337695260",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/9c9934e490ca3a0888ce2fc3e2ee39d9f465c2c4/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-28T15:15:48.719899+00:00"
   }
 ]
