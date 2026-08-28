@@ -22,40 +22,10 @@ on:
         type: choice
         options: ["NO", "YES"]
 
-  # GitHub reste un secours. L'horloge principale sera Cloudflare.
-  schedule:
-    - cron: "7 8 * * *"
-      timezone: "Europe/Paris"
-    - cron: "19 8 * * *"
-      timezone: "Europe/Paris"
-    - cron: "30 10 * * *"
-      timezone: "Europe/Paris"
-    - cron: "42 10 * * *"
-      timezone: "Europe/Paris"
-    - cron: "7 13 * * *"
-      timezone: "Europe/Paris"
-    - cron: "19 13 * * *"
-      timezone: "Europe/Paris"
-    - cron: "30 15 * * *"
-      timezone: "Europe/Paris"
-    - cron: "42 15 * * *"
-      timezone: "Europe/Paris"
-    - cron: "7 18 * * *"
-      timezone: "Europe/Paris"
-    - cron: "19 18 * * *"
-      timezone: "Europe/Paris"
-    - cron: "15 19 * * *"
-      timezone: "Europe/Paris"
-    - cron: "27 19 * * *"
-      timezone: "Europe/Paris"
-    - cron: "30 20 * * *"
-      timezone: "Europe/Paris"
-    - cron: "42 20 * * *"
-      timezone: "Europe/Paris"
-    - cron: "7 22 * * *"
-      timezone: "Europe/Paris"
-    - cron: "19 22 * * *"
-      timezone: "Europe/Paris"
+# IMPORTANT:
+# Plus de cron GitHub ici. Cloudflare est désormais l'horloge unique.
+# Il déclenche déjà le principal + le secours 12 minutes après.
+# Cela évite les anciens runs GitHub qui arrivaient plusieurs heures en retard.
 
 permissions:
   contents: write
@@ -89,25 +59,10 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            SLOT="${{ inputs.slot }}"
-            MODE="${{ inputs.mode }}"
-            FORCE="${{ inputs.force }}"
-          else
-            MODE="LIVE"
-            FORCE="NO"
-            case "${{ github.event.schedule }}" in
-              "7 8 * * *"|"19 8 * * *") SLOT="1" ;;
-              "30 10 * * *"|"42 10 * * *") SLOT="2" ;;
-              "7 13 * * *"|"19 13 * * *") SLOT="3" ;;
-              "30 15 * * *"|"42 15 * * *") SLOT="4" ;;
-              "7 18 * * *"|"19 18 * * *") SLOT="5" ;;
-              "15 19 * * *"|"27 19 * * *") SLOT="8" ;;
-              "30 20 * * *"|"42 20 * * *") SLOT="7" ;;
-              "7 22 * * *"|"19 22 * * *") SLOT="6" ;;
-              *) echo "Unknown schedule: ${{ github.event.schedule }}"; exit 1 ;;
-            esac
-          fi
+          SLOT="${{ inputs.slot }}"
+          MODE="${{ inputs.mode }}"
+          FORCE="${{ inputs.force }}"
+
           echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
           echo "force=$FORCE" >> "$GITHUB_OUTPUT"
@@ -137,10 +92,12 @@ jobs:
           if [ "${{ steps.runconfig.outputs.force }}" = "YES" ]; then
             FORCE_ARG="--force"
           fi
+
           python src/production_runner.py prepare \
             --slot "${{ steps.runconfig.outputs.slot }}" \
             --state /tmp/production-state.json \
             $FORCE_ARG
+
           SKIP=$(python - <<'PY'
           import json
           with open('/tmp/production-state.json', 'r', encoding='utf-8') as f:
@@ -150,9 +107,11 @@ jobs:
           )
           echo "skip=$SKIP" >> "$GITHUB_OUTPUT"
 
-      - name: Stop safely when slot was already published
+      - name: Stop safely when publication is skipped
         if: steps.prepare.outputs.skip == 'true'
-        run: echo "Ce slot est déjà publié aujourd'hui. Aucun doublon envoyé."
+        run: |
+          cat /tmp/production-state.json
+          echo "Publication ignorée proprement : slot déjà publié ou banque fraîche épuisée."
 
       - name: Update the stable public media file
         if: steps.prepare.outputs.skip != 'true'
@@ -161,6 +120,7 @@ jobs:
         run: |
           set -euo pipefail
           SLOT="${{ steps.runconfig.outputs.slot }}"
+
           SRC=$(python - <<'PY'
           import json
           with open('/tmp/production-state.json', 'r', encoding='utf-8') as f:
@@ -168,6 +128,7 @@ jobs:
           print(data['output'])
           PY
           )
+
           PUBLIC_FILENAME=$(python - <<'PY'
           import json
           with open('/tmp/production-state.json', 'r', encoding='utf-8') as f:
@@ -175,21 +136,27 @@ jobs:
           print(data['public_filename'])
           PY
           )
+
           DEST="docs/media/$PUBLIC_FILENAME"
           mkdir -p docs/media
           cp "$SRC" "$DEST"
+
           git config user.name "LABAYKANUSUK Social Machine"
           git config user.email "actions@users.noreply.github.com"
           git add "$DEST"
+
           if ! git diff --cached --quiet; then
             git commit -m "Update Instagram slot $SLOT media"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+
           MEDIA_COMMIT=$(git rev-parse HEAD)
           URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${MEDIA_COMMIT}/${DEST}"
           echo "url=$URL" >> "$GITHUB_OUTPUT"
-          curl -L --fail --silent --show-error --max-time 30 "$URL" -o /tmp/public-media
+
+          curl -L --fail --silent --show-error --max-time 30 \
+            "$URL" -o /tmp/public-media
           test -s /tmp/public-media
           echo "Public media ready: $URL"
 
@@ -225,6 +192,7 @@ jobs:
           git config user.name "LABAYKANUSUK Social Machine"
           git config user.email "actions@users.noreply.github.com"
           git add logs/publication_history.json
+
           if ! git diff --cached --quiet; then
             git commit -m "Record Instagram publication slot ${{ steps.runconfig.outputs.slot }}"
             git pull --rebase origin main
