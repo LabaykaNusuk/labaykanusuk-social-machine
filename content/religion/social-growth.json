@@ -1,0 +1,734 @@
+[
+  {
+    "id": "growth-r-001",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "safa",
+      "marwa",
+      "hajar",
+      "zamzam",
+      "makkah"
+    ],
+    "title_hook": "Pourquoi des millions de pèlerins refont-ils encore aujourd’hui le trajet d’une mère seule dans le désert ?",
+    "editorial_copy": "Le récit authentique rapporte que Hajar a cherché de l’aide entre Safa et Marwa à sept reprises avant l’apparition de Zamzam. Le Sa‘i garde la trace de cet épisode fondateur.",
+    "support_reference": "Sahih al-Bukhari 3364",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "curiosity_story",
+    "social_role": "acquisition",
+    "viral_score": 94,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 3364"
+  },
+  {
+    "id": "growth-r-002",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "hajar-al-aswad",
+      "kaaba",
+      "tawaf",
+      "makkah"
+    ],
+    "title_hook": "Le Hajar al-Aswad peut-il te protéger ou te porter chance ? La réponse de ‘Umar est sans ambiguïté.",
+    "editorial_copy": "‘Umar ibn al-Khattab a rappelé que la Pierre noire est une pierre qui ne peut ni nuire ni profiter par elle-même. Il l’embrassait parce qu’il avait vu le Prophète Mohammad ﷺ le faire.",
+    "support_reference": "Sahih al-Bukhari 1597",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "myth_busting",
+    "social_role": "acquisition",
+    "viral_score": 93,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1597"
+  },
+  {
+    "id": "growth-r-003",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "arafat",
+      "hajj"
+    ],
+    "title_hook": "Tu peux connaître beaucoup de rites du Hajj… mais si tu rates ‘Arafat, tu rates le cœur du pèlerinage.",
+    "editorial_copy": "Le Prophète Mohammad ﷺ a résumé l’importance de cette étape par une formule très forte : « Le Hajj, c’est ‘Arafah. »",
+    "support_reference": "Jami‘ at-Tirmidhi 889, classé sahih",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "high_stakes",
+    "social_role": "acquisition",
+    "viral_score": 92,
+    "verification": "verified",
+    "verified_against": "Jami‘ at-Tirmidhi 889"
+  },
+  {
+    "id": "growth-r-004",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "hajj",
+      "mabrur"
+    ],
+    "title_hook": "Tout le monde souhaite un Hajj mabrur. Mais sais-tu quelle récompense le Prophète ﷺ lui a associée ?",
+    "editorial_copy": "Le Prophète Mohammad ﷺ a enseigné que le Hajj mabrur n’a d’autre récompense que le Paradis.",
+    "support_reference": "Sahih al-Bukhari 1773",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "open_loop",
+    "social_role": "acquisition",
+    "viral_score": 90,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1773"
+  },
+  {
+    "id": "growth-r-005",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "omra",
+      "ramadan"
+    ],
+    "title_hook": "Une Omra pendant Ramadan « équivaut à un Hajj » : attention à ce que cela veut vraiment dire.",
+    "editorial_copy": "Le hadith authentique mentionne une équivalence en récompense. Cela ne transforme pas l’Omra en Hajj et ne remplace pas l’obligation du Hajj pour celui qui en a les moyens.",
+    "support_reference": "Sahih al-Bukhari 1782",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "clarification",
+    "social_role": "acquisition",
+    "viral_score": 94,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1782"
+  },
+  {
+    "id": "growth-r-006",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "miqat",
+      "ihram",
+      "medine",
+      "hajj",
+      "omra"
+    ],
+    "title_hook": "Tu arrives de Médine pour une Omra : où dois-tu entrer en ihram ?",
+    "editorial_copy": "Le Prophète Mohammad ﷺ a fixé Dhul-Hulayfah comme miqat pour les gens de Médine et pour ceux qui passent par cette voie avec l’intention du Hajj ou de la Omra.",
+    "support_reference": "Sahih al-Bukhari 1524",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "scenario_question",
+    "social_role": "save_share",
+    "viral_score": 91,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1524"
+  },
+  {
+    "id": "growth-r-007",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "tawaf",
+      "raml",
+      "makkah"
+    ],
+    "title_hook": "Pourquoi certains hommes accélèrent-ils pendant les trois premiers tours du Tawaf ?",
+    "editorial_copy": "Le ramal dans les trois premiers tours est rapporté dans la Sunna. Le hadith explique aussi son contexte historique lors de l’arrivée des Compagnons à La Mecque.",
+    "support_reference": "Sahih al-Bukhari 1602",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "why",
+    "social_role": "acquisition",
+    "viral_score": 95,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1602"
+  },
+  {
+    "id": "growth-r-008",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "talbiyah",
+      "ihram",
+      "hajj",
+      "omra"
+    ],
+    "title_hook": "Tu entends « Labbayka Allahumma labbayk » partout au Hajj. Mais connais-tu la formule authentiquement rapportée ?",
+    "editorial_copy": "Ibn ‘Umar a transmis la Talbiyah du Prophète Mohammad ﷺ : elle proclame la réponse à l’appel d’Allah, Sa louange, Ses bienfaits, Sa souveraineté et l’absence de tout associé.",
+    "support_reference": "Sahih al-Bukhari 1549",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "meaning",
+    "social_role": "save_share",
+    "viral_score": 90,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1549"
+  },
+  {
+    "id": "growth-r-009",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "kaaba",
+      "makkah",
+      "histoire"
+    ],
+    "title_hook": "La Kaaba n’est pas seulement le centre du Tawaf : le Coran la présente comme le premier sanctuaire établi pour les hommes.",
+    "editorial_copy": "Le Coran affirme que la première Maison établie pour les gens est celle de Bakkah, bénie et guidée pour les mondes.",
+    "support_reference": "Coran 3:96",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "surprising_fact",
+    "social_role": "acquisition",
+    "viral_score": 88,
+    "verification": "verified",
+    "verified_against": "Coran 3:96"
+  },
+  {
+    "id": "growth-r-010",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "arafat",
+      "muzdalifah",
+      "hajj"
+    ],
+    "title_hook": "Pourquoi ‘Arafat est-il suivi de Muzdalifah ? Le Coran relie directement les deux étapes.",
+    "editorial_copy": "Le verset 2:198 ordonne le rappel d’Allah à Al-Mash‘ar Al-Haram après le départ de ‘Arafat. C’est l’un des passages coraniques qui inscrit clairement le parcours du Hajj.",
+    "support_reference": "Coran 2:198",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "why",
+    "social_role": "save_share",
+    "viral_score": 89,
+    "verification": "verified",
+    "verified_against": "Coran 2:198"
+  },
+  {
+    "id": "growth-r-011",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "safa",
+      "marwa",
+      "sai",
+      "omra",
+      "hajj"
+    ],
+    "title_hook": "Safa et Marwa ne sont pas de simples points de passage : le Coran les appelle des « symboles d’Allah ».",
+    "editorial_copy": "Le verset 2:158 cite explicitement As-Safa et Al-Marwa parmi les rites-symboles d’Allah, en lien avec le Hajj et la Omra.",
+    "support_reference": "Coran 2:158",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "meaning",
+    "social_role": "save_share",
+    "viral_score": 88,
+    "verification": "verified",
+    "verified_against": "Coran 2:158"
+  },
+  {
+    "id": "growth-r-012",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "maqam-ibrahim",
+      "kaaba",
+      "makkah"
+    ],
+    "title_hook": "Tu passes devant Maqam Ibrahim après le Tawaf. Sais-tu pourquoi cet endroit est cité directement dans le Coran ?",
+    "editorial_copy": "Allah dit de prendre le Maqam d’Ibrahim comme lieu de prière. Le verset rappelle aussi la purification de la Maison pour ceux qui tournent autour, prient et se prosternent.",
+    "support_reference": "Coran 2:125",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "place_explained",
+    "social_role": "acquisition",
+    "viral_score": 91,
+    "verification": "verified",
+    "verified_against": "Coran 2:125"
+  },
+  {
+    "id": "growth-r-013",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "hajj",
+      "obligation",
+      "capacite"
+    ],
+    "title_hook": "Le Hajj est-il obligatoire pour tout musulman sans exception ? Le Coran pose une condition essentielle.",
+    "editorial_copy": "Le verset 3:97 établit l’obligation du Hajj pour celui qui a la capacité d’accomplir le voyage vers la Maison.",
+    "support_reference": "Coran 3:97",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "clarification",
+    "social_role": "save_share",
+    "viral_score": 90,
+    "verification": "verified",
+    "verified_against": "Coran 3:97"
+  },
+  {
+    "id": "growth-r-014",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "hajj",
+      "ihram",
+      "comportement"
+    ],
+    "title_hook": "Le Hajj n’est pas seulement une suite de gestes : le Coran parle aussi de comportement.",
+    "editorial_copy": "Le verset 2:197 interdit pendant le Hajj les rapports intimes, la perversité et les disputes, puis rappelle que la meilleure provision est la piété.",
+    "support_reference": "Coran 2:197",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "reframe",
+    "social_role": "save_share",
+    "viral_score": 89,
+    "verification": "verified",
+    "verified_against": "Coran 2:197"
+  },
+  {
+    "id": "growth-r-015",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "hajj",
+      "omra",
+      "intention"
+    ],
+    "title_hook": "Pourquoi accomplis-tu le Hajj ou la Omra ? Le début du verset 2:196 recentre toute l’intention.",
+    "editorial_copy": "Le Coran ordonne : accomplissez complètement le Hajj et la Omra pour Allah. Avant l’organisation, le voyage et les photos, la finalité reste l’adoration.",
+    "support_reference": "Coran 2:196",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "reframe",
+    "social_role": "save_share",
+    "viral_score": 87,
+    "verification": "verified",
+    "verified_against": "Coran 2:196"
+  },
+  {
+    "id": "growth-r-016",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "hajj",
+      "appel",
+      "histoire"
+    ],
+    "title_hook": "L’appel au Hajj est mentionné dans le Coran avec une image saisissante : des pèlerins venant de chemins lointains.",
+    "editorial_copy": "Dans le verset 22:27, Allah ordonne d’annoncer le Hajj aux gens et décrit leur venue à pied et depuis des passages éloignés.",
+    "support_reference": "Coran 22:27",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "visual_story",
+    "social_role": "acquisition",
+    "viral_score": 88,
+    "verification": "verified",
+    "verified_against": "Coran 22:27"
+  },
+  {
+    "id": "growth-r-017",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "sacrifice",
+      "hajj",
+      "taqwa"
+    ],
+    "title_hook": "Ce qui atteint Allah dans le sacrifice n’est ni la viande ni le sang.",
+    "editorial_copy": "Le Coran rappelle que ce qui parvient à Allah, c’est la piété. Un rappel puissant contre une vision purement mécanique du rite.",
+    "support_reference": "Coran 22:37",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "counterintuitive",
+    "social_role": "acquisition",
+    "viral_score": 91,
+    "verification": "verified",
+    "verified_against": "Coran 22:37"
+  },
+  {
+    "id": "growth-r-018",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "kaaba",
+      "ibrahim",
+      "ismail",
+      "histoire"
+    ],
+    "title_hook": "Qui élevait les fondations de la Maison ? Le Coran nomme Ibrahim et Isma‘il.",
+    "editorial_copy": "Le verset 2:127 décrit Ibrahim et Isma‘il élevant les fondations de la Maison tout en demandant à Allah d’accepter leur œuvre.",
+    "support_reference": "Coran 2:127",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "history_question",
+    "social_role": "acquisition",
+    "viral_score": 90,
+    "verification": "verified",
+    "verified_against": "Coran 2:127"
+  },
+  {
+    "id": "growth-r-019",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "omra",
+      "expiation"
+    ],
+    "title_hook": "Que se passe-t-il entre une Omra et la suivante ?",
+    "editorial_copy": "Le Prophète Mohammad ﷺ a enseigné qu’une Omra à l’autre est une expiation de ce qui est commis entre les deux.",
+    "support_reference": "Sahih al-Bukhari 1773",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "open_loop",
+    "social_role": "acquisition",
+    "viral_score": 88,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1773"
+  },
+  {
+    "id": "growth-r-020",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "hajj",
+      "pardon",
+      "comportement"
+    ],
+    "title_hook": "Le Hajj peut-il vraiment marquer un nouveau départ ? Voici la formulation du hadith authentique.",
+    "editorial_copy": "Le Prophète Mohammad ﷺ a annoncé que celui qui accomplit le Hajj pour Allah en évitant les rapports conjugaux et la désobéissance revient comme au jour où sa mère l’a mis au monde.",
+    "support_reference": "Sahih al-Bukhari 1521",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "transformation",
+    "social_role": "acquisition",
+    "viral_score": 92,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1521"
+  },
+  {
+    "id": "growth-r-021",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "medine",
+      "masjid-nabawi"
+    ],
+    "title_hook": "Une seule prière dans la Mosquée du Prophète ﷺ : pourquoi les pèlerins y attachent-ils autant d’importance ?",
+    "editorial_copy": "Le Prophète Mohammad ﷺ a enseigné qu’une prière dans sa mosquée est meilleure que mille prières ailleurs, à l’exception d’Al-Masjid Al-Haram.",
+    "support_reference": "Sahih al-Bukhari 1190",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "number_hook",
+    "social_role": "acquisition",
+    "viral_score": 93,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1190"
+  },
+  {
+    "id": "growth-r-022",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "makkah",
+      "medine",
+      "al-aqsa"
+    ],
+    "title_hook": "Trois mosquées seulement sont citées dans ce hadith pour un voyage cultuel spécialement entrepris.",
+    "editorial_copy": "Le hadith authentique cite Al-Masjid Al-Haram, la Mosquée du Prophète ﷺ et Al-Masjid Al-Aqsa.",
+    "support_reference": "Sahih al-Bukhari 1189",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "list_curiosity",
+    "social_role": "save_share",
+    "viral_score": 89,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1189"
+  },
+  {
+    "id": "growth-r-023",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "miqat",
+      "sham",
+      "hajj",
+      "omra"
+    ],
+    "title_hook": "Tu arrives depuis la région du Shâm : le miqat n’est pas choisi au hasard.",
+    "editorial_copy": "Le hadith de Ibn ‘Abbas rapporte qu’Al-Juhfah a été fixée comme miqat pour les gens du Shâm et ceux qui passent par cette voie avec l’intention du Hajj ou de la Omra.",
+    "support_reference": "Sahih al-Bukhari 1524",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "scenario_question",
+    "social_role": "save_share",
+    "viral_score": 86,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1524"
+  },
+  {
+    "id": "growth-r-024",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "miqat",
+      "najd",
+      "hajj",
+      "omra"
+    ],
+    "title_hook": "Le miqat dépend aussi de la direction par laquelle tu arrives.",
+    "editorial_copy": "Le Prophète Mohammad ﷺ a fixé Qarn Al-Manazil comme miqat pour les gens du Najd et ceux qui empruntent cette voie avec l’intention du Hajj ou de la Omra.",
+    "support_reference": "Sahih al-Bukhari 1524",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "practical_fact",
+    "social_role": "save_share",
+    "viral_score": 85,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1524"
+  },
+  {
+    "id": "growth-r-025",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "miqat",
+      "yemen",
+      "hajj",
+      "omra"
+    ],
+    "title_hook": "Tu viens du Yémen pour le Hajj ou la Omra ? Un miqat précis est rapporté.",
+    "editorial_copy": "Le hadith de Ibn ‘Abbas cite Yalamlam comme miqat pour les gens du Yémen et pour ceux qui passent par cette voie avec l’intention du pèlerinage.",
+    "support_reference": "Sahih al-Bukhari 1524",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "scenario_question",
+    "social_role": "save_share",
+    "viral_score": 84,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1524"
+  },
+  {
+    "id": "growth-r-026",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "tawaf",
+      "sai",
+      "maqam-ibrahim",
+      "omra"
+    ],
+    "title_hook": "Dans quel ordre le Prophète ﷺ a-t-il accompli Tawaf, prière et Sa‘i lors de son arrivée ?",
+    "editorial_copy": "Un hadith authentique rapporte sept tours autour de la Kaaba, deux unités de prière derrière Maqam Ibrahim, puis sept passages entre Safa et Marwa.",
+    "support_reference": "Sahih al-Bukhari 1645-1646",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "sequence",
+    "social_role": "save_share",
+    "viral_score": 91,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1645-1646"
+  },
+  {
+    "id": "growth-r-027",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "safa",
+      "marwa",
+      "sai",
+      "histoire"
+    ],
+    "title_hook": "Le verset sur Safa et Marwa a-t-il rendu le Sa‘i facultatif ? ‘Aisha a corrigé précisément cette compréhension.",
+    "editorial_copy": "‘Aisha a expliqué que le verset 2:158 ne signifie pas que le Sa‘i peut être délaissé et a rappelé que le Prophète ﷺ en a établi la pratique.",
+    "support_reference": "Sahih al-Bukhari 1643",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "myth_busting",
+    "social_role": "acquisition",
+    "viral_score": 90,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1643"
+  },
+  {
+    "id": "growth-r-028",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "zamzam",
+      "hajar",
+      "makkah",
+      "histoire"
+    ],
+    "title_hook": "Avant Zamzam, le récit authentique décrit une vallée sans eau et une mère cherchant désespérément de l’aide.",
+    "editorial_copy": "Le récit d’Ibn ‘Abbas décrit Hajar et Isma‘il laissés près de l’emplacement de la Kaaba, puis la recherche entre Safa et Marwa et l’apparition de l’eau de Zamzam.",
+    "support_reference": "Sahih al-Bukhari 3364",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "cinematic_story",
+    "social_role": "acquisition",
+    "viral_score": 95,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 3364"
+  },
+  {
+    "id": "growth-r-029",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "zamzam",
+      "hajar",
+      "tawakkul"
+    ],
+    "title_hook": "La phrase de Hajar dans le désert tient en quelques mots… et elle change complètement la scène.",
+    "editorial_copy": "Quand Ibrahim lui confirma qu’Allah lui avait ordonné de les laisser dans cette vallée, Hajar répondit en substance qu’Allah ne les abandonnerait pas.",
+    "support_reference": "Sahih al-Bukhari 3364",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "quote_story",
+    "social_role": "save_share",
+    "viral_score": 94,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 3364"
+  },
+  {
+    "id": "growth-r-030",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "halq",
+      "taqsir",
+      "hajj",
+      "omra"
+    ],
+    "title_hook": "Se raser ou simplement raccourcir les cheveux : les deux existent, mais le hadith ne les mentionne pas de la même manière.",
+    "editorial_copy": "Le Prophète Mohammad ﷺ a invoqué à plusieurs reprises en faveur de ceux qui se rasent la tête, puis a inclus ceux qui raccourcissent leurs cheveux.",
+    "support_reference": "Sahih al-Bukhari 1727",
+    "source_grade": "sahih",
+    "format_family": "social_growth",
+    "hook_family": "comparison",
+    "social_role": "save_share",
+    "viral_score": 89,
+    "verification": "verified",
+    "verified_against": "Sahih al-Bukhari 1727"
+  },
+  {
+    "id": "growth-r-031",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "hajj",
+      "commerce",
+      "arafat"
+    ],
+    "title_hook": "Faire du commerce pendant le Hajj est-il forcément interdit ? Le verset 2:198 répond à une vraie question pratique.",
+    "editorial_copy": "Le Coran dit qu’il n’y a pas de faute à rechercher une grâce de son Seigneur pendant le Hajj, puis enchaîne sur le départ de ‘Arafat et le rappel d’Allah.",
+    "support_reference": "Coran 2:198",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "myth_busting",
+    "social_role": "acquisition",
+    "viral_score": 88,
+    "verification": "verified",
+    "verified_against": "Coran 2:198"
+  },
+  {
+    "id": "growth-r-032",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "hajj",
+      "mina",
+      "jours"
+    ],
+    "title_hook": "Pourquoi certains pèlerins quittent Mina plus tôt et d’autres restent un jour de plus ?",
+    "editorial_copy": "Le Coran évoque les jours comptés et indique qu’il n’y a pas de péché pour celui qui se hâte en deux jours ni pour celui qui retarde, pour celui qui craint Allah.",
+    "support_reference": "Coran 2:203",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "why",
+    "social_role": "save_share",
+    "viral_score": 90,
+    "verification": "verified",
+    "verified_against": "Coran 2:203"
+  },
+  {
+    "id": "growth-r-033",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "hajj",
+      "dhikr",
+      "rites"
+    ],
+    "title_hook": "Après les rites, le Coran ne dit pas « c’est fini » : il appelle encore au rappel d’Allah.",
+    "editorial_copy": "Le verset 2:200 ordonne de se rappeler Allah après avoir accompli les rites du Hajj, avec un rappel encore plus intense que les habitudes de rappel des ancêtres.",
+    "support_reference": "Coran 2:200",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "reframe",
+    "social_role": "save_share",
+    "viral_score": 86,
+    "verification": "verified",
+    "verified_against": "Coran 2:200"
+  },
+  {
+    "id": "growth-r-034",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "kaaba",
+      "securite",
+      "ibrahim",
+      "makkah"
+    ],
+    "title_hook": "Pourquoi la sécurité de La Mecque apparaît-elle déjà dans l’invocation d’Ibrahim ?",
+    "editorial_copy": "Dans le Coran, Ibrahim demande à Allah de faire de cette cité un lieu sûr et d’accorder des fruits à ses habitants croyants.",
+    "support_reference": "Coran 2:126",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "why",
+    "social_role": "acquisition",
+    "viral_score": 87,
+    "verification": "verified",
+    "verified_against": "Coran 2:126"
+  },
+  {
+    "id": "growth-r-035",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "kaaba",
+      "qibla",
+      "makkah"
+    ],
+    "title_hook": "Pourquoi les musulmans du monde entier se tournent-ils vers la Mosquée sacrée pour prier ?",
+    "editorial_copy": "Le verset 2:144 ordonne de tourner le visage vers Al-Masjid Al-Haram et demande aux croyants, où qu’ils soient, de se tourner dans cette direction.",
+    "support_reference": "Coran 2:144",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "why",
+    "social_role": "acquisition",
+    "viral_score": 90,
+    "verification": "verified",
+    "verified_against": "Coran 2:144"
+  },
+  {
+    "id": "growth-r-036",
+    "type": "hook",
+    "approved": true,
+    "theme": [
+      "hajj",
+      "sacrifice",
+      "taqwa"
+    ],
+    "title_hook": "Le rite peut être visible. La piété, elle, ne l’est pas. C’est précisément ce que rappelle le Coran.",
+    "editorial_copy": "À propos des offrandes, le Coran recentre le croyant sur la taqwa : ce n’est ni leur chair ni leur sang qui parviennent à Allah, mais votre piété.",
+    "support_reference": "Coran 22:37",
+    "source_grade": "quran",
+    "format_family": "social_growth",
+    "hook_family": "contrast",
+    "social_role": "save_share",
+    "viral_score": 89,
+    "verification": "verified",
+    "verified_against": "Coran 22:37"
+  }
+]
