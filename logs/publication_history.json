@@ -585,5 +585,26 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-28T15:15:48.719899+00:00"
+  },
+  {
+    "date": "2026-08-28",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "growth-t-002",
+    "content_type": "tool",
+    "content_fingerprint": "0b816d2f7662612286f8ccf9ca2f0fb4ce28145fb455fe82e1447cbf435751e9",
+    "content_cooldown_days": 30,
+    "photo_id": "MINA_CAMP",
+    "photo_cooldown_days": 7,
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "17947904133294397",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/df4e00642e82a7a0b325d33be54589eb167c3ba8/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-28T17:18:16.722107+00:00"
   }
 ]
