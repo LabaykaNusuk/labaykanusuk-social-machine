@@ -528,5 +528,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-28T08:33:24.231032+00:00"
+  },
+  {
+    "date": "2026-08-28",
+    "slot_order": 3,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "QURAN-003-097",
+    "content_type": "quran",
+    "photo_id": "HADY_SACRIFICE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18120497449834477",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1a61f1e497d1aa9fc9e2bdc247dd3d39426be3c0/docs/media/slot-03.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-28T11:09:02.240279+00:00"
   }
 ]
