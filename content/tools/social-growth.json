@@ -1,0 +1,490 @@
+[
+  {
+    "id": "growth-t-001",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "makkah",
+      "hotel",
+      "marche",
+      "universal"
+    ],
+    "name": "Ton hôtel est à 800 m du Haram ? Ne regarde pas seulement le chiffre.",
+    "benefits": [
+      "Vérifie le trajet piéton réel, pas la distance à vol d’oiseau",
+      "Repère l’entrée que tu utiliseras vraiment",
+      "Pense au retour répété après les prières"
+    ],
+    "cta": "SAUVEGARDE AVANT DE RÉSERVER",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "before_you_book",
+    "social_role": "acquisition",
+    "viral_score": 97,
+    "verification": "practical_non_religious",
+    "source_note": "Conseil terrain : formulation prudente, sans promesse chiffrée."
+  },
+  {
+    "id": "growth-t-002",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "chaussures",
+      "marche",
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "La pire paire de chaussures pour ton pèlerinage ? Celle que tu testes le jour du départ.",
+    "benefits": [
+      "Marche avec tes chaussures plusieurs jours avant le voyage",
+      "Repère les zones de frottement avant Makkah",
+      "Privilégie le confort déjà éprouvé plutôt que le neuf"
+    ],
+    "cta": "TESTE-LES AVANT DE PARTIR",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "mistake",
+    "social_role": "save_share",
+    "viral_score": 94,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-003",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "foule",
+      "groupe",
+      "makkah",
+      "medine",
+      "universal"
+    ],
+    "name": "Tu te sépares de ton groupe à Makkah : votre point de rendez-vous est-il assez précis ?",
+    "benefits": [
+      "Choisis un point visible et facile à nommer",
+      "Ajoute un deuxième point de secours",
+      "Évite les consignes vagues comme « près de la mosquée »"
+    ],
+    "cta": "CHOISIS TON POINT AVANT",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "scenario",
+    "social_role": "save_share",
+    "viral_score": 93,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-004",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "telephone",
+      "documents",
+      "voyage",
+      "universal"
+    ],
+    "name": "Ton téléphone n’a plus de réseau au mauvais moment : qu’as-tu gardé hors ligne ?",
+    "benefits": [
+      "Garde les documents importants accessibles hors connexion",
+      "Conserve l’adresse de l’hôtel en capture d’écran",
+      "Note un contact d’urgence sans dépendre d’une application"
+    ],
+    "cta": "PRÉPARE TON MODE HORS LIGNE",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "what_if",
+    "social_role": "save_share",
+    "viral_score": 95,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-005",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "telephone",
+      "batterie",
+      "makkah",
+      "universal"
+    ],
+    "name": "À 10 % de batterie au milieu d’une longue journée : ton téléphone devient soudain beaucoup plus précieux.",
+    "benefits": [
+      "Charge complètement avant une longue sortie",
+      "Prends une batterie externe autorisée en voyage",
+      "Garde ton câble dans un endroit immédiatement accessible"
+    ],
+    "cta": "NE PARS PAS À 20 %",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "scenario",
+    "social_role": "save_share",
+    "viral_score": 91,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-006",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "bagage",
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le sac qui paraît léger dans la chambre peut devenir très lourd après une heure de marche.",
+    "benefits": [
+      "Emporte seulement ce que tu utiliseras réellement",
+      "Répartis le poids avant de sortir",
+      "Teste ton sac chargé avant le voyage"
+    ],
+    "cta": "ALLÈGE AVANT DE MARCHER",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "reality_check",
+    "social_role": "save_share",
+    "viral_score": 91,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-007",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "hotel",
+      "makkah",
+      "orientation",
+      "universal"
+    ],
+    "name": "Tu sais retrouver ton hôtel sans Google Maps ? Fais ce test avant de t’éloigner.",
+    "benefits": [
+      "Mémorise un repère visible proche de l’hôtel",
+      "Garde l’adresse complète en capture",
+      "Enregistre le nom exact en arabe ou en anglais si disponible"
+    ],
+    "cta": "FAIS LE TEST AVANT DE PARTIR",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "challenge",
+    "social_role": "save_share",
+    "viral_score": 92,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-008",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "hydratation",
+      "chaleur",
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "La soif n’est pas un bon système de planification pour une journée de marche.",
+    "benefits": [
+      "Anticipe tes pauses plutôt que d’attendre l’épuisement",
+      "Adapte ton effort à la chaleur et à ton état",
+      "Suis les consignes de santé officielles pendant ton séjour"
+    ],
+    "cta": "PRÉPARE TA JOURNÉE",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "reframe",
+    "social_role": "save_share",
+    "viral_score": 90,
+    "verification": "practical_health_general",
+    "source_note": "Conseil général, ne remplace pas un avis médical."
+  },
+  {
+    "id": "growth-t-009",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "pieds",
+      "marche",
+      "omra",
+      "hajj",
+      "universal"
+    ],
+    "name": "Une petite ampoule au pied peut changer toute ta journée de pèlerinage.",
+    "benefits": [
+      "Repère les frottements dès les premiers signes",
+      "Garde de quoi protéger une zone irritée",
+      "N’attends pas que la douleur devienne importante"
+    ],
+    "cta": "PROTÈGE TES PIEDS TÔT",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "small_problem_big_effect",
+    "social_role": "save_share",
+    "viral_score": 92,
+    "verification": "practical_health_general",
+    "source_note": "Conseil général, ne remplace pas un avis médical."
+  },
+  {
+    "id": "growth-t-010",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "doua",
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Tu as préparé tes bagages. Mais as-tu préparé les invocations que tu veux vraiment connaître ?",
+    "benefits": [
+      "Retrouve les dou‘as par étapes",
+      "Garde arabe, phonétique et français ensemble",
+      "Prépare avant le départ au lieu de chercher dans la foule"
+    ],
+    "cta": "OUVRE LE GUIDE DES DOU‘AS",
+    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "format_family": "social_growth",
+    "hook_family": "missing_piece",
+    "social_role": "conversion_soft",
+    "viral_score": 89,
+    "verification": "first_party_tool"
+  },
+  {
+    "id": "growth-t-011",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "formation",
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le pire moment pour découvrir un rite ? Quand tu es déjà au milieu de la foule.",
+    "benefits": [
+      "Apprends le parcours avant le voyage",
+      "Comprends les étapes dans le bon ordre",
+      "Révise gratuitement avant ton départ"
+    ],
+    "cta": "COMMENCE LA FORMATION GRATUITE",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-du-pelerin",
+    "format_family": "social_growth",
+    "hook_family": "before_it_happens",
+    "social_role": "conversion_soft",
+    "viral_score": 92,
+    "verification": "first_party_tool"
+  },
+  {
+    "id": "growth-t-012",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "makkah",
+      "medine",
+      "planning",
+      "universal"
+    ],
+    "name": "Ton planning est rempli du matin au soir ? Laisse volontairement de l’espace.",
+    "benefits": [
+      "Prévois des marges pour les déplacements",
+      "Accepte que la foule modifie le rythme",
+      "Évite de transformer chaque journée en course"
+    ],
+    "cta": "PLANIFIE AVEC DE LA MARGE",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "counterintuitive",
+    "social_role": "save_share",
+    "viral_score": 88,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-013",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "groupe",
+      "telephone",
+      "urgence",
+      "universal"
+    ],
+    "name": "Si quelqu’un retrouve ton téléphone verrouillé, peut-il prévenir ton groupe ?",
+    "benefits": [
+      "Ajoute un contact d’urgence accessible depuis l’écran verrouillé si ton téléphone le permet",
+      "Note ton hôtel et un contact de groupe",
+      "Évite d’y afficher des informations sensibles inutiles"
+    ],
+    "cta": "CONFIGURE ÇA AVANT LE DÉPART",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "what_if",
+    "social_role": "save_share",
+    "viral_score": 94,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-014",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "bagage",
+      "documents",
+      "aeroport",
+      "universal"
+    ],
+    "name": "Ton bagage part d’un côté, toi de l’autre : as-tu l’essentiel avec toi ?",
+    "benefits": [
+      "Garde documents et traitements indispensables en bagage cabine selon les règles applicables",
+      "Ne mets pas tous tes moyens de paiement au même endroit",
+      "Conserve une tenue de secours compacte"
+    ],
+    "cta": "SÉPARE L’ESSENTIEL",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "scenario",
+    "social_role": "save_share",
+    "viral_score": 93,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-015",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "hotel",
+      "makkah",
+      "reservation",
+      "universal"
+    ],
+    "name": "Deux hôtels affichent la même distance du Haram. Ils peuvent pourtant offrir deux expériences très différentes.",
+    "benefits": [
+      "Compare le trajet réel à pied",
+      "Regarde l’accès, le dénivelé et les points d’entrée",
+      "Lis les avis récents sur le déplacement plutôt que seulement la chambre"
+    ],
+    "cta": "COMPARE LE TRAJET, PAS SEULEMENT LE PRIX",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "comparison",
+    "social_role": "acquisition",
+    "viral_score": 96,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-016",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "orientation",
+      "makkah",
+      "foule",
+      "universal"
+    ],
+    "name": "À la sortie d’une grande prière, suivre la foule n’est pas toujours la même chose que retrouver ton chemin.",
+    "benefits": [
+      "Repère ton itinéraire avant l’affluence",
+      "Fixe un point de regroupement",
+      "Garde une capture de ton trajet retour"
+    ],
+    "cta": "REPÈRE TON RETOUR AVANT",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "reality_check",
+    "social_role": "save_share",
+    "viral_score": 92,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-017",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "omra",
+      "premiere-omra",
+      "planning",
+      "universal"
+    ],
+    "name": "Première Omra : ne prépare pas seulement « quoi faire ». Prépare aussi « dans quel ordre ».",
+    "benefits": [
+      "Visualise le parcours avant d’arriver",
+      "Repère les transitions entre les étapes",
+      "Garde un guide simple accessible pendant le voyage"
+    ],
+    "cta": "COMMENCE PAR LE PARCOURS",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "reframe",
+    "social_role": "conversion_soft",
+    "viral_score": 90,
+    "verification": "first_party_tool"
+  },
+  {
+    "id": "growth-t-018",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "medine",
+      "makkah",
+      "adresse",
+      "transport",
+      "universal"
+    ],
+    "name": "Montre l’adresse de ton hôtel au chauffeur… mais dans une forme qu’il peut vraiment utiliser.",
+    "benefits": [
+      "Garde le nom exact de l’établissement",
+      "Conserve l’adresse complète en capture",
+      "Ajoute un repère proche si l’adresse seule est ambiguë"
+    ],
+    "cta": "GARDE L’ADRESSE HORS LIGNE",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "practical_fix",
+    "social_role": "save_share",
+    "viral_score": 89,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-019",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "famille",
+      "groupe",
+      "makkah",
+      "universal"
+    ],
+    "name": "Voyager à plusieurs ne garantit pas de rester ensemble dans la foule.",
+    "benefits": [
+      "Décidez à l’avance quoi faire si le groupe se sépare",
+      "Choisissez un responsable de contact",
+      "Fixez un point de rendez-vous et une heure limite"
+    ],
+    "cta": "FAITES LE PLAN AVANT",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "myth_busting",
+    "social_role": "save_share",
+    "viral_score": 93,
+    "verification": "practical_non_religious"
+  },
+  {
+    "id": "growth-t-020",
+    "type": "tool",
+    "approved": true,
+    "theme": [
+      "hajj",
+      "omra",
+      "preparation",
+      "universal"
+    ],
+    "name": "Tu peux acheter tout l’équipement du monde et quand même arriver mal préparé.",
+    "benefits": [
+      "Comprends les rites avant d’acheter des accessoires",
+      "Prépare ton corps à marcher régulièrement",
+      "Prépare aussi tes documents, repères et contacts"
+    ],
+    "cta": "COMMENCE PAR L’ESSENTIEL",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "social_growth",
+    "hook_family": "contrarian",
+    "social_role": "acquisition",
+    "viral_score": 91,
+    "verification": "practical_non_religious"
+  }
+]
