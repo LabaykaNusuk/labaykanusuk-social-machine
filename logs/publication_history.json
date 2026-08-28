@@ -492,5 +492,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-28T04:21:40.111796+00:00"
+  },
+  {
+    "date": "2026-08-28",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "hook-trois-mosquees",
+    "content_type": "hook",
+    "photo_id": "ZAMZAM_DRINK",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18131227963645587",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/ec513933b8091022d29638489b4da2c606e5d434/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-28T06:09:05.390996+00:00"
   }
 ]
