@@ -730,5 +730,23 @@
     ],
     "source": "Référence : Sahih al-Bukhari 1568.",
     "published_at_utc": "2026-08-29T11:27:50.463508+00:00"
+  },
+  {
+    "date": "2026-08-29",
+    "slot_order": 10,
+    "slot_format": "feed",
+    "slot_category": "natural",
+    "content_id": "natural-before-departure-011",
+    "content_type": "natural_reflection",
+    "photo_id": "MUZDALIFAH_NIGHT",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "17894450886600299",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/d7563075881fbde30c8366bcc6cb921494caf61f/docs/media/slot-10.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-29T12:04:16.728709+00:00"
   }
 ]
