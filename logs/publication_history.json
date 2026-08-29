@@ -669,5 +669,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-29T08:32:40.209021+00:00"
+  },
+  {
+    "date": "2026-08-29",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "quiz-histoire-jurhum-zamzam-001",
+    "content_type": "quiz",
+    "photo_id": "TAWAF_IFADAH",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17901296079558452",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7716a66ec933ec07288d7e4cd3acc67043de4e8a/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7716a66ec933ec07288d7e4cd3acc67043de4e8a/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7716a66ec933ec07288d7e4cd3acc67043de4e8a/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "Hajar accepta à condition qu’ils n’aient aucun droit de propriété sur l’eau de Zamzam. Récit d’Ibn ‘Abbâs, Sahih al-Bukhari 2368.",
+    "published_at_utc": "2026-08-29T11:00:44.482515+00:00"
   }
 ]
