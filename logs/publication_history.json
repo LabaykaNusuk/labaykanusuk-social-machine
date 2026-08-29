@@ -748,5 +748,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-29T12:04:16.728709+00:00"
+  },
+  {
+    "date": "2026-08-29",
+    "slot_order": 10,
+    "slot_format": "feed",
+    "slot_category": "natural",
+    "content_id": "natural-call-008",
+    "content_type": "natural_reflection",
+    "photo_id": "MINA_ROAD_AERIAL",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "18056682263717286",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/2fef83b8b9103f0a14f8e60c792c00d3af187ce7/docs/media/slot-10.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-29T12:09:07.545639+00:00"
   }
 ]
