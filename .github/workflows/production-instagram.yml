@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       slot:
-        description: "Slot à tester/publier (1 à 8)"
+        description: "Slot à tester/publier (1 à 8, ou 10 pour le feed naturel)"
         required: true
         default: "1"
         type: choice
-        options: ["1", "2", "3", "4", "5", "6", "7", "8"]
+        options: ["1", "2", "3", "4", "5", "6", "7", "8", "10"]
       mode:
         description: "DRY = génère seulement, LIVE = publie réellement"
         required: true
@@ -22,23 +22,35 @@ on:
         type: choice
         options: ["NO", "YES"]
 
-# IMPORTANT:
-# Plus de cron GitHub ici. Cloudflare est désormais l'horloge unique.
-# Il déclenche déjà le principal + le secours 12 minutes après.
-# Cela évite les anciens runs GitHub qui arrivaient plusieurs heures en retard.
+  schedule:
+    # Heures locales France. GitHub gère automatiquement heure d'été/hiver via Europe/Paris.
+    - cron: "0 8 * * *"
+      timezone: "Europe/Paris"     # slot 1 - story religion
+    - cron: "30 10 * * *"
+      timezone: "Europe/Paris"     # slot 2 - story outil
+    - cron: "0 13 * * *"
+      timezone: "Europe/Paris"     # slot 3 - story religion
+    - cron: "30 15 * * *"
+      timezone: "Europe/Paris"     # slot 4 - story religion
+    - cron: "0 18 * * *"
+      timezone: "Europe/Paris"     # slot 5 - story outil
+    - cron: "15 19 * * *"
+      timezone: "Europe/Paris"     # slot 8 - reel
+    - cron: "30 20 * * *"
+      timezone: "Europe/Paris"     # slot 7 - feed
+    - cron: "0 22 * * *"
+      timezone: "Europe/Paris"     # slot 6 - story religion
 
 permissions:
   contents: write
 
 concurrency:
   group: labaykanusuk-instagram-production
-  queue: max
   cancel-in-progress: false
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
 
     steps:
       - name: Checkout
@@ -46,22 +58,31 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Sync latest main before anti-duplicate check
-        shell: bash
-        run: |
-          set -euo pipefail
-          git fetch origin main
-          git checkout -B main origin/main
-          git reset --hard origin/main
-
       - name: Resolve slot and mode
         id: runconfig
         shell: bash
         run: |
           set -euo pipefail
-          SLOT="${{ inputs.slot }}"
-          MODE="${{ inputs.mode }}"
-          FORCE="${{ inputs.force }}"
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SLOT="${{ inputs.slot }}"
+            MODE="${{ inputs.mode }}"
+            FORCE="${{ inputs.force }}"
+          else
+            MODE="LIVE"
+            FORCE="NO"
+            case "${{ github.event.schedule }}" in
+              "0 8 * * *") SLOT="1" ;;
+              "30 10 * * *") SLOT="2" ;;
+              "0 13 * * *") SLOT="3" ;;
+              "30 15 * * *") SLOT="4" ;;
+              "0 18 * * *") SLOT="5" ;;
+              "15 19 * * *") SLOT="8" ;;
+              "30 20 * * *") SLOT="7" ;;
+              "0 22 * * *") SLOT="6" ;;
+              *) echo "Unknown schedule"; exit 1 ;;
+            esac
+          fi
 
           echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
@@ -75,7 +96,6 @@ jobs:
 
       - name: Install renderer and Reel encoder
         run: |
-          set -euo pipefail
           pip install -r requirements.txt
           playwright install --with-deps chromium
           if ! command -v ffmpeg >/dev/null 2>&1; then
@@ -100,18 +120,14 @@ jobs:
 
           SKIP=$(python - <<'PY'
           import json
-          with open('/tmp/production-state.json', 'r', encoding='utf-8') as f:
-              data = json.load(f)
-          print(str(data.get('skip', False)).lower())
+          print(str(json.load(open('/tmp/production-state.json')).get('skip', False)).lower())
           PY
           )
           echo "skip=$SKIP" >> "$GITHUB_OUTPUT"
 
-      - name: Stop safely when publication is skipped
+      - name: Stop safely when slot was already published
         if: steps.prepare.outputs.skip == 'true'
-        run: |
-          cat /tmp/production-state.json
-          echo "Publication ignorée proprement : slot déjà publié ou banque fraîche épuisée."
+        run: echo "Ce slot est déjà publié aujourd'hui. Aucun doublon envoyé."
 
       - name: Update the stable public media file
         if: steps.prepare.outputs.skip != 'true'
@@ -120,24 +136,18 @@ jobs:
         run: |
           set -euo pipefail
           SLOT="${{ steps.runconfig.outputs.slot }}"
-
           SRC=$(python - <<'PY'
           import json
-          with open('/tmp/production-state.json', 'r', encoding='utf-8') as f:
-              data = json.load(f)
-          print(data['output'])
+          print(json.load(open('/tmp/production-state.json'))['output'])
           PY
           )
-
           PUBLIC_FILENAME=$(python - <<'PY'
           import json
-          with open('/tmp/production-state.json', 'r', encoding='utf-8') as f:
-              data = json.load(f)
-          print(data['public_filename'])
+          print(json.load(open('/tmp/production-state.json'))['public_filename'])
           PY
           )
-
           DEST="docs/media/$PUBLIC_FILENAME"
+
           mkdir -p docs/media
           cp "$SRC" "$DEST"
 
@@ -147,7 +157,6 @@ jobs:
 
           if ! git diff --cached --quiet; then
             git commit -m "Update Instagram slot $SLOT media"
-            git pull --rebase origin main
             git push origin HEAD:main
           fi
 
@@ -155,9 +164,8 @@ jobs:
           URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${MEDIA_COMMIT}/${DEST}"
           echo "url=$URL" >> "$GITHUB_OUTPUT"
 
-          curl -L --fail --silent --show-error --max-time 30 \
-            "$URL" -o /tmp/public-media
-          test -s /tmp/public-media
+          curl -L --fail --silent --show-error --max-time 30 "$URL" -o /tmp/public-media.jpg
+          test -s /tmp/public-media.jpg
           echo "Public media ready: $URL"
 
       - name: Dry run
@@ -166,7 +174,6 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
         run: |
-          set -euo pipefail
           python src/production_runner.py publish \
             --state /tmp/production-state.json \
             --url "${{ steps.media.outputs.url }}"
@@ -178,7 +185,6 @@ jobs:
           IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
           IG_EXPECTED_USERNAME: labaykanusuk
         run: |
-          set -euo pipefail
           python src/production_runner.py publish \
             --state /tmp/production-state.json \
             --url "${{ steps.media.outputs.url }}" \
