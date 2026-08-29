@@ -1,0 +1,134 @@
+[
+  {
+    "id": "natural-intention-001",
+    "type": "natural_reflection",
+    "theme": ["kaaba", "makkah", "hajj", "omra", "universal"],
+    "quote_before": "Chaque pas vers Allah commence par une",
+    "quote_highlight": "intention sincère.",
+    "quote_after": "",
+    "caption": "Il y a des voyages qui commencent bien avant le départ. Ils commencent dans l’intention, dans la préparation et dans le cœur.\n\n◈ LABAYKANUSUK\n#Hajj #Omra #LaMecque #Pelerinage",
+    "panel_side": "left",
+    "approved": true
+  },
+  {
+    "id": "natural-heart-makkah-002",
+    "type": "natural_reflection",
+    "theme": ["kaaba", "makkah", "universal"],
+    "quote_before": "Parfois, le cœur arrive à",
+    "quote_highlight": "La Mecque",
+    "quote_after": "avant le corps.",
+    "caption": "Certains départs commencent par une date. D’autres commencent par un désir qui grandit en silence.\n\n◈ LABAYKANUSUK\n#Hajj #Omra #Makkah #LaMecque",
+    "panel_side": "left",
+    "approved": true
+  },
+  {
+    "id": "natural-preparation-003",
+    "type": "natural_reflection",
+    "theme": ["hajj", "omra", "universal"],
+    "quote_before": "Préparer son pèlerinage, c’est déjà",
+    "quote_highlight": "commencer le voyage.",
+    "quote_after": "",
+    "caption": "Apprendre, anticiper, comprendre les étapes et préparer son cœur. Le voyage commence souvent bien avant l’aéroport.\n\n◈ LABAYKANUSUK\n#Hajj #Omra #Pelerinage",
+    "panel_side": "left",
+    "approved": true
+  },
+  {
+    "id": "natural-first-sight-004",
+    "type": "natural_reflection",
+    "theme": ["kaaba", "makkah"],
+    "quote_before": "Il y a des images qu’on regarde. Et puis il y a",
+    "quote_highlight": "la Kaaba.",
+    "quote_after": "",
+    "caption": "On peut voir la Kaaba mille fois en image. Le jour où l’on se tient réellement devant elle reste un moment à part.\n\n◈ LABAYKANUSUK\n#Kaaba #Hajj #Omra #Makkah",
+    "panel_side": "left",
+    "approved": true
+  },
+  {
+    "id": "natural-slow-down-005",
+    "type": "natural_reflection",
+    "theme": ["hajj", "omra", "makkah", "universal"],
+    "quote_before": "Le pèlerinage apprend aussi à",
+    "quote_highlight": "ralentir",
+    "quote_after": "pour mieux comprendre.",
+    "caption": "Tout ne se vit pas dans la vitesse. Certains moments demandent simplement d’être présents, attentifs et reconnaissants.\n\n◈ LABAYKANUSUK\n#Hajj #Omra #Pelerinage",
+    "panel_side": "left",
+    "approved": true
+  },
+  {
+    "id": "natural-memories-006",
+    "type": "natural_reflection",
+    "theme": ["makkah", "madinah", "hajj", "omra", "universal"],
+    "quote_before": "On revient avec des photos. Mais surtout avec des",
+    "quote_highlight": "souvenirs invisibles.",
+    "quote_after": "",
+    "caption": "Les lieux restent dans les images. Les instants, eux, restent souvent ailleurs.\n\n◈ LABAYKANUSUK\n#Hajj #Omra #Makkah #Madinah",
+    "panel_side": "left",
+    "approved": true
+  },
+  {
+    "id": "natural-knowledge-007",
+    "type": "natural_reflection",
+    "theme": ["hajj", "omra", "universal"],
+    "quote_before": "Plus on comprend les étapes, plus on peut vivre son pèlerinage avec",
+    "quote_highlight": "sérénité.",
+    "quote_after": "",
+    "caption": "La préparation n’enlève rien à l’émotion. Elle évite simplement que l’imprévu prenne toute la place.\n\n◈ LABAYKANUSUK\n#Hajj #Omra #PreparationHajj",
+    "panel_side": "left",
+    "approved": true
+  },
+  {
+    "id": "natural-call-008",
+    "type": "natural_reflection",
+    "theme": ["kaaba", "makkah", "hajj", "omra"],
+    "quote_before": "Certains voyages se choisissent. Celui-ci se prépare comme une",
+    "quote_highlight": "réponse.",
+    "quote_after": "",
+    "caption": "Quand le projet du Hajj ou de la Omra devient réel, chaque détail de préparation prend une autre dimension.\n\n◈ LABAYKANUSUK\n#Hajj #Omra #LaMecque",
+    "panel_side": "left",
+    "approved": true
+  },
+  {
+    "id": "natural-return-009",
+    "type": "natural_reflection",
+    "theme": ["makkah", "madinah", "hajj", "omra", "universal"],
+    "quote_before": "Le retour est parfois le moment où l’on comprend vraiment ce que le voyage a",
+    "quote_highlight": "laissé en nous.",
+    "quote_after": "",
+    "caption": "Le pèlerinage a une fin dans le calendrier. Certaines de ses traces, elles, continuent longtemps après le retour.\n\n◈ LABAYKANUSUK\n#Hajj #Omra #Pelerinage",
+    "panel_side": "left",
+    "approved": true
+  },
+  {
+    "id": "natural-simple-moment-010",
+    "type": "natural_reflection",
+    "theme": ["kaaba", "makkah", "madinah", "universal"],
+    "quote_before": "Parfois, le moment le plus fort du voyage est aussi le plus",
+    "quote_highlight": "silencieux.",
+    "quote_after": "",
+    "caption": "Au milieu d’un voyage immense, ce sont parfois quelques secondes très simples qui restent gravées.\n\n◈ LABAYKANUSUK\n#Hajj #Omra #Makkah #Madinah",
+    "panel_side": "left",
+    "approved": true
+  },
+  {
+    "id": "natural-before-departure-011",
+    "type": "natural_reflection",
+    "theme": ["hajj", "omra", "universal"],
+    "quote_before": "Avant de préparer la valise, il y a tant de choses à préparer dans",
+    "quote_highlight": "son cœur.",
+    "quote_after": "",
+    "caption": "La liste matérielle compte. Mais le pèlerinage ne se résume jamais à ce que l’on met dans une valise.\n\n◈ LABAYKANUSUK\n#Hajj #Omra #PreparationPelerinage",
+    "panel_side": "left",
+    "approved": true
+  },
+  {
+    "id": "natural-one-day-012",
+    "type": "natural_reflection",
+    "theme": ["kaaba", "makkah", "universal"],
+    "quote_before": "Un jour, cette image que tu regardes aujourd’hui sera peut-être devant",
+    "quote_highlight": "tes yeux.",
+    "quote_after": "",
+    "caption": "À celles et ceux qui préparent ce voyage, qu’Allah vous facilite le chemin et vous permette de le vivre dans les meilleures conditions.\n\n◈ LABAYKANUSUK\n#Hajj #Omra #Kaaba #LaMecque",
+    "panel_side": "left",
+    "approved": true
+  }
+]
