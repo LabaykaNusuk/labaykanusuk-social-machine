@@ -710,5 +710,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-29T11:09:03.491522+00:00"
+  },
+  {
+    "date": "2026-08-29",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "quiz-play-hajj-h01-f01",
+    "content_type": "quiz",
+    "photo_id": "MINA_DAYS_TASHRIQ",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17912435508451962",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/5d69fa6cbe13f4a7712658fd4cd70c00f0adcac7/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/5d69fa6cbe13f4a7712658fd4cd70c00f0adcac7/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/5d69fa6cbe13f4a7712658fd4cd70c00f0adcac7/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "Référence : Sahih al-Bukhari 1568.",
+    "published_at_utc": "2026-08-29T11:27:50.463508+00:00"
   }
 ]
