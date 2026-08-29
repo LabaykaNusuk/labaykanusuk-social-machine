@@ -689,5 +689,26 @@
     ],
     "source": "Hajar accepta à condition qu’ils n’aient aucun droit de propriété sur l’eau de Zamzam. Récit d’Ibn ‘Abbâs, Sahih al-Bukhari 2368.",
     "published_at_utc": "2026-08-29T11:00:44.482515+00:00"
+  },
+  {
+    "date": "2026-08-29",
+    "slot_order": 3,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "growth-r-002",
+    "content_type": "hook",
+    "content_fingerprint": "8f0c38d4d3615628c74b066b54ad4adf1f6320bceba3856cc5b07303d8d2cdac",
+    "content_cooldown_days": 30,
+    "photo_id": "ZAMZAM_CROWD",
+    "photo_cooldown_days": 7,
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17990430345032102",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/bb4707cec6daedb612076cdf75524ed6c6ec2a70/docs/media/slot-03.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-29T11:09:03.491522+00:00"
   }
 ]
