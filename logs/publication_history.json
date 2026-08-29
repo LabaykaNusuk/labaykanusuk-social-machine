@@ -627,5 +627,26 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-28T18:32:03.401990+00:00"
+  },
+  {
+    "date": "2026-08-29",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "growth-r-001",
+    "content_type": "hook",
+    "content_fingerprint": "657a625a32d0a3c23587fbd5605e358baaa59a6f0b4526065c5921c65626137b",
+    "content_cooldown_days": 30,
+    "photo_id": "ABRAJ_CLOCK",
+    "photo_cooldown_days": 7,
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18114134761963494",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/5d29fe616d15d62049dae57d909ee5e38b6ad54f/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-29T06:08:40.452719+00:00"
   }
 ]
