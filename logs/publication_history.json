@@ -1020,5 +1020,23 @@
     ],
     "source": "Référence : Sahih Muslim 1218a.",
     "published_at_utc": "2026-08-30T19:09:12.433324+00:00"
+  },
+  {
+    "date": "2026-08-30",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "growth-r-012",
+    "content_type": "hook",
+    "photo_id": "ZAMZAM_DRINK",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18061049039785037",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/9b1cf3244899ffa54bcafe3dc91822cc1147586a/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-30T20:09:05.091390+00:00"
   }
 ]
