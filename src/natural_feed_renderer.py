@@ -70,6 +70,8 @@ def render_natural_feed(item: dict, photo: dict, output_name: str) -> dict:
         "QUOTE_BEFORE": item.get("quote_before", ""),
         "QUOTE_HIGHLIGHT": item.get("quote_highlight", ""),
         "QUOTE_AFTER": item.get("quote_after", ""),
+        "CATEGORY_LABEL": item.get("category_label", "HAJJ & OMRA"),
+        "SOURCE_SHORT": item.get("source_short", item.get("source_reference", "")),
     }
 
     document = _replace(template_path.read_text(encoding="utf-8"), values)
