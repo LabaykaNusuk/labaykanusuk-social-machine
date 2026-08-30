@@ -874,5 +874,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-30T06:09:13.696792+00:00"
+  },
+  {
+    "date": "2026-08-30",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "growth-t-006",
+    "content_type": "tool",
+    "photo_id": "MINA_ARAFAT_ROAD",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18186439372406306",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/f0546f5f540a3663a97768d6a7bf66d257eb0b23/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-30T08:32:16.145287+00:00"
   }
 ]
