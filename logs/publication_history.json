@@ -928,5 +928,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-30T13:32:10.057508+00:00"
+  },
+  {
+    "date": "2026-08-30",
+    "slot_order": 10,
+    "slot_format": "feed",
+    "slot_category": "natural",
+    "content_id": "natural-src-after-sai-029",
+    "content_type": "natural_sourced",
+    "photo_id": "SAI_CORRIDOR",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "18188631604385907",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/dc32549955ebf677a9edbdf47f518d2f70ddbe61/docs/media/slot-10.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-30T15:37:01.344689+00:00"
   }
 ]
