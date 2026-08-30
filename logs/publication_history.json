@@ -982,5 +982,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-30T17:18:03.493832+00:00"
+  },
+  {
+    "date": "2026-08-30",
+    "slot_order": 7,
+    "slot_format": "feed",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "growth-r-011",
+    "content_type": "hook",
+    "photo_id": "ARCADES_TALBIYAH",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "18377385616228074",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/2908b8e16ca70c72df4852626b99f79c24131bde/docs/media/slot-07.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-30T18:32:18.044710+00:00"
   }
 ]
