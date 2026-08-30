@@ -910,5 +910,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-30T11:08:58.753265+00:00"
+  },
+  {
+    "date": "2026-08-30",
+    "slot_order": 4,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "growth-r-009",
+    "content_type": "hook",
+    "photo_id": "TAWAF_IFADAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18109681823327302",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/2ec9cb4e323acb53a775e640eefcb5205b9cc4d8/docs/media/slot-04.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-30T13:32:10.057508+00:00"
   }
 ]
