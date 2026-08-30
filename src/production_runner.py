@@ -122,6 +122,24 @@ def choose_item(pool, hist, target_date: date, prevent_days=90):
     return candidates[0]
 
 
+def choose_natural_item(pool, hist):
+    """Return a never-published natural post, or None when the approved bank is exhausted."""
+    if not pool:
+        return None
+
+    used_ids = {
+        h.get("content_id")
+        for h in published_entries(hist)
+        if h.get("content_id")
+    }
+    candidates = [item for item in pool if item.get("id") not in used_ids]
+    if not candidates:
+        return None
+
+    candidates.sort(key=lambda item: item.get("id", ""))
+    return candidates[0]
+
+
 def choose_photo(item, hist, target_date: date, slot: int):
     manifest = load_json(CONFIG / "photo_manifest.json", {"photos": []})
     photos = [p for p in manifest.get("photos", []) if p.get("approved")]
@@ -329,7 +347,22 @@ def prepare(slot: int, state_path: Path, force=False):
         else:
             pool = tools
 
-    item = choose_item(pool, hist, target_date, prevent_days=90)
+    if meta["category"] == "natural":
+        item = choose_natural_item(pool, hist)
+        if item is None:
+            state = {
+                "skip": True,
+                "reason": "no_fresh_approved_natural_content",
+                "date": target_date.isoformat(),
+                "slot": slot,
+                "approved_natural_count": len(pool),
+            }
+            save_json(state_path, state)
+            print(json.dumps(state, ensure_ascii=False, indent=2))
+            return
+    else:
+        item = choose_item(pool, hist, target_date, prevent_days=90)
+
     photo = choose_photo(item, hist, target_date, slot)
 
     OUTPUT.mkdir(exist_ok=True)
