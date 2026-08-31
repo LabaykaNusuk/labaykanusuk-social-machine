@@ -5,8 +5,7 @@ LABAYKANUSUK — Social Machine → Shopify archive bridge.
 Production behavior:
 - Client Credentials authentication (Shopify Dev Dashboard, 2026).
 - Archives only after the workflow calls this script following a successful LIVE publication.
-- Slot 9 (Quiz) and slot 10 (Feed naturel) are automatically archive-eligible.
-- Other content is archived only when its bank item contains: "site_archive": true.
+- Every successful LIVE publication is archive-eligible: Story, Feed, Reel, Quiz, Feed naturel.
 - Upserts by stable content_id-derived handle: no duplicate Shopify entry for a republication.
 - Maintains fil_pelerin_index/main.latest_handles (max 6).
 - Preserves first publication date and increments publication_count only for a new publication event.
@@ -432,9 +431,8 @@ def latest_history_entry(content_id: str) -> dict:
 
 
 def is_archive_eligible(item: dict, family: str, slot: int) -> bool:
-    if slot in {9, 10} or family in {"quiz", "natural"}:
-        return True
-    return as_bool(item.get("site_archive"), False)
+    # Continuous archive rule: every successful LIVE publication is preserved.
+    return True
 
 
 def category_for(item: dict, family: str) -> str:
@@ -690,7 +688,7 @@ def archive(state_path: Path, image_url: str, slot: int) -> int:
     excerpt = excerpt_for(item, family) or title
     body = body_for(item, family)
 
-    homepage_featured = as_bool(item.get("homepage_featured"), True)
+    homepage_featured = as_bool(item.get("homepage_featured"), family in {"quiz", "natural"})
     reuse_after_days = max(
         0,
         int_or(item.get("reuse_after_days"), DEFAULT_REUSE_DAYS),
