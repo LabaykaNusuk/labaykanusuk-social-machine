@@ -1182,5 +1182,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-31T18:32:42.629796+00:00"
+  },
+  {
+    "date": "2026-08-31",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "quiz-play-hajj-h01-f03",
+    "content_type": "quiz",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18345534529301982",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/4b9bfff4012488507a7d6331d9c3df3e0aa64a6d/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/4b9bfff4012488507a7d6331d9c3df3e0aa64a6d/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/4b9bfff4012488507a7d6331d9c3df3e0aa64a6d/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "Référence : Sahih Muslim 1218a.",
+    "published_at_utc": "2026-08-31T19:08:58.164786+00:00"
   }
 ]
