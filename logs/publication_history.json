@@ -1110,5 +1110,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-31T11:20:56.118059+00:00"
+  },
+  {
+    "date": "2026-08-31",
+    "slot_order": 4,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "growth-r-015",
+    "content_type": "hook",
+    "photo_id": "MINA_CAMP",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17982545289080548",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1969922fccfcf50e631b1214dad4b7d2b0c27d75/docs/media/slot-04.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-31T13:39:19.173132+00:00"
   }
 ]
