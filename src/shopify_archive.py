@@ -278,6 +278,87 @@ mutation UpsertArchivePublication(
 """
 
 
+FILE_CREATE_MUTATION = r"""
+mutation CreateArchiveVisual($files: [FileCreateInput!]!) {
+  fileCreate(files: $files) {
+    files { id fileStatus }
+    userErrors { field message code }
+  }
+}
+"""
+
+IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"}
+
+
+def visual_filename(content_id: str, source_url: str) -> str:
+    path = urllib.parse.urlparse(source_url).path
+    ext = Path(path).suffix.lower()
+    if ext not in IMAGE_EXTENSIONS:
+        ext = ".jpg"
+    return f"labaykanusuk-{slugify(content_id)[:180]}{ext}"
+
+
+def ensure_shopify_visual(
+    domain: str,
+    token: str,
+    version: str,
+    *,
+    content_id: str,
+    title: str,
+    source_url: str,
+    existing_gid: str = "",
+) -> str:
+    """Create/reuse a Shopify-hosted image and return its File GID.
+
+    External image URLs are accepted directly by Shopify fileCreate.
+    Videos are intentionally skipped here because Shopify requires staged uploads
+    for hosted video files; the original image_url/video URL remains preserved.
+    """
+    existing_gid = clean(existing_gid)
+    if existing_gid.startswith("gid://shopify/"):
+        return existing_gid
+
+    source_url = normalize_http_url(source_url)
+    if not source_url:
+        return ""
+
+    ext = Path(urllib.parse.urlparse(source_url).path).suffix.lower()
+    if ext not in IMAGE_EXTENSIONS:
+        print(f"SHOPIFY_VISUAL_SKIPPED: non-image media for {content_id}: {ext or 'unknown'}")
+        return ""
+
+    data = graphql(
+        domain,
+        token,
+        version,
+        FILE_CREATE_MUTATION,
+        {
+            "files": [
+                {
+                    "originalSource": source_url,
+                    "contentType": "IMAGE",
+                    "filename": visual_filename(content_id, source_url),
+                    "alt": trim(title, 500),
+                    "duplicateResolutionMode": "REPLACE",
+                }
+            ]
+        },
+    )
+    result = data.get("fileCreate") or {}
+    errors = result.get("userErrors") or []
+    if errors:
+        raise RuntimeError(
+            "Shopify fileCreate userErrors: "
+            + json.dumps(errors, ensure_ascii=False)
+        )
+    files = result.get("files") or []
+    if not files or not files[0].get("id"):
+        raise RuntimeError(f"Shopify fileCreate returned no file for {content_id}")
+    gid = str(files[0]["id"])
+    print(f"SHOPIFY_VISUAL_OK: {content_id} -> {gid}")
+    return gid
+
+
 def field_map(metaobject: dict | None) -> dict[str, str]:
     if not metaobject:
         return {}
@@ -614,7 +695,7 @@ def health_check() -> int:
         if isinstance(scope, dict) and scope.get("handle")
     )
 
-    required = {"read_metaobjects", "write_metaobjects"}
+    required = {"read_metaobjects", "write_metaobjects", "read_files", "write_files"}
     missing = sorted(required.difference(scopes))
     if missing:
         raise RuntimeError(
@@ -700,6 +781,17 @@ def archive(state_path: Path, image_url: str, slot: int) -> int:
         or history.get("permalink")
     )
 
+    image_url_clean = normalize_http_url(image_url)
+    visual_gid = ensure_shopify_visual(
+        domain,
+        token,
+        version,
+        content_id=content_id,
+        title=title,
+        source_url=image_url_clean,
+        existing_gid=existing.get("visuel", ""),
+    )
+
     publication_fields: dict[str, Any] = {
         "social_id": trim(content_id, 250),
         "title": title,
@@ -708,7 +800,7 @@ def archive(state_path: Path, image_url: str, slot: int) -> int:
         "body": body,
         "source": source,
         "source_url": source_url,
-        "image_url": normalize_http_url(image_url),
+        "image_url": image_url_clean,
         "related_url": related_url_for(item),
         "instagram_url": instagram_url,
         "published_at": published_at,
@@ -729,6 +821,8 @@ def archive(state_path: Path, image_url: str, slot: int) -> int:
         ),
         "homepage_featured": homepage_featured,
     }
+    if visual_gid:
+        publication_fields["visuel"] = visual_gid
 
     saved = upsert(
         domain,
@@ -771,6 +865,7 @@ def archive(state_path: Path, image_url: str, slot: int) -> int:
                 "publication_count": publication_count,
                 "published_at": published_at,
                 "homepage_featured": homepage_featured,
+                "visual_gid": visual_gid or None,
                 "homepage_latest": latest,
                 "message": "SHOPIFY_ARCHIVE_OK",
             },
