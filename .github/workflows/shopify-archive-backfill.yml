@@ -1,0 +1,36 @@
+name: LABAYKANUSUK Shopify Archive Backfill
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Nombre de jours d'historique à importer"
+        required: true
+        default: "14"
+
+permissions:
+  contents: read
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Import historical social publications into Shopify
+        env:
+          SHOPIFY_SHOP: ${{ secrets.SHOPIFY_SHOP }}
+          SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
+          SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
+          SHOPIFY_API_VERSION: "2026-07"
+        run: |
+          set -euo pipefail
+          python src/shopify_archive_backfill.py --days "${{ inputs.days }}"
