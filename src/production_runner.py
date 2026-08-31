@@ -33,7 +33,6 @@ SLOTS = {
     6: {"format": "story", "category": "religion"},
     7: {"format": "feed", "category": "rotation_religion_or_tool"},
     8: {"format": "reel", "category": "rotation_religion_or_tool"},
-    10: {"format": "feed", "category": "natural"},
 }
 
 
@@ -59,15 +58,6 @@ def approved_items():
         if isinstance(data, list):
             tools.extend(x for x in data if x.get("approved") is True)
     return religion, tools
-
-
-def approved_natural_items():
-    items = []
-    for p in sorted((CONTENT / "natural").glob("*.json")):
-        data = load_json(p, [])
-        if isinstance(data, list):
-            items.extend(x for x in data if x.get("approved") is True)
-    return items
 
 
 def history():
@@ -119,24 +109,6 @@ def choose_item(pool, hist, target_date: date, prevent_days=90):
         item_last_used(x["id"], hist) or date.min,
         x["id"],
     ))
-    return candidates[0]
-
-
-def choose_natural_item(pool, hist):
-    """Return a never-published natural post, or None when the approved bank is exhausted."""
-    if not pool:
-        return None
-
-    used_ids = {
-        h.get("content_id")
-        for h in published_entries(hist)
-        if h.get("content_id")
-    }
-    candidates = [item for item in pool if item.get("id") not in used_ids]
-    if not candidates:
-        return None
-
-    candidates.sort(key=lambda item: item.get("id", ""))
     return candidates[0]
 
 
@@ -313,7 +285,7 @@ def already_published_slot(hist, target_date: str, slot: int):
 
 def prepare(slot: int, state_path: Path, force=False):
     if slot not in SLOTS:
-        raise SystemExit("slot must be one of: 1, 2, 3, 4, 5, 6, 7, 8, 10")
+        raise SystemExit("slot must be between 1 and 8")
 
     target_date = date.today()
     hist = history()
@@ -330,8 +302,6 @@ def prepare(slot: int, state_path: Path, force=False):
         pool = religion
     elif meta["category"] == "tool":
         pool = tools
-    elif meta["category"] == "natural":
-        pool = approved_natural_items()
     else:
         # Feed may be religion or tool. With the current validated religion library,
         # the four religious Stories consume the full daily set, so prefer a tool for feed
@@ -347,56 +317,27 @@ def prepare(slot: int, state_path: Path, force=False):
         else:
             pool = tools
 
-    if meta["category"] == "natural":
-        item = choose_natural_item(pool, hist)
-        if item is None:
-            state = {
-                "skip": True,
-                "reason": "no_fresh_approved_natural_content",
-                "date": target_date.isoformat(),
-                "slot": slot,
-                "approved_natural_count": len(pool),
-            }
-            save_json(state_path, state)
-            print(json.dumps(state, ensure_ascii=False, indent=2))
-            return
-    else:
-        item = choose_item(pool, hist, target_date, prevent_days=90)
-
+    item = choose_item(pool, hist, target_date, prevent_days=90)
     photo = choose_photo(item, hist, target_date, slot)
+    template, payload, caption = make_payload(item, meta, photo)
 
     OUTPUT.mkdir(exist_ok=True)
+    payload_path = OUTPUT / f"production-slot-{slot:02d}.json"
+    save_json(payload_path, payload)
     reel_audio = None
-
-    if meta["category"] == "natural":
-        # Isolated renderer for the new natural feed. Existing slots keep using the
-        # original render() path unchanged.
-        from natural_feed_renderer import render_natural_feed
-
-        template = "feed-natural.html"
-        caption = item.get("caption", "")
+    if meta["format"] == "reel":
+        frame_name = f"production-slot-{slot:02d}-frame.jpg"
+        result = render(template, payload_path, frame_name)
+        output_name = f"production-slot-{slot:02d}.mp4"
+        reel_audio = choose_reel_audio(target_date, item["id"])
+        reel_path = make_reel(result["output"], output_name, audio=reel_audio)
+        final_output = str(reel_path)
+        public_filename = f"slot-{slot:02d}.mp4"
+    else:
         output_name = f"production-slot-{slot:02d}.jpg"
-        result = render_natural_feed(item, photo, output_name)
+        result = render(template, payload_path, output_name)
         final_output = result["output"]
         public_filename = f"slot-{slot:02d}.jpg"
-    else:
-        template, payload, caption = make_payload(item, meta, photo)
-        payload_path = OUTPUT / f"production-slot-{slot:02d}.json"
-        save_json(payload_path, payload)
-
-        if meta["format"] == "reel":
-            frame_name = f"production-slot-{slot:02d}-frame.jpg"
-            result = render(template, payload_path, frame_name)
-            output_name = f"production-slot-{slot:02d}.mp4"
-            reel_audio = choose_reel_audio(target_date, item["id"])
-            reel_path = make_reel(result["output"], output_name, audio=reel_audio)
-            final_output = str(reel_path)
-            public_filename = f"slot-{slot:02d}.mp4"
-        else:
-            output_name = f"production-slot-{slot:02d}.jpg"
-            result = render(template, payload_path, output_name)
-            final_output = result["output"]
-            public_filename = f"slot-{slot:02d}.jpg"
 
     state = {
         "skip": False,
@@ -459,6 +400,99 @@ def resolve_instagram_account(token: str):
     return ig_id, username
 
 
+def _active_story_ids(base: str, token: str):
+    """Return the IDs currently exposed by Instagram as active Stories."""
+    data = api_json(
+        f"{base}/stories",
+        {
+            "fields": "id",
+            "access_token": token,
+        },
+    )
+    return {
+        str(item.get("id", ""))
+        for item in data.get("data", [])
+        if item.get("id")
+    }
+
+
+def verify_story_publication(base: str, version: str, token: str, media_id: str, attempts: int = 12, delay: int = 5):
+    """
+    Verify a Story after /media_publish.
+
+    Primary check: the published media ID appears in the account's active
+    Stories edge. As a safety fallback, if that edge is unavailable for the
+    current Instagram Login/API combination, verify that the returned media ID
+    resolves as a real published IG media object instead of breaking every
+    Story publication.
+    """
+    media_id = str(media_id)
+    active_edge_responded = False
+    direct_media_seen = False
+    last_active_error = None
+    last_direct_error = None
+
+    for attempt in range(1, attempts + 1):
+        # Strong check: Story must appear among active Stories.
+        try:
+            active_ids = _active_story_ids(base, token)
+            active_edge_responded = True
+            if media_id in active_ids:
+                print(json.dumps({
+                    "story_verified": True,
+                    "verification": "active_stories",
+                    "instagram_media_id": media_id,
+                    "attempt": attempt,
+                }, ensure_ascii=False))
+                return "active_stories"
+        except Exception as exc:
+            last_active_error = exc
+
+        # Safe fallback: make sure Meta's returned media ID resolves as a
+        # published media object. This prevents a temporary/unsupported
+        # /stories read edge from stopping all Story publishing.
+        try:
+            media = api_json(
+                f"https://graph.instagram.com/{version}/{media_id}",
+                {
+                    "fields": "id,media_type,media_product_type,timestamp",
+                    "access_token": token,
+                },
+            )
+            if str(media.get("id", "")) == media_id:
+                direct_media_seen = True
+        except Exception as exc:
+            last_direct_error = exc
+
+        if attempt < attempts:
+            time.sleep(delay)
+
+    # If the active Stories edge answered successfully but never contained the
+    # new ID, treat the publication as unverified. Crucially, record_success()
+    # will then NOT mark the slot as published, so the backup run can retry.
+    if active_edge_responded:
+        raise RuntimeError(
+            "Instagram returned a media_id, but the Story did not appear "
+            f"in active Stories after {attempts * delay} seconds: {media_id}"
+        )
+
+    # The active edge itself was unavailable. Do not break an otherwise valid
+    # Story if the published media object is resolvable; log the degraded check.
+    if direct_media_seen:
+        print(json.dumps({
+            "story_verified": True,
+            "verification": "direct_media_fallback",
+            "instagram_media_id": media_id,
+            "warning": str(last_active_error) if last_active_error else "active Stories edge unavailable",
+        }, ensure_ascii=False))
+        return "direct_media_fallback"
+
+    raise RuntimeError(
+        "Instagram Story verification failed. "
+        f"active_edge_error={last_active_error}; direct_media_error={last_direct_error}"
+    )
+
+
 def publish_instagram(state, media_url: str):
     token = require_env("IG_ACCESS_TOKEN")
     version = require_env("IG_API_VERSION")
@@ -486,7 +520,6 @@ def publish_instagram(state, media_url: str):
         raise RuntimeError(f"No container id returned: {created}")
 
     # Give Meta time to fetch and process the public media.
-    finished = False
     poll_attempts = 60 if state["kind"] == "REEL" else 30
     for _ in range(poll_attempts):
         status = api_json(
@@ -495,14 +528,16 @@ def publish_instagram(state, media_url: str):
         )
         code = status.get("status_code")
         if code == "FINISHED":
-            finished = True
             break
         if code in {"ERROR", "EXPIRED"}:
             raise RuntimeError(f"Container processing failed: {status}")
         time.sleep(4)
 
-    # Some image containers are publishable even if status polling is not returned consistently.
+    # Some image containers are publishable even if status polling is not
+    # returned consistently.
     last_error = None
+    media_id = None
+
     for attempt in range(8):
         try:
             published = api_json(
@@ -512,14 +547,34 @@ def publish_instagram(state, media_url: str):
             )
             media_id = published.get("id")
             if media_id:
-                return {"media_id": media_id, "ig_id": ig_id, "username": username, "container_id": container_id}
+                break
         except Exception as exc:
             last_error = exc
             if attempt == 7:
                 break
             time.sleep(5)
-    raise RuntimeError(f"Instagram publication failed: {last_error}")
 
+    if not media_id:
+        raise RuntimeError(f"Instagram publication failed: {last_error}")
+
+    # Once Meta has returned a published media ID, do not call media_publish
+    # again on the same container. Verify the Story separately.
+    story_verification = None
+    if state["kind"] == "STORY":
+        story_verification = verify_story_publication(
+            base=base,
+            version=version,
+            token=token,
+            media_id=str(media_id),
+        )
+
+    return {
+        "media_id": str(media_id),
+        "ig_id": ig_id,
+        "username": username,
+        "container_id": container_id,
+        "story_verification": story_verification,
+    }
 
 def record_success(state, media_url: str, published):
     hist = history()
