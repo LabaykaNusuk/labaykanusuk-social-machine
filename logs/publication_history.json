@@ -1074,5 +1074,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-31T08:32:14.418091+00:00"
+  },
+  {
+    "date": "2026-08-31",
+    "slot_order": 10,
+    "slot_format": "feed",
+    "slot_category": "natural",
+    "content_id": "natural-src-all-arafat-013",
+    "content_type": "natural_sourced",
+    "photo_id": "SAI_CORRIDOR",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "17859508530695206",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/8489d140316bafd3fc88dfec4551494bba202477/docs/media/slot-10.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-31T10:17:40.294328+00:00"
   }
 ]
