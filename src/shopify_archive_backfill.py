@@ -55,6 +55,12 @@ def image_url_of(entry: dict, item: dict) -> str:
         entry.get("public_url"),
         entry.get("container_url"),
         entry.get("media_url1"),
+        entry.get("url1"),
+        entry.get("image_url1"),
+        entry.get("public_url1"),
+        entry.get("story_url"),
+        entry.get("reel_cover_url"),
+        entry.get("thumbnail_url"),
         entry.get("image"),
         item.get("image_url"),
         item.get("photo_url"),
@@ -162,6 +168,17 @@ def main() -> int:
             family in {"quiz", "natural"},
         )
 
+        image_url = image_url_of(last_entry, item)
+        visual_gid = sa.ensure_shopify_visual(
+            domain,
+            token,
+            version,
+            content_id=content_id,
+            title=title,
+            source_url=image_url,
+            existing_gid=existing.get("visuel", ""),
+        )
+
         fields = {
             "social_id": sa.trim(content_id, 250),
             "title": title,
@@ -170,7 +187,7 @@ def main() -> int:
             "body": body,
             "source": source,
             "source_url": source_url,
-            "image_url": image_url_of(last_entry, item),
+            "image_url": image_url,
             "related_url": sa.related_url_for(item),
             "instagram_url": instagram_url_of(last_entry),
             "published_at": last_published,
@@ -186,6 +203,8 @@ def main() -> int:
             ),
             "homepage_featured": homepage_featured,
         }
+        if visual_gid:
+            fields["visuel"] = visual_gid
 
         sa.upsert(
             domain,
@@ -201,7 +220,7 @@ def main() -> int:
         if homepage_featured:
             featured_candidates.append((latest_key(entries), handle))
 
-        print(f"IMPORTED {content_id} -> {handle}")
+        print(f"IMPORTED {content_id} -> {handle} visual={bool(visual_gid)}")
 
     # Homepage: newest featured first, merged without duplicates.
     featured_candidates.sort(key=lambda x: x[0], reverse=True)
