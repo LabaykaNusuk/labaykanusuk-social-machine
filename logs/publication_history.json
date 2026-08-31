@@ -1164,5 +1164,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-08-31T17:18:06.298980+00:00"
+  },
+  {
+    "date": "2026-08-31",
+    "slot_order": 7,
+    "slot_format": "feed",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "growth-r-017",
+    "content_type": "hook",
+    "photo_id": "HADY_SACRIFICE",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "18099142367569633",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/4ee4f1857075eabff86d0620134d6449fc04b28f/docs/media/slot-07.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-08-31T18:32:42.629796+00:00"
   }
 ]
