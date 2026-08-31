@@ -190,3 +190,17 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+      - name: Archive successful LIVE quiz to Shopify
+        if: steps.prepare.outputs.skip != 'true' && steps.runconfig.outputs.mode == 'LIVE'
+        continue-on-error: true
+        env:
+          SHOPIFY_SHOP: ${{ secrets.SHOPIFY_SHOP }}
+          SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
+          SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
+          SHOPIFY_API_VERSION: "2026-07"
+        run: |
+          python src/shopify_archive.py \
+            --state /tmp/quiz-state.json \
+            --image-url "${{ steps.media.outputs.url1 }}" \
+            --slot "9"
+
