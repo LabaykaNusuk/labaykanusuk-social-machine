@@ -1292,5 +1292,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-01T13:32:30.705686+00:00"
+  },
+  {
+    "date": "2026-09-01",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "growth-t-011",
+    "content_type": "tool",
+    "photo_id": "SAI_CORRIDOR",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18017790284926165",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/ff62ce8218156f4531a9a38a6f662e9aa1ebf93e/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-01T16:09:15.317461+00:00"
   }
 ]
