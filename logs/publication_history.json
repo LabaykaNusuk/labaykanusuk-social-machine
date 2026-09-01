@@ -1346,5 +1346,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-01T18:33:41.048824+00:00"
+  },
+  {
+    "date": "2026-09-01",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "quiz-play-hajj-h01-f05",
+    "content_type": "quiz",
+    "photo_id": "JAMARAT_WIDE",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18148391329536346",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/862d72a1eda4ba922887430c87fe0d7ac9dc3b5d/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/862d72a1eda4ba922887430c87fe0d7ac9dc3b5d/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/862d72a1eda4ba922887430c87fe0d7ac9dc3b5d/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "Référence : Sahih Muslim 1218a.",
+    "published_at_utc": "2026-09-01T19:10:51.934403+00:00"
   }
 ]
