@@ -1366,5 +1366,23 @@
     ],
     "source": "Référence : Sahih Muslim 1218a.",
     "published_at_utc": "2026-09-01T19:10:51.934403+00:00"
+  },
+  {
+    "date": "2026-09-01",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "growth-r-022",
+    "content_type": "hook",
+    "photo_id": "HARAM_EXTERIOR",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18131605720660211",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/2139d574c44e8fca61a5668e755601ec24afe415/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-01T20:09:08.409677+00:00"
   }
 ]
