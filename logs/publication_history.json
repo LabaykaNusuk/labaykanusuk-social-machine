@@ -1420,5 +1420,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-02T08:32:41.599096+00:00"
+  },
+  {
+    "date": "2026-09-02",
+    "slot_order": 3,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "growth-r-024",
+    "content_type": "hook",
+    "photo_id": "HALQ_HAIRCUT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17899311357664907",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/db0abf368a38e3e5f8224ddbb21477e09e62424f/docs/media/slot-03.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-02T11:09:12.168307+00:00"
   }
 ]
