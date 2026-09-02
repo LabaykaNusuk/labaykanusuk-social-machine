@@ -1510,5 +1510,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-02T18:32:44.181606+00:00"
+  },
+  {
+    "date": "2026-09-02",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "quiz-play-hajj-h02-f01",
+    "content_type": "quiz",
+    "photo_id": "MUZDALIFAH_NIGHT",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18080423603704534",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/c23fafdebcb0fd63de277b2f34ad1cd6cf2c7ff6/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/c23fafdebcb0fd63de277b2f34ad1cd6cf2c7ff6/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/c23fafdebcb0fd63de277b2f34ad1cd6cf2c7ff6/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "Référence : Sahih al-Bukhari 1524.",
+    "published_at_utc": "2026-09-02T19:09:13.921190+00:00"
   }
 ]
