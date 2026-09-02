@@ -1530,5 +1530,23 @@
     ],
     "source": "Référence : Sahih al-Bukhari 1524.",
     "published_at_utc": "2026-09-02T19:09:13.921190+00:00"
+  },
+  {
+    "date": "2026-09-02",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "growth-r-028",
+    "content_type": "hook",
+    "photo_id": "ABRAJ_CLOCK",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18050671205647757",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/02a0f81b35e180dc56ca7539065089d88e45aec3/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-02T20:10:03.634537+00:00"
   }
 ]
