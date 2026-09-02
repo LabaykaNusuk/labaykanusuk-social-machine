@@ -1402,5 +1402,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-02T06:09:06.133897+00:00"
+  },
+  {
+    "date": "2026-09-02",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "growth-t-014",
+    "content_type": "tool",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18142102831577320",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/20352dc7c6cbc9d8dfbdd043588e38bb67aa4ce0/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-02T08:32:41.599096+00:00"
   }
 ]
