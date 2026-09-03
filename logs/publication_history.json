@@ -1674,5 +1674,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-03T18:32:22.670401+00:00"
+  },
+  {
+    "date": "2026-09-03",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "quiz-play-hajj-h02-f02",
+    "content_type": "quiz",
+    "photo_id": "TAWAF_IFADAH",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18096936149373321",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/756f6a3cb133de920dd8e99c906f4e4f6018c0ad/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/756f6a3cb133de920dd8e99c906f4e4f6018c0ad/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/756f6a3cb133de920dd8e99c906f4e4f6018c0ad/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "Référence : Sahih al-Bukhari 1524.",
+    "published_at_utc": "2026-09-03T19:09:19.331179+00:00"
   }
 ]
