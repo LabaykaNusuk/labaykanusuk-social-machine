@@ -1638,5 +1638,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-03T16:10:03.006734+00:00"
+  },
+  {
+    "date": "2026-09-03",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "growth-t-018",
+    "content_type": "tool",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18123961936892658",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/f7c98c0598e052aa45d53fbd93382202e7e851b9/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-03T17:18:03.852032+00:00"
   }
 ]
