@@ -1620,5 +1620,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-03T13:32:46.703833+00:00"
+  },
+  {
+    "date": "2026-09-03",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "growth-t-017",
+    "content_type": "tool",
+    "photo_id": "HALQ_HAIRCUT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18440506081121407",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/813f4af615d838e10e3b7fabcd15b996c2be276d/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-03T16:10:03.006734+00:00"
   }
 ]
