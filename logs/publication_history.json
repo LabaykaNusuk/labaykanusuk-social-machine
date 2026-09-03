@@ -1548,5 +1548,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-02T20:10:03.634537+00:00"
+  },
+  {
+    "date": "2026-09-03",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "growth-r-029",
+    "content_type": "hook",
+    "photo_id": "ZAMZAM_CROWD",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18084582356271722",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/8aaf719a66cc09f5a39b00370585638776490940/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-03T06:09:30.059008+00:00"
   }
 ]
