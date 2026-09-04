@@ -1858,5 +1858,23 @@
     ],
     "source": "Référence : Sahih al-Bukhari 1524.",
     "published_at_utc": "2026-09-04T19:09:02.211288+00:00"
+  },
+  {
+    "date": "2026-09-04",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "RAPPEL-003",
+    "content_type": "editorial_religion",
+    "photo_id": "MUZDALIFAH_NIGHT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18019103606925586",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7bc5f5341b0d8fc1197730151b8f2d3d11ce2188/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-04T20:09:13.594802+00:00"
   }
 ]
