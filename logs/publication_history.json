@@ -1820,5 +1820,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-04T17:18:13.477225+00:00"
+  },
+  {
+    "date": "2026-09-04",
+    "slot_order": 7,
+    "slot_format": "feed",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "RAPPEL-002",
+    "content_type": "editorial_religion",
+    "photo_id": "ARCADES_TALBIYAH",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "17946627087084169",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/831a2f4948d3c4f43b9243e838cd44c82461c798/docs/media/slot-07.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-04T18:33:57.915740+00:00"
   }
 ]
