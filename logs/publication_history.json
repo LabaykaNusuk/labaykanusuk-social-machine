@@ -1730,5 +1730,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-04T06:09:22.983909+00:00"
+  },
+  {
+    "date": "2026-09-04",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "growth-t-020",
+    "content_type": "tool",
+    "photo_id": "MIQAT_PALMS",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17862212112679909",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/916c1d176034bdaec58bfce360ac464a220c914d/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-04T08:32:48.628121+00:00"
   }
 ]
