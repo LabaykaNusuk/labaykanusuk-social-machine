@@ -1838,5 +1838,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-04T18:33:57.915740+00:00"
+  },
+  {
+    "date": "2026-09-04",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "quiz-play-hajj-h02-f03",
+    "content_type": "quiz",
+    "photo_id": "MINA_CAMP",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17883971046486323",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/d853c6a3d88df76506876d5f67e74de1a8dbb457/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/d853c6a3d88df76506876d5f67e74de1a8dbb457/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/d853c6a3d88df76506876d5f67e74de1a8dbb457/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "Référence : Sahih al-Bukhari 1524.",
+    "published_at_utc": "2026-09-04T19:09:02.211288+00:00"
   }
 ]
