@@ -2002,5 +2002,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-05T18:32:19.551708+00:00"
+  },
+  {
+    "date": "2026-09-05",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "quiz-play-hajj-h02-f04",
+    "content_type": "quiz",
+    "photo_id": "JAMARAT_CLOSE",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17883583530653394",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/8edf28950a1dc55cb4819072e5dc510c490b83b6/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/8edf28950a1dc55cb4819072e5dc510c490b83b6/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/8edf28950a1dc55cb4819072e5dc510c490b83b6/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "Référence : Sahih al-Bukhari 1524.",
+    "published_at_utc": "2026-09-05T19:09:11.620357+00:00"
   }
 ]
