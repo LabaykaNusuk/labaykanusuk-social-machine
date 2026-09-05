@@ -1876,5 +1876,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-04T20:09:13.594802+00:00"
+  },
+  {
+    "date": "2026-09-05",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "hook-dhul-hijjah-dix-jours",
+    "content_type": "hook",
+    "photo_id": "SAI_CORRIDOR",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18215498143345925",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/dc4f184c0d80570a04c824d1b4635355cceb17c2/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-05T06:09:09.909290+00:00"
   }
 ]
