@@ -1948,5 +1948,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-05T13:32:29.682936+00:00"
+  },
+  {
+    "date": "2026-09-05",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "TOOL-FORMATION",
+    "content_type": "tool",
+    "photo_id": "ABRAJ_CLOCK",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18121499915505521",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/6c13f3eb0edbe1007aab556d34ec5f79cdf88792/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-05T16:09:13.229199+00:00"
   }
 ]
