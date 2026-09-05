@@ -1912,5 +1912,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-05T08:32:36.966959+00:00"
+  },
+  {
+    "date": "2026-09-05",
+    "slot_order": 3,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "hook-hajj-arafah",
+    "content_type": "hook",
+    "photo_id": "ARCADES_TALBIYAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18166390939460283",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/341d13c1f4854b283e7f73e2fcd9c29dc6d716f9/docs/media/slot-03.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-05T11:09:38.321032+00:00"
   }
 ]
