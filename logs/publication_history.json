@@ -1894,5 +1894,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-05T06:09:09.909290+00:00"
+  },
+  {
+    "date": "2026-09-05",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "TOOL-ESPACE-PELERIN",
+    "content_type": "tool",
+    "photo_id": "HARAM_EXTERIOR",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18083556995288912",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/72b5663e53794afd2d12b3b28bf7d9253642ea3d/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-05T08:32:36.966959+00:00"
   }
 ]
