@@ -1,143 +1,4004 @@
 [
   {
-    "id": "TOOL-FORMATION",
+    "id": "ln120-t-0181",
     "type": "tool",
-    "name": "Formation Hajj & Omra gratuite",
-    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
-    "source_id": "LABAYKANUSUK_SITE",
-    "benefits": [
-      "Formation gratuite",
-      "Parcours Hajj et Omra structurés",
-      "Rites expliqués étape par étape",
-      "Guides, quiz, checklists et contenus terrain"
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
     ],
-    "cta": "ACCÉDER À LA FORMATION",
-    "approved": true
+    "name": "Quand utiliser Compteur d’Istighfar ?",
+    "benefits": [
+      "Compter et écouter l’istighfar avec un objectif simple",
+      "Le bon moment est avant que le besoin devienne urgent : prépare la ressource, puis garde-la accessible",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 91,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-11-2"
   },
   {
-    "id": "TOOL-GUIDES",
+    "id": "ln120-t-0182",
     "type": "tool",
-    "name": "Guides & articles Hajj et Omra",
-    "url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
-    "source_id": "LABAYKANUSUK_SITE",
-    "benefits": [
-      "Ressources centralisées pour les pèlerins francophones",
-      "Préparation, rites, lieux et conseils pratiques",
-      "Recherche par thème"
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
     ],
-    "cta": "EXPLORER LES GUIDES",
-    "approved": true
+    "name": "Cartes Omra gratuites : une fonction, un besoin.",
+    "benefits": [
+      "Garder 7 cartes pratiques de la Omra sur son téléphone",
+      "Pas besoin d’installer une nouvelle application pour commencer",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 91,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-08-1"
   },
   {
-    "id": "TOOL-DOUAS",
+    "id": "ln120-t-0183",
     "type": "tool",
-    "name": "Dou‘as du Hajj et de la Omra",
-    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
-    "source_id": "LABAYKANUSUK_SITE",
-    "benefits": [
-      "Invocations en arabe, français et phonétique",
-      "Audio intégré",
-      "Navigation par étapes du pèlerinage"
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
     ],
-    "cta": "VOIR LES DOU‘AS",
-    "approved": true
+    "name": "Tu ne sais pas par où commencer ? LABAYKANUSUK Radio répond à un besoin précis.",
+    "benefits": [
+      "Écouter guides, témoignages, documentaires et conseils 24 h/24",
+      "Utilise-le quand tu veux éviter de chercher l’information au milieu de dizaines de pages",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 92,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-13-1"
   },
   {
-    "id": "TOOL-PAR-OU-COMMENCER",
+    "id": "ln120-t-0184",
     "type": "tool",
-    "name": "Par où commencer",
-    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
-    "source_id": "LABAYKANUSUK_SITE",
-    "benefits": [
-      "Page pilote pour s’orienter rapidement",
-      "Accès direct aux parcours, guides et outils",
-      "Point d’entrée idéal pour les nouveaux visiteurs"
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
     ],
-    "cta": "COMMENCER ICI",
-    "approved": true
+    "name": "Prêt à passer de la lecture à l’action ? Compteur d’Istighfar.",
+    "benefits": [
+      "Compter et écouter l’istighfar avec un objectif simple",
+      "Ouvre la ressource, teste-la maintenant et garde uniquement ce qui t’est réellement utile",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 92,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-11-6"
   },
   {
-    "id": "TOOL-HISTOIRE-HAJJ",
+    "id": "ln120-t-0185",
     "type": "tool",
-    "name": "Histoire du Hajj",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Cette ressource peut aider un proche : Histoire du Hajj.",
+    "benefits": [
+      "Explorer 27 chapitres de l’histoire du pèlerinage",
+      "Si quelqu’un prépare son pèlerinage, partage-lui directement la page plutôt qu’une capture sans contexte",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
     "url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
-    "source_id": "LABAYKANUSUK_SITE",
-    "benefits": [
-      "Expérience interactive",
-      "Chronologie du Hajj",
-      "Vision spirituelle et historique"
-    ],
-    "cta": "VOIR L’HISTOIRE",
-    "approved": true
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 93,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-14-6"
   },
   {
-    "id": "TOOL-POINT-PELERIN",
+    "id": "ln120-t-0186",
     "type": "tool",
-    "name": "Le Point Pèlerin",
-    "url": "https://www.labaykanusuk.com/blogs/blog-hajj/tagged/le-point-pelerin",
-    "source_id": "LABAYKANUSUK_SITE",
-    "benefits": [
-      "Veille francophone Hajj et Omra",
-      "Actualités, décisions, infos pratiques",
-      "Lecture rapide en format fiche"
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
     ],
-    "cta": "VOIR LES ACTUS",
-    "approved": true
+    "name": "Garde Le Fil du pèlerin dans tes favoris sur ton téléphone.",
+    "benefits": [
+      "Retrouver repères, terrain, histoire, quiz et outils",
+      "Sur place, l’accès rapide compte autant que la qualité de l’information",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 93,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-15-5"
   },
   {
-    "id": "TOOL-RADIO",
+    "id": "ln120-t-0187",
     "type": "tool",
-    "name": "Radio LABAYKANUSUK",
-    "url": "https://radio.labaykanusuk.com",
-    "source_id": "LABAYKANUSUK_SITE",
-    "benefits": [
-      "Radio dédiée aux rappels utiles",
-      "Écoute simple avant, pendant et après le pèlerinage",
-      "Compagnon audio du pèlerin"
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
     ],
-    "cta": "ÉCOUTER LA RADIO",
-    "approved": true
+    "name": "Moins chercher, mieux préparer : Guides & articles.",
+    "benefits": [
+      "Rechercher un sujet précis parmi les guides Hajj & Omra",
+      "L’outil est conçu pour transformer une question vague en prochaine étape claire",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 94,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-16-5"
   },
   {
-    "id": "TOOL-ESPACE-PELERIN",
+    "id": "ln120-t-0188",
     "type": "tool",
-    "name": "Espace Pèlerin",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "À utiliser avec les guides : Équipement Hajj.",
+    "benefits": [
+      "Préparer un équipement cohérent avec la réalité du Hajj",
+      "Les outils donnent des repères rapides ; les guides et la formation permettent d’approfondir",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 94,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-19-4"
+  },
+  {
+    "id": "ln120-t-0189",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "ihram",
+      "universal"
+    ],
+    "name": "Sur le terrain, Guide complet de la Omra doit te faire gagner du temps.",
+    "benefits": [
+      "Comprendre la Omra du miqat jusqu’à la sortie d’ihram",
+      "Une ressource utile est celle que tu peux retrouver rapidement au bon moment",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 95,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-18-4"
+  },
+  {
+    "id": "ln120-t-0190",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Ajoute Mon Parcours Hajj à ta routine de préparation.",
+    "benefits": [
+      "Visualiser le Hajj jour par jour selon son type de Hajj",
+      "Quelques minutes régulières valent mieux qu’une longue session la veille du départ",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 95,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-03-3"
+  },
+  {
+    "id": "ln120-t-0191",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Premier Hajj ou première Omra ? Commence par Équipement Omra.",
+    "benefits": [
+      "Choisir les accessoires vraiment utiles pour la Omra",
+      "L’objectif est de réduire le flou sans remplacer ton guide, ton encadrement ou un avis religieux qualifié",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 96,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-20-3"
+  },
+  {
+    "id": "ln120-t-0192",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "L’erreur : attendre d’être bloqué pour découvrir Formation Hajj & Omra.",
+    "benefits": [
+      "Apprendre les rites avec une progression structurée",
+      "Ouvre la page avant le départ et vérifie que tu sais la retrouver",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 96,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-07-2"
+  },
+  {
+    "id": "ln120-t-0193",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Quand utiliser Mon Parcours Omra ?",
+    "benefits": [
+      "Suivre la Omra étape par étape avant ou pendant le voyage",
+      "Le bon moment est avant que le besoin devienne urgent : prépare la ressource, puis garde-la accessible",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 97,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-02-2"
+  },
+  {
+    "id": "ln120-t-0194",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Compteur d’Istighfar : une fonction, un besoin.",
+    "benefits": [
+      "Compter et écouter l’istighfar avec un objectif simple",
+      "Pas besoin d’installer une nouvelle application pour commencer",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 97,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-11-1"
+  },
+  {
+    "id": "ln120-t-0195",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Tu ne sais pas par où commencer ? LABAYKANUSUK PLAY répond à un besoin précis.",
+    "benefits": [
+      "Tester ses connaissances Hajj, Omra et culture du pèlerinage",
+      "Utilise-le quand tu veux éviter de chercher l’information au milieu de dizaines de pages",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 98,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-04-1"
+  },
+  {
+    "id": "ln120-t-0196",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Prêt à passer de la lecture à l’action ? Histoire du Hajj.",
+    "benefits": [
+      "Explorer 27 chapitres de l’histoire du pèlerinage",
+      "Ouvre la ressource, teste-la maintenant et garde uniquement ce qui t’est réellement utile",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 98,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-14-6"
+  },
+  {
+    "id": "ln120-t-0197",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Cette ressource peut aider un proche : Espace Pèlerin.",
+    "benefits": [
+      "Centraliser sa préparation et retrouver les ressources utiles",
+      "Si quelqu’un prépare son pèlerinage, partage-lui directement la page plutôt qu’une capture sans contexte",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
     "url": "https://www.labaykanusuk.com/pages/espace-pelerin",
-    "source_id": "LABAYKANUSUK_SITE",
-    "benefits": [
-      "Rassemble les outils utiles",
-      "Accès rapide aux besoins du pèlerin",
-      "Hub pratique LABAYKANUSUK"
-    ],
-    "cta": "VOIR L’ESPACE",
-    "approved": true
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 99,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-05-6"
   },
   {
-    "id": "TOOL-ACCOMPAGNEMENT-HAJJ",
+    "id": "ln120-t-0198",
     "type": "tool",
-    "name": "Accompagnement Hajj Nusuk",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "ihram",
+      "universal"
+    ],
+    "name": "Garde Guide complet de la Omra dans tes favoris sur ton téléphone.",
+    "benefits": [
+      "Comprendre la Omra du miqat jusqu’à la sortie d’ihram",
+      "Sur place, l’accès rapide compte autant que la qualité de l’information",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 99,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-18-5"
+  },
+  {
+    "id": "ln120-t-0199",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Moins chercher, mieux préparer : Formation Hajj & Omra.",
+    "benefits": [
+      "Apprendre les rites avec une progression structurée",
+      "L’outil est conçu pour transformer une question vague en prochaine étape claire",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 100,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-07-5"
+  },
+  {
+    "id": "ln120-t-0200",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "À utiliser avec les guides : Mon Parcours Omra.",
+    "benefits": [
+      "Suivre la Omra étape par étape avant ou pendant le voyage",
+      "Les outils donnent des repères rapides ; les guides et la formation permettent d’approfondir",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 100,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-02-4"
+  },
+  {
+    "id": "ln120-t-0201",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Sur le terrain, Dou‘as Hajj & Omra doit te faire gagner du temps.",
+    "benefits": [
+      "Retrouver les invocations utiles dans le parcours du pèlerin",
+      "Une ressource utile est celle que tu peux retrouver rapidement au bon moment",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 101,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-09-4"
+  },
+  {
+    "id": "ln120-t-0202",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Ajoute Accompagnement Nusuk à ta routine de préparation.",
+    "benefits": [
+      "Être accompagné dans les démarches Hajj liées à Nusuk",
+      "Quelques minutes régulières valent mieux qu’une longue session la veille du départ",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
     "url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
-    "source_id": "LABAYKANUSUK_SITE",
-    "benefits": [
-      "Accompagnement dédié au Hajj",
-      "Passerelle avec Carnot Voyages",
-      "Formulaire simple de mise en relation"
-    ],
-    "cta": "DEMANDER UN ACCOMPAGNEMENT",
-    "approved": true
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 101,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-06-3"
   },
   {
-    "id": "TOOL-CHECKLIST",
+    "id": "ln120-t-0203",
     "type": "tool",
-    "name": "Checklist du pèlerin",
-    "url": "https://www.labaykanusuk.com/pages/checklist-pelerin",
-    "source_id": "LABAYKANUSUK_SITE",
-    "benefits": [
-      "Aide à ne rien oublier",
-      "Préparation matérielle et mentale",
-      "Format simple à consulter"
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
     ],
-    "cta": "VOIR LA CHECKLIST",
-    "approved": true
+    "name": "Premier Hajj ou première Omra ? Commence par Compteur d’Istighfar.",
+    "benefits": [
+      "Compter et écouter l’istighfar avec un objectif simple",
+      "L’objectif est de réduire le flou sans remplacer ton guide, ton encadrement ou un avis religieux qualifié",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 102,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-11-3"
+  },
+  {
+    "id": "ln120-t-0204",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "L’erreur : attendre d’être bloqué pour découvrir Dou‘as quotidiennes.",
+    "benefits": [
+      "Lire et écouter des dou‘as en arabe, français et phonétique",
+      "Ouvre la page avant le départ et vérifie que tu sais la retrouver",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 102,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-10-2"
+  },
+  {
+    "id": "ln120-t-0205",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Quand utiliser LABAYKANUSUK Radio ?",
+    "benefits": [
+      "Écouter guides, témoignages, documentaires et conseils 24 h/24",
+      "Le bon moment est avant que le besoin devienne urgent : prépare la ressource, puis garde-la accessible",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 103,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-13-2"
+  },
+  {
+    "id": "ln120-t-0206",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Histoire du Hajj : une fonction, un besoin.",
+    "benefits": [
+      "Explorer 27 chapitres de l’histoire du pèlerinage",
+      "Pas besoin d’installer une nouvelle application pour commencer",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 103,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-14-1"
+  },
+  {
+    "id": "ln120-t-0207",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Tu ne sais pas par où commencer ? Le Fil du pèlerin répond à un besoin précis.",
+    "benefits": [
+      "Retrouver repères, terrain, histoire, quiz et outils",
+      "Utilise-le quand tu veux éviter de chercher l’information au milieu de dizaines de pages",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 104,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-15-1"
+  },
+  {
+    "id": "ln120-t-0208",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Prêt à passer de la lecture à l’action ? Guide complet du Hajj.",
+    "benefits": [
+      "Comprendre le Hajj étape par étape",
+      "Ouvre la ressource, teste-la maintenant et garde uniquement ce qui t’est réellement utile",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 104,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-17-6"
+  },
+  {
+    "id": "ln120-t-0209",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Cette ressource peut aider un proche : Guides & articles.",
+    "benefits": [
+      "Rechercher un sujet précis parmi les guides Hajj & Omra",
+      "Si quelqu’un prépare son pèlerinage, partage-lui directement la page plutôt qu’une capture sans contexte",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 105,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-16-6"
+  },
+  {
+    "id": "ln120-t-0210",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Garde Par où commencer dans tes favoris sur ton téléphone.",
+    "benefits": [
+      "Trouver la bonne porte d’entrée selon son besoin",
+      "Sur place, l’accès rapide compte autant que la qualité de l’information",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 105,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-01-5"
+  },
+  {
+    "id": "ln120-t-0211",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "ihram",
+      "universal"
+    ],
+    "name": "Moins chercher, mieux préparer : Guide complet de la Omra.",
+    "benefits": [
+      "Comprendre la Omra du miqat jusqu’à la sortie d’ihram",
+      "L’outil est conçu pour transformer une question vague en prochaine étape claire",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 106,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-18-5"
+  },
+  {
+    "id": "ln120-t-0212",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À utiliser avec les guides : Espace Pèlerin.",
+    "benefits": [
+      "Centraliser sa préparation et retrouver les ressources utiles",
+      "Les outils donnent des repères rapides ; les guides et la formation permettent d’approfondir",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 106,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-05-4"
+  },
+  {
+    "id": "ln120-t-0213",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Sur le terrain, Équipement Omra doit te faire gagner du temps.",
+    "benefits": [
+      "Choisir les accessoires vraiment utiles pour la Omra",
+      "Une ressource utile est celle que tu peux retrouver rapidement au bon moment",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 107,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-20-4"
+  },
+  {
+    "id": "ln120-t-0214",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Ajoute Dou‘as Hajj & Omra à ta routine de préparation.",
+    "benefits": [
+      "Retrouver les invocations utiles dans le parcours du pèlerin",
+      "Quelques minutes régulières valent mieux qu’une longue session la veille du départ",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 107,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-09-3"
+  },
+  {
+    "id": "ln120-t-0215",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Premier Hajj ou première Omra ? Commence par Mon Parcours Omra.",
+    "benefits": [
+      "Suivre la Omra étape par étape avant ou pendant le voyage",
+      "L’objectif est de réduire le flou sans remplacer ton guide, ton encadrement ou un avis religieux qualifié",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 108,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-02-3"
+  },
+  {
+    "id": "ln120-t-0216",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "L’erreur : attendre d’être bloqué pour découvrir LABAYKANUSUK Radio.",
+    "benefits": [
+      "Écouter guides, témoignages, documentaires et conseils 24 h/24",
+      "Ouvre la page avant le départ et vérifie que tu sais la retrouver",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 108,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-13-2"
+  },
+  {
+    "id": "ln120-t-0217",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Quand utiliser LABAYKANUSUK PLAY ?",
+    "benefits": [
+      "Tester ses connaissances Hajj, Omra et culture du pèlerinage",
+      "Le bon moment est avant que le besoin devienne urgent : prépare la ressource, puis garde-la accessible",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 109,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-04-2"
+  },
+  {
+    "id": "ln120-t-0218",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Guide complet du Hajj : une fonction, un besoin.",
+    "benefits": [
+      "Comprendre le Hajj étape par étape",
+      "Pas besoin d’installer une nouvelle application pour commencer",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 109,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-17-1"
+  },
+  {
+    "id": "ln120-t-0219",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Tu ne sais pas par où commencer ? Accompagnement Nusuk répond à un besoin précis.",
+    "benefits": [
+      "Être accompagné dans les démarches Hajj liées à Nusuk",
+      "Utilise-le quand tu veux éviter de chercher l’information au milieu de dizaines de pages",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 110,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-06-1"
+  },
+  {
+    "id": "ln120-t-0220",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Prêt à passer de la lecture à l’action ? Équipement Omra.",
+    "benefits": [
+      "Choisir les accessoires vraiment utiles pour la Omra",
+      "Ouvre la ressource, teste-la maintenant et garde uniquement ce qui t’est réellement utile",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 110,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-20-6"
+  },
+  {
+    "id": "ln120-t-0221",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Cette ressource peut aider un proche : Formation Hajj & Omra.",
+    "benefits": [
+      "Apprendre les rites avec une progression structurée",
+      "Si quelqu’un prépare son pèlerinage, partage-lui directement la page plutôt qu’une capture sans contexte",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 111,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-07-6"
+  },
+  {
+    "id": "ln120-t-0222",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Garde LABAYKANUSUK PLAY dans tes favoris sur ton téléphone.",
+    "benefits": [
+      "Tester ses connaissances Hajj, Omra et culture du pèlerinage",
+      "Sur place, l’accès rapide compte autant que la qualité de l’information",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 111,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-04-5"
+  },
+  {
+    "id": "ln120-t-0223",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Moins chercher, mieux préparer : Dou‘as Hajj & Omra.",
+    "benefits": [
+      "Retrouver les invocations utiles dans le parcours du pèlerin",
+      "L’outil est conçu pour transformer une question vague en prochaine étape claire",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 112,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-09-5"
+  },
+  {
+    "id": "ln120-t-0224",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "À utiliser avec les guides : Cartes Omra gratuites.",
+    "benefits": [
+      "Garder 7 cartes pratiques de la Omra sur son téléphone",
+      "Les outils donnent des repères rapides ; les guides et la formation permettent d’approfondir",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 112,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-08-4"
+  },
+  {
+    "id": "ln120-t-0225",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Sur le terrain, Compteur d’Istighfar doit te faire gagner du temps.",
+    "benefits": [
+      "Compter et écouter l’istighfar avec un objectif simple",
+      "Une ressource utile est celle que tu peux retrouver rapidement au bon moment",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 113,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-11-4"
+  },
+  {
+    "id": "ln120-t-0226",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Ajoute Horaires de prière à ta routine de préparation.",
+    "benefits": [
+      "Consulter les horaires de prière par ville",
+      "Quelques minutes régulières valent mieux qu’une longue session la veille du départ",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 113,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-12-3"
+  },
+  {
+    "id": "ln120-t-0227",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Premier Hajj ou première Omra ? Commence par LABAYKANUSUK Radio.",
+    "benefits": [
+      "Écouter guides, témoignages, documentaires et conseils 24 h/24",
+      "L’objectif est de réduire le flou sans remplacer ton guide, ton encadrement ou un avis religieux qualifié",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 114,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-13-3"
+  },
+  {
+    "id": "ln120-t-0228",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "L’erreur : attendre d’être bloqué pour découvrir Guides & articles.",
+    "benefits": [
+      "Rechercher un sujet précis parmi les guides Hajj & Omra",
+      "Ouvre la page avant le départ et vérifie que tu sais la retrouver",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 114,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-16-2"
+  },
+  {
+    "id": "ln120-t-0229",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Quand utiliser Le Fil du pèlerin ?",
+    "benefits": [
+      "Retrouver repères, terrain, histoire, quiz et outils",
+      "Le bon moment est avant que le besoin devienne urgent : prépare la ressource, puis garde-la accessible",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 115,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-15-2"
+  },
+  {
+    "id": "ln120-t-0230",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Équipement Omra : une fonction, un besoin.",
+    "benefits": [
+      "Choisir les accessoires vraiment utiles pour la Omra",
+      "Pas besoin d’installer une nouvelle application pour commencer",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 115,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-20-1"
+  },
+  {
+    "id": "ln120-t-0231",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Tu ne sais pas par où commencer ? Guide complet du Hajj répond à un besoin précis.",
+    "benefits": [
+      "Comprendre le Hajj étape par étape",
+      "Utilise-le quand tu veux éviter de chercher l’information au milieu de dizaines de pages",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 116,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-17-1"
+  },
+  {
+    "id": "ln120-t-0232",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Prêt à passer de la lecture à l’action ? Mon Parcours Hajj.",
+    "benefits": [
+      "Visualiser le Hajj jour par jour selon son type de Hajj",
+      "Ouvre la ressource, teste-la maintenant et garde uniquement ce qui t’est réellement utile",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 116,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-03-6"
+  },
+  {
+    "id": "ln120-t-0233",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "ihram",
+      "universal"
+    ],
+    "name": "Cette ressource peut aider un proche : Guide complet de la Omra.",
+    "benefits": [
+      "Comprendre la Omra du miqat jusqu’à la sortie d’ihram",
+      "Si quelqu’un prépare son pèlerinage, partage-lui directement la page plutôt qu’une capture sans contexte",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 117,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-18-6"
+  },
+  {
+    "id": "ln120-t-0234",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Garde Formation Hajj & Omra dans tes favoris sur ton téléphone.",
+    "benefits": [
+      "Apprendre les rites avec une progression structurée",
+      "Sur place, l’accès rapide compte autant que la qualité de l’information",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 117,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-07-5"
+  },
+  {
+    "id": "ln120-t-0235",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Moins chercher, mieux préparer : Équipement Omra.",
+    "benefits": [
+      "Choisir les accessoires vraiment utiles pour la Omra",
+      "L’outil est conçu pour transformer une question vague en prochaine étape claire",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 118,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-20-5"
+  },
+  {
+    "id": "ln120-t-0236",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À utiliser avec les guides : Compteur d’Istighfar.",
+    "benefits": [
+      "Compter et écouter l’istighfar avec un objectif simple",
+      "Les outils donnent des repères rapides ; les guides et la formation permettent d’approfondir",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 118,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-11-4"
+  },
+  {
+    "id": "ln120-t-0237",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Sur le terrain, Mon Parcours Omra doit te faire gagner du temps.",
+    "benefits": [
+      "Suivre la Omra étape par étape avant ou pendant le voyage",
+      "Une ressource utile est celle que tu peux retrouver rapidement au bon moment",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 119,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-02-4"
+  },
+  {
+    "id": "ln120-t-0238",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Ajoute Le Fil du pèlerin à ta routine de préparation.",
+    "benefits": [
+      "Retrouver repères, terrain, histoire, quiz et outils",
+      "Quelques minutes régulières valent mieux qu’une longue session la veille du départ",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 119,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-15-3"
+  },
+  {
+    "id": "ln120-t-0239",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Premier Hajj ou première Omra ? Commence par LABAYKANUSUK PLAY.",
+    "benefits": [
+      "Tester ses connaissances Hajj, Omra et culture du pèlerinage",
+      "L’objectif est de réduire le flou sans remplacer ton guide, ton encadrement ou un avis religieux qualifié",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Ouvrir l’outil",
+    "url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 120,
+    "master_slot": "10:30",
+    "master_id": "TOOLA-04-3"
+  },
+  {
+    "id": "ln120-t-0240",
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "L’erreur : attendre d’être bloqué pour découvrir Équipement Hajj.",
+    "benefits": [
+      "Préparer un équipement cohérent avec la réalité du Hajj",
+      "Ouvre la page avant le départ et vérifie que tu sais la retrouver",
+      "Accès direct depuis LABAYKANUSUK"
+    ],
+    "cta": "Découvrir",
+    "url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "source_reference": "LABAYKANUSUK — Ressources du pèlerin",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "master_day": 120,
+    "master_slot": "18:07",
+    "master_id": "TOOLB-19-2"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Accompagnement Nusuk",
+    "benefits": [
+      "Accompagnement Nusuk est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0241"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Mon Parcours Hajj",
+    "benefits": [
+      "Mon Parcours Hajj est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0242"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Cartes Omra gratuites",
+    "benefits": [
+      "Cartes Omra gratuites est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0243"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Dou‘as Hajj & Omra",
+    "benefits": [
+      "Dou‘as Hajj & Omra est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0244"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Dou‘as quotidiennes",
+    "benefits": [
+      "Dou‘as quotidiennes est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0245"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Compteur d’Istighfar",
+    "benefits": [
+      "Compteur d’Istighfar est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0246"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Histoire du Hajj",
+    "benefits": [
+      "Histoire du Hajj est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0247"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — LABAYKANUSUK Radio",
+    "benefits": [
+      "LABAYKANUSUK Radio est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0248"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "ihram",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Guide complet de la Omra",
+    "benefits": [
+      "Guide complet de la Omra est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0249"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Le Fil du pèlerin",
+    "benefits": [
+      "Le Fil du pèlerin est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0250"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Mon Parcours Omra",
+    "benefits": [
+      "Mon Parcours Omra est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0251"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Guide complet du Hajj",
+    "benefits": [
+      "Guide complet du Hajj est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0252"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Équipement Hajj",
+    "benefits": [
+      "Équipement Hajj est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0253"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Équipement Omra",
+    "benefits": [
+      "Équipement Omra est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0254"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — LABAYKANUSUK PLAY",
+    "benefits": [
+      "LABAYKANUSUK PLAY est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0255"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Par où commencer",
+    "benefits": [
+      "Par où commencer est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0256"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Espace Pèlerin",
+    "benefits": [
+      "Espace Pèlerin est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0257"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Horaires de prière",
+    "benefits": [
+      "Horaires de prière est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0258"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Guides & articles",
+    "benefits": [
+      "Guides & articles est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0259"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "À garder dans tes favoris — Formation Hajj & Omra",
+    "benefits": [
+      "Formation Hajj & Omra est une ressource à ouvrir avant d’en avoir besoin.",
+      "Garde le lien accessible sur ton téléphone.",
+      "Un accès direct évite de rechercher l’information dans l’urgence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0260"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Accompagnement Nusuk",
+    "benefits": [
+      "Prépare Accompagnement Nusuk avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0261"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Mon Parcours Hajj",
+    "benefits": [
+      "Prépare Mon Parcours Hajj avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0262"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Cartes Omra gratuites",
+    "benefits": [
+      "Prépare Cartes Omra gratuites avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0263"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Dou‘as Hajj & Omra",
+    "benefits": [
+      "Prépare Dou‘as Hajj & Omra avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0264"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Dou‘as quotidiennes",
+    "benefits": [
+      "Prépare Dou‘as quotidiennes avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0265"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Compteur d’Istighfar",
+    "benefits": [
+      "Prépare Compteur d’Istighfar avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0266"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Histoire du Hajj",
+    "benefits": [
+      "Prépare Histoire du Hajj avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0267"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — LABAYKANUSUK Radio",
+    "benefits": [
+      "Prépare LABAYKANUSUK Radio avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0268"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "ihram",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Guide complet de la Omra",
+    "benefits": [
+      "Prépare Guide complet de la Omra avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0269"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Le Fil du pèlerin",
+    "benefits": [
+      "Prépare Le Fil du pèlerin avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0270"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Mon Parcours Omra",
+    "benefits": [
+      "Prépare Mon Parcours Omra avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0271"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Guide complet du Hajj",
+    "benefits": [
+      "Prépare Guide complet du Hajj avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0272"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Équipement Hajj",
+    "benefits": [
+      "Prépare Équipement Hajj avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0273"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Équipement Omra",
+    "benefits": [
+      "Prépare Équipement Omra avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0274"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — LABAYKANUSUK PLAY",
+    "benefits": [
+      "Prépare LABAYKANUSUK PLAY avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0275"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Par où commencer",
+    "benefits": [
+      "Prépare Par où commencer avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0276"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Espace Pèlerin",
+    "benefits": [
+      "Prépare Espace Pèlerin avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0277"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Horaires de prière",
+    "benefits": [
+      "Prépare Horaires de prière avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0278"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Guides & articles",
+    "benefits": [
+      "Prépare Guides & articles avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0279"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Le bon réflexe avant le départ — Formation Hajj & Omra",
+    "benefits": [
+      "Prépare Formation Hajj & Omra avant le voyage.",
+      "Teste la ressource tranquillement chez toi.",
+      "Sur place, tu sauras exactement où retrouver l’essentiel."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0280"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Accompagnement Nusuk",
+    "benefits": [
+      "Être accompagné dans les démarches Hajj liées à Nusuk. Le bon moment est avant que le besoin devienne urgent : prépare la ressource, puis garde-la accessible.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0281"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Mon Parcours Hajj",
+    "benefits": [
+      "Visualiser le Hajj jour par jour selon son type de Hajj. Pas besoin d’installer une nouvelle application pour commencer.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0282"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Cartes Omra gratuites",
+    "benefits": [
+      "Garder 7 cartes pratiques de la Omra sur son téléphone. Utilise-le quand tu veux éviter de chercher l’information au milieu de dizaines de pages.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0283"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Dou‘as Hajj & Omra",
+    "benefits": [
+      "Retrouver les invocations utiles dans le parcours du pèlerin. Si quelqu’un prépare son pèlerinage, partage-lui directement la page plutôt qu’une capture sans contexte.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0284"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Dou‘as quotidiennes",
+    "benefits": [
+      "Lire et écouter des dou‘as en arabe, français et phonétique. Sur place, l’accès rapide compte autant que la qualité de l’information.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0285"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Compteur d’Istighfar",
+    "benefits": [
+      "Compter et écouter l’istighfar avec un objectif simple. L’outil est conçu pour transformer une question vague en prochaine étape claire.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0286"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Histoire du Hajj",
+    "benefits": [
+      "Explorer 27 chapitres de l’histoire du pèlerinage. Les outils donnent des repères rapides ; les guides et la formation permettent d’approfondir.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0287"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — LABAYKANUSUK Radio",
+    "benefits": [
+      "Écouter guides, témoignages, documentaires et conseils 24 h/24. Une ressource utile est celle que tu peux retrouver rapidement au bon moment.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0288"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "ihram",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Guide complet de la Omra",
+    "benefits": [
+      "Comprendre la Omra du miqat jusqu’à la sortie d’ihram. Quelques minutes régulières valent mieux qu’une longue session la veille du départ.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0289"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Le Fil du pèlerin",
+    "benefits": [
+      "Retrouver repères, terrain, histoire, quiz et outils. L’objectif est de réduire le flou sans remplacer ton guide, ton encadrement ou un avis religieux qualifié.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0290"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Mon Parcours Omra",
+    "benefits": [
+      "Suivre la Omra étape par étape avant ou pendant le voyage. Ouvre la page avant le départ et vérifie que tu sais la retrouver.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0291"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Guide complet du Hajj",
+    "benefits": [
+      "Comprendre le Hajj étape par étape. Le bon moment est avant que le besoin devienne urgent : prépare la ressource, puis garde-la accessible.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0292"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Équipement Hajj",
+    "benefits": [
+      "Préparer un équipement cohérent avec la réalité du Hajj. Utilise-le quand tu veux éviter de chercher l’information au milieu de dizaines de pages.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0293"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Équipement Omra",
+    "benefits": [
+      "Choisir les accessoires vraiment utiles pour la Omra. Si quelqu’un prépare son pèlerinage, partage-lui directement la page plutôt qu’une capture sans contexte.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0294"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — LABAYKANUSUK PLAY",
+    "benefits": [
+      "Tester ses connaissances Hajj, Omra et culture du pèlerinage. Une ressource utile est celle que tu peux retrouver rapidement au bon moment.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0295"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Par où commencer",
+    "benefits": [
+      "Trouver la bonne porte d’entrée selon son besoin. Quelques minutes régulières valent mieux qu’une longue session la veille du départ.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0296"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Espace Pèlerin",
+    "benefits": [
+      "Centraliser sa préparation et retrouver les ressources utiles. Ouvre la page avant le départ et vérifie que tu sais la retrouver.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0297"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Horaires de prière",
+    "benefits": [
+      "Consulter les horaires de prière par ville. Ouvre la ressource, teste-la maintenant et garde uniquement ce qui t’est réellement utile.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0298"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Guides & articles",
+    "benefits": [
+      "Rechercher un sujet précis parmi les guides Hajj & Omra. Sur place, l’accès rapide compte autant que la qualité de l’information.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0299"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Une ressource, un besoin précis — Formation Hajj & Omra",
+    "benefits": [
+      "Apprendre les rites avec une progression structurée. Quelques minutes régulières valent mieux qu’une longue session la veille du départ.",
+      "Utilise-la au moment où ce besoin se présente.",
+      "Pas de détour : un accès direct vers la ressource concernée."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0300"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Accompagnement Nusuk",
+    "benefits": [
+      "Ajoute Accompagnement Nusuk à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0301"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Mon Parcours Hajj",
+    "benefits": [
+      "Ajoute Mon Parcours Hajj à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0302"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Cartes Omra gratuites",
+    "benefits": [
+      "Ajoute Cartes Omra gratuites à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0303"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Dou‘as Hajj & Omra",
+    "benefits": [
+      "Ajoute Dou‘as Hajj & Omra à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0304"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Dou‘as quotidiennes",
+    "benefits": [
+      "Ajoute Dou‘as quotidiennes à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0305"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Compteur d’Istighfar",
+    "benefits": [
+      "Ajoute Compteur d’Istighfar à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0306"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Histoire du Hajj",
+    "benefits": [
+      "Ajoute Histoire du Hajj à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0307"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — LABAYKANUSUK Radio",
+    "benefits": [
+      "Ajoute LABAYKANUSUK Radio à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0308"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "ihram",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Guide complet de la Omra",
+    "benefits": [
+      "Ajoute Guide complet de la Omra à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0309"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Le Fil du pèlerin",
+    "benefits": [
+      "Ajoute Le Fil du pèlerin à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0310"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Mon Parcours Omra",
+    "benefits": [
+      "Ajoute Mon Parcours Omra à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0311"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Guide complet du Hajj",
+    "benefits": [
+      "Ajoute Guide complet du Hajj à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0312"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Équipement Hajj",
+    "benefits": [
+      "Ajoute Équipement Hajj à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0313"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Équipement Omra",
+    "benefits": [
+      "Ajoute Équipement Omra à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0314"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — LABAYKANUSUK PLAY",
+    "benefits": [
+      "Ajoute LABAYKANUSUK PLAY à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0315"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Par où commencer",
+    "benefits": [
+      "Ajoute Par où commencer à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0316"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Espace Pèlerin",
+    "benefits": [
+      "Ajoute Espace Pèlerin à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0317"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Horaires de prière",
+    "benefits": [
+      "Ajoute Horaires de prière à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0318"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Guides & articles",
+    "benefits": [
+      "Ajoute Guides & articles à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0319"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Prépare ton téléphone comme ta valise — Formation Hajj & Omra",
+    "benefits": [
+      "Ajoute Formation Hajj & Omra à tes favoris.",
+      "Les bons liens font partie de la préparation pratique.",
+      "Quelques secondes gagnées sur place peuvent faire la différence."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0320"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Accompagnement Nusuk",
+    "benefits": [
+      "Découvre Accompagnement Nusuk avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0321"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Mon Parcours Hajj",
+    "benefits": [
+      "Découvre Mon Parcours Hajj avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0322"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Cartes Omra gratuites",
+    "benefits": [
+      "Découvre Cartes Omra gratuites avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0323"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Dou‘as Hajj & Omra",
+    "benefits": [
+      "Découvre Dou‘as Hajj & Omra avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0324"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Dou‘as quotidiennes",
+    "benefits": [
+      "Découvre Dou‘as quotidiennes avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0325"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Compteur d’Istighfar",
+    "benefits": [
+      "Découvre Compteur d’Istighfar avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0326"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Histoire du Hajj",
+    "benefits": [
+      "Découvre Histoire du Hajj avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0327"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — LABAYKANUSUK Radio",
+    "benefits": [
+      "Découvre LABAYKANUSUK Radio avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0328"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "ihram",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Guide complet de la Omra",
+    "benefits": [
+      "Découvre Guide complet de la Omra avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0329"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Le Fil du pèlerin",
+    "benefits": [
+      "Découvre Le Fil du pèlerin avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0330"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Mon Parcours Omra",
+    "benefits": [
+      "Découvre Mon Parcours Omra avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0331"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Guide complet du Hajj",
+    "benefits": [
+      "Découvre Guide complet du Hajj avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0332"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Équipement Hajj",
+    "benefits": [
+      "Découvre Équipement Hajj avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0333"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Équipement Omra",
+    "benefits": [
+      "Découvre Équipement Omra avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0334"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — LABAYKANUSUK PLAY",
+    "benefits": [
+      "Découvre LABAYKANUSUK PLAY avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0335"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Par où commencer",
+    "benefits": [
+      "Découvre Par où commencer avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0336"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Espace Pèlerin",
+    "benefits": [
+      "Découvre Espace Pèlerin avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0337"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Horaires de prière",
+    "benefits": [
+      "Découvre Horaires de prière avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0338"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Guides & articles",
+    "benefits": [
+      "Découvre Guides & articles avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0339"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Avant de partir, ouvre-la une fois — Formation Hajj & Omra",
+    "benefits": [
+      "Découvre Formation Hajj & Omra avant le départ.",
+      "Repère son fonctionnement et ce qu’elle contient.",
+      "Tu l’utiliseras plus sereinement au moment utile."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0340"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Accompagnement Nusuk",
+    "benefits": [
+      "Accompagnement Nusuk répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/accompagnement-hajj-nusuk",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0341"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Mon Parcours Hajj",
+    "benefits": [
+      "Mon Parcours Hajj répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0342"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Cartes Omra gratuites",
+    "benefits": [
+      "Cartes Omra gratuites répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/cartes-guide-omra-gratuites",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0343"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Dou‘as Hajj & Omra",
+    "benefits": [
+      "Dou‘as Hajj & Omra répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/dou-as-du-hajj-et-de-la-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0344"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Dou‘as quotidiennes",
+    "benefits": [
+      "Dou‘as quotidiennes répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/douas-adhkar-francais-arabe-phonetique",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0345"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Compteur d’Istighfar",
+    "benefits": [
+      "Compteur d’Istighfar répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/compteur-istighfar-gratuit",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0346"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Histoire du Hajj",
+    "benefits": [
+      "Histoire du Hajj répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/histoire-du-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0347"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — LABAYKANUSUK Radio",
+    "benefits": [
+      "LABAYKANUSUK Radio répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/radio-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0348"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "ihram",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Guide complet de la Omra",
+    "benefits": [
+      "Guide complet de la Omra répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-omra/comment-faire-la-omra-etape-par-etape-guide-complet-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0349"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Le Fil du pèlerin",
+    "benefits": [
+      "Le Fil du pèlerin répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/le-fil-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0350"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Mon Parcours Omra",
+    "benefits": [
+      "Mon Parcours Omra répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/mon-parcours-omra-interactif",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0351"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Guide complet du Hajj",
+    "benefits": [
+      "Guide complet du Hajj répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/blogs/blog-hajj/guide-complet-du-hajj-etape-par-etape",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0352"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Équipement Hajj",
+    "benefits": [
+      "Équipement Hajj répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-hajj",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0353"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Équipement Omra",
+    "benefits": [
+      "Équipement Omra répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/collections/equipement-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0354"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — LABAYKANUSUK PLAY",
+    "benefits": [
+      "LABAYKANUSUK PLAY répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/jeu-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0355"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Par où commencer",
+    "benefits": [
+      "Par où commencer répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/par-ou-commencer",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0356"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Espace Pèlerin",
+    "benefits": [
+      "Espace Pèlerin répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/espace-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0357"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Horaires de prière",
+    "benefits": [
+      "Horaires de prière répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/horaires-priere",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0358"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Guides & articles",
+    "benefits": [
+      "Guides & articles répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/guides-articles-hajj-omra",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0359"
+  },
+  {
+    "type": "tool",
+    "approved": true,
+    "review_status": "approved",
+    "theme": [
+      "hajj",
+      "omra",
+      "universal"
+    ],
+    "name": "Un outil utile n’attend pas l’urgence — Formation Hajj & Omra",
+    "benefits": [
+      "Formation Hajj & Omra répond à un besoin concret du pèlerin.",
+      "Anticipe plutôt que chercher au dernier moment.",
+      "LABAYKANUSUK centralise la ressource pour la retrouver facilement."
+    ],
+    "cta": "DÉCOUVRIR",
+    "url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "source_reference": "LABAYKANUSUK — ressource officielle du site",
+    "source_url": "https://www.labaykanusuk.com/pages/formation-hajj-et-omra-gratuite-premiere-plateforme-francophone-du-pelerin",
+    "format_family": "acquisition-angle",
+    "id": "ln120-t-0360"
   }
 ]
