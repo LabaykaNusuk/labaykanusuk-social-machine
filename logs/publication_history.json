@@ -2186,5 +2186,23 @@
     ],
     "source": "ADAB / DISTINCTION PÉDAGOGIQUE — Guide Madinah al-Munawwarah",
     "published_at_utc": "2026-09-06T19:10:13.846732+00:00"
+  },
+  {
+    "date": "2026-09-06",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "ln120-r-0004",
+    "content_type": "hook",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18338803615284803",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1b2d7fb02a2aade60784d37975b45228cccfed4c/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-06T20:09:28.907537+00:00"
   }
 ]
