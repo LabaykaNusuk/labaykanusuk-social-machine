@@ -2094,5 +2094,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-06T11:09:03.988774+00:00"
+  },
+  {
+    "date": "2026-09-06",
+    "slot_order": 4,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "ln120-r-0001",
+    "content_type": "hook",
+    "photo_id": "IHRAM_PREPARATION",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18135554917627971",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/5fb36cf29b258510de9c9220261c8b06ff6fda44/docs/media/slot-04.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-06T13:32:32.049189+00:00"
   }
 ]
