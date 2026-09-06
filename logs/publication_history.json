@@ -2148,5 +2148,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-06T17:17:46.846825+00:00"
+  },
+  {
+    "date": "2026-09-06",
+    "slot_order": 7,
+    "slot_format": "feed",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "ln120-r-0003",
+    "content_type": "hook",
+    "photo_id": "HADY_SACRIFICE",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "17962105769984653",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/93480f77e4257c9f364d72f02ec891bbfcc90ff2/docs/media/slot-07.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-06T18:32:05.770374+00:00"
   }
 ]
