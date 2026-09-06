@@ -2058,5 +2058,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-06T06:08:59.094920+00:00"
+  },
+  {
+    "date": "2026-09-06",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "TOOL-PAR-OU-COMMENCER",
+    "content_type": "tool",
+    "photo_id": "HARAM_EXTERIOR",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18109451435331041",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1c37634e5cb2e42098731b763d011a2d6ad9e7cb/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-06T08:32:26.826469+00:00"
   }
 ]
