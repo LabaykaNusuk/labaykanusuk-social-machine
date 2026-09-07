@@ -2222,5 +2222,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-07T06:08:09.727218+00:00"
+  },
+  {
+    "date": "2026-09-07",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "ln120-t-0002",
+    "content_type": "tool",
+    "photo_id": "MINA_CAMP",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18120408139909599",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/b7e958984c2f8b81b2975394d34c5c64acfdd87a/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-07T08:31:42.824515+00:00"
   }
 ]
