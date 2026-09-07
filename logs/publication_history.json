@@ -2204,5 +2204,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-06T20:09:28.907537+00:00"
+  },
+  {
+    "date": "2026-09-07",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "ln120-r-0005",
+    "content_type": "hook",
+    "photo_id": "ARAFAT_MUZDALIFAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18070952432536501",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/632454c81e91e1ca2e8d3e19e05223b11889a30e/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-07T06:08:09.727218+00:00"
   }
 ]
