@@ -2514,5 +2514,23 @@
     ],
     "source": "ARCHÉOLOGIE — L’Histoire du Hajj",
     "published_at_utc": "2026-09-08T19:08:27.234214+00:00"
+  },
+  {
+    "date": "2026-09-08",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "ln120-r-0014",
+    "content_type": "hook",
+    "photo_id": "SAI_CORRIDOR",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18004635002970165",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/4ee3af8c0c68c4a9cc2fd9ffc90d6d45c2c82e82/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-08T20:08:17.300908+00:00"
   }
 ]
