@@ -2386,5 +2386,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-08T06:08:32.763856+00:00"
+  },
+  {
+    "date": "2026-09-08",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "ln120-t-0006",
+    "content_type": "tool",
+    "photo_id": "MINA_ROAD_AERIAL",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18375192103236990",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/546ffc79930102efb20bad40aef9fc6f248d5180/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-08T08:31:59.170787+00:00"
   }
 ]
