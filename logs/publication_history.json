@@ -2604,5 +2604,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-09T13:32:17.835419+00:00"
+  },
+  {
+    "date": "2026-09-09",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "ln120-t-0009",
+    "content_type": "tool",
+    "photo_id": "ARCADES_TALBIYAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18102731207204237",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/3fa446286849a35ba3b2943bf3927fef46589c45/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-09T16:08:55.162862+00:00"
   }
 ]
