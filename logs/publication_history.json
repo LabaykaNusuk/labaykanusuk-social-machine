@@ -2622,5 +2622,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-09T16:08:55.162862+00:00"
+  },
+  {
+    "date": "2026-09-09",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "ln120-t-0010",
+    "content_type": "tool",
+    "photo_id": "ABRAJ_CLOCK",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18111009787892093",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/fad0511a7c238c4f1dc9c9ff3aed7c97ec6d1e90/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-09T17:18:08.658230+00:00"
   }
 ]
