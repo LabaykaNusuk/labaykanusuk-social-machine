@@ -2640,5 +2640,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-09T17:18:08.658230+00:00"
+  },
+  {
+    "date": "2026-09-09",
+    "slot_order": 7,
+    "slot_format": "feed",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "ln120-t-0011",
+    "content_type": "tool",
+    "photo_id": "JAMARAT_CLOSE",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "18113795675044173",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/02786f6ebaa816dae104cda77cae2e189e10b36a/docs/media/slot-07.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-09T18:33:11.405780+00:00"
   }
 ]
