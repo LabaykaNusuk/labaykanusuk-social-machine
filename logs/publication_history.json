@@ -2586,5 +2586,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-09T11:08:42.624963+00:00"
+  },
+  {
+    "date": "2026-09-09",
+    "slot_order": 4,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "ln120-r-0017",
+    "content_type": "hook",
+    "photo_id": "TAWAF_IFADAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17885139822617609",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/442a25dd07bfa5b184a275616efd5e9d6c069234/docs/media/slot-04.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-09T13:32:17.835419+00:00"
   }
 ]
