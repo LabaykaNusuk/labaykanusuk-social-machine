@@ -2568,5 +2568,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-09T08:32:00.849313+00:00"
+  },
+  {
+    "date": "2026-09-09",
+    "slot_order": 3,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "ln120-r-0016",
+    "content_type": "hook",
+    "photo_id": "JAMARAT_WIDE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18442856350121611",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e93d48faf5bcc61c4ce3ee14b76d153576df0af9/docs/media/slot-03.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-09T11:08:42.624963+00:00"
   }
 ]
