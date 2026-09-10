@@ -2822,5 +2822,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-10T18:32:41.111545+00:00"
+  },
+  {
+    "date": "2026-09-10",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0005",
+    "content_type": "quiz",
+    "photo_id": "TAWAF_IFADAH",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17962284110982560",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/283295246fd7adabe3134dfaa442f7adb76f6676/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/283295246fd7adabe3134dfaa442f7adb76f6676/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/283295246fd7adabe3134dfaa442f7adb76f6676/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "CORAN — Coran 2:127",
+    "published_at_utc": "2026-09-10T19:09:50.143739+00:00"
   }
 ]
