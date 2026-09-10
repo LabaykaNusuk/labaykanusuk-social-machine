@@ -2842,5 +2842,23 @@
     ],
     "source": "CORAN — Coran 2:127",
     "published_at_utc": "2026-09-10T19:09:50.143739+00:00"
+  },
+  {
+    "date": "2026-09-10",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0004",
+    "content_type": "hook",
+    "photo_id": "JAMARAT_WIDE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18182266420418961",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/dced0c41b7a86f719099ed1d29726b0ac639b7e7/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-10T20:09:56.499844+00:00"
   }
 ]
