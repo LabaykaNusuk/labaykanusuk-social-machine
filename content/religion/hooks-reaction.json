@@ -1,251 +1,2282 @@
 [
   {
-    "id": "hook-jumua-expiation",
+    "id": "clean-r-0121",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "universal",
-      "rappel"
+      "hajj"
     ],
-    "title_hook": "Sais-tu que d’une Jumu‘a à l’autre, des fautes peuvent être effacées ?",
-    "editorial_copy": "Le Prophète Muhammad ﷺ a enseigné que les cinq prières, d’une Jumu‘a à l’autre et d’un Ramadan à l’autre, sont une expiation de ce qui se trouve entre eux lorsque les grands péchés sont évités.",
-    "support_reference": "Sahih Muslim 233c",
-    "source_grade": "sahih",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "D’une Jumu‘a à l’autre : un rappel sur l’effacement des fautes.",
-      "Un rappel à garder en tête entre deux Jumu‘a.",
-      "Ce que les textes enseignent entre une Jumu‘a et la suivante.",
-      "Sais-tu que d’une Jumu‘a à l’autre, des fautes peuvent être effacées ?"
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Quel objet est déconseillé dans les déplacements vers les Jamarât lorsqu'il encombre les flux ?",
+    "editorial_copy": "Les autorités demandent d'éviter de transporter des bagages dans les zones de forte affluence des Jamarât.",
+    "support_reference": "Guide de sensibilisation des Jamarat, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Al-Jamarat-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   },
   {
-    "id": "hook-omra-expiation",
+    "id": "clean-r-0122",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "omra",
-      "kaaba",
-      "makkah"
+      "hajj"
     ],
-    "title_hook": "Sais-tu ce qu’il y a entre une Omra et la suivante ?",
-    "editorial_copy": "Le Prophète Muhammad ﷺ a enseigné qu’une Omra à l’autre est une expiation de ce qui a été commis entre les deux.",
-    "support_reference": "Sahih al-Bukhari 1773",
-    "source_grade": "sahih",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "Entre une Omra et la suivante : que faut-il retenir ?",
-      "Une Omra après l’autre : un enseignement à connaître.",
-      "Ce qui est rapporté entre deux Omra mérite d’être connu.",
-      "Sais-tu ce qu’il y a entre une Omra et la suivante ?"
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Quelle différence y a-t-il entre le 10 Dhul-Hijjah et les jours de Tashriq pour la lapidation des Jamarât ?",
+    "editorial_copy": "Le récit du jour du Nahr décrit Jamrat al-ʿAqabah, tandis que les jours de Tashriq concernent les trois Jamarât.",
+    "support_reference": "Guide de sensibilisation des Jamarat, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Al-Jamarat-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   },
   {
-    "id": "hook-hajj-mabrur-paradis",
+    "id": "clean-r-0123",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "hajj",
-      "kaaba",
-      "makkah"
+      "hajj"
     ],
-    "title_hook": "Le savais-tu ? Le Hajj accepté a une récompense immense.",
-    "editorial_copy": "Le Prophète Muhammad ﷺ a enseigné que le Hajj mabrur n’a d’autre récompense que le Paradis.",
-    "support_reference": "Sahih al-Bukhari 1773",
-    "source_grade": "sahih",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "Le Hajj mabrur : quelle récompense est promise ?",
-      "Une récompense immense est liée au Hajj mabrur.",
-      "Voici pourquoi le Hajj mabrur est si précieux.",
-      "Le savais-tu ? Le Hajj accepté a une récompense immense."
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Combien de petits cailloux le récit de Jâbir mentionne-t-il pour Jamrat al-ʿAqabah le 10 Dhul-Hijjah ?",
+    "editorial_copy": "Le récit mentionne sept petits cailloux pour Jamrat al-ʿAqabah.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   },
   {
-    "id": "hook-hajj-retour-nouveau-ne",
+    "id": "clean-r-0124",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "hajj",
-      "kaaba",
-      "makkah"
+      "hajj"
     ],
-    "title_hook": "Sais-tu comment peut revenir celui qui accomplit correctement son Hajj ?",
-    "editorial_copy": "Celui qui accomplit le Hajj pour Allah, en s’écartant des rapports conjugaux et de la désobéissance pendant le pèlerinage, revient purifié comme au jour de sa naissance.",
-    "support_reference": "Sahih al-Bukhari 1521",
-    "source_grade": "sahih",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "Après un Hajj accompli correctement, quel retour est décrit ?",
-      "Le Hajj peut marquer un véritable nouveau départ.",
-      "Un enseignement fort sur celui qui accomplit correctement son Hajj.",
-      "Sais-tu comment peut revenir celui qui accomplit correctement son Hajj ?"
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Que prononce-t-on à chaque caillou dans le récit de Jâbir pour Jamrat al-ʿAqabah ?",
+    "editorial_copy": "Le récit de Jâbir mentionne le takbir à chaque caillou.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   },
   {
-    "id": "hook-hajj-arafah",
+    "id": "clean-r-0125",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "hajj",
-      "arafat"
+      "hajj"
     ],
-    "title_hook": "Pourquoi ‘Arafat est-il si central dans le Hajj ?",
-    "editorial_copy": "Le Prophète Muhammad ﷺ a résumé l’importance de cette étape par une parole très courte : « Le Hajj, c’est ‘Arafah. »",
-    "support_reference": "Jami‘ at-Tirmidhi 889, classé sahih",
-    "source_grade": "sahih",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "Pourquoi ‘Arafat est-il si central dans le Hajj ?",
-      "‘Arafat : pourquoi cette étape est-elle au cœur du Hajj ?",
-      "Une parole très courte résume l’importance de ‘Arafat.",
-      "Le Hajj et ‘Arafat : un lien essentiel à connaître."
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Pendant les jours de Tashriq, quel ordre est rapporté pour les trois Jamarât ?",
+    "editorial_copy": "Le récit d'Ibn ʿUmar décrit la petite Jamrah, puis la moyenne, puis la grande.",
+    "support_reference": "Sahih al-Bukhari 1751",
+    "source_url": "https://sunnah.com/bukhari:1751",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   },
   {
-    "id": "hook-jeune-arafah",
+    "id": "clean-r-0126",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "arafat",
-      "dhul-hijjah",
-      "rappel"
+      "hajj"
     ],
-    "title_hook": "Le savais-tu ? Le jeûne du jour de ‘Arafah possède une immense vertu.",
-    "editorial_copy": "Le Prophète Muhammad ﷺ a indiqué que le jeûne du jour de ‘Arafah expie les fautes de l’année précédente et de l’année suivante.",
-    "support_reference": "Sahih Muslim 1162",
-    "source_grade": "sahih",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "Le jeûne du jour de ‘Arafah possède une immense vertu.",
-      "Pourquoi le jeûne de ‘Arafah est-il si précieux ?",
-      "Un jour de jeûne, une vertu immense : ‘Arafah.",
-      "Le savais-tu ? Le jeûne du jour de ‘Arafah possède une immense vertu."
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Combien de cailloux Ibn ʿUmar lançait-il à chacune des Jamarât dans le hadith ?",
+    "editorial_copy": "Sahih al-Bukhari 1751 mentionne sept petits cailloux avec takbir pour chaque lancer.",
+    "support_reference": "Sahih al-Bukhari 1751",
+    "source_url": "https://sunnah.com/bukhari:1751",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   },
   {
-    "id": "hook-dhul-hijjah-dix-jours",
+    "id": "clean-r-0127",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "dhul-hijjah",
-      "hajj",
-      "rappel"
+      "hajj"
     ],
-    "title_hook": "Sais-tu pourquoi les dix premiers jours de Dhul Hijjah sont si précieux ?",
-    "editorial_copy": "Le Prophète Muhammad ﷺ a enseigné que les bonnes œuvres accomplies durant ces jours ont une valeur exceptionnelle auprès d’Allah.",
-    "support_reference": "Sahih al-Bukhari 969",
-    "source_grade": "sahih",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "Les dix premiers jours de Dhul Hijjah : pourquoi sont-ils si précieux ?",
-      "Ces dix jours occupent une place exceptionnelle.",
-      "Dhul Hijjah : dix jours à ne pas laisser passer.",
-      "Sais-tu pourquoi les dix premiers jours de Dhul Hijjah sont si précieux ?"
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Après quelles Jamarât Ibn ʿUmar s'arrêtait-il longuement pour invoquer Allah ?",
+    "editorial_copy": "Le hadith décrit une longue invocation après les deux premières Jamarât.",
+    "support_reference": "Sahih al-Bukhari 1751",
+    "source_url": "https://sunnah.com/bukhari:1751",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   },
   {
-    "id": "hook-omra-ramadan",
+    "id": "clean-r-0128",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "omra",
-      "ramadan",
-      "makkah"
+      "hajj"
     ],
-    "title_hook": "Le savais-tu ? Une Omra pendant Ramadan a une récompense particulière.",
-    "editorial_copy": "Le Prophète Muhammad ﷺ a enseigné qu’une Omra accomplie pendant Ramadan équivaut à un Hajj en récompense.",
-    "support_reference": "Sahih al-Bukhari 1782",
-    "source_grade": "sahih",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "Une Omra pendant Ramadan possède une récompense particulière.",
-      "Ramadan change-t-il la récompense d’une Omra ?",
-      "Omra pendant Ramadan : un mérite particulier à connaître.",
-      "Le savais-tu ? Une Omra pendant Ramadan a une récompense particulière."
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Un pèlerin a, par ignorance, rasé ses cheveux avant de sacrifier le jour du Nahr. Quelle réponse prophétique est rapportée ?",
+    "editorial_copy": "Sahih al-Bukhari 1736 rapporte « fais-le maintenant, il n'y a pas de mal » pour ce type d'inversion involontaire.",
+    "support_reference": "Sahih al-Bukhari 1736",
+    "source_url": "https://sunnah.com/bukhari:1736",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   },
   {
-    "id": "hook-medine-priere-mille",
+    "id": "clean-r-0129",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "medine",
-      "masjid-nabawi"
+      "hajj"
     ],
-    "title_hook": "Sais-tu ce que vaut une prière dans la Mosquée du Prophète ﷺ ?",
-    "editorial_copy": "Une prière dans la mosquée du Prophète ﷺ à Médine est meilleure que mille prières dans les autres mosquées, à l’exception d’Al-Masjid Al-Haram.",
-    "support_reference": "Sahih al-Bukhari 1190",
-    "source_grade": "sahih",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "À Médine, que vaut une prière dans la Mosquée du Prophète ﷺ ?",
-      "Une prière à Médine : une valeur particulière à connaître.",
-      "La Mosquée du Prophète ﷺ : pourquoi une prière y est-elle si précieuse ?",
-      "Sais-tu ce que vaut une prière dans la Mosquée du Prophète ﷺ ?"
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Un pèlerin a sacrifié avant la lapidation le jour du Nahr par ignorance. Quelle réponse est rapportée ?",
+    "editorial_copy": "Le hadith rapporte une souplesse pour ces inversions involontaires le jour du Nahr.",
+    "support_reference": "Sahih al-Bukhari 1736",
+    "source_url": "https://sunnah.com/bukhari:1736",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   },
   {
-    "id": "hook-hajj-omra-pauvrete-fautes",
+    "id": "clean-r-0130",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "hajj",
-      "omra",
-      "makkah"
+      "hajj"
     ],
-    "title_hook": "Sais-tu ce qui est rapporté sur l’enchaînement du Hajj et de la Omra ?",
-    "editorial_copy": "Le Prophète Muhammad ﷺ a encouragé à faire suivre le Hajj et la Omra, en indiquant qu’ils repoussent la pauvreté et les fautes comme le soufflet débarrasse le métal de ses impuretés.",
-    "support_reference": "Jami‘ at-Tirmidhi 810, classé hasan",
-    "source_grade": "hasan",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "Hajj et Omra : que disent les textes sur le fait de les enchaîner ?",
-      "Faire suivre le Hajj et la Omra : un enseignement souvent méconnu.",
-      "Un hadith à connaître sur l’enchaînement du Hajj et de la Omra.",
-      "Sais-tu ce qui est rapporté sur l’enchaînement du Hajj et de la Omra ?"
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Dans la zone des Jamarât très fréquentée, quelle pratique est conforme aux consignes officielles ?",
+    "editorial_copy": "Les consignes officielles visent à préserver la sécurité et la fluidité des foules.",
+    "support_reference": "Guide de sensibilisation des Jamarat, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Al-Jamarat-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   },
   {
-    "id": "hook-trois-mosquees",
+    "id": "clean-r-0131",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "makkah",
-      "medine",
-      "masjid-nabawi",
-      "kaaba"
+      "hajj"
     ],
-    "title_hook": "Le savais-tu ? Trois mosquées occupent une place particulière pour le voyage cultuel.",
-    "editorial_copy": "Le Prophète Muhammad ﷺ a cité Al-Masjid Al-Haram, sa mosquée à Médine et Al-Masjid Al-Aqsa parmi les trois mosquées vers lesquelles on entreprend spécialement le voyage.",
-    "support_reference": "Sahih al-Bukhari 1189",
-    "source_grade": "sahih",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "Trois mosquées occupent une place particulière dans le voyage cultuel.",
-      "Pourquoi ces trois mosquées sont-elles citées ensemble ?",
-      "Un enseignement essentiel sur trois mosquées.",
-      "Le savais-tu ? Trois mosquées occupent une place particulière pour le voyage cultuel."
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Quel objet est déconseillé dans les déplacements vers les Jamarât lorsqu'il encombre les flux ?",
+    "editorial_copy": "Les autorités demandent d'éviter de transporter des bagages dans les zones de forte affluence des Jamarât.",
+    "support_reference": "Guide de sensibilisation des Jamarat, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Al-Jamarat-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   },
   {
-    "id": "hook-hajj-mabrur-preparation",
+    "id": "clean-r-0132",
     "type": "hook",
     "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
     "theme": [
-      "hajj",
-      "rappel"
+      "hajj"
     ],
-    "title_hook": "Un rappel qui donne envie de préparer son pèlerinage autrement.",
-    "editorial_copy": "Dans les textes authentiques, le Hajj mabrur est associé au Paradis. La préparation du pèlerinage ne concerne donc pas seulement le voyage, mais aussi l’intention, le comportement et l’adoration.",
-    "support_reference": "Sahih al-Bukhari 1773",
-    "source_grade": "sahih",
-    "format_family": "hook_reaction",
-    "title_variants": [
-      "Un rappel qui donne envie de préparer son pèlerinage autrement.",
-      "Avant le départ, un rappel sur ce que signifie un Hajj mabrur.",
-      "Préparer son Hajj ne concerne pas seulement le voyage.",
-      "Un Hajj bien préparé ne se résume pas à la logistique."
-    ]
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Quelle différence y a-t-il entre le 10 Dhul-Hijjah et les jours de Tashriq pour la lapidation des Jamarât ?",
+    "editorial_copy": "Le récit du jour du Nahr décrit Jamrat al-ʿAqabah, tandis que les jours de Tashriq concernent les trois Jamarât.",
+    "support_reference": "Guide de sensibilisation des Jamarat, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Al-Jamarat-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0133",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Combien de petits cailloux le récit de Jâbir mentionne-t-il pour Jamrat al-ʿAqabah le 10 Dhul-Hijjah ?",
+    "editorial_copy": "Le récit mentionne sept petits cailloux pour Jamrat al-ʿAqabah.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0134",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Que prononce-t-on à chaque caillou dans le récit de Jâbir pour Jamrat al-ʿAqabah ?",
+    "editorial_copy": "Le récit de Jâbir mentionne le takbir à chaque caillou.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0135",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Pendant les jours de Tashriq, quel ordre est rapporté pour les trois Jamarât ?",
+    "editorial_copy": "Le récit d'Ibn ʿUmar décrit la petite Jamrah, puis la moyenne, puis la grande.",
+    "support_reference": "Sahih al-Bukhari 1751",
+    "source_url": "https://sunnah.com/bukhari:1751",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0136",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Combien de cailloux Ibn ʿUmar lançait-il à chacune des Jamarât dans le hadith ?",
+    "editorial_copy": "Sahih al-Bukhari 1751 mentionne sept petits cailloux avec takbir pour chaque lancer.",
+    "support_reference": "Sahih al-Bukhari 1751",
+    "source_url": "https://sunnah.com/bukhari:1751",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0137",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Après quelles Jamarât Ibn ʿUmar s'arrêtait-il longuement pour invoquer Allah ?",
+    "editorial_copy": "Le hadith décrit une longue invocation après les deux premières Jamarât.",
+    "support_reference": "Sahih al-Bukhari 1751",
+    "source_url": "https://sunnah.com/bukhari:1751",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0138",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Un pèlerin a, par ignorance, rasé ses cheveux avant de sacrifier le jour du Nahr. Quelle réponse prophétique est rapportée ?",
+    "editorial_copy": "Sahih al-Bukhari 1736 rapporte « fais-le maintenant, il n'y a pas de mal » pour ce type d'inversion involontaire.",
+    "support_reference": "Sahih al-Bukhari 1736",
+    "source_url": "https://sunnah.com/bukhari:1736",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0139",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Un pèlerin a sacrifié avant la lapidation le jour du Nahr par ignorance. Quelle réponse est rapportée ?",
+    "editorial_copy": "Le hadith rapporte une souplesse pour ces inversions involontaires le jour du Nahr.",
+    "support_reference": "Sahih al-Bukhari 1736",
+    "source_url": "https://sunnah.com/bukhari:1736",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0140",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Dans la zone des Jamarât très fréquentée, quelle pratique est conforme aux consignes officielles ?",
+    "editorial_copy": "Les consignes officielles visent à préserver la sécurité et la fluidité des foules.",
+    "support_reference": "Guide de sensibilisation des Jamarat, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Al-Jamarat-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0141",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Quel objet est déconseillé dans les déplacements vers les Jamarât lorsqu'il encombre les flux ?",
+    "editorial_copy": "Les autorités demandent d'éviter de transporter des bagages dans les zones de forte affluence des Jamarât.",
+    "support_reference": "Guide de sensibilisation des Jamarat, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Al-Jamarat-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0142",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "JAMARAT & JOURS DE TASHRIQ",
+    "title_hook": "Quelle différence y a-t-il entre le 10 Dhul-Hijjah et les jours de Tashriq pour la lapidation des Jamarât ?",
+    "editorial_copy": "Le récit du jour du Nahr décrit Jamrat al-ʿAqabah, tandis que les jours de Tashriq concernent les trois Jamarât.",
+    "support_reference": "Guide de sensibilisation des Jamarat, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Al-Jamarat-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0143",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Combien de circuits comporte le Tawaf ?",
+    "editorial_copy": "Le Tawaf comporte sept circuits.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0144",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Où commence chaque circuit du Tawaf ?",
+    "editorial_copy": "Le Tawaf commence à l'alignement d'Al-Hajar al-Aswad.",
+    "support_reference": "Guide de la Omra et de la visite, édition française",
+    "source_url": "https://haj.gov.sa/-/media/Project/HAJJ/Awareness-Guides/UMRAH-VISIT-GUIDE/French/FR-umrah-visit-Guide.pdf",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0145",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Dans quel sens se fait le Tawaf autour de la Kaaba ?",
+    "editorial_copy": "Le parcours se fait avec la Kaaba à gauche, dans le sens antihoraire.",
+    "support_reference": "Guide de la Omra et de la visite, édition française",
+    "source_url": "https://haj.gov.sa/-/media/Project/HAJJ/Awareness-Guides/UMRAH-VISIT-GUIDE/French/FR-umrah-visit-Guide.pdf",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0146",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Dans le Tawaf d'arrivée décrit par Jâbir, comment les sept circuits furent-ils répartis pour l'allure ?",
+    "editorial_copy": "Le récit de Jâbir rapporte trois circuits avec raml puis quatre en marchant dans ce Tawaf précis.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0147",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Après ce Tawaf décrit par Jâbir, vers quel lieu se dirigea-t-il pour prier ?",
+    "editorial_copy": "Le récit de Jâbir rapporte la prière près de Maqam Ibrahim après le Tawaf.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0148",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Selon Sahih Muslim, le Hijr fait-il partie de la Kaaba ?",
+    "editorial_copy": "Le hadith de ʿAishah rapporte que le Hijr fait partie de la Maison.",
+    "support_reference": "Sahih Muslim 1333j",
+    "source_url": "https://sunnah.com/muslim:1333j",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0149",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Quel Tawaf du Hajj est accompli après le retour de Mina vers La Mecque le jour du Nahr dans le parcours général ?",
+    "editorial_copy": "Le Tawaf al-Ifadah fait partie des grandes étapes du 10 Dhul-Hijjah et des jours qui suivent selon l'organisation du Hajj.",
+    "support_reference": "Le jour du sacrifice, Tawaf al-Ifadah",
+    "source_url": "https://haj.gov.sa/fr/Hajj/Day-of-Sacrifice",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0150",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Après son retour à la Maison dans le récit de Jâbir, quelle eau lui fut donnée ?",
+    "editorial_copy": "Le récit de Jâbir mentionne que les Banû ʿAbd al-Muttalib lui donnèrent à boire de Zamzam.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0151",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Dans le récit de Jâbir, quelle étape suit le Tawaf d'arrivée et la prière près de Maqam Ibrahim ?",
+    "editorial_copy": "Après le Tawaf et la prière, le récit passe à As-Safa et au Saʿi.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0152",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Quelle action envers Al-Hajar al-Aswad est rapportée dans le récit de Jâbir avant de se diriger vers Safa ?",
+    "editorial_copy": "Le récit de Jâbir rapporte qu'il embrassa Al-Hajar al-Aswad avant de se diriger vers Safa. Cela décrit la Sunna rapportée, sans justifier de nuire aux autres en cas d'affluence.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0153",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Combien de circuits comporte le Tawaf ?",
+    "editorial_copy": "Le Tawaf comporte sept circuits.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0154",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Où commence chaque circuit du Tawaf ?",
+    "editorial_copy": "Le Tawaf commence à l'alignement d'Al-Hajar al-Aswad.",
+    "support_reference": "Guide de la Omra et de la visite, édition française",
+    "source_url": "https://haj.gov.sa/-/media/Project/HAJJ/Awareness-Guides/UMRAH-VISIT-GUIDE/French/FR-umrah-visit-Guide.pdf",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0155",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Dans quel sens se fait le Tawaf autour de la Kaaba ?",
+    "editorial_copy": "Le parcours se fait avec la Kaaba à gauche, dans le sens antihoraire.",
+    "support_reference": "Guide de la Omra et de la visite, édition française",
+    "source_url": "https://haj.gov.sa/-/media/Project/HAJJ/Awareness-Guides/UMRAH-VISIT-GUIDE/French/FR-umrah-visit-Guide.pdf",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0156",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Dans le Tawaf d'arrivée décrit par Jâbir, comment les sept circuits furent-ils répartis pour l'allure ?",
+    "editorial_copy": "Le récit de Jâbir rapporte trois circuits avec raml puis quatre en marchant dans ce Tawaf précis.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0157",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Après ce Tawaf décrit par Jâbir, vers quel lieu se dirigea-t-il pour prier ?",
+    "editorial_copy": "Le récit de Jâbir rapporte la prière près de Maqam Ibrahim après le Tawaf.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0158",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Selon Sahih Muslim, le Hijr fait-il partie de la Kaaba ?",
+    "editorial_copy": "Le hadith de ʿAishah rapporte que le Hijr fait partie de la Maison.",
+    "support_reference": "Sahih Muslim 1333j",
+    "source_url": "https://sunnah.com/muslim:1333j",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0159",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Quel Tawaf du Hajj est accompli après le retour de Mina vers La Mecque le jour du Nahr dans le parcours général ?",
+    "editorial_copy": "Le Tawaf al-Ifadah fait partie des grandes étapes du 10 Dhul-Hijjah et des jours qui suivent selon l'organisation du Hajj.",
+    "support_reference": "Le jour du sacrifice, Tawaf al-Ifadah",
+    "source_url": "https://haj.gov.sa/fr/Hajj/Day-of-Sacrifice",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0160",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Après son retour à la Maison dans le récit de Jâbir, quelle eau lui fut donnée ?",
+    "editorial_copy": "Le récit de Jâbir mentionne que les Banû ʿAbd al-Muttalib lui donnèrent à boire de Zamzam.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0161",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Dans le récit de Jâbir, quelle étape suit le Tawaf d'arrivée et la prière près de Maqam Ibrahim ?",
+    "editorial_copy": "Après le Tawaf et la prière, le récit passe à As-Safa et au Saʿi.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0162",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Quelle action envers Al-Hajar al-Aswad est rapportée dans le récit de Jâbir avant de se diriger vers Safa ?",
+    "editorial_copy": "Le récit de Jâbir rapporte qu'il embrassa Al-Hajar al-Aswad avant de se diriger vers Safa. Cela décrit la Sunna rapportée, sans justifier de nuire aux autres en cas d'affluence.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0163",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Combien de circuits comporte le Tawaf ?",
+    "editorial_copy": "Le Tawaf comporte sept circuits.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0164",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Où commence chaque circuit du Tawaf ?",
+    "editorial_copy": "Le Tawaf commence à l'alignement d'Al-Hajar al-Aswad.",
+    "support_reference": "Guide de la Omra et de la visite, édition française",
+    "source_url": "https://haj.gov.sa/-/media/Project/HAJJ/Awareness-Guides/UMRAH-VISIT-GUIDE/French/FR-umrah-visit-Guide.pdf",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0165",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Dans quel sens se fait le Tawaf autour de la Kaaba ?",
+    "editorial_copy": "Le parcours se fait avec la Kaaba à gauche, dans le sens antihoraire.",
+    "support_reference": "Guide de la Omra et de la visite, édition française",
+    "source_url": "https://haj.gov.sa/-/media/Project/HAJJ/Awareness-Guides/UMRAH-VISIT-GUIDE/French/FR-umrah-visit-Guide.pdf",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0166",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Dans le Tawaf d'arrivée décrit par Jâbir, comment les sept circuits furent-ils répartis pour l'allure ?",
+    "editorial_copy": "Le récit de Jâbir rapporte trois circuits avec raml puis quatre en marchant dans ce Tawaf précis.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0167",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Après ce Tawaf décrit par Jâbir, vers quel lieu se dirigea-t-il pour prier ?",
+    "editorial_copy": "Le récit de Jâbir rapporte la prière près de Maqam Ibrahim après le Tawaf.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0168",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Selon Sahih Muslim, le Hijr fait-il partie de la Kaaba ?",
+    "editorial_copy": "Le hadith de ʿAishah rapporte que le Hijr fait partie de la Maison.",
+    "support_reference": "Sahih Muslim 1333j",
+    "source_url": "https://sunnah.com/muslim:1333j",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0169",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Quel Tawaf du Hajj est accompli après le retour de Mina vers La Mecque le jour du Nahr dans le parcours général ?",
+    "editorial_copy": "Le Tawaf al-Ifadah fait partie des grandes étapes du 10 Dhul-Hijjah et des jours qui suivent selon l'organisation du Hajj.",
+    "support_reference": "Le jour du sacrifice, Tawaf al-Ifadah",
+    "source_url": "https://haj.gov.sa/fr/Hajj/Day-of-Sacrifice",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0170",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Après son retour à la Maison dans le récit de Jâbir, quelle eau lui fut donnée ?",
+    "editorial_copy": "Le récit de Jâbir mentionne que les Banû ʿAbd al-Muttalib lui donnèrent à boire de Zamzam.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0171",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Dans le récit de Jâbir, quelle étape suit le Tawaf d'arrivée et la prière près de Maqam Ibrahim ?",
+    "editorial_copy": "Après le Tawaf et la prière, le récit passe à As-Safa et au Saʿi.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0172",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Quelle action envers Al-Hajar al-Aswad est rapportée dans le récit de Jâbir avant de se diriger vers Safa ?",
+    "editorial_copy": "Le récit de Jâbir rapporte qu'il embrassa Al-Hajar al-Aswad avant de se diriger vers Safa. Cela décrit la Sunna rapportée, sans justifier de nuire aux autres en cas d'affluence.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0173",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Combien de circuits comporte le Tawaf ?",
+    "editorial_copy": "Le Tawaf comporte sept circuits.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0174",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Où commence chaque circuit du Tawaf ?",
+    "editorial_copy": "Le Tawaf commence à l'alignement d'Al-Hajar al-Aswad.",
+    "support_reference": "Guide de la Omra et de la visite, édition française",
+    "source_url": "https://haj.gov.sa/-/media/Project/HAJJ/Awareness-Guides/UMRAH-VISIT-GUIDE/French/FR-umrah-visit-Guide.pdf",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0175",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TAWAF & AUTOUR DE LA KAABA",
+    "title_hook": "Dans quel sens se fait le Tawaf autour de la Kaaba ?",
+    "editorial_copy": "Le parcours se fait avec la Kaaba à gauche, dans le sens antihoraire.",
+    "support_reference": "Guide de la Omra et de la visite, édition française",
+    "source_url": "https://haj.gov.sa/-/media/Project/HAJJ/Awareness-Guides/UMRAH-VISIT-GUIDE/French/FR-umrah-visit-Guide.pdf",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0176",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Où commence le Saʿi ?",
+    "editorial_copy": "Le Saʿi commence à As-Safa.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0177",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Où se termine le septième parcours du Saʿi ?",
+    "editorial_copy": "Le septième parcours se termine à Al-Marwah.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0178",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Combien de parcours compte un Saʿi complet ?",
+    "editorial_copy": "Le Saʿi compte sept parcours entre Safa et Marwah.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0179",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Dans le comptage du Saʿi, que vaut le trajet de Safa à Marwah ?",
+    "editorial_copy": "Safa vers Marwah compte comme le premier parcours.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0180",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Quelle pratique est recommandée aux hommes capables entre les repères verts du Saʿi ?",
+    "editorial_copy": "Le guide officiel indique qu'il est souhaitable aux hommes capables de trottiner entre les repères verts.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0181",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "À Safa et Marwah, quelle orientation est indiquée pour les invocations dans le guide officiel ?",
+    "editorial_copy": "Le guide officiel mentionne l'orientation vers la Qiblah pour le dhikr et les invocations.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0182",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Dans le couloir du Saʿi, quelle attitude faut-il éviter ?",
+    "editorial_copy": "Le guide officiel demande de ne pas créer d'attroupement ni gêner la circulation.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0183",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Dans le récit de Jâbir, quel ordre est observé entre Tawaf et Saʿi lors de l'arrivée à La Mecque ?",
+    "editorial_copy": "Le récit décrit le Tawaf de la Maison, puis le départ vers Safa pour le Saʿi.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0184",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Comment le Coran qualifie-t-il As-Safa et Al-Marwah dans le verset cité par le guide officiel ?",
+    "editorial_copy": "Le guide cite Al-Baqarah 2:158 : Safa et Marwah font partie des symboles d'Allah.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0185",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Que faisait le Prophète ﷺ à As-Safa dans le récit de Jâbir avant de poursuivre le Saʿi ?",
+    "editorial_copy": "Le récit de Jâbir décrit le dhikr et l'invocation à As-Safa, puis un comportement similaire à Al-Marwah.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0186",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Où commence le Saʿi ?",
+    "editorial_copy": "Le Saʿi commence à As-Safa.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0187",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Où se termine le septième parcours du Saʿi ?",
+    "editorial_copy": "Le septième parcours se termine à Al-Marwah.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0188",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Combien de parcours compte un Saʿi complet ?",
+    "editorial_copy": "Le Saʿi compte sept parcours entre Safa et Marwah.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0189",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Dans le comptage du Saʿi, que vaut le trajet de Safa à Marwah ?",
+    "editorial_copy": "Safa vers Marwah compte comme le premier parcours.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0190",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Quelle pratique est recommandée aux hommes capables entre les repères verts du Saʿi ?",
+    "editorial_copy": "Le guide officiel indique qu'il est souhaitable aux hommes capables de trottiner entre les repères verts.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0191",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "À Safa et Marwah, quelle orientation est indiquée pour les invocations dans le guide officiel ?",
+    "editorial_copy": "Le guide officiel mentionne l'orientation vers la Qiblah pour le dhikr et les invocations.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0192",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Dans le couloir du Saʿi, quelle attitude faut-il éviter ?",
+    "editorial_copy": "Le guide officiel demande de ne pas créer d'attroupement ni gêner la circulation.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0193",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Dans le récit de Jâbir, quel ordre est observé entre Tawaf et Saʿi lors de l'arrivée à La Mecque ?",
+    "editorial_copy": "Le récit décrit le Tawaf de la Maison, puis le départ vers Safa pour le Saʿi.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0194",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Comment le Coran qualifie-t-il As-Safa et Al-Marwah dans le verset cité par le guide officiel ?",
+    "editorial_copy": "Le guide cite Al-Baqarah 2:158 : Safa et Marwah font partie des symboles d'Allah.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0195",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Que faisait le Prophète ﷺ à As-Safa dans le récit de Jâbir avant de poursuivre le Saʿi ?",
+    "editorial_copy": "Le récit de Jâbir décrit le dhikr et l'invocation à As-Safa, puis un comportement similaire à Al-Marwah.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0196",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Où commence le Saʿi ?",
+    "editorial_copy": "Le Saʿi commence à As-Safa.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0197",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Où se termine le septième parcours du Saʿi ?",
+    "editorial_copy": "Le septième parcours se termine à Al-Marwah.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0198",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "SAʿI & ACCOMPLISSEMENT",
+    "title_hook": "Combien de parcours compte un Saʿi complet ?",
+    "editorial_copy": "Le Saʿi compte sept parcours entre Safa et Marwah.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0199",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "En quittant Arafat au milieu de la foule, quelle conduite est illustrée dans le récit de Jâbir ?",
+    "editorial_copy": "Le récit décrit une demande de modération dans le déplacement.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0200",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Dans le Saʿi, que faut-il faire si un endroit est déjà encombré ?",
+    "editorial_copy": "Le guide officiel insiste sur la fluidité et l'absence d'attroupements gênants.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0201",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Si un agent de sécurité donne une consigne de circulation dans les lieux saints, quelle attitude est appropriée ?",
+    "editorial_copy": "Les guides officiels demandent de se conformer aux instructions des agents.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0202",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Pour se rendre aux Jamarât, quelle stratégie est la plus sûre ?",
+    "editorial_copy": "Les déplacements vers les Jamarât sont organisés pour répartir les flux et réduire les risques.",
+    "support_reference": "Guide de sensibilisation des Jamarat, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Al-Jamarat-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0203",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Par forte chaleur, quelle conduite générale est cohérente avec les conseils sanitaires officiels ?",
+    "editorial_copy": "La prévention de la chaleur repose notamment sur l'hydratation et la protection contre l'exposition solaire.",
+    "support_reference": "Guide de sensibilisation à la santé, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Your-Health-A-Guide-for-Pilgrims?fileLang=fr",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0204",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Que faire en premier si tu perds ton groupe dans une zone organisée ?",
+    "editorial_copy": "Les dispositifs officiels de guidage et d'assistance sont conçus pour orienter les pèlerins.",
+    "support_reference": "Guide de sensibilisation Mina, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Mina-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0205",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "La visite de la grotte de Hira est-elle un rite nécessaire du Hajj ?",
+    "editorial_copy": "Les lieux historiques de La Mecque peuvent être visités, mais leur visite ne constitue pas un rite du Hajj.",
+    "support_reference": "Sites to Visit in Makkah",
+    "source_url": "https://haj.gov.sa/fr/Makkah-Al-Mukarramah/Sites-to-Visit-in-Makkah",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0206",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Après avoir terminé le Tawaf et en allant vers le Saʿi, quelle conduite de circulation est recommandée ?",
+    "editorial_copy": "Le guide officiel recommande de poursuivre avec le flux vers la zone du Saʿi.",
+    "support_reference": "Guide de la Omra et de la visite, édition française",
+    "source_url": "https://haj.gov.sa/-/media/Project/HAJJ/Awareness-Guides/UMRAH-VISIT-GUIDE/French/FR-umrah-visit-Guide.pdf",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0207",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Quelle attitude envers les autres pèlerins le guide de l'ihram recommande-t-il pendant le Hajj ?",
+    "editorial_copy": "Le guide officiel insiste sur la douceur, le bon caractère et l'aide aux compagnons de pèlerinage.",
+    "support_reference": "Guide de sensibilisation à Ihram, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/The-Ihraam-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0208",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Pourquoi respecter les consignes des autorités organisatrices pendant le Hajj ?",
+    "editorial_copy": "Le guide officiel relie le respect des consignes à la sécurité du pèlerin et des autres.",
+    "support_reference": "Guide de sensibilisation à Ihram, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/The-Ihraam-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0209",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "En quittant Arafat au milieu de la foule, quelle conduite est illustrée dans le récit de Jâbir ?",
+    "editorial_copy": "Le récit décrit une demande de modération dans le déplacement.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0210",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Dans le Saʿi, que faut-il faire si un endroit est déjà encombré ?",
+    "editorial_copy": "Le guide officiel insiste sur la fluidité et l'absence d'attroupements gênants.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0211",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Si un agent de sécurité donne une consigne de circulation dans les lieux saints, quelle attitude est appropriée ?",
+    "editorial_copy": "Les guides officiels demandent de se conformer aux instructions des agents.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0212",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Pour se rendre aux Jamarât, quelle stratégie est la plus sûre ?",
+    "editorial_copy": "Les déplacements vers les Jamarât sont organisés pour répartir les flux et réduire les risques.",
+    "support_reference": "Guide de sensibilisation des Jamarat, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Al-Jamarat-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0213",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Par forte chaleur, quelle conduite générale est cohérente avec les conseils sanitaires officiels ?",
+    "editorial_copy": "La prévention de la chaleur repose notamment sur l'hydratation et la protection contre l'exposition solaire.",
+    "support_reference": "Guide de sensibilisation à la santé, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Your-Health-A-Guide-for-Pilgrims?fileLang=fr",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0214",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Que faire en premier si tu perds ton groupe dans une zone organisée ?",
+    "editorial_copy": "Les dispositifs officiels de guidage et d'assistance sont conçus pour orienter les pèlerins.",
+    "support_reference": "Guide de sensibilisation Mina, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Mina-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0215",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "La visite de la grotte de Hira est-elle un rite nécessaire du Hajj ?",
+    "editorial_copy": "Les lieux historiques de La Mecque peuvent être visités, mais leur visite ne constitue pas un rite du Hajj.",
+    "support_reference": "Sites to Visit in Makkah",
+    "source_url": "https://haj.gov.sa/fr/Makkah-Al-Mukarramah/Sites-to-Visit-in-Makkah",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0216",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Après avoir terminé le Tawaf et en allant vers le Saʿi, quelle conduite de circulation est recommandée ?",
+    "editorial_copy": "Le guide officiel recommande de poursuivre avec le flux vers la zone du Saʿi.",
+    "support_reference": "Guide de la Omra et de la visite, édition française",
+    "source_url": "https://haj.gov.sa/-/media/Project/HAJJ/Awareness-Guides/UMRAH-VISIT-GUIDE/French/FR-umrah-visit-Guide.pdf",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0217",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Quelle attitude envers les autres pèlerins le guide de l'ihram recommande-t-il pendant le Hajj ?",
+    "editorial_copy": "Le guide officiel insiste sur la douceur, le bon caractère et l'aide aux compagnons de pèlerinage.",
+    "support_reference": "Guide de sensibilisation à Ihram, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/The-Ihraam-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0218",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Pourquoi respecter les consignes des autorités organisatrices pendant le Hajj ?",
+    "editorial_copy": "Le guide officiel relie le respect des consignes à la sécurité du pèlerin et des autres.",
+    "support_reference": "Guide de sensibilisation à Ihram, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/The-Ihraam-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0219",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "En quittant Arafat au milieu de la foule, quelle conduite est illustrée dans le récit de Jâbir ?",
+    "editorial_copy": "Le récit décrit une demande de modération dans le déplacement.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0220",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Dans le Saʿi, que faut-il faire si un endroit est déjà encombré ?",
+    "editorial_copy": "Le guide officiel insiste sur la fluidité et l'absence d'attroupements gênants.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0221",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Si un agent de sécurité donne une consigne de circulation dans les lieux saints, quelle attitude est appropriée ?",
+    "editorial_copy": "Les guides officiels demandent de se conformer aux instructions des agents.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0222",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Pour se rendre aux Jamarât, quelle stratégie est la plus sûre ?",
+    "editorial_copy": "Les déplacements vers les Jamarât sont organisés pour répartir les flux et réduire les risques.",
+    "support_reference": "Guide de sensibilisation des Jamarat, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Al-Jamarat-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0223",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Par forte chaleur, quelle conduite générale est cohérente avec les conseils sanitaires officiels ?",
+    "editorial_copy": "La prévention de la chaleur repose notamment sur l'hydratation et la protection contre l'exposition solaire.",
+    "support_reference": "Guide de sensibilisation à la santé, 25/05/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Your-Health-A-Guide-for-Pilgrims?fileLang=fr",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0224",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Que faire en premier si tu perds ton groupe dans une zone organisée ?",
+    "editorial_copy": "Les dispositifs officiels de guidage et d'assistance sont conçus pour orienter les pèlerins.",
+    "support_reference": "Guide de sensibilisation Mina, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Awareness-Center/Awareness-Guides/Mina-A-Guide-for-Pilgrims",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0225",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "La visite de la grotte de Hira est-elle un rite nécessaire du Hajj ?",
+    "editorial_copy": "Les lieux historiques de La Mecque peuvent être visités, mais leur visite ne constitue pas un rite du Hajj.",
+    "support_reference": "Sites to Visit in Makkah",
+    "source_url": "https://haj.gov.sa/fr/Makkah-Al-Mukarramah/Sites-to-Visit-in-Makkah",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0226",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "TERRAIN & IMPRÉVUS",
+    "title_hook": "Après avoir terminé le Tawaf et en allant vers le Saʿi, quelle conduite de circulation est recommandée ?",
+    "editorial_copy": "Le guide officiel recommande de poursuivre avec le flux vers la zone du Saʿi.",
+    "support_reference": "Guide de la Omra et de la visite, édition française",
+    "source_url": "https://haj.gov.sa/-/media/Project/HAJJ/Awareness-Guides/UMRAH-VISIT-GUIDE/French/FR-umrah-visit-Guide.pdf",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0227",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "Quelle séquence résume correctement le cœur du parcours du 8 au 10 Dhul-Hijjah ?",
+    "editorial_copy": "Le récit de Jâbir décrit Mina le 8, Arafat le 9, Muzdalifah la nuit puis le retour vers Mina le 10.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0228",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "Quel est le miqat d'un voyageur venant de Médine pour accomplir le Hajj ?",
+    "editorial_copy": "Le miqat de Médine est Dhul-Hulayfah.",
+    "support_reference": "Sahih al-Bukhari 1524",
+    "source_url": "https://sunnah.com/bukhari:1524",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0229",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "À Arafat, quel moment marque le départ vers Muzdalifah dans le récit de Jâbir ?",
+    "editorial_copy": "La station se poursuit jusqu'au coucher du soleil puis le départ a lieu vers Muzdalifah.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0230",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "À Muzdalifah, quelles prières sont regroupées après l'arrivée depuis Arafat ?",
+    "editorial_copy": "Maghrib et Isha sont regroupées à Muzdalifah dans le récit de Jâbir.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0231",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "Le 10 Dhul-Hijjah, combien de cailloux sont lancés à Jamrat al-ʿAqabah dans le récit de Jâbir ?",
+    "editorial_copy": "Sept petits cailloux sont lancés avec takbir à chaque lancer.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0232",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "Quel nombre est commun au Tawaf et au Saʿi complets ?",
+    "editorial_copy": "Le Tawaf comporte sept circuits et le Saʿi sept parcours.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0233",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "Quel est le point de départ du Saʿi ?",
+    "editorial_copy": "Le Saʿi commence à As-Safa et se termine à Al-Marwah.",
+    "support_reference": "Déambulation, mise à jour 16/08/2026",
+    "source_url": "https://haj.gov.sa/fr/Hajj/saai",
+    "source_type": "official_guide",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0234",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "Que montre le hadith de ʿAbdullah ibn ʿAmr lorsqu'un pèlerin inverse involontairement l'ordre de certains rites du jour du Nahr ?",
+    "editorial_copy": "Le hadith rapporte plusieurs réponses « fais-le maintenant, il n'y a pas de mal » concernant des inversions involontaires ce jour-là.",
+    "support_reference": "Sahih al-Bukhari 1736",
+    "source_url": "https://sunnah.com/bukhari:1736",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0235",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "Quel vêtement parfumé doit être évité pendant l'ihram selon le hadith ?",
+    "editorial_copy": "Le hadith interdit les vêtements imprégnés de safran ou de wars pendant l'ihram.",
+    "support_reference": "Sahih al-Bukhari 1542",
+    "source_url": "https://sunnah.com/bukhari:1542",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0236",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "Pour une femme en ihram, quelle paire d'accessoires est explicitement mentionnée comme interdite dans le hadith ?",
+    "editorial_copy": "Sahih al-Bukhari 1838 mentionne le niqab et les gants.",
+    "support_reference": "Sahih al-Bukhari 1838",
+    "source_url": "https://sunnah.com/bukhari:1838",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0237",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "Quelle séquence résume correctement le cœur du parcours du 8 au 10 Dhul-Hijjah ?",
+    "editorial_copy": "Le récit de Jâbir décrit Mina le 8, Arafat le 9, Muzdalifah la nuit puis le retour vers Mina le 10.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0238",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "Quel est le miqat d'un voyageur venant de Médine pour accomplir le Hajj ?",
+    "editorial_copy": "Le miqat de Médine est Dhul-Hulayfah.",
+    "support_reference": "Sahih al-Bukhari 1524",
+    "source_url": "https://sunnah.com/bukhari:1524",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0239",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "À Arafat, quel moment marque le départ vers Muzdalifah dans le récit de Jâbir ?",
+    "editorial_copy": "La station se poursuit jusqu'au coucher du soleil puis le départ a lieu vers Muzdalifah.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
+  },
+  {
+    "id": "clean-r-0240",
+    "type": "hook",
+    "approved": true,
+    "review_status": "approved",
+    "review_note": "Contenu spécifique issu d'une banque Hajj ou Omra source_checked. Aucun remplissage générique.",
+    "theme": [
+      "hajj"
+    ],
+    "category_label": "MAÎTRISE DU HAJJ",
+    "title_hook": "À Muzdalifah, quelles prières sont regroupées après l'arrivée depuis Arafat ?",
+    "editorial_copy": "Maghrib et Isha sont regroupées à Muzdalifah dans le récit de Jâbir.",
+    "support_reference": "Sahih Muslim 1218a",
+    "source_url": "https://sunnah.com/muslim:1218a",
+    "source_type": "hadith_sahih",
+    "certainty": "high",
+    "format_family": "repere-source",
+    "cta_hint": "À retenir"
   }
 ]
