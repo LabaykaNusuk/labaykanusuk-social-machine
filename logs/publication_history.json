@@ -2950,5 +2950,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-11T16:09:04.295504+00:00"
+  },
+  {
+    "date": "2026-09-11",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-t-0004",
+    "content_type": "tool",
+    "photo_id": "MUZDALIFAH_NIGHT",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18197494516380090",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/0374dde064c9f9544229750495ca5bfc7aefd731/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-11T17:18:21.139101+00:00"
   }
 ]
