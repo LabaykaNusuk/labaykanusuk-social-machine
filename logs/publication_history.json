@@ -2878,5 +2878,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-11T06:09:21.857010+00:00"
+  },
+  {
+    "date": "2026-09-11",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0002",
+    "content_type": "tool",
+    "photo_id": "MINA_CAMP",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18022145225859908",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/647743310ae23f3ca954a372fdad79000d51a556/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-11T08:33:02.018770+00:00"
   }
 ]
