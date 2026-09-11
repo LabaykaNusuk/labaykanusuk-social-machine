@@ -2986,5 +2986,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-11T18:32:12.677514+00:00"
+  },
+  {
+    "date": "2026-09-11",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0006",
+    "content_type": "quiz",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18115254797076777",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/75c00c786ae5db82aa0b0aa718d691843ed45d1d/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/75c00c786ae5db82aa0b0aa718d691843ed45d1d/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/75c00c786ae5db82aa0b0aa718d691843ed45d1d/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "CORAN + HADITH — Coran 2:199",
+    "published_at_utc": "2026-09-11T19:08:41.248046+00:00"
   }
 ]
