@@ -3078,5 +3078,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-12T11:10:35.259467+00:00"
+  },
+  {
+    "date": "2026-09-12",
+    "slot_order": 4,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0011",
+    "content_type": "hook",
+    "photo_id": "MUZDALIFAH_NIGHT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17995386701992472",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/cb19f6512d6cf348174fef1b52abba3ef1519abd/docs/media/slot-04.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-12T13:32:04.554837+00:00"
   }
 ]
