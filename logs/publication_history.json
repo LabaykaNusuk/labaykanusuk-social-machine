@@ -3150,5 +3150,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-12T18:32:44.618126+00:00"
+  },
+  {
+    "date": "2026-09-12",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0007",
+    "content_type": "quiz",
+    "photo_id": "HADY_SACRIFICE",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18018048119926202",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/4b205afac9ea830ce916470d0714b0ce61fcf511/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/4b205afac9ea830ce916470d0714b0ce61fcf511/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/4b205afac9ea830ce916470d0714b0ce61fcf511/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "CORAN + SÎRA — Coran 105:1-5",
+    "published_at_utc": "2026-09-12T19:08:56.368687+00:00"
   }
 ]
