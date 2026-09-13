@@ -3314,5 +3314,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-13T18:31:59.282089+00:00"
+  },
+  {
+    "date": "2026-09-13",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0008",
+    "content_type": "quiz",
+    "photo_id": "ZAMZAM_CROWD",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17922878304205480",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/845f6f5a867402759b52624fa039379bf132e61f/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/845f6f5a867402759b52624fa039379bf132e61f/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/845f6f5a867402759b52624fa039379bf132e61f/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "CORAN ET HADITH — Coran 2:125",
+    "published_at_utc": "2026-09-13T19:09:11.838162+00:00"
   }
 ]
