@@ -3260,5 +3260,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-13T13:33:22.587647+00:00"
+  },
+  {
+    "date": "2026-09-13",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0009",
+    "content_type": "tool",
+    "photo_id": "MINA_DAYS_TASHRIQ",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18282040045289526",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/00129a080bda2ce01794f0a3f67c827377d0967b/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-13T16:09:07.061132+00:00"
   }
 ]
