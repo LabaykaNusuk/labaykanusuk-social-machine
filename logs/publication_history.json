@@ -3460,5 +3460,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-14T17:17:36.331065+00:00"
+  },
+  {
+    "date": "2026-09-14",
+    "slot_order": 7,
+    "slot_format": "feed",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-r-0023",
+    "content_type": "hook",
+    "photo_id": "ARAFAT_MUZDALIFAH",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "17968344627168063",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/c334e4c388704ac7bf179dbcecf94dc3c3a9455e/docs/media/slot-07.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-14T18:32:50.287058+00:00"
   }
 ]
