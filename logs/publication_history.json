@@ -3406,5 +3406,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-14T11:09:03.139186+00:00"
+  },
+  {
+    "date": "2026-09-14",
+    "slot_order": 4,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0021",
+    "content_type": "hook",
+    "photo_id": "MINA_CAMP",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18133275013645776",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/63bae46a82e20f1b38294b98a4a2aebc2c78b270/docs/media/slot-04.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-14T13:33:00.356266+00:00"
   }
 ]
