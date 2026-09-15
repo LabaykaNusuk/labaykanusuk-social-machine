@@ -3642,5 +3642,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-15T18:33:20.210865+00:00"
+  },
+  {
+    "date": "2026-09-15",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0010",
+    "content_type": "quiz",
+    "photo_id": "ZAMZAM_CROWD",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18129624475737871",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a9420193b9bb3f5a967001510e52e7c81dce5f7f/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a9420193b9bb3f5a967001510e52e7c81dce5f7f/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a9420193b9bb3f5a967001510e52e7c81dce5f7f/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "GÉOGRAPHIE DU HARAM — Guide Makkah",
+    "published_at_utc": "2026-09-15T19:08:50.712086+00:00"
   }
 ]
