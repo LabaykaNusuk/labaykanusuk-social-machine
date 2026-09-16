@@ -3806,5 +3806,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-16T18:32:06.051186+00:00"
+  },
+  {
+    "date": "2026-09-16",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0011",
+    "content_type": "quiz",
+    "photo_id": "HALQ_HAIRCUT",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17878158708652221",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/002ad45c14116e2f3237c04fdc49eea4572592b9/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/002ad45c14116e2f3237c04fdc49eea4572592b9/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/002ad45c14116e2f3237c04fdc49eea4572592b9/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HADITH — Guide Madinah al-Munawwarah",
+    "published_at_utc": "2026-09-16T19:08:58.117384+00:00"
   }
 ]
