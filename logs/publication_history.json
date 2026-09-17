@@ -3970,5 +3970,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-17T18:32:55.011183+00:00"
+  },
+  {
+    "date": "2026-09-17",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0012",
+    "content_type": "quiz",
+    "photo_id": "SAI_CORRIDOR",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18434689195178545",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a5e93c5c4bfa9bdaccdc99375b1fe6a8612aae91/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a5e93c5c4bfa9bdaccdc99375b1fe6a8612aae91/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a5e93c5c4bfa9bdaccdc99375b1fe6a8612aae91/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HADITH / HISTOIRE — L’Histoire du Hajj",
+    "published_at_utc": "2026-09-17T19:08:58.657294+00:00"
   }
 ]
