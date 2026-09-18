@@ -4154,5 +4154,23 @@
     ],
     "source": "HADITH / SÎRA — Sîra du Hajj et de la Omra",
     "published_at_utc": "2026-09-18T19:08:33.501102+00:00"
+  },
+  {
+    "date": "2026-09-18",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0044",
+    "content_type": "hook",
+    "photo_id": "MUZDALIFAH_NIGHT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18116028017320434",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/80c619d9818e961c2c2df76f60a3278e1fff177b/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-18T20:08:42.670448+00:00"
   }
 ]
