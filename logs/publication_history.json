@@ -4298,5 +4298,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-19T18:32:20.352204+00:00"
+  },
+  {
+    "date": "2026-09-19",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0014",
+    "content_type": "quiz",
+    "photo_id": "HARAM_EXTERIOR",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18132497026709937",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/3cd0240ee1a3be63ce97c0fc4f0e77f03823aad7/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/3cd0240ee1a3be63ce97c0fc4f0e77f03823aad7/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/3cd0240ee1a3be63ce97c0fc4f0e77f03823aad7/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HADITH AUTHENTIQUE — Sahih al-Bukhari 3364",
+    "published_at_utc": "2026-09-19T19:08:28.208257+00:00"
   }
 ]
