@@ -4390,5 +4390,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-20T11:20:21.032646+00:00"
+  },
+  {
+    "date": "2026-09-20",
+    "slot_order": 4,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0051",
+    "content_type": "hook",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18041520917831071",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/6fe87dbfe68ca3672b9dca805338fe9f80bf8288/docs/media/slot-04.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-20T13:31:56.025619+00:00"
   }
 ]
