@@ -4444,5 +4444,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-20T17:17:34.170733+00:00"
+  },
+  {
+    "date": "2026-09-20",
+    "slot_order": 7,
+    "slot_format": "feed",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-r-0053",
+    "content_type": "hook",
+    "photo_id": "HADY_SACRIFICE",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "18109110662139972",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/b9868ec8f7c3c23cf2c6530c1366eb8b6fa67fe3/docs/media/slot-07.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-20T18:31:45.559361+00:00"
   }
 ]
