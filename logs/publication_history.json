@@ -4408,5 +4408,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-20T13:31:56.025619+00:00"
+  },
+  {
+    "date": "2026-09-20",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0031",
+    "content_type": "tool",
+    "photo_id": "MUZDALIFAH_NIGHT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18115917037975362",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/23b4af1dea17d6d6c8e69fa75d2d3ebccdd11427/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-20T16:08:29.336224+00:00"
   }
 ]
