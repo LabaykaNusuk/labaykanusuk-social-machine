@@ -4626,5 +4626,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-21T18:31:34.602471+00:00"
+  },
+  {
+    "date": "2026-09-21",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0016",
+    "content_type": "quiz",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17976547820914704",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1c0d2ba5a215d88f5f699c8d5bc2220bcd5f44cc/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1c0d2ba5a215d88f5f699c8d5bc2220bcd5f44cc/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1c0d2ba5a215d88f5f699c8d5bc2220bcd5f44cc/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HADITH HASAN SAHIH — Jami‘ at-Tirmidhi 877",
+    "published_at_utc": "2026-09-21T19:08:31.775421+00:00"
   }
 ]
