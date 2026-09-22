@@ -4754,5 +4754,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-22T16:08:51.874298+00:00"
+  },
+  {
+    "date": "2026-09-22",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-r-0062",
+    "content_type": "hook",
+    "photo_id": "MINA_CAMP",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18128218600798569",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/db0551058a0b002fe58e25270ee9bd5ac124d4df/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-22T17:18:03.144660+00:00"
   }
 ]
