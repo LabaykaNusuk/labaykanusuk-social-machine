@@ -4810,5 +4810,23 @@
     ],
     "source": "HISTOIRE — L’Histoire du Hajj",
     "published_at_utc": "2026-09-22T19:08:30.923358+00:00"
+  },
+  {
+    "date": "2026-09-22",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0064",
+    "content_type": "hook",
+    "photo_id": "TAWAF_IFADAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17960146533209348",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a970a0f531fb6004ef468c54ef01f12d9b689074/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-22T20:08:51.131366+00:00"
   }
 ]
