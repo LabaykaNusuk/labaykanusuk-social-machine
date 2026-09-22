@@ -4700,5 +4700,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-22T08:32:21.195207+00:00"
+  },
+  {
+    "date": "2026-09-22",
+    "slot_order": 3,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0060",
+    "content_type": "hook",
+    "photo_id": "MINA_DAYS_TASHRIQ",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18127310314803478",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e265dae21d53be5bf19c201fb40cb2d9af18f067/docs/media/slot-03.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-22T11:09:09.484021+00:00"
   }
 ]
