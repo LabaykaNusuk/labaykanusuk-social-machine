@@ -5282,5 +5282,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-25T18:32:26.187158+00:00"
+  },
+  {
+    "date": "2026-09-25",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0020",
+    "content_type": "quiz",
+    "photo_id": "ARCADES_TALBIYAH",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18107647826522601",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/60d389ebd1b2ca14a54c60905da9aa9c834bcca2/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/60d389ebd1b2ca14a54c60905da9aa9c834bcca2/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/60d389ebd1b2ca14a54c60905da9aa9c834bcca2/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE / CÉRÉMONIAL — L’Histoire du Hajj",
+    "published_at_utc": "2026-09-25T19:08:41.887696+00:00"
   }
 ]
