@@ -5302,5 +5302,23 @@
     ],
     "source": "HISTOIRE / CÉRÉMONIAL — L’Histoire du Hajj",
     "published_at_utc": "2026-09-25T19:08:41.887696+00:00"
+  },
+  {
+    "date": "2026-09-25",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0078",
+    "content_type": "hook",
+    "photo_id": "MINA_DAYS_TASHRIQ",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17964427257194509",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/dc6a72f4f1055178732ec738379185aa28057ee6/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-25T20:09:09.634946+00:00"
   }
 ]
