@@ -5228,5 +5228,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-25T13:31:42.738306+00:00"
+  },
+  {
+    "date": "2026-09-25",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0045",
+    "content_type": "tool",
+    "photo_id": "JAMARAT_CLOSE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18105798515350363",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/ae950c16dc1f653f2f09a24bfdd427a02b2ff5c1/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-25T16:08:41.161811+00:00"
   }
 ]
