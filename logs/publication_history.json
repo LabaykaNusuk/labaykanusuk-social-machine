@@ -5174,5 +5174,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-25T06:08:50.798692+00:00"
+  },
+  {
+    "date": "2026-09-25",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0044",
+    "content_type": "tool",
+    "photo_id": "HADY_SACRIFICE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18105012596526873",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a00ecd267d9c1e91dfe6917b9f5362f6bedd64d0/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-25T08:32:05.118958+00:00"
   }
 ]
