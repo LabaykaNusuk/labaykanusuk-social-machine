@@ -5446,5 +5446,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-26T18:31:26.785357+00:00"
+  },
+  {
+    "date": "2026-09-26",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0021",
+    "content_type": "quiz",
+    "photo_id": "HALQ_HAIRCUT",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18176265640448076",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7c14fb978127f2423c9e430e03aaef2a57c851a8/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7c14fb978127f2423c9e430e03aaef2a57c851a8/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7c14fb978127f2423c9e430e03aaef2a57c851a8/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE / INGÉNIERIE — L’Histoire du Hajj",
+    "published_at_utc": "2026-09-26T19:08:36.595970+00:00"
   }
 ]
