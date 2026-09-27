@@ -5574,5 +5574,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-27T16:08:53.853955+00:00"
+  },
+  {
+    "date": "2026-09-27",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-t-0052",
+    "content_type": "tool",
+    "photo_id": "MIQAT_PALMS",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18111575222275089",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/3389ffa5cc9b2a0419035fcd5415d0e9bb11e639/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-27T17:17:30.277571+00:00"
   }
 ]
