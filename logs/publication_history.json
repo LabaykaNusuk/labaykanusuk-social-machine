@@ -5630,5 +5630,23 @@
     ],
     "source": "HISTOIRE / RITE — L’Histoire du Hajj",
     "published_at_utc": "2026-09-27T19:08:25.496342+00:00"
+  },
+  {
+    "date": "2026-09-27",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0088",
+    "content_type": "hook",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18077486159384215",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/b218b4a9345bfc9662051268c3dbfe2673b78ba4/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-27T20:09:20.670472+00:00"
   }
 ]
