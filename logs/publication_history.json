@@ -5610,5 +5610,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-27T18:31:08.833179+00:00"
+  },
+  {
+    "date": "2026-09-27",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0022",
+    "content_type": "quiz",
+    "photo_id": "TAWAF_IFADAH",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18371447632215818",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/9115abb2879fb0ecbee15677484b8843322b1f26/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/9115abb2879fb0ecbee15677484b8843322b1f26/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/9115abb2879fb0ecbee15677484b8843322b1f26/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE / RITE — L’Histoire du Hajj",
+    "published_at_utc": "2026-09-27T19:08:25.496342+00:00"
   }
 ]
