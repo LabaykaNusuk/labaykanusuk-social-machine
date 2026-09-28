@@ -5774,5 +5774,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-28T18:31:26.114573+00:00"
+  },
+  {
+    "date": "2026-09-28",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0023",
+    "content_type": "quiz",
+    "photo_id": "ZAMZAM_CROWD",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18394962373165741",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/cf84e14a0cbdb31e48c1e8cd2e620d680fecec25/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/cf84e14a0cbdb31e48c1e8cd2e620d680fecec25/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/cf84e14a0cbdb31e48c1e8cd2e620d680fecec25/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE / SÎRA — Guide Madinah al-Munawwarah",
+    "published_at_utc": "2026-09-28T19:08:22.185461+00:00"
   }
 ]
