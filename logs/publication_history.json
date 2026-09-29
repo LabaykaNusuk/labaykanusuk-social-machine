@@ -5920,5 +5920,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-09-29T16:08:42.407439+00:00"
+  },
+  {
+    "date": "2026-09-29",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-t-0058",
+    "content_type": "tool",
+    "photo_id": "TAWAF_IFADAH",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18144388426601158",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/085fc866e226d7546b88ad7a1ea8eb00976ad68b/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-29T17:18:08.731997+00:00"
   }
 ]
