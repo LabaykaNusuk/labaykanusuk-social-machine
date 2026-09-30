@@ -5976,5 +5976,23 @@
     ],
     "source": "HISTOIRE / WAQF — Guide Madinah al-Munawwarah",
     "published_at_utc": "2026-09-29T19:08:14.260651+00:00"
+  },
+  {
+    "date": "2026-09-30",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0099",
+    "content_type": "hook",
+    "photo_id": "HALQ_HAIRCUT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18093128150659621",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/bc05edcdac6a60aee7f68f6ee8afb6590d9a5500/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-30T06:08:28.129023+00:00"
   }
 ]
