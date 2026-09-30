@@ -6122,5 +6122,23 @@
     ],
     "source": "HISTOIRE ADMINISTRATIVE — L’Histoire du Hajj",
     "published_at_utc": "2026-09-30T19:08:22.886803+00:00"
+  },
+  {
+    "date": "2026-09-30",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0104",
+    "content_type": "hook",
+    "photo_id": "MINA_CAMP",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18010803572987021",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/eef81d440519e50fe626db13f5f43aa293a0b135/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-09-30T20:25:53.008458+00:00"
   }
 ]
