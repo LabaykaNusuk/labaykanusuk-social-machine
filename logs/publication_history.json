@@ -6266,5 +6266,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-01T18:50:42.393383+00:00"
+  },
+  {
+    "date": "2026-10-01",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0026",
+    "content_type": "quiz",
+    "photo_id": "MINA_CAMP",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18094953950408100",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e2ce1e14fabfaef7b9b3d2d8213459c6c02b4680/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e2ce1e14fabfaef7b9b3d2d8213459c6c02b4680/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e2ce1e14fabfaef7b9b3d2d8213459c6c02b4680/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE ARCHITECTURALE — Guide Madinah al-Munawwarah",
+    "published_at_utc": "2026-10-01T19:20:30.617354+00:00"
   }
 ]
