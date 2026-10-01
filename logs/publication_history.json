@@ -6230,5 +6230,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-01T16:16:43.050876+00:00"
+  },
+  {
+    "date": "2026-10-01",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-t-0064",
+    "content_type": "tool",
+    "photo_id": "MINA_ROAD_AERIAL",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18111214604602449",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/8e2724d174cb2ba8e4b6f8ac0ee8c1f6ce27ca48/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-01T18:16:15.085927+00:00"
   }
 ]
