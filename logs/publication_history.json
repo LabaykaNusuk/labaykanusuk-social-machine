@@ -6286,5 +6286,23 @@
     ],
     "source": "HISTOIRE ARCHITECTURALE — Guide Madinah al-Munawwarah",
     "published_at_utc": "2026-10-01T19:20:30.617354+00:00"
+  },
+  {
+    "date": "2026-10-01",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0108",
+    "content_type": "hook",
+    "photo_id": "ARCADES_TALBIYAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18114489737042568",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/9dcc86c216ea1bc1f1b70a3c152cff7006cfd93c/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-01T20:09:19.475361+00:00"
   }
 ]
