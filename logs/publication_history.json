@@ -6430,5 +6430,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-02T18:31:31.227900+00:00"
+  },
+  {
+    "date": "2026-10-02",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0027",
+    "content_type": "quiz",
+    "photo_id": "MINA_ARAFAT_ROAD",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18113608790119392",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/aaab7532ba476a4122dffd80d26318d116aabd97/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/aaab7532ba476a4122dffd80d26318d116aabd97/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/aaab7532ba476a4122dffd80d26318d116aabd97/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE DES CARAVANES — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-02T19:08:53.733511+00:00"
   }
 ]
