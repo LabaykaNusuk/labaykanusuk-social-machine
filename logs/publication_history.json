@@ -6450,5 +6450,23 @@
     ],
     "source": "HISTOIRE DES CARAVANES — L’Histoire du Hajj",
     "published_at_utc": "2026-10-02T19:08:53.733511+00:00"
+  },
+  {
+    "date": "2026-10-02",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0114",
+    "content_type": "hook",
+    "photo_id": "HALQ_HAIRCUT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18041096330831642",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/68a32c450bbbb93773c9a4b03eea287c83615517/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-02T20:09:19.131720+00:00"
   }
 ]
