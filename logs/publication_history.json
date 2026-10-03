@@ -6594,5 +6594,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-03T18:32:04.340492+00:00"
+  },
+  {
+    "date": "2026-10-03",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0028",
+    "content_type": "quiz",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17966179746195606",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e5f8d1cb6ff5d6d46953e5ed2d6b8aa274d613b9/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e5f8d1cb6ff5d6d46953e5ed2d6b8aa274d613b9/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e5f8d1cb6ff5d6d46953e5ed2d6b8aa274d613b9/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE DES ROUTES — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-03T19:08:55.817028+00:00"
   }
 ]
