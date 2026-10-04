@@ -6758,5 +6758,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-04T18:32:27.714063+00:00"
+  },
+  {
+    "date": "2026-10-04",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0029",
+    "content_type": "quiz",
+    "photo_id": "HARAM_EXTERIOR",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17900976222378222",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/609028aef2fd270c948edba2cc50ba9d611437d7/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/609028aef2fd270c948edba2cc50ba9d611437d7/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/609028aef2fd270c948edba2cc50ba9d611437d7/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE DU HARAM — Guide Makkah",
+    "published_at_utc": "2026-10-04T19:09:04.997092+00:00"
   }
 ]
