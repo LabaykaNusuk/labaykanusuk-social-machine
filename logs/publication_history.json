@@ -6868,5 +6868,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-05T13:32:34.432140+00:00"
+  },
+  {
+    "date": "2026-10-05",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0075",
+    "content_type": "tool",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18108163363904031",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/76dbc5415bd9c64288a9a1f2fdd72371e99fecbe/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-05T16:09:31.821522+00:00"
   }
 ]
