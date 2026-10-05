@@ -6922,5 +6922,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-05T18:32:36.546236+00:00"
+  },
+  {
+    "date": "2026-10-05",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0030",
+    "content_type": "quiz",
+    "photo_id": "ABRAJ_CLOCK",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18115471070109156",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e584822d15e8cdaf72bd5d5669e1cc2f56d72384/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e584822d15e8cdaf72bd5d5669e1cc2f56d72384/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e584822d15e8cdaf72bd5d5669e1cc2f56d72384/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE ET TRADITIONS — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-05T19:09:35.188616+00:00"
   }
 ]
