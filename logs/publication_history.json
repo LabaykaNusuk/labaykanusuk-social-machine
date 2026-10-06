@@ -7032,5 +7032,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-06T08:31:39.317998+00:00"
+  },
+  {
+    "date": "2026-10-06",
+    "slot_order": 3,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0132",
+    "content_type": "hook",
+    "photo_id": "TAWAF_IFADAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17950624764331078",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/e83cf6e20d655eb571ffd64797eb1f84f1d72fb1/docs/media/slot-03.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-06T11:08:52.721005+00:00"
   }
 ]
