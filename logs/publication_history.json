@@ -7068,5 +7068,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-06T13:31:57.441860+00:00"
+  },
+  {
+    "date": "2026-10-06",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0079",
+    "content_type": "tool",
+    "photo_id": "ARAFAT_MUZDALIFAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18144016195642560",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a13b42666d12ce7bdfa8c3638a69a063205284c1/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-06T16:21:47.583533+00:00"
   }
 ]
