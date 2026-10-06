@@ -7104,5 +7104,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-06T17:17:14.750653+00:00"
+  },
+  {
+    "date": "2026-10-06",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0031",
+    "content_type": "quiz",
+    "photo_id": "ABRAJ_CLOCK",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18099209108290352",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7aaad98a478590d99cda394f3e949d00095e45d2/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7aaad98a478590d99cda394f3e949d00095e45d2/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7aaad98a478590d99cda394f3e949d00095e45d2/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE GÉNÉALOGIQUE — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-06T19:08:26.423806+00:00"
   }
 ]
