@@ -6996,5 +6996,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-06T01:09:54.818436+00:00"
+  },
+  {
+    "date": "2026-10-06",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0131",
+    "content_type": "hook",
+    "photo_id": "MINA_ARAFAT_ROAD",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18396397789163751",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/9ab26dca4deb812fd28b2a52241f425a23d01abf/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-06T06:08:18.936714+00:00"
   }
 ]
