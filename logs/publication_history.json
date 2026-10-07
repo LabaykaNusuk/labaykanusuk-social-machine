@@ -7270,5 +7270,23 @@
     ],
     "source": "HISTOIRE MILITAIRE — L’Histoire du Hajj",
     "published_at_utc": "2026-10-07T19:08:33.270996+00:00"
+  },
+  {
+    "date": "2026-10-07",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0137",
+    "content_type": "hook",
+    "photo_id": "ARCADES_TALBIYAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17909894994590882",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/c4d311c3ad218b205caf46b83d88a61b4a077114/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-07T20:12:04.623532+00:00"
   }
 ]
