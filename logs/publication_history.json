@@ -7232,5 +7232,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-07T17:18:41.141500+00:00"
+  },
+  {
+    "date": "2026-10-07",
+    "slot_order": 7,
+    "slot_format": "feed",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-t-0084",
+    "content_type": "tool",
+    "photo_id": "MINA_ROAD_AERIAL",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "18099805577548618",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/207521a0f25df2365d6d370564b76b8e491bd4b5/docs/media/slot-07.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-07T18:32:38.459923+00:00"
   }
 ]
