@@ -7250,5 +7250,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-07T18:32:38.459923+00:00"
+  },
+  {
+    "date": "2026-10-07",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0032",
+    "content_type": "quiz",
+    "photo_id": "ABRAJ_CLOCK",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18093279275405762",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/0891aef8a398a6ef3a65f79f06a1fb0d051cd72e/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/0891aef8a398a6ef3a65f79f06a1fb0d051cd72e/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/0891aef8a398a6ef3a65f79f06a1fb0d051cd72e/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE MILITAIRE — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-07T19:08:33.270996+00:00"
   }
 ]
