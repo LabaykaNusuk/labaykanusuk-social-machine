@@ -7124,5 +7124,23 @@
     ],
     "source": "HISTOIRE GÉNÉALOGIQUE — L’Histoire du Hajj",
     "published_at_utc": "2026-10-06T19:08:26.423806+00:00"
+  },
+  {
+    "date": "2026-10-07",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0134",
+    "content_type": "hook",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18140435068719007",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/0b79943d236849c4242f223adb68541d2f137584/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-07T06:08:30.509247+00:00"
   }
 ]
