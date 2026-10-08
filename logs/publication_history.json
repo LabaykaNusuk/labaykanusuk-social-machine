@@ -7324,5 +7324,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-08T06:08:36.545965+00:00"
+  },
+  {
+    "date": "2026-10-08",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0085",
+    "content_type": "tool",
+    "photo_id": "JAMARAT_WIDE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18102266111209242",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/82aec0424fd96e76889b2f5dce3b4a8c8d1bc756/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-08T08:31:25.739395+00:00"
   }
 ]
