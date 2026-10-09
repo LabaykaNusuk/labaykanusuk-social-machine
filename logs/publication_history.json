@@ -7488,5 +7488,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-09T06:08:58.820207+00:00"
+  },
+  {
+    "date": "2026-10-09",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0087",
+    "content_type": "tool",
+    "photo_id": "MIQAT_PALMS",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17945004051359563",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/8dfa032e6fe7b0c55b6ec2ed4bbe5fbd02c03f4e/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-09T08:31:41.736185+00:00"
   }
 ]
