@@ -7452,5 +7452,23 @@
     ],
     "source": "HISTOIRE MÉDIÉVALE — L’Histoire du Hajj",
     "published_at_utc": "2026-10-08T19:09:41.959367+00:00"
+  },
+  {
+    "date": "2026-10-09",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0144",
+    "content_type": "hook",
+    "photo_id": "ARAFAT_MUZDALIFAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18116238118795578",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/0ed6a341230b9e6cbf4597bc2f0d736c2fa02447/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-09T00:09:55.192590+00:00"
   }
 ]
