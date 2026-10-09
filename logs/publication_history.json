@@ -7596,5 +7596,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-09T18:31:39.447457+00:00"
+  },
+  {
+    "date": "2026-10-09",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0034",
+    "content_type": "quiz",
+    "photo_id": "HARAM_EXTERIOR",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18105875456204237",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7c4fc81a4761bebde949279e239467f6a10c426b/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7c4fc81a4761bebde949279e239467f6a10c426b/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7c4fc81a4761bebde949279e239467f6a10c426b/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE OTTOMANE — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-09T19:17:12.816933+00:00"
   }
 ]
