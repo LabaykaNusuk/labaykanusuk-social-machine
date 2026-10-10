@@ -7634,5 +7634,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-10T06:08:22.421134+00:00"
+  },
+  {
+    "date": "2026-10-10",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0091",
+    "content_type": "tool",
+    "photo_id": "HALQ_HAIRCUT",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17865635844680688",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/8a869ee6a34e4f1da124942f55be2327fe4d7a0e/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-10T08:31:33.622397+00:00"
   }
 ]
