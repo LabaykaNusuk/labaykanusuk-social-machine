@@ -7742,5 +7742,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-10T18:31:25.980449+00:00"
+  },
+  {
+    "date": "2026-10-10",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0035",
+    "content_type": "quiz",
+    "photo_id": "HARAM_EXTERIOR",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18377463406241002",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/97f5cb93c5d062feff2d66a060edd337307a522e/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/97f5cb93c5d062feff2d66a060edd337307a522e/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/97f5cb93c5d062feff2d66a060edd337307a522e/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE POLITIQUE — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-10T19:08:25.147687+00:00"
   }
 ]
