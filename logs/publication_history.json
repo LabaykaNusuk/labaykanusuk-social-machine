@@ -7616,5 +7616,23 @@
     ],
     "source": "HISTOIRE OTTOMANE — L’Histoire du Hajj",
     "published_at_utc": "2026-10-09T19:17:12.816933+00:00"
+  },
+  {
+    "date": "2026-10-10",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0148",
+    "content_type": "hook",
+    "photo_id": "MINA_ROAD_AERIAL",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18073459466771843",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/38b91e7829c8351778297cf9c9ad91dba81ae55f/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-10T06:08:22.421134+00:00"
   }
 ]
