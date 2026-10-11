@@ -24,9 +24,9 @@ def history():
     return json.loads(HISTORY.read_text(encoding="utf-8")) if HISTORY.exists() else []
 
 def select(data, records, day):
-    done={r["date"] for r in records if r.get("status")=="published"}
+    done={r["date"] for r in records if r.get("status") in ("published","pending")}
     if day in done: return None
-    used={int(r["index"]) for r in records if r.get("status")=="published"}
+    used={int(r["index"]) for r in records if r.get("status") in ("published","pending")}
     for i in range(len(data)):
         if i not in used: return i
     return None  # stop after 148 rather than repeat
@@ -48,12 +48,13 @@ def caption(item):
 
 def main():
     ap=argparse.ArgumentParser()
-    ap.add_argument("--mode",choices=["DRY","LIVE"],default="DRY")
+    ap.add_argument("--mode",choices=["DRY","PREPARE","LIVE"],default="DRY")
     ap.add_argument("--day",default=today())
     args=ap.parse_args()
     data=entries()
     records=history()
-    index=select(data,records,args.day)
+    pending=next((r for r in records if r.get("date")==args.day and r.get("status")=="pending"),None)
+    index=int(pending["index"]) if args.mode=="LIVE" and pending else select(data,records,args.day)
     if index is None:
         print("SKIP: déjà publié ce jour ou collection terminée")
         return
@@ -61,19 +62,27 @@ def main():
     out=ROOT/"lexique-preview.jpg"
     asyncio.run(render(item,out))
     print(json.dumps({"date":args.day,"index":index,"term":item["term"],"image":str(out),"caption":caption(item)},ensure_ascii=False))
+    if args.mode=="PREPARE":
+        if pending: raise RuntimeError("Publication déjà en attente: intervention manuelle requise")
+        records.append({"date":args.day,"index":index,"term":item["term"],"status":"pending"})
+        HISTORY.parent.mkdir(parents=True,exist_ok=True)
+        HISTORY.write_text(json.dumps(records,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+        print("PENDING: réservation locale, à enregistrer dans GitHub avant publication")
+        return
     if args.mode=="DRY":
         print("DRY: aucune écriture distante, aucune publication")
         return
     if os.getenv("LEXIQUE_LIVE_ENABLED")!="true":
         raise RuntimeError("LIVE désactivé: variable LEXIQUE_LIVE_ENABLED non égale à true")
     if args.day!=today(): raise RuntimeError("LIVE seulement pour la date locale du jour")
+    if not pending: raise RuntimeError("LIVE refusé: aucune réservation pending enregistrée")
     # GitHub Actions prépare et expose l'image; le workflow fournit l'URL publique.
     media_url=os.environ.get("LEXIQUE_MEDIA_URL")
     if not media_url: raise RuntimeError("LEXIQUE_MEDIA_URL manquante")
     from publish_instagram import publish
     result=publish(media_url,"IMAGE",caption(item),dry_run=False)
     if not result.get("id"): raise RuntimeError(f"Réponse Instagram sans ID: {result}")
-    records.append({"date":args.day,"index":index,"term":item["term"],"status":"published","instagram_id":str(result["id"])})
+    pending.update({"status":"published","instagram_id":str(result["id"])})
     HISTORY.parent.mkdir(parents=True,exist_ok=True)
     HISTORY.write_text(json.dumps(records,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("PUBLISHED",result["id"])
