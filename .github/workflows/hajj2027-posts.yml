@@ -1,6 +1,8 @@
 name: LABAYKANUSUK Hajj 2027 Posts (isolated)
 
 on:
+  schedule:
+    - cron: "0 15,16 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -23,6 +25,25 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
+      - name: Check Paris publication time
+        id: paris_time
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python3 - <<'CHECK'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          import os
+
+          paris = datetime.now(ZoneInfo("Europe/Paris"))
+          allowed = os.environ["EVENT_NAME"] != "schedule" or paris.hour == 17
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"allowed={str(allowed).lower()}\n")
+
+          print(f"Paris: {paris:%Y-%m-%d %H:%M}")
+          print(f"Publication autorisée : {allowed}")
+          CHECK
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -45,14 +66,14 @@ jobs:
             hajj2027/output/caption.txt
             hajj2027/output/selected.json
       - name: LIVE safeguards
-        if: ${{ inputs.mode == 'LIVE' }}
+        if: ${{ (github.event_name == 'schedule' && steps.paris_time.outputs.allowed == 'true') || inputs.mode == 'LIVE' }}
         env:
           ENABLED: ${{ vars.HAJJ2027_LIVE_ENABLED }}
         run: |
           test "$ENABLED" = true || { echo 'LIVE disabled. Set HAJJ2027_LIVE_ENABLED=true after approval.'; exit 1; }
           test "$(GH_TOKEN=$GITHUB_TOKEN gh api repos/$GITHUB_REPOSITORY --jq .is_private)" = false || { echo 'Repository must be public'; exit 1; }
       - name: Reserve next item and commit history
-        if: ${{ inputs.mode == 'LIVE' }}
+        if: ${{ (github.event_name == 'schedule' && steps.paris_time.outputs.allowed == 'true') || inputs.mode == 'LIVE' }}
         run: |
           python src/hajj2027_daily.py --mode PREPARE
           git config user.name 'github-actions[bot]'
@@ -61,7 +82,7 @@ jobs:
           git commit -m 'hajj2027: reserve pending publication'
           git push origin HEAD:${{ github.ref_name }}
       - name: Publish stable immutable public image
-        if: ${{ inputs.mode == 'LIVE' }}
+        if: ${{ (github.event_name == 'schedule' && steps.paris_time.outputs.allowed == 'true') || inputs.mode == 'LIVE' }}
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
