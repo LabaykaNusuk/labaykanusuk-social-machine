@@ -1,0 +1,341 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LABAYKANUSUK - Grand Lexique du Hajj</title>
+
+<style>
+:root {
+  --violet:#24003d;
+  --or:#d6a72c;
+  --creme:#f7f2e8;
+  --vert:#2E6B55;
+  --ink:#1d1027;
+}
+
+* { box-sizing:border-box; }
+
+html,body {
+  margin:0;
+  min-height:100%;
+  background:#12001f;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+body {
+  display:grid;
+  place-items:center;
+  padding:32px;
+}
+
+.stage {
+  width:min(92vw,720px);
+}
+
+.card {
+  position:relative;
+  width:100%;
+  aspect-ratio:4/5;
+  overflow:hidden;
+  border-radius:34px;
+  background:
+    radial-gradient(
+      circle at 85% 12%,
+      rgba(214,167,44,.16),
+      transparent 24%
+    ),
+    linear-gradient(
+      145deg,
+      var(--violet) 0%,
+      #1d0032 64%,
+      #160025 100%
+    );
+  box-shadow:0 38px 95px rgba(0,0,0,.38);
+  isolation:isolate;
+}
+
+.card::before {
+  content:"◈";
+  position:absolute;
+  right:-3%;
+  top:17%;
+  font-size:clamp(220px,34vw,390px);
+  line-height:1;
+  color:rgba(247,242,232,.035);
+  transform:rotate(7deg);
+  z-index:0;
+}
+
+.gold-line {
+  position:absolute;
+  left:7%;
+  right:7%;
+  top:6.5%;
+  height:1px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(214,167,44,.95),
+    transparent
+  );
+}
+
+.header {
+  position:absolute;
+  z-index:2;
+  left:8.5%;
+  right:8.5%;
+  top:9.3%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+}
+
+.brand {
+  color:var(--creme);
+  font-size:clamp(10px,1.5vw,15px);
+  letter-spacing:.18em;
+  font-weight:800;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+
+.series {
+  color:var(--or);
+  font-size:clamp(9px,1.35vw,13px);
+  letter-spacing:.14em;
+  font-weight:700;
+  text-transform:uppercase;
+  text-align:right;
+}
+
+.panel {
+  position:absolute;
+  z-index:2;
+  left:7%;
+  right:7%;
+  top:18%;
+  bottom:10%;
+  border-radius:30px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.72),
+      rgba(255,255,255,.28)
+    ),
+    var(--creme);
+  box-shadow:
+    0 16px 55px rgba(0,0,0,.18),
+    inset 0 0 0 1px rgba(36,0,61,.06);
+  overflow:hidden;
+}
+
+.panel::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      120deg,
+      transparent 0 62%,
+      rgba(214,167,44,.08) 62% 63%,
+      transparent 63%
+    ),
+    linear-gradient(
+      180deg,
+      transparent 0 82%,
+      rgba(46,107,85,.045) 82% 100%
+    );
+  pointer-events:none;
+}
+
+.content {
+  position:relative;
+  z-index:2;
+  height:100%;
+  padding:11% 10% 8%;
+  display:flex;
+  flex-direction:column;
+}
+
+.eyebrow {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:6%;
+}
+
+.category {
+  display:inline-flex;
+  align-items:center;
+  min-height:34px;
+  padding:0 14px;
+  border-radius:999px;
+  background:var(--vert);
+  color:#fff;
+  font-size:clamp(10px,1.5vw,14px);
+  font-weight:800;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.context {
+  color:rgba(36,0,61,.58);
+  font-size:clamp(10px,1.45vw,14px);
+  font-weight:700;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+
+h1 {
+  margin:0;
+  color:var(--violet);
+  font-size:clamp(48px,9vw,112px);
+  line-height:1;
+  letter-spacing:-.055em;
+  font-weight:900;
+  overflow-wrap:break-word;
+}
+
+.accent {
+  width:84px;
+  height:5px;
+  border-radius:99px;
+  background:var(--or);
+  margin:6% 0 7%;
+}
+
+.definition {
+  margin:0;
+  max-width:100%;
+  color:var(--ink);
+  font-size:clamp(21px,3.35vw,37px);
+  line-height:1.33;
+  font-weight:650;
+  letter-spacing:-.025em;
+  overflow-wrap:break-word;
+}
+
+.spacer {
+  flex:1;
+}
+
+.footer {
+  position:relative;
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:24px;
+  padding-top:5%;
+  border-top:1px solid rgba(36,0,61,.14);
+}
+
+.footer-left {
+  color:var(--violet);
+  font-size:clamp(10px,1.35vw,13px);
+  line-height:1.45;
+  letter-spacing:.06em;
+  font-weight:800;
+  text-transform:uppercase;
+}
+
+.footer-right {
+  color:var(--or);
+  font-size:clamp(11px,1.6vw,16px);
+  font-weight:900;
+  letter-spacing:.14em;
+}
+
+.caption {
+  margin-top:18px;
+  color:rgba(247,242,232,.75);
+  font-size:13px;
+  line-height:1.55;
+  text-align:center;
+}
+
+@media (max-width:520px) {
+  body { padding:14px; }
+  .card { border-radius:22px; }
+  .panel {
+    border-radius:22px;
+    top:17%;
+  }
+  .header { top:8.8%; }
+  .content { padding:11% 9% 8%; }
+  .definition { max-width:100%; }
+}
+</style>
+</head>
+
+<body>
+<main class="stage">
+
+  <article class="card"
+    aria-label="Grand Lexique du Hajj">
+
+    <div class="gold-line"></div>
+
+    <header class="header">
+      <div class="brand">
+        LABAYKANUSUK ◈
+      </div>
+
+      <div class="series">
+        Grand Lexique du Hajj
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="content">
+
+        <div class="eyebrow">
+          <span class="category">
+            {{ category }}
+          </span>
+
+          <span class="context">
+            {{ context }}
+          </span>
+        </div>
+
+        <h1>{{ term }}</h1>
+
+        <div class="accent"></div>
+
+        <p class="definition">
+          {{ definition }}
+        </p>
+
+        <div class="spacer"></div>
+
+        <footer class="footer">
+
+          <div class="footer-left">
+            Un mot. Une réponse.
+            <br>
+            Un lien pour approfondir.
+          </div>
+
+          <div class="footer-right">
+            LABAYKANUSUK.COM
+          </div>
+
+        </footer>
+
+      </div>
+    </section>
+
+  </article>
+
+  <div class="caption">
+    Aperçu Instagram 4:5.
+    Grand Lexique du Hajj.
+  </div>
+
+</main>
+</body>
+</html>
