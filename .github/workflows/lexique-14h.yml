@@ -1,4 +1,6 @@
+
 name: LABAYKANUSUK Lexique 14h (isolé)
+
 on:
   workflow_dispatch:
     inputs:
@@ -7,29 +9,39 @@ on:
         required: true
         default: "DRY"
         type: choice
-        options: ["DRY", "LIVE"]
+        options:
+          - DRY
+          - LIVE
+
   schedule:
     - cron: "0 14 * * *"
       timezone: "Europe/Paris"
+
 permissions:
   contents: write
+
 concurrency:
   group: labaykanusuk-lexique-only
   cancel-in-progress: false
+
 jobs:
   lexique:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - name: Install isolated renderer
         run: |
           pip install jinja2 playwright
           playwright install --with-deps chromium
+
       - name: Decide safe mode
         id: mode
         env:
@@ -43,13 +55,16 @@ jobs:
           else
             echo "value=DRY" >> "$GITHUB_OUTPUT"
           fi
+
       - name: Generate preview only
         run: python src/lexique_daily.py --mode DRY
+
       - uses: actions/upload-artifact@v4
         with:
           name: lexique-14h-preview
           path: lexique-preview.jpg
           if-no-files-found: ignore
+
       - name: Publish only after explicit activation
         if: steps.mode.outputs.value == 'LIVE'
         env:
@@ -61,22 +76,39 @@ jobs:
         run: |
           set -euo pipefail
           test -s lexique-preview.jpg
+          test "${GITHUB_REPOSITORY_VISIBILITY}" = "public" || { echo "STOP: dépôt privé, URL inaccessible à Instagram"; exit 1; }
+
           mkdir -p docs/media
           cp lexique-preview.jpg docs/media/lexique-daily.jpg
+
           git config user.name "LABAYKANUSUK Social Machine"
           git config user.email "actions@users.noreply.github.com"
+
           git add docs/media/lexique-daily.jpg
+
           if ! git diff --cached --quiet; then
             git commit -m "Lexique daily image"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+
           COMMIT=$(git rev-parse HEAD)
           export LEXIQUE_MEDIA_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${COMMIT}/docs/media/lexique-daily.jpg"
+
           curl --fail --location --retry 5 --retry-delay 3 "$LEXIQUE_MEDIA_URL" -o /tmp/lexique-public.jpg
           test -s /tmp/lexique-public.jpg
-          python src/lexique_daily.py --mode LIVE
+
+          python src/lexique_daily.py --mode PREPARE
+
           git add lexique/publication_history.json
+          git commit -m "Reserve Lexique publication before Instagram"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+          python src/lexique_daily.py --mode LIVE
+
+          git add lexique/publication_history.json
+
           if ! git diff --cached --quiet; then
             git commit -m "Record Lexique publication"
             git pull --rebase origin main
