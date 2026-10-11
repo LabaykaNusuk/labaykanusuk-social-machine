@@ -7870,5 +7870,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-11T16:08:44.810330+00:00"
+  },
+  {
+    "date": "2026-10-11",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-t-0095",
+    "content_type": "tool",
+    "photo_id": "ABRAJ_CLOCK",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18130989478689174",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/2788a2d7190e2fe19861f6fd509fe2336d1a17e0/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-11T17:16:37.971484+00:00"
   }
 ]
