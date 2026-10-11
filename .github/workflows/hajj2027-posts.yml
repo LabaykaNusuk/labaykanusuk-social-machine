@@ -50,7 +50,7 @@ jobs:
           ENABLED: ${{ vars.HAJJ2027_LIVE_ENABLED }}
         run: |
           test "$ENABLED" = true || { echo 'LIVE disabled. Set HAJJ2027_LIVE_ENABLED=true after approval.'; exit 1; }
-          test "$GITHUB_REPOSITORY_VISIBILITY" = public || { echo 'Repository must be public'; exit 1; }
+          test "$(gh api repos/$GITHUB_REPOSITORY --jq .visibility)" = public || { echo 'Repository must be public'; exit 1; }
       - name: Reserve next item and commit history
         if: ${{ inputs.mode == 'LIVE' }}
         run: |
