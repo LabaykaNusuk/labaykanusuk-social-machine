@@ -14,8 +14,8 @@ on:
           - LIVE
 
   schedule:
-    - cron: "0 14 * * *"
-      timezone: "Europe/Paris"
+    - cron: "0 12 * * *"
+    - cron: "0 13 * * *"
 
 permissions:
   contents: write
@@ -29,20 +29,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check Paris publication time
+        id: paris
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          HOUR=$(TZ=Europe/Paris date +%H)
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$HOUR" != "14" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Outside 14h Paris. Skipping."
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.paris.outputs.run == 'true'
         with:
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
+        if: steps.paris.outputs.run == 'true'
         with:
           python-version: "3.12"
 
       - name: Install isolated renderer
+        if: steps.paris.outputs.run == 'true'
         run: |
           pip install jinja2 playwright
           playwright install --with-deps chromium
 
       - name: Decide safe mode
+        if: steps.paris.outputs.run == 'true'
         id: mode
         env:
           ENABLED: ${{ vars.LEXIQUE_LIVE_ENABLED }}
@@ -57,16 +74,18 @@ jobs:
           fi
 
       - name: Generate preview only
+        if: steps.paris.outputs.run == 'true'
         run: python src/lexique_daily.py --mode DRY
 
       - uses: actions/upload-artifact@v4
+        if: steps.paris.outputs.run == 'true'
         with:
           name: lexique-14h-preview
           path: lexique-preview.jpg
           if-no-files-found: ignore
 
       - name: Publish only after explicit activation
-        if: steps.mode.outputs.value == 'LIVE'
+        if: steps.paris.outputs.run == 'true' && steps.mode.outputs.value == 'LIVE'
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -75,8 +94,13 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+
           test -s lexique-preview.jpg
-          test "${GITHUB_REPOSITORY_VISIBILITY}" = "public" || { echo "STOP: dépôt privé, URL inaccessible à Instagram"; exit 1; }
+
+          test "${GITHUB_REPOSITORY_VISIBILITY}" = "public" || {
+            echo "STOP: dépôt privé, URL inaccessible à Instagram"
+            exit 1
+          }
 
           mkdir -p docs/media
           cp lexique-preview.jpg docs/media/lexique-daily.jpg
@@ -93,9 +117,11 @@ jobs:
           fi
 
           COMMIT=$(git rev-parse HEAD)
+
           export LEXIQUE_MEDIA_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${COMMIT}/docs/media/lexique-daily.jpg"
 
           curl --fail --location --retry 5 --retry-delay 3 "$LEXIQUE_MEDIA_URL" -o /tmp/lexique-public.jpg
+
           test -s /tmp/lexique-public.jpg
 
           python src/lexique_daily.py --mode PREPARE
