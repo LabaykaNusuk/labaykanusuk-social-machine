@@ -7906,5 +7906,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-11T18:31:29.697666+00:00"
+  },
+  {
+    "date": "2026-10-11",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0036",
+    "content_type": "quiz",
+    "photo_id": "MUZDALIFAH_NIGHT",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18098424251093941",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/567d78d8a4c3f5d0d54f697d79ef852b1df0c8a1/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/567d78d8a4c3f5d0d54f697d79ef852b1df0c8a1/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/567d78d8a4c3f5d0d54f697d79ef852b1df0c8a1/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE POLITIQUE / ADMINISTRATIVE — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-11T19:08:40.247868+00:00"
   }
 ]
