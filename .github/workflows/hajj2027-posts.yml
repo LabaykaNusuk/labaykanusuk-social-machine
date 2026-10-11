@@ -1,0 +1,89 @@
+name: LABAYKANUSUK Hajj 2027 Posts (isolated)
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "DRY preview or LIVE actual Instagram post"
+        required: true
+        default: DRY
+        type: choice
+        options: [DRY, LIVE]
+  # Publication schedule deliberately disabled until a time is approved.
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lbkn-hajj2027-posts-only
+  cancel-in-progress: false
+
+jobs:
+  hajj2027:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated dependencies
+        run: |
+          pip install 'jinja2>=3.1,<4' 'playwright>=1.45,<2'
+          python -m playwright install --with-deps chromium
+      - name: Validate source and render DRY preview
+        run: python src/hajj2027_daily.py --mode DRY
+      - name: Upload preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: hajj2027-preview
+          path: |
+            hajj2027/output/post.jpg
+            hajj2027/output/post.html
+            hajj2027/output/caption.txt
+            hajj2027/output/selected.json
+      - name: LIVE safeguards
+        if: ${{ inputs.mode == 'LIVE' }}
+        env:
+          ENABLED: ${{ vars.HAJJ2027_LIVE_ENABLED }}
+        run: |
+          test "$ENABLED" = true || { echo 'LIVE disabled. Set HAJJ2027_LIVE_ENABLED=true after approval.'; exit 1; }
+          test "$GITHUB_REPOSITORY_VISIBILITY" = public || { echo 'Repository must be public'; exit 1; }
+      - name: Reserve next item and commit history
+        if: ${{ inputs.mode == 'LIVE' }}
+        run: |
+          python src/hajj2027_daily.py --mode PREPARE
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add hajj2027/history.json
+          git commit -m 'hajj2027: reserve pending publication'
+          git push origin HEAD:${{ github.ref_name }}
+      - name: Publish stable immutable public image
+        if: ${{ inputs.mode == 'LIVE' }}
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ secrets.IG_API_VERSION }}
+          HAJJ2027_LIVE_ENABLED: ${{ vars.HAJJ2027_LIVE_ENABLED }}
+        run: |
+          set -euo pipefail
+          ID=$(python -c 'import json; print(json.load(open("hajj2027/history.json"))["pending"]["id"])')
+          mkdir -p docs/media/hajj2027
+          cp hajj2027/output/post.jpg "docs/media/hajj2027/${ID}.jpg"
+          git add "docs/media/hajj2027/${ID}.jpg"
+          git commit -m "hajj2027: image ${ID}"
+          git push origin HEAD:${{ github.ref_name }}
+          SHA=$(git rev-parse HEAD)
+          export HAJJ2027_MEDIA_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${SHA}/docs/media/hajj2027/${ID}.jpg"
+          echo "Checking public image URL"
+          for attempt in 1 2 3 4 5 6; do
+            if curl --fail --location --silent --show-error --max-time 20 "$HAJJ2027_MEDIA_URL" -o /tmp/hajj2027-check.jpg && test $(wc -c </tmp/hajj2027-check.jpg) -gt 10000; then break; fi
+            sleep 10
+          done
+          test -s /tmp/hajj2027-check.jpg
+          python src/hajj2027_daily.py --mode LIVE
+          git add hajj2027/history.json
+          git commit -m "hajj2027: published ${ID}"
+          git push origin HEAD:${{ github.ref_name }}

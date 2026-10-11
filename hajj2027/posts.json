@@ -1,0 +1,2198 @@
+{
+  "source": "LABAYKANUSUK_HAJJ_2027_REELS_UNIQUES_360_ANALYSES(1).pdf",
+  "total": 274,
+  "items": [
+    {
+      "id": 1,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "J'habite en France sans nationalité française. Puis-je utiliser Nusuk ?",
+      "question": "J'habite en France sans nationalité française. Puis-je utiliser Nusuk ?",
+      "answer": "C'est possible selon la nationalité, la résidence et les critères de la campagne. Préparez un justificatif de résidence si demandé."
+    },
+    {
+      "id": 2,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "J'ai deux passeports. Lequel utiliser ?",
+      "question": "J'ai deux passeports. Lequel utiliser ?",
+      "answer": "Choisissez le passeport correspondant au profil éligible et gardez la même identité dans toutes les démarches. Évitez les candidatures contradictoires."
+    },
+    {
+      "id": 3,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Une carte de séjour de dix ans suffit-elle ?",
+      "question": "Une carte de séjour de dix ans suffit-elle ?",
+      "answer": "C'est un justificatif important, pas une garantie d'éligibilité. D'autres documents ou critères liés à la nationalité peuvent s'appliquer."
+    },
+    {
+      "id": 4,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Je vis en Belgique et travaille en France. Quel pays déclarer ?",
+      "question": "Je vis en Belgique et travaille en France. Quel pays déclarer ?",
+      "answer": "Déclarez votre pays de résidence réel. Le pays où vous travaillez ne devient pas automatiquement votre résidence."
+    },
+    {
+      "id": 5,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Je viens de déménager. Cela change-t-il mon dossier ?",
+      "question": "Je viens de déménager. Cela change-t-il mon dossier ?",
+      "answer": "Oui, le pays de résidence peut modifier les conditions d'accès. Signalez le changement selon la procédure officielle."
+    },
+    {
+      "id": 6,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Je suis étudiant étranger en France. Puis-je candidater ?",
+      "question": "Je suis étudiant étranger en France. Puis-je candidater ?",
+      "answer": "Cela dépend de votre statut de résidence, de votre nationalité et des justificatifs acceptés. Le titre étudiant seul ne suffit pas à conclure."
+    },
+    {
+      "id": 7,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "J'ai déjà accompli le Hajj. Puis-je repartir en 2027 ?",
+      "question": "J'ai déjà accompli le Hajj. Puis-je repartir en 2027 ?",
+      "answer": "Vérifiez les éventuelles restrictions ou priorités de la campagne 2027. Les règles peuvent différer pour les anciens pèlerins."
+    },
+    {
+      "id": 8,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Mon pays n'est pas dans la liste Nusuk. Que faire ?",
+      "question": "Mon pays n'est pas dans la liste Nusuk. Que faire ?",
+      "answer": "Cherchez le circuit officiel de votre pays auprès des autorités compétentes. Tous les pays ne réservent pas par Nusuk Hajj."
+    },
+    {
+      "id": 9,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Je viens d'obtenir la nationalité française. Est-ce gênant ?",
+      "question": "Je viens d'obtenir la nationalité française. Est-ce gênant ?",
+      "answer": "Pas nécessairement si vos documents sont valides. Faites clarifier tout ancien dossier établi sous une autre nationalité."
+    },
+    {
+      "id": 10,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Je réside en France mais je suis momentanément à l'étranger. Puis-je m'inscrire ?",
+      "question": "Je réside en France mais je suis momentanément à l'étranger. Puis-je m'inscrire ?",
+      "answer": "Votre lieu de séjour temporaire ne change pas forcément votre résidence administrative. Ce sont les conditions et justificatifs qui comptent."
+    },
+    {
+      "id": 11,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Je suis converti. Quels documents présenter ?",
+      "question": "Je suis converti. Quels documents présenter ?",
+      "answer": "Préparez les pièces habituelles. Une attestation de conversion n'est à fournir que si elle est effectivement exigée pour votre situation."
+    },
+    {
+      "id": 12,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Je suis né en France avec un passeport étranger. Est-ce important ?",
+      "question": "Je suis né en France avec un passeport étranger. Est-ce important ?",
+      "answer": "Oui. Pays de naissance, nationalité et résidence sont trois informations distinctes qu'il faut déclarer correctement."
+    },
+    {
+      "id": 13,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Je suis retraité et vis dans deux pays. Quelle résidence indiquer ?",
+      "question": "Je suis retraité et vis dans deux pays. Quelle résidence indiquer ?",
+      "answer": "Déclarez votre résidence administrative réelle et fournissez les justificatifs acceptés. Six mois dans un pays ne suffisent pas toujours à trancher."
+    },
+    {
+      "id": 14,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Puis-je candidater dans deux pays à la fois ?",
+      "question": "Puis-je candidater dans deux pays à la fois ?",
+      "answer": "Évitez les doubles dossiers incohérents. Utilisez le circuit correspondant à votre situation et sollicitez une clarification officielle."
+    },
+    {
+      "id": 15,
+      "part": "A",
+      "category": "Éligibilité et droit de partir",
+      "title": "Mon pays n'est pas éligible cette année. Dois-je attendre ?",
+      "question": "Mon pays n'est pas éligible cette année. Dois-je attendre ?",
+      "answer": "Pas nécessairement : un autre dispositif officiel peut exister. Vérifiez-le avant de vous adresser à un vendeur privé."
+    },
+    {
+      "id": 16,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Mon passeport expire peu après le Hajj. Faut-il le renouveler ?",
+      "question": "Mon passeport expire peu après le Hajj. Faut-il le renouveler ?",
+      "answer": "Comparez sa validité aux exigences officielles du visa Hajj 2027. Renouvelez-le s'il ne respecte pas la durée minimale requise."
+    },
+    {
+      "id": 17,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "J'ai changé de passeport après inscription. Que faire ?",
+      "question": "J'ai changé de passeport après inscription. Que faire ?",
+      "answer": "Le numéro a changé : suivez la procédure de mise à jour. Si le dossier est validé ou réservé, demandez d'abord comment procéder."
+    },
+    {
+      "id": 18,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Mon nom comporte un tiret refusé par Nusuk. Que faire ?",
+      "question": "Mon nom comporte un tiret refusé par Nusuk. Que faire ?",
+      "answer": "Suivez les consignes de saisie des caractères spéciaux sans supprimer arbitrairement une partie du nom. Contactez le support si le blocage persiste."
+    },
+    {
+      "id": 19,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Nom de naissance ou nom marital : lequel écrire ?",
+      "question": "Nom de naissance ou nom marital : lequel écrire ?",
+      "answer": "Utilisez l'identité du passeport de voyage et respectez la répartition des champs. Le billet et le visa doivent rester cohérents."
+    },
+    {
+      "id": 20,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "J'ai trois prénoms. Dois-je tous les indiquer ?",
+      "question": "J'ai trois prénoms. Dois-je tous les indiquer ?",
+      "answer": "Renseignez les prénoms conformément au passeport et aux instructions du formulaire, pas seulement le prénom usuel."
+    },
+    {
+      "id": 21,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Mon passeport est abîmé. Peut-il être refusé ?",
+      "question": "Mon passeport est abîmé. Peut-il être refusé ?",
+      "answer": "Oui, surtout si les données ou la zone lisible par machine sont détériorées. Faites-le contrôler par l'administration émettrice."
+    },
+    {
+      "id": 22,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Le scan du passeport passe, mais pas ma photo. Pourquoi ?",
+      "question": "Le scan du passeport passe, mais pas ma photo. Pourquoi ?",
+      "answer": "Ce sont deux contrôles différents. La photo portrait doit respecter ses propres critères de fond, cadrage et format."
+    },
+    {
+      "id": 23,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Une photo prise au téléphone peut-elle convenir ?",
+      "question": "Une photo prise au téléphone peut-elle convenir ?",
+      "answer": "Seulement si elle satisfait les exigences techniques. Évitez selfie, filtre et fond irrégulier ; une photo d'identité conforme est préférable."
+    },
+    {
+      "id": 24,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Mon document est refusé car flou. Comment le refaire ?",
+      "question": "Mon document est refusé car flou. Comment le refaire ?",
+      "answer": "Photographiez la page entière à plat, sans reflets ni bords coupés, puis agrandissez l'image pour contrôler chaque caractère."
+    },
+    {
+      "id": 25,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Mon fichier dépasse la taille maximale. Que faire ?",
+      "question": "Mon fichier dépasse la taille maximale. Que faire ?",
+      "answer": "Compressez-le au format autorisé, puis vérifiez qu'il reste lisible. Évitez de transmettre votre passeport à des sites inconnus."
+    },
+    {
+      "id": 26,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Le lieu de naissance est orthographié différemment. Que faire ?",
+      "question": "Le lieu de naissance est orthographié différemment. Que faire ?",
+      "answer": "Pour les champs du passeport, reprenez sa translittération. Signalez toute divergence avec d'autres justificatifs au support."
+    },
+    {
+      "id": 27,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "J'ai inversé ma date de naissance. Puis-je corriger ?",
+      "question": "J'ai inversé ma date de naissance. Puis-je corriger ?",
+      "answer": "Cela dépend des champs encore modifiables. Si le dossier est verrouillé, demandez une correction officielle plutôt que de créer un doublon."
+    },
+    {
+      "id": 28,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Mon dossier validé repasse en vérification après modification. Pourquoi ?",
+      "question": "Mon dossier validé repasse en vérification après modification. Pourquoi ?",
+      "answer": "Une donnée modifiée peut nécessiter un nouveau contrôle. Ce statut n'est pas en lui-même un refus."
+    },
+    {
+      "id": 29,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Quel justificatif de résidence faut-il fournir ?",
+      "question": "Quel justificatif de résidence faut-il fournir ?",
+      "answer": "Consultez la liste applicable à votre pays et à votre statut. Une facture n'est pas automatiquement suffisante."
+    },
+    {
+      "id": 30,
+      "part": "A",
+      "category": "Identité, passeport et documents",
+      "title": "Mon document français doit-il être traduit ?",
+      "question": "Mon document français doit-il être traduit ?",
+      "answer": "Uniquement si la procédure exige une langue ou une traduction particulière. Vérifiez si un traducteur agréé est requis."
+    },
+    {
+      "id": 31,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Je n'ai pas reçu l'email de confirmation. Que faire ?",
+      "question": "Je n'ai pas reçu l'email de confirmation. Que faire ?",
+      "answer": "Vérifiez l'adresse et les spams, puis utilisez le renvoi prévu. Si rien n'arrive, contactez l'assistance avec l'email du compte."
+    },
+    {
+      "id": 32,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Mon mot de passe est refusé. Que faire ?",
+      "question": "Mon mot de passe est refusé. Que faire ?",
+      "answer": "Vérifiez le site officiel et l'identifiant utilisé. Lancez la réinitialisation plutôt que de multiplier les essais."
+    },
+    {
+      "id": 33,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "L'email de réinitialisation n'arrive pas. Pourquoi ?",
+      "question": "L'email de réinitialisation n'arrive pas. Pourquoi ?",
+      "answer": "Assurez-vous d'utiliser l'adresse liée au compte et contrôlez les indésirables. Signalez ensuite l'absence de message au support."
+    },
+    {
+      "id": 34,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Le code OTP arrive trop tard. Que faire ?",
+      "question": "Le code OTP arrive trop tard. Que faire ?",
+      "answer": "Un code expiré n'est plus utilisable. Demandez-en un nouveau et ne tentez pas plusieurs anciens codes."
+    },
+    {
+      "id": 35,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Je ne reçois pas les SMS sur mon numéro français. Que vérifier ?",
+      "question": "Je ne reçois pas les SMS sur mon numéro français. Que vérifier ?",
+      "answer": "Contrôlez l'indicatif +33, le numéro enregistré et la réception des SMS internationaux. Demandez la mise à jour officielle si nécessaire."
+    },
+    {
+      "id": 36,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "J'ai changé de téléphone. Vais-je perdre mon compte ?",
+      "question": "J'ai changé de téléphone. Vais-je perdre mon compte ?",
+      "answer": "Non, en principe, mais vous devez conserver l'accès à votre email et au numéro utilisé pour la vérification."
+    },
+    {
+      "id": 37,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Mon adresse email existe déjà sur Nusuk. Que faire ?",
+      "question": "Mon adresse email existe déjà sur Nusuk. Que faire ?",
+      "answer": "Essayez de récupérer le compte existant. Si vous ne reconnaissez pas l'inscription, signalez-la avant de transmettre vos documents."
+    },
+    {
+      "id": 38,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Mon compte est bloqué après plusieurs essais. Que faire ?",
+      "question": "Mon compte est bloqué après plusieurs essais. Que faire ?",
+      "answer": "Lisez le message de blocage et utilisez le délai ou la procédure de récupération indiquée. Méfiez-vous des déblocages payants."
+    },
+    {
+      "id": 39,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Mon dossier reste en vérification plusieurs semaines. Est-ce normal ?",
+      "question": "Mon dossier reste en vérification plusieurs semaines. Est-ce normal ?",
+      "answer": "Les délais varient. Vérifiez les demandes de pièces et sollicitez un suivi avec la référence du dossier ; attente ne signifie pas refus."
+    },
+    {
+      "id": 40,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Mon épouse est validée, pas moi. Pourquoi ?",
+      "question": "Mon épouse est validée, pas moi. Pourquoi ?",
+      "answer": "Chaque dossier est examiné séparément. Les délais peuvent différer selon les contrôles nécessaires."
+    },
+    {
+      "id": 41,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Je ne comprends pas le statut anglais affiché. Que faire ?",
+      "question": "Je ne comprends pas le statut anglais affiché. Que faire ?",
+      "answer": "Traduisez le libellé exact et l'étape concernée. « Approved » ne signifie pas nécessairement « forfait réservé »."
+    },
+    {
+      "id": 42,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Nusuk marche sur téléphone, pas sur ordinateur. Pourquoi ?",
+      "question": "Nusuk marche sur téléphone, pas sur ordinateur. Pourquoi ?",
+      "answer": "Testez un navigateur à jour, une session privée et désactivez les extensions gênantes. Vérifiez ensuite une éventuelle panne du service."
+    },
+    {
+      "id": 43,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Le bouton « Continuer » est grisé. Pourquoi ?",
+      "question": "Le bouton « Continuer » est grisé. Pourquoi ?",
+      "answer": "Recherchez un champ obligatoire, une pièce non acceptée ou une confirmation manquante, y compris plus haut sur la page."
+    },
+    {
+      "id": 44,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "J'ai reçu un refus sans motif clair. Que faire ?",
+      "question": "J'ai reçu un refus sans motif clair. Que faire ?",
+      "answer": "Conservez le message, consultez le statut détaillé et demandez une explication officielle avant de refaire le dossier."
+    },
+    {
+      "id": 45,
+      "part": "A",
+      "category": "Compte Nusuk et blocages",
+      "title": "Le support répond automatiquement. Comment obtenir une réponse utile ?",
+      "question": "Le support répond automatiquement. Comment obtenir une réponse utile ?",
+      "answer": "Envoyez référence, date, capture pertinente et description précise. Dites ce que vous avez déjà tenté et posez une question unique."
+    },
+    {
+      "id": 46,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Un seul compte suffit-il pour un couple ?",
+      "question": "Un seul compte suffit-il pour un couple ?",
+      "answer": "Chaque pèlerin doit fournir ses informations individuelles. Les fonctions familiales éventuelles ne remplacent pas les contrôles de chaque dossier."
+    },
+    {
+      "id": 47,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Mon mari est validé, pas moi. Peut-il réserver seul ?",
+      "question": "Mon mari est validé, pas moi. Peut-il réserver seul ?",
+      "answer": "Vérifiez les règles d'association des accompagnants avant d'agir. Une réservation séparée peut compromettre le voyage commun."
+    },
+    {
+      "id": 48,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Quatre amis peuvent-ils réserver ensemble ?",
+      "question": "Quatre amis peuvent-ils réserver ensemble ?",
+      "answer": "Préparez les quatre dossiers et vérifiez les outils de groupe ainsi que les places disponibles. La validation ne garantit pas le même forfait."
+    },
+    {
+      "id": 49,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Qui doit administrer notre groupe familial ?",
+      "question": "Qui doit administrer notre groupe familial ?",
+      "answer": "Choisissez une personne disponible pour suivre notifications et décisions, sans partager inutilement les mots de passe."
+    },
+    {
+      "id": 50,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Ma mère n'apparaît pas dans le groupe. Pourquoi ?",
+      "question": "Ma mère n'apparaît pas dans le groupe. Pourquoi ?",
+      "answer": "Vérifiez son profil et les étapes de rattachement. Contactez l'assistance avant de créer un profil en double."
+    },
+    {
+      "id": 51,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Peut-on retirer une personne d'un groupe ?",
+      "question": "Peut-on retirer une personne d'un groupe ?",
+      "answer": "Cela dépend du statut de la réservation. Vérifiez d'abord l'effet sur les chambres, le prix et les autres participants."
+    },
+    {
+      "id": 52,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Puis-je gérer le dossier de mon père qui ne sait pas utiliser Internet ?",
+      "question": "Puis-je gérer le dossier de mon père qui ne sait pas utiliser Internet ?",
+      "answer": "Oui, avec son accord et en le tenant informé, notamment avant les engagements financiers. Protégez ses accès."
+    },
+    {
+      "id": 53,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Deux sœurs peuvent-elles partir ensemble ?",
+      "question": "Deux sœurs peuvent-elles partir ensemble ?",
+      "answer": "Vérifiez les conditions officielles 2027 relatives aux femmes et aux accompagnants, ainsi que les options de réservation commune."
+    },
+    {
+      "id": 54,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Peut-on emmener un enfant au Hajj ?",
+      "question": "Peut-on emmener un enfant au Hajj ?",
+      "answer": "L'admission dépend des règles d'âge, de visa et de réservation de la campagne. Vérifiez-les avant toute dépense."
+    },
+    {
+      "id": 55,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Un enfant non admis au Hajj peut-il quand même venir en Arabie saoudite ?",
+      "question": "Un enfant non admis au Hajj peut-il quand même venir en Arabie saoudite ?",
+      "answer": "L'entrée dans le pays ne donne pas automatiquement accès aux zones du pèlerinage. Vérifiez les restrictions de la période."
+    },
+    {
+      "id": 56,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Un couple de nationalités différentes peut-il être dans le même groupe ?",
+      "question": "Un couple de nationalités différentes peut-il être dans le même groupe ?",
+      "answer": "Cela dépend des deux circuits d'éligibilité. Faites confirmer les possibilités de regroupement avant de réserver."
+    },
+    {
+      "id": 57,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Nous sommes trois et il ne reste que deux places. Que faire ?",
+      "question": "Nous sommes trois et il ne reste que deux places. Que faire ?",
+      "answer": "Ne comptez pas sur l'ajout garanti d'une troisième place. Cherchez un forfait adapté à trois ou une autre solution officielle."
+    },
+    {
+      "id": 58,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Un membre du groupe annule. Les autres gardent-ils leur réservation ?",
+      "question": "Un membre du groupe annule. Les autres gardent-ils leur réservation ?",
+      "answer": "Vérifiez les conditions du groupe, les suppléments de chambre et les éventuelles conséquences financières."
+    },
+    {
+      "id": 59,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Peut-on payer toute la famille avec une seule carte ?",
+      "question": "Peut-on payer toute la famille avec une seule carte ?",
+      "answer": "Seulement si les règles de paiement le permettent. Anticipez le plafond et conservez une preuve par transaction."
+    },
+    {
+      "id": 60,
+      "part": "A",
+      "category": "Couples, familles et accompagnants",
+      "title": "Peut-on demander des chambres séparées entre frères et sœurs ?",
+      "question": "Peut-on demander des chambres séparées entre frères et sœurs ?",
+      "answer": "Choisissez la configuration adaptée et faites confirmer les disponibilités et suppléments avant de payer."
+    },
+    {
+      "id": 61,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Premium ou Luxury : pourquoi payer plus ?",
+      "question": "Premium ou Luxury : pourquoi payer plus ?",
+      "answer": "Comparez les prestations réelles : hôtels, chambres, transports, repas et services aux lieux du Hajj. Le nom seul ne dit pas tout."
+    },
+    {
+      "id": 62,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Un forfait Standard permet-il les mêmes rites ?",
+      "question": "Un forfait Standard permet-il les mêmes rites ?",
+      "answer": "Oui, les rites ne dépendent pas du prix. Ce sont les services matériels et le confort qui diffèrent."
+    },
+    {
+      "id": 63,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Qu'est-ce qu'un forfait shifting ?",
+      "question": "Qu'est-ce qu'un forfait shifting ?",
+      "answer": "C'est une formule avec changement d'hébergement pendant le séjour. Elle demande une organisation particulière des bagages."
+    },
+    {
+      "id": 64,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Pourquoi choisir un forfait non-shifting ?",
+      "question": "Pourquoi choisir un forfait non-shifting ?",
+      "answer": "Il évite le changement d'hôtel prévu dans d'autres formules, mais pas les déplacements vers les sites du Hajj."
+    },
+    {
+      "id": 65,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Dix jours suffisent-ils pour le Hajj ?",
+      "question": "Dix jours suffisent-ils pour le Hajj ?",
+      "answer": "Un programme court peut couvrir les rites s'il est bien organisé, mais laisse moins de marge pour repos et imprévus."
+    },
+    {
+      "id": 66,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Pourquoi certains forfaits durent-ils trois semaines ?",
+      "question": "Pourquoi certains forfaits durent-ils trois semaines ?",
+      "answer": "Ils peuvent inclure plus de nuits, Médine ou un rythme moins concentré, avec un coût et une disponibilité personnelle accrus."
+    },
+    {
+      "id": 67,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Que signifie « Mashair uniquement » ?",
+      "question": "Que signifie « Mashair uniquement » ?",
+      "answer": "Mashair renvoie notamment à Mina, Arafat et Muzdalifah. Vérifiez si vols et hôtels hors de ces sites sont exclus."
+    },
+    {
+      "id": 68,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Tous les forfaits incluent-ils Médine ?",
+      "question": "Tous les forfaits incluent-ils Médine ?",
+      "answer": "Non. Contrôlez les nuits, les dates et les transferts si Médine est importante pour vous."
+    },
+    {
+      "id": 69,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Que couvre vraiment « all-inclusive » ?",
+      "question": "Que couvre vraiment « all-inclusive » ?",
+      "answer": "Plusieurs prestations sont incluses, mais pas forcément les achats personnels ou toutes les options. Le détail du contrat prime."
+    },
+    {
+      "id": 70,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Comment vérifier un prestataire saoudien inconnu ?",
+      "question": "Comment vérifier un prestataire saoudien inconnu ?",
+      "answer": "Assurez-vous qu'il figure parmi les prestataires autorisés sur les canaux officiels de la campagne."
+    },
+    {
+      "id": 71,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Prestataire saoudien et accompagnateur francophone : quelle différence ?",
+      "question": "Prestataire saoudien et accompagnateur francophone : quelle différence ?",
+      "answer": "Le premier fournit les services contractuels ; le second peut aider à comprendre et suivre le parcours selon sa mission précise."
+    },
+    {
+      "id": 72,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Peut-on choisir son guide avant de payer ?",
+      "question": "Peut-on choisir son guide avant de payer ?",
+      "answer": "Cela dépend de l'offre. Si le français est indispensable, demandez une confirmation écrite sur l'encadrement."
+    },
+    {
+      "id": 73,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Pourquoi deux forfaits du même prestataire coûtent-ils différemment ?",
+      "question": "Pourquoi deux forfaits du même prestataire coûtent-ils différemment ?",
+      "answer": "Comparez durée, hôtels, occupation des chambres, vols et services à Mina ; le prix reflète souvent ces écarts."
+    },
+    {
+      "id": 74,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Une offre affichée peut-elle changer avant la vente ?",
+      "question": "Une offre affichée peut-elle changer avant la vente ?",
+      "answer": "Oui, prix et disponibilités peuvent évoluer avant la confirmation définitive. Une fiche consultée n'est pas une réservation."
+    },
+    {
+      "id": 75,
+      "part": "A",
+      "category": "Forfaits et prestataires",
+      "title": "Comment lire correctement une fiche de forfait ?",
+      "question": "Comment lire correctement une fiche de forfait ?",
+      "answer": "Contrôlez prix total, dates, villes, vols, hôtels, chambres, repas, transports, services à Mina et annulation."
+    },
+    {
+      "id": 76,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Un hôtel à 500 mètres du Haram peut-il être loin à pied ?",
+      "question": "Un hôtel à 500 mètres du Haram peut-il être loin à pied ?",
+      "answer": "Oui, selon la porte utilisée, les détours, la foule et les restrictions d'accès. La distance annoncée n'est pas toujours le trajet réel."
+    },
+    {
+      "id": 77,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Un hôtel à Aziziyah est-il un mauvais choix ?",
+      "question": "Un hôtel à Aziziyah est-il un mauvais choix ?",
+      "answer": "Pas forcément : il peut coûter moins cher, mais nécessite d'examiner les navettes et les temps de trajet."
+    },
+    {
+      "id": 78,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Pourquoi les hôtels proches du Haram sont-ils plus chers ?",
+      "question": "Pourquoi les hôtels proches du Haram sont-ils plus chers ?",
+      "answer": "La proximité est très demandée. Elle peut limiter certains trajets, sans supprimer attente ni foule."
+    },
+    {
+      "id": 79,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Double ou quadruple : quelle différence pratique ?",
+      "question": "Double ou quadruple : quelle différence pratique ?",
+      "answer": "La double offre plus d'intimité ; la quadruple peut réduire le prix, au prix d'un espace et d'une salle de bain partagés."
+    },
+    {
+      "id": 80,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Peut-on choisir ses colocataires ?",
+      "question": "Peut-on choisir ses colocataires ?",
+      "answer": "Ce n'est pas systématiquement garanti. Demandez si le regroupement nominatif est prévu dans l'offre."
+    },
+    {
+      "id": 81,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Chambre double signifie-t-elle lit matrimonial ?",
+      "question": "Chambre double signifie-t-elle lit matrimonial ?",
+      "answer": "Non, elle peut comporter deux lits séparés. Vérifiez le type de literie annoncé."
+    },
+    {
+      "id": 82,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Peut-on obtenir une chambre accessible en fauteuil ?",
+      "question": "Peut-on obtenir une chambre accessible en fauteuil ?",
+      "answer": "Faites confirmer les accès, ascenseurs, salle de bain et disponibilité réelle, pas seulement une mention générale d'accessibilité."
+    },
+    {
+      "id": 83,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Comment juger un hôtel bien classé mais mal noté ?",
+      "question": "Comment juger un hôtel bien classé mais mal noté ?",
+      "answer": "Privilégiez les avis récents et les problèmes récurrents, notamment propreté, ascenseurs et organisation."
+    },
+    {
+      "id": 84,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Buffet inclus signifie-t-il tous les repas ?",
+      "question": "Buffet inclus signifie-t-il tous les repas ?",
+      "answer": "Non. Vérifiez les repas couverts, les horaires et ce qui est prévu pendant les déplacements."
+    },
+    {
+      "id": 85,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Pourquoi faut-il parfois quitter l'hôtel pendant le Hajj ?",
+      "question": "Pourquoi faut-il parfois quitter l'hôtel pendant le Hajj ?",
+      "answer": "Certains programmes changent d'hébergement ou modifient l'occupation des chambres durant les rites."
+    },
+    {
+      "id": 86,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Où laisser les valises pendant Mina ?",
+      "question": "Où laisser les valises pendant Mina ?",
+      "answer": "Le lieu de stockage dépend du forfait. Demandez les consignes et prévoyez un petit sac pour les jours des rites."
+    },
+    {
+      "id": 87,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Peut-on rester à l'hôtel au lieu de dormir au camp ?",
+      "question": "Peut-on rester à l'hôtel au lieu de dormir au camp ?",
+      "answer": "Cette question touche au programme et au fiqh. Consultez l'équipe et une autorité religieuse compétente avant toute décision."
+    },
+    {
+      "id": 88,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "À quoi ressemblent toilettes et douches à Mina ?",
+      "question": "À quoi ressemblent toilettes et douches à Mina ?",
+      "answer": "Ce sont souvent des installations collectives, avec des niveaux d'équipement variables et des temps d'attente."
+    },
+    {
+      "id": 89,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "La climatisation des tentes est-elle garantie ?",
+      "question": "La climatisation des tentes est-elle garantie ?",
+      "answer": "Vérifiez l'équipement contractuel ; même annoncé, il n'exclut pas une panne ou un confort différent de celui d'un hôtel."
+    },
+    {
+      "id": 90,
+      "part": "A",
+      "category": "Hôtels, chambres et confort",
+      "title": "Un camp confortable peut-il être loin des Jamarat ?",
+      "question": "Un camp confortable peut-il être loin des Jamarat ?",
+      "answer": "Oui. Emplacement, distance et services sont des critères distincts à comparer."
+    },
+    {
+      "id": 91,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "À quoi sert le portefeuille Nusuk ?",
+      "question": "À quoi sert le portefeuille Nusuk ?",
+      "answer": "Lorsque la campagne l'utilise, il permet de préparer le règlement d'un forfait. Vérifiez les règles de recharge et de restitution avant de verser."
+    },
+    {
+      "id": 92,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Ma banque bloque le paiement. Que lui demander ?",
+      "question": "Ma banque bloque le paiement. Que lui demander ?",
+      "answer": "Vérifiez paiements internationaux, plafonds et contrôles de sécurité. Prévenez-la avant une transaction importante."
+    },
+    {
+      "id": 93,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Mon plafond est trop bas. Comment faire ?",
+      "question": "Mon plafond est trop bas. Comment faire ?",
+      "answer": "Demandez une hausse temporaire ou étudiez les moyens de paiement officiellement acceptés, suffisamment tôt."
+    },
+    {
+      "id": 94,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Pourquoi des frais bancaires s'ajoutent-ils ?",
+      "question": "Pourquoi des frais bancaires s'ajoutent-ils ?",
+      "answer": "Ils peuvent venir de la transaction internationale ou de la conversion de devises, séparément du prix du forfait."
+    },
+    {
+      "id": 95,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Je vois des riyals mais paie en euros. Quel sera le coût ?",
+      "question": "Je vois des riyals mais paie en euros. Quel sera le coût ?",
+      "answer": "Il dépend du taux appliqué à la transaction et des frais de votre banque. Vérifiez le montant réellement débité."
+    },
+    {
+      "id": 96,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Carte à débit immédiat : quels risques ?",
+      "question": "Carte à débit immédiat : quels risques ?",
+      "answer": "Assurez-vous d'avoir solde et plafond suffisants ; vérifiez aussi les modalités de remboursement éventuel."
+    },
+    {
+      "id": 97,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Peut-on recharger avec plusieurs cartes ?",
+      "question": "Peut-on recharger avec plusieurs cartes ?",
+      "answer": "Cela dépend des moyens autorisés. Gardez les références de chaque versement pour faciliter le suivi."
+    },
+    {
+      "id": 98,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Mon virement n'apparaît pas. Que faire ?",
+      "question": "Mon virement n'apparaît pas. Que faire ?",
+      "answer": "Vérifiez référence, bénéficiaire et délai annoncé. Conservez le justificatif avant de contacter le support."
+    },
+    {
+      "id": 99,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Erreur après paiement : dois-je repayer ?",
+      "question": "Erreur après paiement : dois-je repayer ?",
+      "answer": "Pas avant d'avoir vérifié banque et historique Nusuk. Un nouvel essai pourrait créer un double débit."
+    },
+    {
+      "id": 100,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "J'ai été débité deux fois. Comment réagir ?",
+      "question": "J'ai été débité deux fois. Comment réagir ?",
+      "answer": "Distinguez opérations en attente et débits définitifs, puis transmettez les deux références au support et à la banque."
+    },
+    {
+      "id": 101,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "J'ai de l'argent sur l'eWallet mais aucun forfait. Pourquoi ?",
+      "question": "J'ai de l'argent sur l'eWallet mais aucun forfait. Pourquoi ?",
+      "answer": "Le solde ne garantit ni éligibilité, ni ouverture de la vente, ni disponibilité d'une place."
+    },
+    {
+      "id": 102,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Le Hajj est-il payable en plusieurs fois ?",
+      "question": "Le Hajj est-il payable en plusieurs fois ?",
+      "answer": "Vérifiez si un échéancier officiel existe. Épargner en amont n'est pas la même chose qu'un paiement fractionné du forfait."
+    },
+    {
+      "id": 103,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Paiement « en attente » signifie-t-il réservation confirmée ?",
+      "question": "Paiement « en attente » signifie-t-il réservation confirmée ?",
+      "answer": "Non. Attendez une confirmation officielle de la commande et de son statut."
+    },
+    {
+      "id": 104,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Puis-je payer avec la carte de mon frère ?",
+      "question": "Puis-je payer avec la carte de mon frère ?",
+      "answer": "Vérifiez l'autorisation de paiement par un tiers, les validations bancaires et le traitement d'un remboursement."
+    },
+    {
+      "id": 105,
+      "part": "A",
+      "category": "Argent, banques et portefeuille",
+      "title": "Comment calculer le vrai budget Hajj ?",
+      "question": "Comment calculer le vrai budget Hajj ?",
+      "answer": "Additionnez forfait, frais bancaires, dépenses personnelles, prestations exclues et réserve pour imprévus."
+    },
+    {
+      "id": 106,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "Comment se passe l'ouverture des réservations ?",
+      "question": "Comment se passe l'ouverture des réservations ?",
+      "answer": "Les candidats éligibles accèdent aux offres selon les phases officielles. Dates et modalités 2027 restent à confirmer."
+    },
+    {
+      "id": 107,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "Se connecter une heure avant donne-t-il un avantage ?",
+      "question": "Se connecter une heure avant donne-t-il un avantage ?",
+      "answer": "Aucune garantie. En revanche, vérifier accès, documents et paiement avant l'ouverture réduit les erreurs évitables."
+    },
+    {
+      "id": 108,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "Mon forfait a disparu avant paiement. Pourquoi ?",
+      "question": "Mon forfait a disparu avant paiement. Pourquoi ?",
+      "answer": "Les disponibilités changent. Une fiche consultée ne bloque pas une place ; prévoyez plusieurs choix acceptables."
+    },
+    {
+      "id": 109,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "J'ai sélectionné un forfait sans pouvoir payer. Suis-je réservé ?",
+      "question": "J'ai sélectionné un forfait sans pouvoir payer. Suis-je réservé ?",
+      "answer": "Pas nécessairement. Vérifiez le statut exact et les opérations bancaires avant de recommencer."
+    },
+    {
+      "id": 110,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "Le site est inaccessible pendant la vente. Que faire ?",
+      "question": "Le site est inaccessible pendant la vente. Que faire ?",
+      "answer": "Contrôlez votre connexion et les annonces officielles. Ne confiez jamais vos identifiants à un prétendu intermédiaire prioritaire."
+    },
+    {
+      "id": 111,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "Y aura-t-il plusieurs vagues de vente ?",
+      "question": "Y aura-t-il plusieurs vagues de vente ?",
+      "answer": "Cela a existé lors de campagnes précédentes, mais seul Nusuk peut confirmer le calendrier 2027."
+    },
+    {
+      "id": 112,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "J'ai raté la première vente. Tout est-il fini ?",
+      "question": "J'ai raté la première vente. Tout est-il fini ?",
+      "answer": "Pas forcément si d'autres places sont annoncées. Ne payez pas pour une prétendue réservation de dernière minute."
+    },
+    {
+      "id": 113,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "Pourquoi mon ami voit-il un forfait que je ne vois pas ?",
+      "question": "Pourquoi mon ami voit-il un forfait que je ne vois pas ?",
+      "answer": "Pays, statut, groupe ou phase de vente peuvent modifier les offres accessibles à chaque profil."
+    },
+    {
+      "id": 114,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "Dois-je prendre n'importe quel forfait disponible ?",
+      "question": "Dois-je prendre n'importe quel forfait disponible ?",
+      "answer": "Non. Fixez à l'avance budget maximal et besoins indispensables pour éviter un achat inadapté."
+    },
+    {
+      "id": 115,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "Comment éviter une erreur au dernier clic ?",
+      "question": "Comment éviter une erreur au dernier clic ?",
+      "answer": "Relisez dates, villes, prix, chambres, services et annulation avant toute confirmation financière."
+    },
+    {
+      "id": 116,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "Telegram annonce une ouverture non confirmée. Qui croire ?",
+      "question": "Telegram annonce une ouverture non confirmée. Qui croire ?",
+      "answer": "Les annonces officielles. Les captures partagées peuvent être anciennes ou concerner un autre pays."
+    },
+    {
+      "id": 117,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "Quelqu'un veut me revendre sa réservation. Est-ce sûr ?",
+      "question": "Quelqu'un veut me revendre sa réservation. Est-ce sûr ?",
+      "answer": "Ne payez aucun transfert sans autorisation officielle explicite. Une réservation nominative n'est pas librement revendable."
+    },
+    {
+      "id": 118,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "On me vend un accès à un « forfait caché ». Que faire ?",
+      "question": "On me vend un accès à un « forfait caché ». Que faire ?",
+      "answer": "Méfiez-vous : exigez une preuve officielle de l'offre et de l'autorisation du vendeur avant tout versement."
+    },
+    {
+      "id": 119,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "J'ai reçu un email de réservation absent de mon compte. Que faire ?",
+      "question": "J'ai reçu un email de réservation absent de mon compte. Que faire ?",
+      "answer": "Connectez-vous directement au site officiel, sans cliquer sur un lien douteux, et vérifiez le statut réel."
+    },
+    {
+      "id": 120,
+      "part": "A",
+      "category": "Vente et réservation",
+      "title": "Comment savoir si mon Hajj est vraiment réservé ?",
+      "question": "Comment savoir si mon Hajj est vraiment réservé ?",
+      "answer": "Vérifiez confirmation officielle, paiement et étapes restantes comme visa et documents de voyage."
+    },
+    {
+      "id": 121,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Pas de forfait obtenu : comment récupérer mon solde ?",
+      "question": "Pas de forfait obtenu : comment récupérer mon solde ?",
+      "answer": "Utilisez la procédure officielle de remboursement du portefeuille et vérifiez les conditions et frais applicables."
+    },
+    {
+      "id": 122,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Pourquoi mon remboursement tarde-t-il ?",
+      "question": "Pourquoi mon remboursement tarde-t-il ?",
+      "answer": "Le traitement de la demande et le retour bancaire sont distincts. Vérifiez le délai annoncé puis demandez une référence."
+    },
+    {
+      "id": 123,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "J'ai reçu moins que mon versement. Pourquoi ?",
+      "question": "J'ai reçu moins que mon versement. Pourquoi ?",
+      "answer": "Frais et taux de change peuvent expliquer l'écart. Comparez les montants de Nusuk et de la banque."
+    },
+    {
+      "id": 124,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "J'ai payé avec trois cartes. Où ira le remboursement ?",
+      "question": "J'ai payé avec trois cartes. Où ira le remboursement ?",
+      "answer": "Selon les règles, il peut revenir vers les moyens de paiement d'origine. Gardez chaque référence."
+    },
+    {
+      "id": 125,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Peut-on annuler juste après achat ?",
+      "question": "Peut-on annuler juste après achat ?",
+      "answer": "Les droits, délais et retenues dépendent des conditions du forfait. Ne supposez pas un remboursement intégral automatique."
+    },
+    {
+      "id": 126,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Annulation personnelle : vais-je perdre de l'argent ?",
+      "question": "Annulation personnelle : vais-je perdre de l'argent ?",
+      "answer": "C'est possible selon la date et les frais contractuels. Demandez un décompte avant de confirmer."
+    },
+    {
+      "id": 127,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Maladie après réservation : remboursement possible ?",
+      "question": "Maladie après réservation : remboursement possible ?",
+      "answer": "Vérifiez conditions du forfait et assurance éventuelle. Un certificat médical n'assure pas à lui seul un remboursement."
+    },
+    {
+      "id": 128,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Le prestataire annule : quels recours ?",
+      "question": "Le prestataire annule : quels recours ?",
+      "answer": "Demandez motif écrit, options de remplacement et conditions de remboursement prévues au contrat."
+    },
+    {
+      "id": 129,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Remboursement annoncé, mais rien à la banque. Que faire ?",
+      "question": "Remboursement annoncé, mais rien à la banque. Que faire ?",
+      "answer": "Obtenez une référence de remboursement puis faites rechercher l'opération par votre banque."
+    },
+    {
+      "id": 130,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Puis-je conserver le solde pour l'année suivante ?",
+      "question": "Puis-je conserver le solde pour l'année suivante ?",
+      "answer": "Vérifiez la règle de fin de campagne. La reconduction automatique n'est pas acquise."
+    },
+    {
+      "id": 131,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Pourquoi perdre de l'argent au change lors d'un remboursement ?",
+      "question": "Pourquoi perdre de l'argent au change lors d'un remboursement ?",
+      "answer": "Le taux de conversion peut varier entre les deux opérations ; le même montant en riyals n'assure pas le même montant en euros."
+    },
+    {
+      "id": 132,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Comment contester des frais de remboursement ?",
+      "question": "Comment contester des frais de remboursement ?",
+      "answer": "Demandez leur détail, comparez-le aux conditions acceptées et réclamez par écrit avec justificatifs."
+    },
+    {
+      "id": 133,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Puis-je faire annuler le paiement par ma banque ?",
+      "question": "Puis-je faire annuler le paiement par ma banque ?",
+      "answer": "Renseignez-vous sur les recours légitimes en cas de transaction contestée, sans contourner artificiellement les conditions d'annulation."
+    },
+    {
+      "id": 134,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Le forfait reçu diffère de l'offre. Comment réclamer ?",
+      "question": "Le forfait reçu diffère de l'offre. Comment réclamer ?",
+      "answer": "Conservez la fiche, la confirmation et les preuves des écarts ; saisissez les canaux de réclamation prévus."
+    },
+    {
+      "id": 135,
+      "part": "A",
+      "category": "Annulations et remboursements",
+      "title": "Comment conserver mes preuves de paiement ?",
+      "question": "Comment conserver mes preuves de paiement ?",
+      "answer": "Archivez reçus, références, confirmations, relevés et échanges dans un dossier daté."
+    },
+    {
+      "id": 136,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Pourquoi le vol Nusuk est-il parfois plus cher ?",
+      "question": "Pourquoi le vol Nusuk est-il parfois plus cher ?",
+      "answer": "Comparez bagages, dates, conditions et services intégrés au programme, pas seulement le prix brut du billet."
+    },
+    {
+      "id": 137,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Puis-je acheter mon vol moi-même ?",
+      "question": "Puis-je acheter mon vol moi-même ?",
+      "answer": "Seulement si le forfait et la procédure le permettent. Confirmez la compatibilité avant de réserver ailleurs."
+    },
+    {
+      "id": 138,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Je vis en France mais veux partir du Maroc. Possible ?",
+      "question": "Je vis en France mais veux partir du Maroc. Possible ?",
+      "answer": "Vérifiez les aéroports autorisés pour votre profil et les règles du forfait ; le départ ne se choisit pas toujours librement."
+    },
+    {
+      "id": 139,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Deux escales, est-ce une mauvaise idée ?",
+      "question": "Deux escales, est-ce une mauvaise idée ?",
+      "answer": "Pas forcément, mais le trajet est plus long et les correspondances plus fatigantes. Contrôlez temps et bagages."
+    },
+    {
+      "id": 140,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "J'arrive à Médine et mon forfait commence à La Mecque. Que faire ?",
+      "question": "J'arrive à Médine et mon forfait commence à La Mecque. Que faire ?",
+      "answer": "Vérifiez la cohérence de l'itinéraire et qui organise le transfert entre les deux villes."
+    },
+    {
+      "id": 141,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Puis-je arriver quelques jours plus tôt ?",
+      "question": "Puis-je arriver quelques jours plus tôt ?",
+      "answer": "Seulement si visa et programme l'autorisent ; hôtel et transports supplémentaires peuvent rester à votre charge."
+    },
+    {
+      "id": 142,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Puis-je voir ma famille à Riyad avant le Hajj ?",
+      "question": "Puis-je voir ma famille à Riyad avant le Hajj ?",
+      "answer": "Ne présumez pas que le visa Hajj autorise ces déplacements. Vérifiez les restrictions officielles."
+    },
+    {
+      "id": 143,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Un visa touristique suffit-il pour le Hajj ?",
+      "question": "Un visa touristique suffit-il pour le Hajj ?",
+      "answer": "Non. Le Hajj exige les autorisations spécifiques prévues pour le pèlerinage."
+    },
+    {
+      "id": 144,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Mon visa Hajj n'apparaît pas encore. Que faire ?",
+      "question": "Mon visa Hajj n'apparaît pas encore. Que faire ?",
+      "answer": "Consultez le calendrier de délivrance et le statut officiel, puis contactez le responsable si le délai est dépassé."
+    },
+    {
+      "id": 145,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Le billet ne correspond pas exactement au passeport. Que faire ?",
+      "question": "Le billet ne correspond pas exactement au passeport. Que faire ?",
+      "answer": "Signalez immédiatement l'écart à l'émetteur du billet ; la correction peut être soumise à des conditions."
+    },
+    {
+      "id": 146,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Mon vol est annulé juste avant le départ. Que faire ?",
+      "question": "Mon vol est annulé juste avant le départ. Que faire ?",
+      "answer": "Contactez compagnie et responsable du forfait, demandez une solution écrite et vérifiez l'effet sur l'accueil."
+    },
+    {
+      "id": 147,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Ma valise manque à Djeddah. Qui prévenir ?",
+      "question": "Ma valise manque à Djeddah. Qui prévenir ?",
+      "answer": "Déclarez-la au service bagages de la compagnie, obtenez un numéro de dossier et prévenez l'accompagnateur."
+    },
+    {
+      "id": 148,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Puis-je modifier mon retour ?",
+      "question": "Puis-je modifier mon retour ?",
+      "answer": "Cela dépend du billet, du visa et du forfait. Vérifiez frais et conséquences sur hébergement et transferts."
+    },
+    {
+      "id": 149,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Le transfert aéroport-hôtel est-il compris ?",
+      "question": "Le transfert aéroport-hôtel est-il compris ?",
+      "answer": "Consultez les transports détaillés et demandez confirmation des points d'accueil et trajets pris en charge."
+    },
+    {
+      "id": 150,
+      "part": "A",
+      "category": "Vols, visas et départ",
+      "title": "Je n'ai jamais pris l'avion. Comment me préparer ?",
+      "question": "Je n'ai jamais pris l'avion. Comment me préparer ?",
+      "answer": "Familiarisez-vous avec enregistrement, bagages, contrôles, embarquement et correspondances avant le jour du départ."
+    },
+    {
+      "id": 151,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Quel vaccin méningite est demandé ?",
+      "question": "Quel vaccin méningite est demandé ?",
+      "answer": "Les exigences portent habituellement sur le méningocoque ACYW ; vérifiez le vaccin, le certificat et les délais officiels 2027."
+    },
+    {
+      "id": 152,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "J'ai déjà été vacciné. Dois-je recommencer ?",
+      "question": "J'ai déjà été vacciné. Dois-je recommencer ?",
+      "answer": "Cela dépend du type de vaccin, de sa date et des règles saoudiennes. Faites contrôler votre certificat."
+    },
+    {
+      "id": 153,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Mon certificat n'a pas de tampon. Est-il valable ?",
+      "question": "Mon certificat n'a pas de tampon. Est-il valable ?",
+      "answer": "Vérifiez les mentions exigées et demandez au centre un document conforme si une information manque."
+    },
+    {
+      "id": 154,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "J'ai perdu mon carnet de vaccination. Que faire ?",
+      "question": "J'ai perdu mon carnet de vaccination. Que faire ?",
+      "answer": "Contactez le médecin, la pharmacie ou le centre qui a administré le vaccin pour obtenir un justificatif."
+    },
+    {
+      "id": 155,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Grippe et Covid sont-ils obligatoires pour tous ?",
+      "question": "Grippe et Covid sont-ils obligatoires pour tous ?",
+      "answer": "Les exigences varient selon l'année et le profil. Distinguez recommandations et obligations officielles 2027."
+    },
+    {
+      "id": 156,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Plus de 65 ans : puis-je partir ?",
+      "question": "Plus de 65 ans : puis-je partir ?",
+      "answer": "Vérifiez les critères de la campagne et demandez une évaluation médicale adaptée aux efforts et à la chaleur."
+    },
+    {
+      "id": 157,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Je suis diabétique. Comment gérer mon traitement ?",
+      "question": "Je suis diabétique. Comment gérer mon traitement ?",
+      "answer": "Préparez doses, horaires, conservation et ordonnance avec votre médecin avant le départ."
+    },
+    {
+      "id": 158,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Puis-je emporter plusieurs semaines de médicaments ?",
+      "question": "Puis-je emporter plusieurs semaines de médicaments ?",
+      "answer": "Vérifiez les restrictions saoudiennes, notamment pour les substances réglementées, et emportez les prescriptions nécessaires."
+    },
+    {
+      "id": 159,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Un fauteuil roulant rend-il le Hajj possible ?",
+      "question": "Un fauteuil roulant rend-il le Hajj possible ?",
+      "answer": "Des aides peuvent exister, mais vérifiez disponibilité, distances, transports et assistance humaine selon vos besoins."
+    },
+    {
+      "id": 160,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Comment se préparer à la chaleur ?",
+      "question": "Comment se préparer à la chaleur ?",
+      "answer": "Respectez les recommandations d'hydratation, de protection et de repos, et apprenez à reconnaître les signes d'alerte."
+    },
+    {
+      "id": 161,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Avec un problème cardiaque, le Hajj est-il trop difficile ?",
+      "question": "Avec un problème cardiaque, le Hajj est-il trop difficile ?",
+      "answer": "Une évaluation médicale individuelle est indispensable avant réservation compte tenu des efforts et des températures."
+    },
+    {
+      "id": 162,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Peut-on accomplir le Hajj enceinte ?",
+      "question": "Peut-on accomplir le Hajj enceinte ?",
+      "answer": "Cela nécessite un avis médical personnalisé, en tenant compte du stade de grossesse, des foules et du voyage."
+    },
+    {
+      "id": 163,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Je tombe malade à Mina. Que faire ?",
+      "question": "Je tombe malade à Mina. Que faire ?",
+      "answer": "Alertez les équipes et accédez aux services médicaux. En cas de symptômes graves, appelez les secours sans attendre."
+    },
+    {
+      "id": 164,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Mon père utilise de l'oxygène. Peut-on l'organiser ?",
+      "question": "Mon père utilise de l'oxygène. Peut-on l'organiser ?",
+      "answer": "Coordonnez médecin, compagnie et prestataire : autorisations, alimentation électrique et assistance doivent être confirmées."
+    },
+    {
+      "id": 165,
+      "part": "A",
+      "category": "Santé, vaccins et mobilité",
+      "title": "Le forfait inclut-il une assurance médicale ?",
+      "question": "Le forfait inclut-il une assurance médicale ?",
+      "answer": "Vérifiez les garanties exactes, exclusions, plafonds et procédures de prise en charge."
+    },
+    {
+      "id": 166,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Je ne retrouve pas mon groupe à La Mecque. Qui appeler ?",
+      "question": "Je ne retrouve pas mon groupe à La Mecque. Qui appeler ?",
+      "answer": "Gardez les contacts de l'équipe, l'adresse de l'hôtel et un point de rendez-vous ; restez dans un lieu sûr."
+    },
+    {
+      "id": 167,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Mon guide ne parle pas français. Que faire ?",
+      "question": "Mon guide ne parle pas français. Que faire ?",
+      "answer": "Demandez avant l'achat si l'assistance francophone est prévue, et sur place sollicitez le responsable compétent."
+    },
+    {
+      "id": 168,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Un guide peut-il gérer des centaines de pèlerins ?",
+      "question": "Un guide peut-il gérer des centaines de pèlerins ?",
+      "answer": "L'encadrement dépend de toute une équipe. Demandez les effectifs et la répartition des responsabilités."
+    },
+    {
+      "id": 169,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Je ne trouve pas mon bus pour Mina. Que faire ?",
+      "question": "Je ne trouve pas mon bus pour Mina. Que faire ?",
+      "answer": "Vérifiez point de rassemblement et numéro de groupe. Ne montez pas au hasard dans un véhicule."
+    },
+    {
+      "id": 170,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Comment être au bon endroit à Arafat ?",
+      "question": "Comment être au bon endroit à Arafat ?",
+      "answer": "Suivez les consignes officielles pour être dans les limites d'Arafat au temps requis le 9 Dhul Hijjah ; alertez l'équipe en cas de doute."
+    },
+    {
+      "id": 171,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Où dormir à Muzdalifah ?",
+      "question": "Où dormir à Muzdalifah ?",
+      "answer": "Préparez-vous à des conditions de repos collectives et simples, avec un petit sac contenant vos indispensables."
+    },
+    {
+      "id": 172,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Je suis perdu à Mina. Comment retrouver ma tente ?",
+      "question": "Je suis perdu à Mina. Comment retrouver ma tente ?",
+      "answer": "Conservez numéro et emplacement du camp sur téléphone et papier ; sollicitez les agents officiels."
+    },
+    {
+      "id": 173,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Je suis désorienté après les Jamarat. Que faire ?",
+      "question": "Je suis désorienté après les Jamarat. Que faire ?",
+      "answer": "Suivez les parcours autorisés, évitez le contre-sens et rejoignez un repère sûr avant d'appeler le groupe."
+    },
+    {
+      "id": 174,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Notre bus a des heures de retard. Qui décide ?",
+      "question": "Notre bus a des heures de retard. Qui décide ?",
+      "answer": "Le responsable coordonne avec le transporteur et transmet les consignes ; évitez de partir seul."
+    },
+    {
+      "id": 175,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Je suis séparé de mon épouse dans la foule. Que faire ?",
+      "question": "Je suis séparé de mon épouse dans la foule. Que faire ?",
+      "answer": "Utilisez un point de rendez-vous fixé à l'avance ; évitez de marcher tous les deux sans direction."
+    },
+    {
+      "id": 176,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Mon accompagnateur ne répond pas. Qui contacter ?",
+      "question": "Mon accompagnateur ne répond pas. Qui contacter ?",
+      "answer": "Utilisez les autres numéros de l'équipe et du prestataire ; en urgence, contactez directement les secours."
+    },
+    {
+      "id": 177,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Un pèlerin fait un malaise. Qui intervient ?",
+      "question": "Un pèlerin fait un malaise. Qui intervient ?",
+      "answer": "Alertez immédiatement les secours. L'équipe facilite l'accès, mais les soins relèvent des professionnels de santé."
+    },
+    {
+      "id": 178,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Je ne comprends pas un rite. À qui demander ?",
+      "question": "Je ne comprends pas un rite. À qui demander ?",
+      "answer": "Le guide peut expliquer le déroulement ; une question complexe de fiqh doit être adressée à une personne religieusement qualifiée."
+    },
+    {
+      "id": 179,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Les rites sont finis mais mon vol est dans trois jours. Qui nous accompagne ?",
+      "question": "Les rites sont finis mais mon vol est dans trois jours. Qui nous accompagne ?",
+      "answer": "Vérifiez les prestations prévues jusqu'au retour : hôtel, transferts, repas éventuels et assistance."
+    },
+    {
+      "id": 180,
+      "part": "A",
+      "category": "Terrain et accompagnement",
+      "title": "Comment reconnaître un accompagnement expérimenté ?",
+      "question": "Comment reconnaître un accompagnement expérimenté ?",
+      "answer": "Demandez années de terrain, rôle exact, présence sur place, gestion des urgences et services écrits."
+    },
+    {
+      "id": 181,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "« Passeport déjà lié à un autre compte »",
+      "question": "« Passeport déjà lié à un autre compte »",
+      "answer": "Ce message peut signaler un ancien compte ou un dossier déjà associé à votre document. Ne créez pas un autre profil au hasard : relevez le message exact et demandez au support de vérifier le rattachement."
+    },
+    {
+      "id": 182,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Pourquoi le site Nusuk plante aux heures de pointe",
+      "question": "Pourquoi le site Nusuk plante aux heures de pointe",
+      "answer": "Si la plateforme ralentit, vérifiez d'abord votre connexion puis les annonces de service. Réessayez à un autre moment sans multiplier les soumissions ni conclure automatiquement que votre dossier est perdu."
+    },
+    {
+      "id": 183,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Ajouter un accompagnateur après coup, la procédure exacte",
+      "question": "Ajouter un accompagnateur après coup, la procédure exacte",
+      "answer": "L'ajout d'un accompagnant dépend de l'étape du dossier et des fonctions disponibles. Vérifiez les possibilités de rattachement avant de réserver ; après confirmation, demandez une réponse écrite au support."
+    },
+    {
+      "id": 184,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Catégories de tickets Nusuk expliquées (lequel choisir)",
+      "question": "Catégories de tickets Nusuk expliquées (lequel choisir)",
+      "answer": "Choisissez la catégorie de demande qui correspond réellement à votre problème. Précisez l'étape concernée et joignez une capture lisible : un ticket sur le mauvais sujet risque de compliquer le suivi."
+    },
+    {
+      "id": 185,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Nusuk vs Motawif : pourquoi la confusion persiste encore",
+      "question": "Nusuk vs Motawif : pourquoi la confusion persiste encore",
+      "answer": "Motawif est le nom d'un ancien dispositif que certains pèlerins citent encore. Pour le Hajj 2027, partez uniquement du circuit officiellement annoncé pour votre pays, pas d'un ancien lien partagé en ligne."
+    },
+    {
+      "id": 186,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Le bug qui empêche de changer de forfait après réservation",
+      "question": "Le bug qui empêche de changer de forfait après réservation",
+      "answer": "Un changement de forfait après achat n'est pas un simple échange de panier. Vérifiez les conditions de modification, les disponibilités et les frais éventuels avant toute demande."
+    },
+    {
+      "id": 187,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Pourquoi ne jamais attendre le dernier jour pour s'inscrire",
+      "question": "Pourquoi ne jamais attendre le dernier jour pour s'inscrire",
+      "answer": "Inscrivez-vous dès que la campagne et votre situation le permettent. Un passeport à renouveler, une pièce refusée ou un contrôle en attente peuvent prendre du temps ; commencer tôt vous laisse une marge de correction."
+    },
+    {
+      "id": 188,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Pourquoi avoir 2 navigateurs ouverts peut casser votre session",
+      "question": "Pourquoi avoir 2 navigateurs ouverts peut casser votre session",
+      "answer": "Des sessions ouvertes simultanément peuvent compliquer le suivi d'une opération. Pour une étape sensible, utilisez une session principale et vérifiez le résultat dans votre espace avant de recommencer."
+    },
+    {
+      "id": 189,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Nusuk app mobile vs site web : lequel est plus fiable",
+      "question": "Nusuk app mobile vs site web : lequel est plus fiable",
+      "answer": "Si une fonction ne marche pas sur l'application, essayez le site officiel, ou inversement, lorsque les deux sont proposés. Vérifiez que vous consultez bien le même compte et le même statut."
+    },
+    {
+      "id": 190,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Antécédent de séjour irrégulier : ce que ça change vraiment",
+      "question": "Antécédent de séjour irrégulier : ce que ça change vraiment",
+      "answer": "Un précédent séjour irrégulier peut avoir des conséquences sur une nouvelle demande d'entrée. Seules les autorités compétentes peuvent confirmer votre situation : faites-la clarifier avant d'engager des dépenses."
+    },
+    {
+      "id": 191,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Comment lire correctement le statut MOFA / KSA Visa",
+      "question": "Comment lire correctement le statut MOFA / KSA Visa",
+      "answer": "Le suivi du visa et le suivi du forfait ne sont pas nécessairement le même écran. Utilisez les portails officiels indiqués pour votre démarche et vérifiez le numéro de référence correspondant à chaque étape."
+    },
+    {
+      "id": 192,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Visa refusé 2 fois : que faire différemment la 3e fois",
+      "question": "Visa refusé 2 fois : que faire différemment la 3e fois",
+      "answer": "Après plusieurs refus, renvoyer exactement le même dossier ne règle rien. Demandez le motif officiel, corrigez uniquement les éléments concernés et vérifiez si une nouvelle demande est autorisée."
+    },
+    {
+      "id": 193,
+      "part": "B",
+      "category": "Nusuk et démarches",
+      "title": "Pourquoi patienter la veille du départ est le pire scénario",
+      "question": "Pourquoi patienter la veille du départ est le pire scénario",
+      "answer": "Ne découvrez pas un problème de visa la veille du départ. Contrôlez les étapes et les dates annoncées assez tôt pour pouvoir contacter l'organisme responsable en cas d'anomalie."
+    },
+    {
+      "id": 194,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Ce qui arrive à des pèlerins chaque année et dont personne ne parle avant",
+      "question": "Ce qui arrive à des pèlerins chaque année et dont personne ne parle avant",
+      "answer": "Le risque existe de payer une offre qui n'est jamais exécutée. Avant tout versement, vérifiez l'identité juridique de l'interlocuteur, son rôle réel et la présence de la prestation dans le circuit officiel."
+    },
+    {
+      "id": 195,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "5 signaux qui doivent vous alerter avant de signer un forfait",
+      "question": "5 signaux qui doivent vous alerter avant de signer un forfait",
+      "answer": "Méfiez-vous de cinq signaux : identité floue, absence d'écrit, prix incohérent, paiement pressant et réponses évasives. Aucun ne prouve seul une fraude, mais leur accumulation doit vous faire arrêter le paiement."
+    },
+    {
+      "id": 196,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "L'agence qui ferme juste avant le départ, comment ça arrive vraiment",
+      "question": "L'agence qui ferme juste avant le départ, comment ça arrive vraiment",
+      "answer": "Une défaillance d'entreprise peut compromettre un voyage. Vérifiez les informations légales et les garanties applicables avant de payer, puis conservez les coordonnées du responsable contractuel."
+    },
+    {
+      "id": 197,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Pourquoi exiger un contrat écrit avant tout paiement",
+      "question": "Pourquoi exiger un contrat écrit avant tout paiement",
+      "answer": "Avant de verser de l'argent à un vendeur de voyage, demandez un document écrit précisant les prestations, le prix, les conditions d'annulation et l'identité du cocontractant. Un simple message WhatsApp ne suffit pas."
+    },
+    {
+      "id": 198,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Le piège du virement direct sans aucune trace",
+      "question": "Le piège du virement direct sans aucune trace",
+      "answer": "Un virement est traçable, mais cela ne rend pas le bénéficiaire fiable. Vérifiez le nom du titulaire du compte et la cohérence avec votre contrat. N'envoyez pas d'argent sur un compte personnel non justifié."
+    },
+    {
+      "id": 199,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Ce que signifie vraiment « agence agréée » en France",
+      "question": "Ce que signifie vraiment « agence agréée » en France",
+      "answer": "En France, une entreprise qui vend des voyages doit respecter des obligations réglementaires, notamment d'immatriculation lorsqu'elles s'appliquent. Vérifiez sa fiche officielle et ne confondez pas cette formalité avec une autorisation Nusuk."
+    },
+    {
+      "id": 200,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Comment un simple compte Instagram peut se faire passer pour une agence",
+      "question": "Comment un simple compte Instagram peut se faire passer pour une agence",
+      "answer": "Un compte Instagram peut reprendre le logo et les photos d'une entreprise sans lui appartenir. Retrouvez ses coordonnées sur une source indépendante et contactez-la directement avant de communiquer vos documents."
+    },
+    {
+      "id": 201,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Ce qui se passe quand un hôtel n'est pas payé par l'agence",
+      "question": "Ce qui se passe quand un hôtel n'est pas payé par l'agence",
+      "answer": "Si un hôtel n'a pas reçu le paiement attendu, l'hébergement peut être perturbé. Gardez la confirmation de votre forfait et contactez immédiatement le prestataire responsable pour faire constater et résoudre le problème."
+    },
+    {
+      "id": 202,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Comment reconnaître un guide non qualifié avant le départ",
+      "question": "Comment reconnaître un guide non qualifié avant le départ",
+      "answer": "Demandez quelles sont les missions du guide, ses langues de travail, son expérience et son rôle pendant les rites. Une belle présentation ne remplace pas un dispositif d'encadrement identifiable."
+    },
+    {
+      "id": 203,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Comment un acompte de 50% peut déjà être un piège",
+      "question": "Comment un acompte de 50% peut déjà être un piège",
+      "answer": "Un acompte important peut exposer votre trésorerie. Avant de payer, vérifiez ce qu'il réserve réellement, à qui il est versé et dans quelles conditions il est remboursable."
+    },
+    {
+      "id": 204,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Ce qu'il faut lire absolument dans les petites lignes du contrat",
+      "question": "Ce qu'il faut lire absolument dans les petites lignes du contrat",
+      "answer": "Les petites lignes importantes concernent notamment les changements d'hôtel, les services exclus, les frais de modification et l'annulation. Lisez-les avant de signer, pas lorsqu'un problème survient."
+    },
+    {
+      "id": 205,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Pourquoi les avis en ligne ne suffisent jamais seuls",
+      "question": "Pourquoi les avis en ligne ne suffisent jamais seuls",
+      "answer": "Les avis en ligne sont des indices, pas une garantie. Comparez leur ancienneté, leur précision et les retours concordants, puis croisez avec les informations légales et contractuelles."
+    },
+    {
+      "id": 206,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Ce que révèle vraiment l'ancienneté d'une société",
+      "question": "Ce que révèle vraiment l'ancienneté d'une société",
+      "answer": "L'ancienneté d'une société se vérifie dans les registres officiels. Elle apporte un élément de contexte, mais ne prouve pas à elle seule sa compétence actuelle ni la qualité du prochain séjour."
+    },
+    {
+      "id": 207,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Comment une liquidation judiciaire peut toucher votre dossier sans prévenir",
+      "question": "Comment une liquidation judiciaire peut toucher votre dossier sans prévenir",
+      "answer": "Avant de confier une somme importante, recherchez si l'entreprise fait l'objet d'une procédure collective publique. Si c'est le cas, demandez quelles garanties et quels recours s'appliquent à votre réservation."
+    },
+    {
+      "id": 208,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Le piège classique du « dernières places, payez maintenant »",
+      "question": "Le piège classique du « dernières places, payez maintenant »",
+      "answer": "La formule « dernières places » peut créer une pression inutile. Vérifiez si la disponibilité est réelle dans le circuit officiel et ne renoncez pas à lire les conditions pour aller plus vite."
+    },
+    {
+      "id": 209,
+      "part": "B",
+      "category": "Sécurité et prestataires",
+      "title": "Pourquoi vérifier même quand c'est une recommandation familiale",
+      "question": "Pourquoi vérifier même quand c'est une recommandation familiale",
+      "answer": "Une agence recommandée par un proche mérite les mêmes vérifications qu'une autre. Les équipes, les contrats et les autorisations peuvent avoir changé depuis son voyage."
+    },
+    {
+      "id": 210,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Les documents que 9 pèlerins sur 10 oublient",
+      "question": "Les documents que 9 pèlerins sur 10 oublient",
+      "answer": "Préparez un dossier de départ avec passeport, confirmations, coordonnées utiles, documents sanitaires requis et éventuelles assurances. La liste définitive dépend de votre forfait et des exigences 2027."
+    },
+    {
+      "id": 211,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Pourquoi préparer son dossier des mois à l'avance change tout",
+      "question": "Pourquoi préparer son dossier des mois à l'avance change tout",
+      "answer": "Commencer tôt permet de renouveler ses documents, de préparer le budget et de comprendre les offres. Cela ne garantit pas une place, mais réduit les problèmes que l'on peut anticiper."
+    },
+    {
+      "id": 212,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "La trousse santé que personne ne prépare correctement",
+      "question": "La trousse santé que personne ne prépare correctement",
+      "answer": "Préparez une trousse adaptée avec vos traitements habituels, les ordonnances et le nécessaire recommandé par un professionnel de santé. Vérifiez les restrictions sur les médicaments et évitez l'automédication hasardeuse."
+    },
+    {
+      "id": 213,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Pourquoi prévoir une copie papier ET numérique de chaque document",
+      "question": "Pourquoi prévoir une copie papier ET numérique de chaque document",
+      "answer": "Conservez des copies papier et numériques sécurisées du passeport, du visa et des confirmations. En cas de perte de téléphone ou de réseau, vous disposerez d'un autre moyen de retrouver les informations essentielles."
+    },
+    {
+      "id": 214,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Ce qu'il faut savoir avant de demander un congé pour le voyage",
+      "question": "Ce qu'il faut savoir avant de demander un congé pour le voyage",
+      "answer": "Avant de poser vos congés, distinguez les dates espérées des dates de voyage confirmées. Discutez des possibilités de modification avec votre employeur et ne réservez pas de congés irréversibles sur une simple estimation."
+    },
+    {
+      "id": 215,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "La check-list bagages que les premiers pèlerins ratent",
+      "question": "La check-list bagages que les premiers pèlerins ratent",
+      "answer": "Prévoyez des bagages faciles à porter et un petit sac pour les jours des rites. Vérifiez les limites de la compagnie, les besoins médicaux et les objets interdits avant de faire la valise."
+    },
+    {
+      "id": 216,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Pourquoi anticiper le change de devises avant le départ",
+      "question": "Pourquoi anticiper le change de devises avant le départ",
+      "answer": "Le change peut entraîner des frais et des écarts de taux. Comparez les conditions de votre banque, prévoyez un moyen de paiement utilisable sur place et évitez de transporter inutilement de grosses sommes."
+    },
+    {
+      "id": 217,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Pourquoi prévoir un contact d'urgence en France pendant le voyage",
+      "question": "Pourquoi prévoir un contact d'urgence en France pendant le voyage",
+      "answer": "Laissez à une personne de confiance votre itinéraire, les contacts du groupe et les références utiles. Elle pourra aider à transmettre une information si vous perdez l'accès à votre téléphone."
+    },
+    {
+      "id": 218,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Ce qu'il faut savoir sur l'assurance rapatriement",
+      "question": "Ce qu'il faut savoir sur l'assurance rapatriement",
+      "answer": "L'assurance rapatriement ne couvre pas automatiquement toutes les situations. Vérifiez les motifs pris en charge, les plafonds, les exclusions et le numéro d'assistance à appeler avant d'engager des frais."
+    },
+    {
+      "id": 219,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "La checklist administrative spécifique pour les personnes âgées",
+      "question": "La checklist administrative spécifique pour les personnes âgées",
+      "answer": "Pour un pèlerin âgé, vérifiez l'identité, les documents médicaux utiles, les traitements, les contacts d'urgence et les besoins de mobilité. Faites-le avec son accord et sans présumer qu'il aura besoin d'une assistance permanente."
+    },
+    {
+      "id": 220,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Pourquoi anticiper le décalage entre inscription et départ réel",
+      "question": "Pourquoi anticiper le décalage entre inscription et départ réel",
+      "answer": "Entre l'inscription et le départ, il peut s'écouler plusieurs mois avec différentes validations. Ne confondez pas compte créé, dossier accepté, forfait acheté et documents de voyage délivrés."
+    },
+    {
+      "id": 221,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Ce qu'il faut vérifier sur son assurance santé existante",
+      "question": "Ce qu'il faut vérifier sur son assurance santé existante",
+      "answer": "Avant de souscrire une couverture supplémentaire, regardez ce que votre assurance actuelle couvre déjà à l'étranger. Comparez notamment les soins, l'assistance, le rapatriement et les exclusions liées au Hajj."
+    },
+    {
+      "id": 222,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Pourquoi la photocopie du passeport ne suffit jamais seule",
+      "question": "Pourquoi la photocopie du passeport ne suffit jamais seule",
+      "answer": "Une photocopie aide à retrouver les informations d'un passeport perdu, mais elle ne remplace pas le document original pour voyager. Gardez l'original en sécurité et des copies accessibles séparément."
+    },
+    {
+      "id": 223,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Ce que change le statut « primo-pèlerin » sur le dossier",
+      "question": "Ce que change le statut « primo-pèlerin » sur le dossier",
+      "answer": "Le fait d'avoir déjà accompli le Hajj peut compter dans certaines conditions de priorité ou d'éligibilité. Déclarez votre situation réelle et consultez les règles publiées pour 2027."
+    },
+    {
+      "id": 224,
+      "part": "B",
+      "category": "Préparer son départ",
+      "title": "Comment anticiper un imprévu médical sur le dossier",
+      "question": "Comment anticiper un imprévu médical sur le dossier",
+      "answer": "Si une maladie ou une intervention médicale survient avant le départ, vérifiez rapidement votre aptitude à voyager avec votre médecin. Informez ensuite les interlocuteurs contractuels concernés des changements nécessaires."
+    },
+    {
+      "id": 225,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce que ressent vraiment un premier pèlerin la nuit avant le départ",
+      "question": "Ce que ressent vraiment un premier pèlerin la nuit avant le départ",
+      "answer": "La veille du premier départ, l'émotion et l'appréhension peuvent se mélanger. Préparer les documents et le trajet à l'avance permet de réserver cette dernière soirée au repos et à ses proches."
+    },
+    {
+      "id": 226,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "La dou'a que les pèlerins oublient de préparer",
+      "question": "La dou'a que les pèlerins oublient de préparer",
+      "answer": "Ne partez pas avec l'idée qu'il faut réciter une longue liste parfaite. Préparez quelques invocations personnelles, comprenez leur sens et gardez-les sur une petite fiche facile à consulter."
+    },
+    {
+      "id": 227,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Pourquoi la peur avant le départ est normale et même saine",
+      "question": "Pourquoi la peur avant le départ est normale et même saine",
+      "answer": "Avoir peur de l'inconnu n'est pas un signe d'échec. Transformez cette inquiétude en questions concrètes : qui appeler, où aller, quels documents garder et comment suivre le programme."
+    },
+    {
+      "id": 228,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce que personne ne vous dit sur la fatigue physique du Hajj",
+      "question": "Ce que personne ne vous dit sur la fatigue physique du Hajj",
+      "answer": "Le Hajj peut demander beaucoup de marche, d'attente et d'efforts sous la chaleur. Préparez votre condition physique selon vos capacités et signalez les besoins particuliers avant le départ."
+    },
+    {
+      "id": 229,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Comment préparer son cœur avant de prononcer la Talbiya",
+      "question": "Comment préparer son cœur avant de prononcer la Talbiya",
+      "answer": "Avant la Talbiyah, prenez le temps de comprendre l'intention du pèlerinage et les étapes de l'ihram. La préparation religieuse permet de vivre ce moment avec davantage de compréhension, sans rechercher une émotion obligatoire."
+    },
+    {
+      "id": 230,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Le moment où tout bascule : l'arrivée au Miqat",
+      "question": "Le moment où tout bascule : l'arrivée au Miqat",
+      "answer": "Le miqat est une limite liée à l'entrée en état d'ihram selon l'itinéraire. Identifiez le point applicable à votre voyage et demandez à votre encadrement quand vous préparer, avant de le dépasser."
+    },
+    {
+      "id": 231,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce que ressentent les pèlerins au premier regard sur la Kaaba",
+      "question": "Ce que ressentent les pèlerins au premier regard sur la Kaaba",
+      "answer": "Le premier regard sur la Kaaba peut être très émouvant ou plus silencieux qu'on l'imaginait. Il n'existe pas d'émotion imposée : concentrez-vous sur les rites et évitez de vous comparer aux autres."
+    },
+    {
+      "id": 232,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Pourquoi pleurer pendant le Tawaf n'a rien d'étrange",
+      "question": "Pourquoi pleurer pendant le Tawaf n'a rien d'étrange",
+      "answer": "Pleurer pendant le tawaf n'a rien d'anormal, mais ne pas pleurer non plus. La valeur du rite ne se mesure pas aux larmes ; concentrez-vous sur sa réalisation correcte et votre intention."
+    },
+    {
+      "id": 233,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce qu'il faut lâcher avant de partir, pas seulement emporter",
+      "question": "Ce qu'il faut lâcher avant de partir, pas seulement emporter",
+      "answer": "Avant de partir, essayez de régler vos engagements importants, vos dettes selon vos possibilités et les responsabilités laissées à la maison. Un départ bien organisé libère l'esprit pour le voyage."
+    },
+    {
+      "id": 234,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "La différence entre se préparer et se stresser",
+      "question": "La différence entre se préparer et se stresser",
+      "answer": "Préparer son Hajj, c'est distinguer ce que l'on peut organiser de ce qu'on ne maîtrise pas. Une checklist utile réduit l'incertitude ; consulter sans cesse les rumeurs ne la réduit pas."
+    },
+    {
+      "id": 235,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce que les pèlerins regrettent de ne pas avoir fait avant de partir",
+      "question": "Ce que les pèlerins regrettent de ne pas avoir fait avant de partir",
+      "answer": "Certains regrettent de n'avoir pas suffisamment appris le déroulement des rites avant le départ. Suivez une formation sérieuse, entraînez-vous à lire votre programme et posez vos questions à l'avance."
+    },
+    {
+      "id": 236,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Pourquoi demander pardon avant le départ change le voyage",
+      "question": "Pourquoi demander pardon avant le départ change le voyage",
+      "answer": "Avant le voyage, prenez le temps de demander pardon à ceux que vous avez blessés et de régler les conflits possibles. C'est une démarche personnelle qui peut donner plus de sérénité au départ."
+    },
+    {
+      "id": 237,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce qu'un guide conseille de faire la dernière semaine avant le départ",
+      "question": "Ce qu'un guide conseille de faire la dernière semaine avant le départ",
+      "answer": "La dernière semaine, confirmez les documents, les bagages, les coordonnées et les rendez-vous. Évitez d'ajouter de nouvelles démarches inutiles au dernier moment et préservez votre sommeil."
+    },
+    {
+      "id": 238,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "La peur de ne pas être « prêt spirituellement », en parler vraiment",
+      "question": "La peur de ne pas être « prêt spirituellement », en parler vraiment",
+      "answer": "Vous n'avez pas besoin de tout savoir par cœur pour commencer à vous préparer. Apprenez les piliers, les obligations et le déroulement avec des sources reconnues, puis notez les questions qui restent."
+    },
+    {
+      "id": 239,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce que ressent une famille qui envoie un proche âgé seul",
+      "question": "Ce que ressent une famille qui envoie un proche âgé seul",
+      "answer": "Quand un parent âgé part seul, sa famille peut s'inquiéter des déplacements et des urgences. Un plan de contact clair, les coordonnées de l'encadrement et les besoins médicaux anticipés sont plus utiles qu'une promesse vague."
+    },
+    {
+      "id": 240,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Pourquoi certains pèlerins reviennent transformés, d'autres frustrés",
+      "question": "Pourquoi certains pèlerins reviennent transformés, d'autres frustrés",
+      "answer": "Deux pèlerins peuvent vivre le même séjour très différemment. Les attentes, la fatigue et les difficultés rencontrées comptent. Préparez-vous à accomplir les rites, pas à reproduire exactement le récit d'une autre personne."
+    },
+    {
+      "id": 241,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce qu'il faut accepter de ne pas contrôler pendant le voyage",
+      "question": "Ce qu'il faut accepter de ne pas contrôler pendant le voyage",
+      "answer": "Vous ne contrôlerez pas tous les horaires, les foules ni les transports. En revanche, vous pouvez connaître les consignes, prévoir l'essentiel et apprendre à réagir sans vous mettre en danger."
+    },
+    {
+      "id": 242,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "La préparation du cœur pour affronter la foule et la fatigue",
+      "question": "La préparation du cœur pour affronter la foule et la fatigue",
+      "answer": "La foule et la fatigue peuvent éprouver la patience. Préparez-vous à laisser passer, à demander de l'aide calmement et à respecter les consignes, plutôt qu'à vouloir tout faire à votre rythme habituel."
+    },
+    {
+      "id": 243,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce que disent les pèlerins sur le moment du Jamarat",
+      "question": "Ce que disent les pèlerins sur le moment du Jamarat",
+      "answer": "Aux Jamarat, l'affluence peut impressionner. Le plus important est de suivre les horaires, les itinéraires et les consignes de sécurité de votre groupe, sans courir ni chercher à forcer un passage."
+    },
+    {
+      "id": 244,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Pourquoi pardonner avant de partir allège vraiment le voyage",
+      "question": "Pourquoi pardonner avant de partir allège vraiment le voyage",
+      "answer": "Le départ peut être l'occasion de reprendre contact avec une personne avec qui vous êtes fâché. Le pardon ne signifie pas nier un tort, mais il peut aider à partir sans nourrir inutilement un conflit."
+    },
+    {
+      "id": 245,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce qu'on ressent en quittant Médine après quelques jours",
+      "question": "Ce qu'on ressent en quittant Médine après quelques jours",
+      "answer": "Quitter Médine peut susciter beaucoup d'émotion. Profitez du temps prévu sur place, respectez le programme et ne laissez pas le regret d'un départ perturber les dernières étapes du voyage."
+    },
+    {
+      "id": 246,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "La dou'a à ne jamais oublier à Arafat",
+      "question": "La dou'a à ne jamais oublier à Arafat",
+      "answer": "À Arafat, réservez du temps aux invocations personnelles et aux rappels authentiques. Préparez ce que vous souhaitez demander à Allah et respectez le déroulement des rites et les horaires de votre groupe."
+    },
+    {
+      "id": 247,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce qu'un premier Hajj change dans une vie, selon ceux qui l'ont vécu",
+      "question": "Ce qu'un premier Hajj change dans une vie, selon ceux qui l'ont vécu",
+      "answer": "Après le Hajj, certains pèlerins souhaitent changer durablement leurs habitudes. Plutôt que d'attendre une transformation immédiate, choisissez des engagements réalistes à poursuivre au retour."
+    },
+    {
+      "id": 248,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Pourquoi se préparer seul est plus dur que se préparer accompagné",
+      "question": "Pourquoi se préparer seul est plus dur que se préparer accompagné",
+      "answer": "Se préparer seul demande de chercher les bonnes sources et de trier beaucoup d'informations. Une formation structurée ou un interlocuteur compétent peut aider à identifier les étapes et à éviter les confusions."
+    },
+    {
+      "id": 249,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce que les personnes âgées redoutent le plus avant de partir",
+      "question": "Ce que les personnes âgées redoutent le plus avant de partir",
+      "answer": "Pour une personne âgée, l'inquiétude peut porter sur la marche, les toilettes, les déplacements ou la séparation du groupe. Demandez-lui ce qui la préoccupe réellement avant de choisir les prestations."
+    },
+    {
+      "id": 250,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "La peur de l'échec rituel, en parler sans tabou",
+      "question": "La peur de l'échec rituel, en parler sans tabou",
+      "answer": "La peur de se tromper dans un rite est fréquente. Apprenez les étapes avec une formation fiable et identifiez à qui poser une question religieuse sur place, plutôt que de suivre des conseils contradictoires."
+    },
+    {
+      "id": 251,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Ce qu'il faut dire à ses enfants avant de partir pour le Hajj",
+      "question": "Ce qu'il faut dire à ses enfants avant de partir pour le Hajj",
+      "answer": "Avant de partir, expliquez aux enfants les dates du voyage, qui s'occupera d'eux et comment vous contacter. Un calendrier simple et des nouvelles régulières peuvent les rassurer."
+    },
+    {
+      "id": 252,
+      "part": "B",
+      "category": "Vivre son Hajj",
+      "title": "Pourquoi revenir « le cœur net » est l'objectif, pas la perfection du rite",
+      "question": "Pourquoi revenir « le cœur net » est l'objectif, pas la perfection du rite",
+      "answer": "Ne mesurez pas votre pèlerinage à une impression de perfection émotionnelle. Préparez les rites sérieusement, demandez conseil en cas d'erreur et concentrez-vous sur votre intention et votre comportement."
+    },
+    {
+      "id": 253,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "L'accompagnement gratuit cache-t-il un piège ? On répond cash",
+      "question": "L'accompagnement gratuit cache-t-il un piège ? On répond cash",
+      "answer": "Une demande d'aide gratuite doit préciser ce qui est offert, ce qui ne l'est pas et les éventuelles prestations payantes. Lisez ces conditions avant de laisser vos coordonnées : la transparence est essentielle."
+    },
+    {
+      "id": 254,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Remplir ce formulaire réserve-t-il quelque chose ? Non, voici pourquoi",
+      "question": "Remplir ce formulaire réserve-t-il quelque chose ? Non, voici pourquoi",
+      "answer": "Remplir un formulaire d'accompagnement ne réserve pas automatiquement un forfait Hajj. La réservation suit une procédure distincte et nécessite une confirmation officielle."
+    },
+    {
+      "id": 255,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Mes données sont-elles transmises à n'importe qui ?",
+      "question": "Mes données sont-elles transmises à n'importe qui ?",
+      "answer": "Avant d'envoyer vos données, vérifiez l'identité du responsable, la finalité de la collecte et la politique de confidentialité. Ne transmettez jamais votre mot de passe Nusuk par un formulaire non prévu pour cela."
+    },
+    {
+      "id": 256,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Puis-je comparer plusieurs agences avant de décider ?",
+      "question": "Puis-je comparer plusieurs agences avant de décider ?",
+      "answer": "Vous pouvez comparer plusieurs offres et demander des explications avant de vous engager. Assurez-vous simplement de savoir si une démarche déjà effectuée crée une obligation contractuelle."
+    },
+    {
+      "id": 257,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "L'accompagnement sur place est-il inclus gratuitement ?",
+      "question": "L'accompagnement sur place est-il inclus gratuitement ?",
+      "answer": "L'aide au dossier et l'accompagnement physique pendant le Hajj sont deux prestations différentes. Demandez précisément ce qui est gratuit et ce qui est inclus dans le forfait acheté."
+    },
+    {
+      "id": 258,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Que se passe-t-il si je n'ai pas encore de compte Nusuk ?",
+      "question": "Que se passe-t-il si je n'ai pas encore de compte Nusuk ?",
+      "answer": "Vous pouvez demander des informations sur les étapes à préparer avant de disposer d'un compte Nusuk. En revanche, l'ouverture du compte et les conditions d'accès restent celles du dispositif officiel."
+    },
+    {
+      "id": 259,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Pourquoi une aide gratuite peut-elle vraiment exister ?",
+      "question": "Pourquoi une aide gratuite peut-elle vraiment exister ?",
+      "answer": "Une structure peut proposer des conseils gratuits dans le cadre de sa mission d'information ou de son activité. La question importante est de connaître ses éventuels liens commerciaux et les prestations facturées."
+    },
+    {
+      "id": 260,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Combien de temps avant d'être rappelé après la demande ?",
+      "question": "Combien de temps avant d'être rappelé après la demande ?",
+      "answer": "Un délai de rappel n'est fiable que s'il est annoncé par le service concerné. Après votre demande, conservez la confirmation et utilisez le contact officiel si vous n'avez pas de nouvelles."
+    },
+    {
+      "id": 261,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "LABAYKANUSUK organise-t-il le voyage lui-même ?",
+      "question": "LABAYKANUSUK organise-t-il le voyage lui-même ?",
+      "answer": "voyage relèvent des organismes contractuellement responsables. Vérifiez le rôle de chacun avant de payer."
+    },
+    {
+      "id": 262,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Pourquoi ne pas simplement tout faire seul sur Nusuk ?",
+      "question": "Pourquoi ne pas simplement tout faire seul sur Nusuk ?",
+      "answer": "Vous pouvez accomplir vos démarches vous-même lorsque la procédure le permet. Un accompagnement sert surtout à comprendre les étapes, préparer les documents et éviter des erreurs, sans garantir une place."
+    },
+    {
+      "id": 263,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Quelle est la différence entre LABAYKANUSUK et une agence classique ?",
+      "question": "Quelle est la différence entre LABAYKANUSUK et une agence classique ?",
+      "answer": "Une plateforme d'information et une agence de voyage n'ont pas les mêmes obligations ni le même rôle. Demandez qui conseille, qui encaisse, qui vend le forfait et qui intervient sur place."
+    },
+    {
+      "id": 264,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Pourquoi faire confiance à un guide plutôt qu'à une pub Instagram ?",
+      "question": "Pourquoi faire confiance à un guide plutôt qu'à une pub Instagram ?",
+      "answer": "Ne choisissez pas un intervenant seulement sur une vidéo convaincante. Vérifiez ses missions, ses références et sa capacité à expliquer les situations concrètes du Hajj."
+    },
+    {
+      "id": 265,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Pourquoi certains pèlerins hésitent à demander de l'aide, et ont tort",
+      "question": "Pourquoi certains pèlerins hésitent à demander de l'aide, et ont tort",
+      "answer": "Demander de l'aide n'est pas un aveu d'incompétence. Lorsque le dossier, le budget ou les règles vous semblent confus, poser une question précise peut éviter une erreur coûteuse."
+    },
+    {
+      "id": 266,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Qu'est-ce qui différencie un vrai accompagnement d'un argumentaire de vente ? [source",
+      "question": "Qu'est-ce qui différencie un vrai accompagnement d'un argumentaire de vente ? [source",
+      "answer": "B166] Un accompagnement sérieux annonce ses limites, explique les démarches et ne promet pas ce qu'il ne contrôle pas. Demandez ce qui se passe concrètement si votre dossier est refusé ou si aucun forfait n'est disponible."
+    },
+    {
+      "id": 267,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Est-ce trop tard pour demander de l'aide si le départ approche ?",
+      "question": "Est-ce trop tard pour demander de l'aide si le départ approche ?",
+      "answer": "Même près du départ, une question peut être utile. Mais certaines corrections, réservations ou démarches ne seront peut-être plus possibles ; il faut distinguer conseil et capacité réelle d'intervention."
+    },
+    {
+      "id": 268,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Pourquoi poser des questions avant de payer n'est jamais mal vu",
+      "question": "Pourquoi poser des questions avant de payer n'est jamais mal vu",
+      "answer": "Avant de payer plusieurs milliers d'euros, vous pouvez demander des réponses écrites sur le programme, les conditions et les responsabilités. Une question précise est un signe de préparation, pas de méfiance excessive."
+    },
+    {
+      "id": 269,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Pourquoi un imam qualifié change la qualité d'un accompagnement",
+      "question": "Pourquoi un imam qualifié change la qualité d'un accompagnement",
+      "answer": "Un intervenant religieux compétent peut expliquer les rites et répondre aux questions de fiqh selon ses qualifications. Vérifiez son rôle et les possibilités de le consulter pendant le voyage."
+    },
+    {
+      "id": 270,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Pourquoi certains pèlerins préfèrent tout gérer seuls, et ce qu'ils risquent",
+      "question": "Pourquoi certains pèlerins préfèrent tout gérer seuls, et ce qu'ils risquent",
+      "answer": "Certains préfèrent gérer leur dossier seuls et y parviennent. L'important est de connaître les étapes, les délais et les sources officielles, pas de dépendre nécessairement d'un intermédiaire."
+    },
+    {
+      "id": 271,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Le format « rappel gratuit » est-il vraiment sans engagement ?",
+      "question": "Le format « rappel gratuit » est-il vraiment sans engagement ?",
+      "answer": "Un rappel présenté comme gratuit doit préciser s'il est sans engagement et s'il débouche éventuellement sur des offres payantes. Vérifiez ces conditions avant de prendre rendez-vous."
+    },
+    {
+      "id": 272,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Pourquoi LABAYKANUSUK fait toute cette formation gratuite",
+      "question": "Pourquoi LABAYKANUSUK fait toute cette formation gratuite",
+      "answer": "Une formation gratuite permet de préparer les pèlerins avant les décisions de voyage. Elle doit distinguer clairement l'enseignement des rites, l'information administrative et les éventuelles offres commerciales."
+    },
+    {
+      "id": 273,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "Pourquoi répondre à vos pires doutes publiquement plutôt que les cacher",
+      "question": "Pourquoi répondre à vos pires doutes publiquement plutôt que les cacher",
+      "answer": "Répondre publiquement aux questions difficiles permet de clarifier les limites d'un service : coût, données personnelles, responsabilités et recours. Les réponses doivent rester vérifiables, même lorsqu'elles sont inconfortables."
+    },
+    {
+      "id": 274,
+      "part": "B",
+      "category": "Accompagnement Hajj",
+      "title": "La dernière question qu'il faut se poser avant de choisir",
+      "question": "La dernière question qu'il faut se poser avant de choisir",
+      "answer": "Avant de choisir un interlocuteur, demandez-vous s'il explique clairement ce qu'il sait, ce qu'il ignore et ce dont il est responsable. La transparence est plus utile qu'une promesse de départ garanti."
+    }
+  ]
+}
