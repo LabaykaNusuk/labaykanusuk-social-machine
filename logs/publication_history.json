@@ -8070,5 +8070,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-12T18:32:22.237265+00:00"
+  },
+  {
+    "date": "2026-10-12",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0037",
+    "content_type": "quiz",
+    "photo_id": "HADY_SACRIFICE",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18124134994923878",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/bf1c67749caa73fae1ecb62372a0425c7e11f92c/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/bf1c67749caa73fae1ecb62372a0425c7e11f92c/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/bf1c67749caa73fae1ecb62372a0425c7e11f92c/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE RELIGIEUSE — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-12T19:08:25.530703+00:00"
   }
 ]
