@@ -8090,5 +8090,23 @@
     ],
     "source": "HISTOIRE RELIGIEUSE — L’Histoire du Hajj",
     "published_at_utc": "2026-10-12T19:08:25.530703+00:00"
+  },
+  {
+    "date": "2026-10-12",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0163",
+    "content_type": "hook",
+    "photo_id": "JAMARAT_WIDE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17925524754424354",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/ffd9f432a83ec6fc64d4d08cc29358fcb3d26991/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-12T20:08:16.982814+00:00"
   }
 ]
