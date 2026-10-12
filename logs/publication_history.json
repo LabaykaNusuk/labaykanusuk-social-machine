@@ -8016,5 +8016,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-12T13:31:35.767947+00:00"
+  },
+  {
+    "date": "2026-10-12",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0098",
+    "content_type": "tool",
+    "photo_id": "TAWAF_IFADAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18103834238308522",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/0adfd62ebeedd99be65f8237818c227999796d56/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-12T16:08:33.873354+00:00"
   }
 ]
