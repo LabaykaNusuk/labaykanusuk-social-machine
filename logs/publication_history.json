@@ -8198,5 +8198,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-13T11:08:57.513678+00:00"
+  },
+  {
+    "date": "2026-10-13",
+    "slot_order": 4,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0167",
+    "content_type": "hook",
+    "photo_id": "ARCADES_TALBIYAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18132193540743158",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a27579139a4dd79e068ebe6b72a3ad307671d61d/docs/media/slot-04.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-13T13:31:26.753044+00:00"
   }
 ]
