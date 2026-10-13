@@ -8234,5 +8234,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-13T16:08:27.810252+00:00"
+  },
+  {
+    "date": "2026-10-13",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-r-0168",
+    "content_type": "hook",
+    "photo_id": "SAI_CORRIDOR",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18073109207741472",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/f7f5f184805c4ae5e661df7197e0b55d46114add/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-13T17:17:42.402544+00:00"
   }
 ]
