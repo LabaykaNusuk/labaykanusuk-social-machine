@@ -8252,5 +8252,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-13T17:17:42.402544+00:00"
+  },
+  {
+    "date": "2026-10-13",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0038",
+    "content_type": "quiz",
+    "photo_id": "MINA_DAYS_TASHRIQ",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17994111515844815",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/3e26ec4f78fd3a7022f2b5664d9cd048744e50ba/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/3e26ec4f78fd3a7022f2b5664d9cd048744e50ba/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/3e26ec4f78fd3a7022f2b5664d9cd048744e50ba/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE SANITAIRE — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-13T19:08:26.826652+00:00"
   }
 ]
