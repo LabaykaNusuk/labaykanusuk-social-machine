@@ -8272,5 +8272,23 @@
     ],
     "source": "HISTOIRE SANITAIRE — L’Histoire du Hajj",
     "published_at_utc": "2026-10-13T19:08:26.826652+00:00"
+  },
+  {
+    "date": "2026-10-14",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0169",
+    "content_type": "hook",
+    "photo_id": "JAMARAT_CLOSE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18338849266279538",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/fca501d3ea48a15a98994286d0bef6ca26ecc8fd/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-14T06:09:10.209433+00:00"
   }
 ]
