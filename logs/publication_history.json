@@ -8582,5 +8582,23 @@
     ],
     "source": "HISTOIRE · HORS RITES — Guide Madinah al-Munawwarah",
     "published_at_utc": "2026-10-15T19:09:17.204575+00:00"
+  },
+  {
+    "date": "2026-10-15",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0178",
+    "content_type": "hook",
+    "photo_id": "JAMARAT_CLOSE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18016072229953224",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/8df2ef597ea0bc5698c84533e15a3fe8cce98c81/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-15T20:09:58.997668+00:00"
   }
 ]
