@@ -8562,5 +8562,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-15T18:33:22.579830+00:00"
+  },
+  {
+    "date": "2026-10-15",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0040",
+    "content_type": "quiz",
+    "photo_id": "KAABA_NIGHT",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18145933213605761",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/737ef926df8f4add66b206e60108aee91703e574/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/737ef926df8f4add66b206e60108aee91703e574/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/737ef926df8f4add66b206e60108aee91703e574/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE · HORS RITES — Guide Madinah al-Munawwarah",
+    "published_at_utc": "2026-10-15T19:09:17.204575+00:00"
   }
 ]
