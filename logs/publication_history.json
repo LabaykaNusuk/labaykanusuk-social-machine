@@ -8454,5 +8454,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-15T06:09:24.294958+00:00"
+  },
+  {
+    "date": "2026-10-15",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0104",
+    "content_type": "tool",
+    "photo_id": "ARCADES_TALBIYAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18103365794526880",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/739920359821732b5b37a79c0c4d6e6370b73c21/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-15T08:32:25.359197+00:00"
   }
 ]
