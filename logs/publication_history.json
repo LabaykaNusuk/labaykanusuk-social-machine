@@ -8764,5 +8764,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-16T20:09:30.846222+00:00"
+  },
+  {
+    "date": "2026-10-17",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0185",
+    "content_type": "hook",
+    "photo_id": "HADY_SACRIFICE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17939767260384446",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1430ffeeb26cde5f6649d61476f874aa464e90d0/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-17T06:09:26.345179+00:00"
   }
 ]
