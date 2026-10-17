@@ -8890,5 +8890,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-17T18:32:26.409587+00:00"
+  },
+  {
+    "date": "2026-10-17",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0042",
+    "content_type": "quiz",
+    "photo_id": "ARAFAT_MUZDALIFAH",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18000939060007600",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/07b4f4e8d4616c24a1f025038f6e398283a63975/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/07b4f4e8d4616c24a1f025038f6e398283a63975/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/07b4f4e8d4616c24a1f025038f6e398283a63975/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "HISTOIRE ÉCONOMIQUE — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-17T19:09:16.536481+00:00"
   }
 ]
