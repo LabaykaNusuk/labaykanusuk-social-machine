@@ -8946,5 +8946,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-18T06:09:47.691510+00:00"
+  },
+  {
+    "date": "2026-10-18",
+    "slot_order": 2,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0114",
+    "content_type": "tool",
+    "photo_id": "SAI_CORRIDOR",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18098648786560183",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/ab323be135e6ffe4eecafb3fb587d0099a14de29/docs/media/slot-02.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-18T08:32:34.891302+00:00"
   }
 ]
