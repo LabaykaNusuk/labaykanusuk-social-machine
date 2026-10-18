@@ -9074,5 +9074,23 @@
     ],
     "source": "REPÈRE DU HARAM — Guide Makkah",
     "published_at_utc": "2026-10-18T19:09:14.295125+00:00"
+  },
+  {
+    "date": "2026-10-18",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0194",
+    "content_type": "hook",
+    "photo_id": "HADY_SACRIFICE",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18176476636451613",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/f68441cedc4de48c9687a4753446ebf59a288ecb/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-18T20:09:13.322372+00:00"
   }
 ]
