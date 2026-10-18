@@ -9000,5 +9000,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-18T13:44:18.962580+00:00"
+  },
+  {
+    "date": "2026-10-18",
+    "slot_order": 5,
+    "slot_format": "story",
+    "slot_category": "tool",
+    "content_id": "clean-t-0115",
+    "content_type": "tool",
+    "photo_id": "HARAM_EXTERIOR",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "17916939474469765",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/bd1528f0e4ac86a82da32291ddcffb8ea2034b59/docs/media/slot-05.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-18T16:09:16.655850+00:00"
   }
 ]
