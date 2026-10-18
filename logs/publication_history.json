@@ -9018,5 +9018,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-18T16:09:16.655850+00:00"
+  },
+  {
+    "date": "2026-10-18",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-r-0192",
+    "content_type": "hook",
+    "photo_id": "MINA_DAYS_TASHRIQ",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18092002481689949",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/ec954e4273e5f02a2e43c4e57b89cc5494297f75/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-18T17:17:47.767564+00:00"
   }
 ]
