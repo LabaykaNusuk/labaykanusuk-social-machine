@@ -9092,5 +9092,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-18T20:09:13.322372+00:00"
+  },
+  {
+    "date": "2026-10-19",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0195",
+    "content_type": "hook",
+    "photo_id": "MINA_ROAD_AERIAL",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18169936132478883",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/0919fa0893a2e431298e6857b6f52fc93e392d3b/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-19T06:09:25.232014+00:00"
   }
 ]
