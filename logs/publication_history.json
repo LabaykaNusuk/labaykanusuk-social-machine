@@ -9218,5 +9218,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-19T18:33:09.998499+00:00"
+  },
+  {
+    "date": "2026-10-19",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0044",
+    "content_type": "quiz",
+    "photo_id": "ZAMZAM_CROWD",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18637367392036217",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a7e948c9fffcac0e16145ad48547ff0f8d2f9789/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a7e948c9fffcac0e16145ad48547ff0f8d2f9789/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/a7e948c9fffcac0e16145ad48547ff0f8d2f9789/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "RÉCIT DE SÎRA — Sîra Hajj & Omra",
+    "published_at_utc": "2026-10-19T19:09:10.223030+00:00"
   }
 ]
