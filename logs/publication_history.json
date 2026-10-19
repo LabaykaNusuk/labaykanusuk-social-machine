@@ -9182,5 +9182,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-19T16:09:09.593142+00:00"
+  },
+  {
+    "date": "2026-10-19",
+    "slot_order": 8,
+    "slot_format": "reel",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-t-0118",
+    "content_type": "tool",
+    "photo_id": "HALQ_HAIRCUT",
+    "kind": "REEL",
+    "status": "published",
+    "instagram_media_id": "18349269661268369",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/4b9e6d09e74b0896c1bc8891ae8f412796fbdba4/docs/media/slot-08.mp4",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-19T17:17:50.202828+00:00"
   }
 ]
