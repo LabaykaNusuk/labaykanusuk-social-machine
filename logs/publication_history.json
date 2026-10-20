@@ -9402,5 +9402,23 @@
     ],
     "source": "RÉCIT DE VOYAGE / HISTOIRE — L’Histoire du Hajj",
     "published_at_utc": "2026-10-20T19:09:14.443919+00:00"
+  },
+  {
+    "date": "2026-10-20",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0204",
+    "content_type": "hook",
+    "photo_id": "ARCADES_TALBIYAH",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18099964628645883",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/494832e9afcc68ae0553f6c43021dcea60f50d09/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-20T20:08:41.220232+00:00"
   }
 ]
