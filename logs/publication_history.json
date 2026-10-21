@@ -9420,5 +9420,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-20T20:08:41.220232+00:00"
+  },
+  {
+    "date": "2026-10-21",
+    "slot_order": 1,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0205",
+    "content_type": "hook",
+    "photo_id": "SAI_CORRIDOR",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18080434010381236",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/fa75027f2b49bba1d48c135218a29aecd0a08bbd/docs/media/slot-01.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-21T06:08:51.387543+00:00"
   }
 ]
