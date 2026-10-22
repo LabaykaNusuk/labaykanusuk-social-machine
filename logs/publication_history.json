@@ -9710,5 +9710,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-22T18:58:26.562576+00:00"
+  },
+  {
+    "date": "2026-10-22",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0047",
+    "content_type": "quiz",
+    "photo_id": "HARAM_EXTERIOR",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "18076137518470533",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1f2a7badc3c0cb5acee1fee23e39540888b7ea6f/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1f2a7badc3c0cb5acee1fee23e39540888b7ea6f/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/1f2a7badc3c0cb5acee1fee23e39540888b7ea6f/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "SERVICE INSTITUTIONNEL — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-22T19:18:14.281115+00:00"
   }
 ]
