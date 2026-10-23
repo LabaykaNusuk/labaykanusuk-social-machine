@@ -9894,5 +9894,23 @@
     ],
     "source": "SÉCURITÉ DES FOULES — L’Histoire du Hajj",
     "published_at_utc": "2026-10-23T19:11:59.298035+00:00"
+  },
+  {
+    "date": "2026-10-23",
+    "slot_order": 6,
+    "slot_format": "story",
+    "slot_category": "religion",
+    "content_id": "clean-r-0218",
+    "content_type": "hook",
+    "photo_id": "MINA_DAYS_TASHRIQ",
+    "kind": "STORY",
+    "status": "published",
+    "instagram_media_id": "18146115349609529",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/7d44efc48dd408648508d966329d77b74ce567ab/docs/media/slot-06.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-23T20:08:28.622257+00:00"
   }
 ]
