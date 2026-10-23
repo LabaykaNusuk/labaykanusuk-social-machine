@@ -9856,5 +9856,23 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-23T17:17:16.062684+00:00"
+  },
+  {
+    "date": "2026-10-23",
+    "slot_order": 7,
+    "slot_format": "feed",
+    "slot_category": "rotation_religion_or_tool",
+    "content_id": "clean-t-0131",
+    "content_type": "tool",
+    "photo_id": "ABRAJ_CLOCK",
+    "kind": "IMAGE",
+    "status": "published",
+    "instagram_media_id": "18107839619618475",
+    "instagram_username": "labaykanusuk",
+    "public_url": "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/887341463d46c8c4013f1e04379c6d6dc4ef7640/docs/media/slot-07.jpg",
+    "audio_category": null,
+    "audio_file": null,
+    "audio_mode": "silent",
+    "published_at_utc": "2026-10-23T18:43:59.092317+00:00"
   }
 ]
