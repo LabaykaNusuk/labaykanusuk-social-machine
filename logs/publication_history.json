@@ -9874,5 +9874,25 @@
     "audio_file": null,
     "audio_mode": "silent",
     "published_at_utc": "2026-10-23T18:43:59.092317+00:00"
+  },
+  {
+    "date": "2026-10-23",
+    "slot_order": 9,
+    "slot_format": "carousel",
+    "slot_category": "quiz",
+    "content_id": "ln120-q-0048",
+    "content_type": "quiz",
+    "photo_id": "MINA_ARAFAT_ROAD",
+    "kind": "CAROUSEL",
+    "status": "published",
+    "instagram_media_id": "17988273936108807",
+    "instagram_username": "labaykanusuk",
+    "public_urls": [
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/703691531f9ae9e5cab1eedd5f6d0eb0ca12107a/docs/media/quiz-card-1.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/703691531f9ae9e5cab1eedd5f6d0eb0ca12107a/docs/media/quiz-card-2.jpg",
+      "https://raw.githubusercontent.com/LabaykaNusuk/labaykanusuk-social-machine/703691531f9ae9e5cab1eedd5f6d0eb0ca12107a/docs/media/quiz-card-3.jpg"
+    ],
+    "source": "SÉCURITÉ DES FOULES — L’Histoire du Hajj",
+    "published_at_utc": "2026-10-23T19:11:59.298035+00:00"
   }
 ]
